@@ -1,9 +1,15 @@
 class Api::ScoresController < ApplicationController
   def show
-    render json: { scores: scores.all(1.day.ago.to_date) }
+    render json: all_scores
   end
 
   private
+
+  def all_scores
+    Rails.cache.fetch("nhl-#{1.day.ago}") do
+      { scores: scores.all(1.day.ago.to_date) }
+    end
+  end
 
   def scores
     @scores ||= begin
