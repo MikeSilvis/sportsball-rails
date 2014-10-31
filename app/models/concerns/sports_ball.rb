@@ -3,6 +3,9 @@ module SportsBall
 
   included do
     attr_accessor :league
+    def name
+      league.upcase
+    end
 
     def available_leagues
       @allowed_sports ||= ESPN.leagues
