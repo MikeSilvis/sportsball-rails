@@ -23,14 +23,28 @@ class ScoresController < ApplicationController
   helper_method :teams
 
   def dates
-    @dates ||= [
+    @dates ||= scores.league == 'nfl' ? nfl_dates : nba_nhl_dates
+  end
+  helper_method :dates
+
+  def nfl_dates
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  end
+
+  def nba_nhl_dates
+    [
       4.days.ago.to_date,
       3.days.ago.to_date,
       2.days.ago.to_date,
       1.day.ago.to_date
-    ]
+    ].map { |d| d.strftime('%Y-%m-%d') }
   end
-  helper_method :dates
 
   def current_date
      params[:date] ? Date.parse(params[:date]) : Date.today

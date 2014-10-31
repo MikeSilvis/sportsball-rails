@@ -9,9 +9,8 @@
 
 <ul class="nav nav-tabs nav-justified tabbar" role="tablist">
   <% dates.each do |date| %>
-    <% date_time = date.strftime('%Y-%m-%d') %>
-    <li class='<%= 'active' if params[:date] == date_time %>'>
-      <%= link_to date_time, score_path(params[:id], date: date_time) %>
+    <li class='<%= 'active' if params[:date] == date %>'>
+      <%= link_to date, score_path(params[:id], date: date) %>
     </li>
   <% end %>
 </ul>
