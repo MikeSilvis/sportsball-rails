@@ -6,6 +6,7 @@
   }
 
 </style>
+
 <ul class="nav nav-tabs nav-justified tabbar" role="tablist">
   <% dates.each do |date| %>
     <% date_time = date.strftime('%Y-%m-%d') %>
@@ -15,25 +16,29 @@
   <% end %>
 </ul>
 
+<div class="jumbotron mikes-jumbo">
+  <%= current_date.strftime('%A, %B %e') %>
+</div>
+
 <table class="table">
   <% scores.all(params[:date]).each do |score| %>
-    <tr class='heading info'>
-      <th><h5>Final</h5></th>
-      <th></th>
-    </tr>
     <tr class='scores'>
-      <tr class="<%= 'winner' if (score[:home_score] > score[:away_score]) %>">
+      <td class="<%= 'winner' if (score[:home_score] > score[:away_score]) %>">
         <% if teams.find(score[:home_team]) %>
-          <td> <%= teams.find(score[:home_team])[:name] %> </td>
+          <td> <%= teams.find(score[:home_team])[:name] %></td>
         <% end %>
-        <td> <%= score[:home_score] %>
-      </tr>
-      <tr class="<%= 'winner' if (score[:away_score] > score[:home_score]) %>">
+      </td>
+      <td class="<%= 'winner' if (score[:home_score] > score[:away_score]) %>">
+        <%= score[:home_score] %>
+      </td>
+      <td class="<%= 'winner' if (score[:away_score] > score[:home_score]) %>">
+        <%= score[:away_score] %>
+      </td>
+      <td class="<%= 'winner' if (score[:away_score] > score[:home_score]) %>">
         <% if teams.find(score[:away_team]) %>
-          <td> <%= teams.find(score[:away_team])[:name] %> </td>
+          <td> <%= teams.find(score[:away_team])[:name] %></td>
         <% end %>
-        <td> <%= score[:away_score] %> </td>
-      </tr>
+      </td>
     </tr>
   <% end %>
 </table>

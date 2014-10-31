@@ -31,4 +31,9 @@ class ScoresController < ApplicationController
     ]
   end
   helper_method :dates
+
+  def current_date
+     params[:date] ? Date.parse(params[:date]) : Date.today
+  end
+  helper_method :current_date
 end
