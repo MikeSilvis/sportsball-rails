@@ -20,25 +20,28 @@
   <%= current_date.strftime('%A, %B %e') %>
 </div>
 
-<table class="table">
-  <% scores.all(params[:date]).each do |score| %>
-    <tr class='scores'>
-      <td class="<%= 'winner' if (score[:home_score] > score[:away_score]) %>">
-        <% if teams.find(score[:home_team]) %>
-          <td> <%= teams.find(score[:home_team])[:name] %></td>
-        <% end %>
-      </td>
-      <td class="<%= 'winner' if (score[:home_score] > score[:away_score]) %>">
-        <%= score[:home_score] %>
-      </td>
-      <td class="<%= 'winner' if (score[:away_score] > score[:home_score]) %>">
-        <%= score[:away_score] %>
-      </td>
-      <td class="<%= 'winner' if (score[:away_score] > score[:home_score]) %>">
-        <% if teams.find(score[:away_team]) %>
-          <td> <%= teams.find(score[:away_team])[:name] %></td>
-        <% end %>
-      </td>
-    </tr>
+<table class="table table-hover">
+  <% scores.all(current_date).each do |score| %>
+      <tr>
+        <td class="team-name left <%= 'winner' if (score[:home_score] > score[:away_score]) %>">
+          <% if teams.find(score[:home_team]) %>
+            <%= teams.find(score[:home_team])[:name] %>
+          <% end %>
+        </td>
+        <td class="team-score left <%= 'winner' if (score[:home_score] > score[:away_score]) %>">
+          <%= score[:home_score] %>
+        </td>
+        <td class='middle'>
+          -
+        </td>
+        <td class="team-score right <%= 'winner' if (score[:away_score] > score[:home_score]) %>">
+          <%= score[:away_score] %>
+        </td>
+        <td class="team-name right <%= 'winner' if (score[:away_score] > score[:home_score]) %>">
+          <% if teams.find(score[:away_team]) %>
+            <%= teams.find(score[:away_team])[:name] %>
+          <% end %>
+        </td>
+      </tr>
   <% end %>
 </table>

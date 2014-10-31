@@ -4,9 +4,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .table {
-  background-color:white;
-  opacity: 0.9;
+  background-color: #101010;
+  color: white;
+  opacity: 0.8;
   margin-bottom: 80px;
+  tr:hover {
+    cursor: pointer;
+    color: #101010;
+  }
 }
 
 .dropdown-menu > li > a {
@@ -18,8 +23,24 @@
 }
 
 .tabbar {
-  background-color: white;
+  background-color: #101010;
+  opacity: 0.8;
   padding-bottom:5px;
+  a {
+    color: white;
+  }
+}
+.nav-tabs.nav-justified > li > a {
+  border-bottom: 0px;
+  border-radius: 10px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  color: #101010;
+  background-color: white;
+}
+.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus {
+  border: 0px;
 }
 
 .mikes-jumbo {
@@ -29,4 +50,21 @@
   p {
     margin-bottom: 0px;
   }
+}
+.team-name {
+  width: 40%;
+}
+.team-score {
+  width: 4.5%;
+}
+.middle {
+  width: 1%;
+}
+
+.left {
+  text-align: right;
+}
+
+.right {
+  text-align: left;
 }
