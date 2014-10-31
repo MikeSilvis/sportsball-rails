@@ -11,15 +11,15 @@ class Score
     find(date).map do |game|
       game[:away_team] = {
         name: team.find(game[:away_team]).try(:fetch, :name),
-        logo: "",
-        wins: "",
-        loses: ""
+        logo: "http://upload.wikimedia.org/wikipedia/ang/c/cd/Panthers_tacn.png",
+        wins: "5",
+        loses: "3"
       }
       game[:home_team] = {
         name: team.find(game[:home_team]).try(:fetch, :name),
-        logo: "",
-        wins: "",
-        loses: ""
+        logo: "http://img4.wikia.nocookie.net/__cb20100914172946/logopedia/images/0/00/200px-Pittsburgh_Penguins_logo_1972-1992_svg.png",
+        wins: "20",
+        loses: "1"
       }
       game
     end
