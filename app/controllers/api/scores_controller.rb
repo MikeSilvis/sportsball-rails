@@ -6,9 +6,13 @@ class Api::ScoresController < ApplicationController
   private
 
   def all_scores
-    Rails.cache.fetch("nhl-#{1.day.ago}") do
-      { scores: scores.all(1.day.ago.to_date) }
+    Rails.cache.fetch("nhl-#{current_time}") do
+      { scores: scores.all(current_time.to_date) }
     end
+  end
+
+  def current_time
+    @current_time ||= (params[:date] ? Date.parse(params[:date]) : 1.day.ago).in_time_zone("Eastern Time (US & Canada)")
   end
 
   def scores
