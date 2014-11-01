@@ -8,4 +8,8 @@ class Team
   def find(team)
     all.values.flatten.detect { |h| h[:data_name] == team }
   end
+
+  def logo(data_name)
+    ActionController::Base.helpers.image_url("nhl-teams/#{data_name}.gif")
+  end
 end

@@ -10,16 +10,20 @@ class Score
   def all(date = Date.today)
     find(date).map do |game|
       game[:away_team] = {
-        name: team.find(game[:away_team]).try(:fetch, :name),
-        logo: "http://upload.wikimedia.org/wikipedia/ang/c/cd/Panthers_tacn.png",
-        wins: "5",
-        loses: "3"
+        name: game[:away_team_name],
+        logo: team.logo(game[:away_team]),
+        wins: game[:away_team_record].split("-")[0],
+        loses: game[:home_team_record].split("-")[1],
+        record: game[:away_team_record],
+        data_name: game[:away_team]
       }
       game[:home_team] = {
-        name: team.find(game[:home_team]).try(:fetch, :name),
-        logo: "http://img4.wikia.nocookie.net/__cb20100914172946/logopedia/images/0/00/200px-Pittsburgh_Penguins_logo_1972-1992_svg.png",
-        wins: "20",
-        loses: "1"
+        name: game[:home_team_name],
+        logo: team.logo(game[:home_team]),
+        wins: game[:home_team_record].split("-")[0],
+        loses: game[:home_team_record].split("-")[1],
+        record: game[:home_team_record],
+        data_name: game[:home_team]
       }
       game
     end
