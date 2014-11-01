@@ -10,6 +10,6 @@ class Team
   end
 
   def logo(data_name)
-    ActionController::Base.helpers.image_url("nhl-teams/#{data_name}.gif")
+    ActionController::Base.helpers.image_url("nhl-teams/#{data_name}.png")
   end
 end
