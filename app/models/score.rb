@@ -32,7 +32,10 @@ class Score
         data_name: game[:home_team]
       }
 
-      game[:start_time] = Time.parse(game[:start_time]) if game[:state] == 'pregame'
+      if game[:state] == 'pregame'
+        game[:start_time].gsub!("ET", "EST")
+        game[:start_time] = Time.parse(game[:start_time]).utc.to_i if game[:state] == 'pregame'
+      end
 
       game
     end.sort_by do |game|
