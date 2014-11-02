@@ -6,9 +6,7 @@ class Api::ScoresController < ApplicationController
   private
 
   def all_scores
-    Rails.cache.fetch("nhl-#{current_time}") do
-      { scores: scores.all(current_time.to_date) }
-    end
+    { scores: scores.all(current_time.to_date) }
   end
 
   def current_time
