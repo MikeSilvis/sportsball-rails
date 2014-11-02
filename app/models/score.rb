@@ -1,5 +1,10 @@
 class Score
   include SportsBall
+  GAME_ORDER = {
+    'pregame'     => 2,
+    'in-progress' => 1,
+    'final'       => 3
+  }
 
   def team
     @team||= Team.new.tap do |t|
@@ -17,6 +22,7 @@ class Score
         record: game[:away_team_record],
         data_name: game[:away_team]
       }
+
       game[:home_team] = {
         name: game[:home_team_name],
         logo: team.logo(game[:home_team]),
@@ -25,9 +31,29 @@ class Score
         record: game[:home_team_record],
         data_name: game[:home_team]
       }
+
+      game[:start_time] = Time.parse(game[:start_time]) if game[:state] == 'pregame'
+
       game
-    end.sort do |a, b|
-      a[:final] ? 1 : -1
+    end.sort_by do |game|
+      GAME_ORDER[game[:state]]
+    end
+  end
+
+  concerning :UpdateFrequency do
+    def check
+      time = Time.now
+      all = self.all
+      while verify_similar(all)
+        puts 'still cached'
+      end
+
+      puts "ESPN took: #{Time.now - time} to update"
+    end
+
+    def verify_similar(all)
+      sleep 10
+      all == self.all
     end
   end
 
