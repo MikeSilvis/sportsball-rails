@@ -26,6 +26,8 @@ class Score
         data_name: game[:home_team]
       }
       game
+    end.sort do |a, b|
+      a[:final] ? 1 : -1
     end
   end
 
