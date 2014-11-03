@@ -3,7 +3,7 @@ class Score
   GAME_ORDER = {
     'pregame'     => 2,
     'in-progress' => 1,
-    'final'       => 3
+    'postgame'    => 3
   }
 
   def team
