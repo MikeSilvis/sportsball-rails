@@ -55,7 +55,6 @@ class Score
     end
 
     def verify_similar(all)
-      sleep 10
       all == self.all
     end
   end
