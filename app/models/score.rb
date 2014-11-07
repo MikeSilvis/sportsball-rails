@@ -40,6 +40,8 @@ class Score
       game
     end.sort_by do |game|
       GAME_ORDER[game[:state]]
+    end.sort_by do |game|
+      game[:start_time] || 0
     end
   end
 
