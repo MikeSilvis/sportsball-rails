@@ -63,7 +63,9 @@ class Score
     date = Date.today unless date
 
     if league == 'nfl'
-      ESPN.get_nfl_scores(date.year, 3)
+      ## TODO: FIX NFL HACK
+      week = ((date - Date.new(2014, 9, 4)).to_i / 7) + 1
+      ESPN.get_nfl_scores(date.year, week)
     else
       ESPN.public_send("get_#{league}_scores", date) if allowed_sport?
     end

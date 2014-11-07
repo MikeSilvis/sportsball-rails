@@ -15,5 +15,4 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'spring',        group: :development
 gem 'therubyracer'
 gem 'turbolinks'
-gem 'twitter-bootstrap-rails'
 gem 'uglifier', '>= 1.3.0'
