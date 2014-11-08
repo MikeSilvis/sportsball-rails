@@ -45,6 +45,25 @@ class Score
     end
   end
 
+  def find(date = Date.today)
+    date = Date.today unless date
+
+    ## TODO: FIX Football HAX
+    if league == 'nfl'
+      week = week_from_date(date, Date.new(2014, 9, 4))
+      ESPN.get_nfl_scores(date.year, week)
+    elsif league == 'ncf'
+      week = week_from_date(date, Date.new(2014, 8, 28))
+      ESPN.get_ncf_scores(date.year, week)
+    else
+      ESPN.public_send("get_#{league}_scores", date) if allowed_league?
+    end
+  end
+
+  def week_from_date(date, start_date)
+    ((date - start_date).to_i / 7) + 1
+  end
+
   concerning :UpdateFrequency do
     def check
       time = Time.now
@@ -58,18 +77,6 @@ class Score
 
     def verify_similar(all)
       all == self.all
-    end
-  end
-
-  def find(date = Date.today)
-    date = Date.today unless date
-
-    if league == 'nfl'
-      ## TODO: FIX NFL HACK
-      week = ((date - Date.new(2014, 9, 4)).to_i / 7) + 1
-      ESPN.get_nfl_scores(date.year, week)
-    else
-      ESPN.public_send("get_#{league}_scores", date) if allowed_sport?
     end
   end
 end

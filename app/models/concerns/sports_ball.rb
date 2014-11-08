@@ -7,12 +7,12 @@ module SportsBall
       league.upcase
     end
 
-    def available_leagues
+    def self.available_leagues
       @allowed_sports ||= ESPN.leagues
     end
 
-    def allowed_sport?
-      available_leagues.include?(league)
+    def allowed_league?
+      self.class.available_leagues.include?(league)
     end
   end
 end
