@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/getsentry/raven-ruby.git
+  revision: 7b0578aaaf2368afb47db2c444b96cb6a2dd586c
+  specs:
+    sentry-raven (0.11.2)
+      faraday (>= 0.7.6)
+
+GIT
   remote: git://github.com/mikesilvis/espn-scraper.git
   revision: 30095cc127262647fe45ab9aa2f905a2113c7bfc
   specs:
@@ -53,6 +60,8 @@ GEM
     debugger-linecache (1.2.0)
     erubis (2.7.0)
     execjs (2.2.2)
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
     hike (1.2.3)
     httparty (0.13.3)
       json (~> 1.8)
@@ -78,6 +87,7 @@ GEM
     minitest (5.4.2)
     multi_json (1.10.1)
     multi_xml (0.5.5)
+    multipart-post (2.0.0)
     nokogiri (1.6.4.1)
       mini_portile (~> 0.6.0)
     pg (0.17.1)
@@ -151,6 +161,7 @@ DEPENDENCIES
   rails (= 4.1.6)
   rails_12factor
   sass-rails (~> 4.0.3)
+  sentry-raven!
   spring
   therubyracer
   turbolinks
