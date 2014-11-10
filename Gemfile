@@ -18,4 +18,8 @@ gem 'spring',        group: :development
 gem 'therubyracer'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
+gem 'unicorn-rails'
 
+group :production do
+  gem 'rack-cache', require: 'rack/cache'
+end
