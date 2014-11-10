@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.1.4'
 
+gem 'benchmark-ips'
 gem 'byebug'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'espn_scraper', github: 'mikesilvis/espn-scraper'
@@ -23,3 +24,4 @@ gem 'unicorn-rails'
 group :production do
   gem 'rack-cache', require: 'rack/cache'
 end
+
