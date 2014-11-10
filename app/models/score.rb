@@ -34,7 +34,7 @@ class Score
 
       if game[:state] == 'pregame'
         game[:start_time].gsub!("ET", "EST")
-        game[:start_time] = Time.parse(game[:start_time]).utc.to_i if game[:state] == 'pregame'
+        game[:start_time] = Time.parse(game[:start_time]).utc.to_i
       end
 
       game

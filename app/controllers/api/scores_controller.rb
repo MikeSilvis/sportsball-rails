@@ -12,7 +12,7 @@ class Api::ScoresController < ApplicationController
   end
 
   def current_time
-    @current_time ||= (params[:date] ? Date.parse(params[:date]) : Time.now).in_time_zone("Pacific Time (US & Canada)").to_date
+    @current_time ||= (params[:date] ? Date.parse(params[:date]) : Time.now).in_time_zone('Pacific Time (US & Canada)').to_date
   end
 
   def scores
