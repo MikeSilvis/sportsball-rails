@@ -14,14 +14,14 @@ gem 'pg'
 gem 'rails', '4.1.6'
 gem 'rails_12factor'
 gem 'sass-rails', '~> 4.0.3'
-gem 'sentry-raven', :github => 'getsentry/raven-ruby'
 gem 'spring',        group: :development
 gem 'therubyracer'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
-gem 'unicorn-rails'
+#gem 'unicorn-rails'
 
 group :production do
   gem 'rack-cache', require: 'rack/cache'
+  #gem 'sentry-raven', github: 'getsentry/raven-ruby'
 end
 

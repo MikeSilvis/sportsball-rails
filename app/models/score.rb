@@ -1,68 +1,54 @@
 class Score
   include SportsBall
+  attr_accessor :away_team,
+                :home_team,
+                :game_date,
+                :away_score,
+                :home_score,
+                :state,
+                :ended_in,
+                :start_time
+
   GAME_ORDER = {
     'pregame'     => 2,
     'in-progress' => 1,
     'postgame'    => 3
   }
 
-  def team
-    @team||= Team.new.tap do |t|
-              t.league = self.league
-            end
+  def initialize(attrs)
+    self.away_team  = Team.new(attrs, 'away')
+    self.home_team  = Team.new(attrs, 'home')
+    self.state      = attrs[:state]
+    self.ended_in   = attrs[:ended_in]
+    self.league     = attrs[:league]
+    self.start_time = attrs[:start_time]
+    self.game_date  = attrs[:game_date]
+    self.away_score = attrs[:away_score]
+    self.home_score = attrs[:home_score]
   end
 
-  def all(date = Date.today)
-    find(date).map do |game|
-      game[:away_team] = {
-        name: game[:away_team_name],
-        logo: team.logo(game[:away_team]),
-        wins: game[:away_team_record].split("-")[0],
-        loses: game[:home_team_record].split("-")[1],
-        record: game[:away_team_record],
-        data_name: game[:away_team]
-      }
-
-      game[:home_team] = {
-        name: game[:home_team_name],
-        logo: team.logo(game[:home_team]),
-        wins: game[:home_team_record].split("-")[0],
-        loses: game[:home_team_record].split("-")[1],
-        record: game[:home_team_record],
-        data_name: game[:home_team]
-      }
-
-      if game[:state] == 'pregame'
-        game[:start_time].gsub!("ET", "EST")
-        game[:start_time] = Time.parse(game[:start_time]).utc.to_i
-      end
-
-      game
-    end.sort_by do |game|
-      game[:start_time] || 0
-    end.sort_by do |game|
-      GAME_ORDER[game[:state]]
-    end
+  def start_time=(val)
+    val.to_s.gsub!('ET', 'EST')
+    @start_time = if val
+                    Time.parse(val).utc
+                  end
   end
 
-  def find(date = Date.today)
-    date = Date.today unless date
-
-    ## TODO: FIX Football HAX
-    if league == 'nfl'
-      week = week_from_date(date, Date.new(2014, 9, 4))
-      ESPN.get_nfl_scores(date.year, week)
-    elsif league == 'ncf'
-      week = week_from_date(date, Date.new(2014, 8, 28))
-      ESPN.get_ncf_scores(date.year, week)
-    else
-      ESPN.public_send("get_#{league}_scores", date) if allowed_league?
-    end
+  def as_json(attrs)
+    {
+      game_date: game_date,
+      home_team: home_team.as_json,
+      away_team: away_team.as_json,
+      start_time: start_time.to_i,
+      state: state,
+      start_time: start_time,
+      ended_in: ended_in,
+      league: league,
+      away_score: away_score,
+      home_score: home_score,
+    }
   end
-
-  def week_from_date(date, start_date)
-    ((date - start_date).to_i / 7) + 1
-  end
+  add_method_tracer :as_json, 'Score/as_json'
 
   concerning :UpdateFrequency do
     def check

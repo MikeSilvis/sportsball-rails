@@ -1,8 +1,8 @@
 class Api::ScoresController < ApplicationController
-  before_filter :require_valid_league
+  #before_filter :require_valid_league
 
   def show
-    render json: { scores: scores.all(current_time.to_date) }
+    render json: { scores: scores }
   end
 
   private
@@ -16,10 +16,6 @@ class Api::ScoresController < ApplicationController
   end
 
   def scores
-    @scores ||= begin
-                  score = Score.new
-                  score.league = params[:id]
-                  score
-                end
+    @scores ||= League.new(params[:id]).scores(current_time.to_date)
   end
 end

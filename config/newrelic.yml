@@ -59,7 +59,7 @@ common: &default_settings
 
   # Developer mode should be off in every environment but
   # development as it has very high overhead in memory.
-  developer_mode: false
+  developer_mode: true
 
   # The newrelic agent generates its own log file to keep its logging
   # information separate from that of your application. Specify its
@@ -116,7 +116,7 @@ common: &default_settings
   # Java: create a config setting called "ignored_params" and set it to
   #     a comma separated list of HTTP parameter names.
   #     ex: ignored_params: credit_card, ssn, password
-  capture_params: false
+  capture_params: true
 
   # Transaction tracer captures deep information about slow
   # transactions and sends this to the New Relic service once a
@@ -192,7 +192,7 @@ development:
   <<: *default_settings
   # Turn on communication to New Relic service in development mode
   monitor_mode: true
-  app_name: My Application (Development)
+  app_name: Champion
 
   # Rails Only - when running in Developer Mode, the New Relic Agent will
   # present performance information on the last 100 transactions you have
@@ -221,4 +221,4 @@ production:
 staging:
   <<: *default_settings
   monitor_mode: true
-  app_name: My Application (Staging)
+  app_name: Champion

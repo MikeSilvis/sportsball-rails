@@ -1,5 +1,8 @@
+require 'new_relic/agent/method_tracer'
+
 module SportsBall
   extend ActiveSupport::Concern
+  include ::NewRelic::Agent::MethodTracer
 
   included do
     attr_accessor :league

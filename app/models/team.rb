@@ -2,7 +2,27 @@ require 'open-uri'
 
 class Team
   include SportsBall
-  attr_accessor :data_name
+  attr_accessor :data_name, :name, :logo, :wins, :loses, :record
+  POSSIBLE_TEAMS = %w[away home]
+
+  def initialize(attrs, team)
+    return nil unless POSSIBLE_TEAMS.include?(team)
+
+    self.name      = attrs["#{team}_team_name".to_sym]
+    self.record    = attrs["#{team}_team_record".to_sym]
+    self.data_name = attrs["#{team}_team".to_sym]
+    self.league    = attrs[:league]
+  end
+
+  def as_json
+    {
+      name: self.name,
+      logo: self.logo,
+      record: self.record,
+      data_name: self.data_name
+    }
+  end
+  add_method_tracer :as_json, 'Team/as_json'
 
   def all
     @all ||= ESPN.get_teams_in(league) if allowed_sport?
@@ -12,29 +32,26 @@ class Team
     all.values.flatten.detect { |h| h[:data_name] == team }
   end
 
-  def logo(data_name)
-    ActionController::Base.helpers.image_url("#{league}-teams/#{data_name}.png")
+  def logo(rabble_name = nil)
+    ActionController::Base.helpers.image_url("#{league}-teams/#{self.data_name}.png")
   end
 
-  ## TODO: FIX / DELETE ME
-  concerning :DownloadingLogo do
-      def self.score_data(array)
-        array.each do |a|
-          away_team = Team.new
-          away_team.league = a[:league]
-          away_team.data_name = a[:away_team]
-          away_team.download_logo(a[:away_team_logo])
+  module DownloadingLogo
+    def self.score_data(array)
+      array.each do |a|
+        away_team = Team.new(a, 'away')
+        away_team.download_logo(a[:away_team_logo])
 
-          home_team = Team.new
-          home_team.league = a[:league]
-          home_team.data_name = a[:home_team]
-          home_team.download_logo(a[:home_team_logo])
-        end
+        home_team = Team.new(a, 'home')
+        home_team.download_logo(a[:home_team_logo])
       end
+    end
+
     def download_logo(url)
       open("app/assets/images/#{league}-teams/#{data_name}.png", 'wb') do |file|
         file << open(url).read
       end
     end
   end
+  include DownloadingLogo
 end

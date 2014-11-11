@@ -40,6 +40,10 @@ namespace :speed do
         Faraday.get 'http://scores.espn.go.com/college-football/scoreboard?seasonYear=2014&seasonType=2&weekNumber=11&confId=80'
       end
 
+      x.report("ESPN: ncf (top 25)") do
+        Faraday.get 'http://scores.espn.go.com/college-football/scoreboard?seasonYear=2014&seasonType=2&weekNumber=9'
+      end
+
       x.report("ESPN: nhl") do
         Faraday.get 'http://scores.espn.go.com/nhl/scoreboard'
       end
