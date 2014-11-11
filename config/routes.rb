@@ -3,5 +3,8 @@ Rails.application.routes.draw do
     resources :league, only: [] do
       resources :scores, only: :index
     end
+    resources :leagues, only: [] do
+      resources :scores, only: :index
+    end
   end
 end
