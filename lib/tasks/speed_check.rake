@@ -1,7 +1,8 @@
+require 'faraday'
 require 'benchmark/ips'
 
 namespace :speed do
-  desc "Compares various sport providers API response time"
+  desc 'Compares various sport providers API response time'
   task :check => :environment do
     Benchmark.ips do |x|
       # Configure the number of seconds used during
@@ -55,5 +56,58 @@ namespace :speed do
       x.compare!
     end
   end
-end
 
+  desc 'Compares requests vs object parse time'
+  task :nokogiri => :environment do
+    Benchmark.ips do |x|
+      # Configure the number of seconds used during
+      # the warmup phase (default 2) and calculation phase (default 5)
+      x.config(:time => 5, :warmup => 2)
+
+      # These parameters can also be configured this way
+      x.time = 5
+      x.warmup = 2
+
+      x.report("ESPN: ncf - Get Request") do
+        Faraday.get 'http://scores.espn.go.com/college-football/scoreboard?seasonYear=2014&seasonType=2&weekNumber=11&confId=80'
+      end
+
+      x.report("ESPN: ncf - nokogiri") do
+        ESPN.get_ncf_scores(2014, 9)
+      end
+
+      x.report("ESPN: ncf - object") do
+        League.new('ncf').scores
+      end
+
+      x.compare!
+    end
+  end
+
+  desc 'Compares the various leagues response times'
+  task :leagues => :environment do
+    Benchmark.ips do |x|
+      # Configure the number of seconds used during
+      # the warmup phase (default 2) and calculation phase (default 5)
+      x.config(:time => 5, :warmup => 2)
+
+      # These parameters can also be configured this way
+      x.time = 5
+      x.warmup = 2
+
+      x.report("NHL") do
+        League.new('nhl').scores
+      end
+
+      x.report("NCF") do
+        League.new('ncf').scores
+      end
+
+      x.report("NFL") do
+        League.new('nfl').scores
+      end
+
+      x.compare!
+    end
+  end
+end

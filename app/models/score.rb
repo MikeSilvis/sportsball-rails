@@ -38,14 +38,13 @@ class Score
                   end
   end
 
-  def as_json(attrs)
+  def as_json(attrs = {})
     {
       game_date: game_date,
       home_team: home_team.as_json,
       away_team: away_team.as_json,
       start_time: start_time.to_i,
       state: state,
-      start_time: start_time,
       ended_in: ended_in,
       league: league,
       away_score: away_score,

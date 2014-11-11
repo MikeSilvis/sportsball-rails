@@ -14,7 +14,7 @@ class Team
     self.league    = attrs[:league]
   end
 
-  def as_json
+  def as_json(attrs = {})
     {
       name: self.name,
       logo: self.logo,
