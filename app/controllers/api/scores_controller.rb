@@ -1,7 +1,7 @@
 class Api::ScoresController < ApplicationController
   #before_filter :require_valid_league
 
-  def show
+  def index
     render json: { scores: scores }
   end
 
@@ -16,6 +16,10 @@ class Api::ScoresController < ApplicationController
   end
 
   def scores
-    @scores ||= League.new(params[:id]).scores(current_time.to_date)
+    @scores ||= league.scores(current_time.to_date)
+  end
+
+  def league
+    @league ||= League.new(params[:league_id])
   end
 end

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   namespace :api do
-    resources :scores, only: :show
+    resources :league, only: [] do
+      resources :scores, only: :index
+    end
   end
 end
