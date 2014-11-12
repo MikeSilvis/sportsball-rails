@@ -9,6 +9,7 @@ gem 'less-rails'
 gem 'newrelic_rpm'
 gem 'rails', '4.1.6'
 gem 'rails-api'
+gem 'therubyracer'
 gem 'unicorn-rails'
 
 group :production do
