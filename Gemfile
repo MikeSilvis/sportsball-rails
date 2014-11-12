@@ -19,6 +19,7 @@ gem 'therubyracer'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 gem 'unicorn-rails'
+gem 'rails-api'
 
 group :production do
   gem 'rack-cache', require: 'rack/cache'
