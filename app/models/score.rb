@@ -10,13 +10,8 @@ class Score
                 :start_time,
                 :time_remaining,
                 :progress,
-                :line
-
-  GAME_ORDER = {
-    'pregame'     => 2,
-    'in-progress' => 1,
-    'postgame'    => 3
-  }
+                :line,
+                :id
 
   def initialize(attrs)
     self.away_team      = Team.new(attrs, 'away')
@@ -31,6 +26,7 @@ class Score
     self.time_remaining = attrs[:time_remaining]
     self.progress       = attrs[:progress]
     self.line           = attrs[:line]
+    self.id             = attrs[:id]
   end
 
   def start_time=(val)

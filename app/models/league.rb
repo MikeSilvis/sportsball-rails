@@ -1,7 +1,13 @@
 class League
   attr_accessor :name
 
-  SPECIAL_LEAGUES = {
+  GAME_ORDER = {
+    'pregame'     => 2,
+    'in-progress' => 1,
+    'postgame'    => 3
+  }
+
+  WEEK_LEAGUES = {
     'nfl' => {
       date: Date.new(2014, 9, 4)
     },
@@ -17,6 +23,13 @@ class League
   def scores(date = Date.today)
     query_espn(date).map do |score|
       Score.new(score)
+    end.sort_by do |score|
+      [
+        GAME_ORDER[score.state],
+        (score.start_time if score.start_time),
+        -score.progress.to_i,
+        score.time_remaining.to_s.gsub(':','.').to_f
+      ]
     end
   end
   add_method_tracer :as_json, 'League/scores'
@@ -24,8 +37,8 @@ class League
   def query_espn(date = Date.today)
     date = Date.today unless date
 
-    if SPECIAL_LEAGUES[name]
-      week = ((date - SPECIAL_LEAGUES[name][:date]).to_i / 7) + 1
+    if WEEK_LEAGUES[name]
+      week = ((date - WEEK_LEAGUES[name][:date]).to_i / 7) + 1
       ESPN.public_send("get_#{name}_scores", date.year, week)
     else
       ESPN.public_send("get_#{name}_scores", date)

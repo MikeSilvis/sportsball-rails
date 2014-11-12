@@ -13,7 +13,14 @@ gem 'therubyracer'
 gem 'unicorn-rails'
 
 group :production do
-  gem 'rails_12factor'
   gem 'rack-cache', require: 'rack/cache'
+  gem 'rails_12factor'
   gem 'sentry-raven', github: 'getsentry/raven-ruby'
 end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'vcr'
+  gem 'webmock'
+end
+

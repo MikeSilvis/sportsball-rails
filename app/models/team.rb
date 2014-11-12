@@ -20,7 +20,7 @@ class Team
       logo: self.logo,
       record: self.record,
       data_name: self.data_name
-    }
+    }.compact
   end
   add_method_tracer :as_json, 'Team/as_json'
 
