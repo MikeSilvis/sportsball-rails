@@ -44,5 +44,5 @@ class League
       ESPN.public_send("get_#{name}_scores", date)
     end
   end
-  add_method_tracer :as_json, 'League/query_espn'
+  add_method_tracer :query_espn, 'League/query_espn'
 end
