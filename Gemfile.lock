@@ -72,7 +72,6 @@ GEM
     newrelic_rpm (3.9.6.257)
     nokogiri (1.6.4.1)
       mini_portile (~> 0.6.0)
-    pg (0.17.1)
     rack (1.5.2)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -134,7 +133,6 @@ DEPENDENCIES
   byebug
   espn_scraper!
   newrelic_rpm
-  pg
   rack-cache
   rails (= 4.1.6)
   rails-api
