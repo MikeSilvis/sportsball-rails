@@ -18,7 +18,7 @@ gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 gem 'unicorn-rails'
 gem 'rails_12factor'
-gem 'rails-api'
+#gem 'rails-api'
 
 group :production do
   gem 'rack-cache', require: 'rack/cache'
