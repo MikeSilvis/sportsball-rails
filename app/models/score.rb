@@ -49,7 +49,8 @@ class Score
       league: league,
       away_score: away_score,
       home_score: home_score,
-      progress: progress
+      progress: progress,
+      time_remaining: time_remaining
     }
   end
   add_method_tracer :as_json, 'Score/as_json'
