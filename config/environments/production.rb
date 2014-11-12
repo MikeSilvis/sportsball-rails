@@ -20,7 +20,8 @@ Rails.application.configure do
   # config.action_dispatch.rack_cache = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
-  config.serve_static_assets = false
+  config.serve_static_assets = true
+  config.static_cache_control = "public, max-age=31536000"
   config.action_controller.asset_host = "http://getbaryab.com"
 
   # Compress JavaScripts and CSS.
