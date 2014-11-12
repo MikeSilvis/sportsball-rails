@@ -9,7 +9,8 @@ class Score
                 :ended_in,
                 :start_time,
                 :time_remaining,
-                :progress
+                :progress,
+                :line
 
   GAME_ORDER = {
     'pregame'     => 2,
@@ -29,6 +30,7 @@ class Score
     self.home_score     = attrs[:home_score]
     self.time_remaining = attrs[:time_remaining]
     self.progress       = attrs[:progress]
+    self.line           = attrs[:line]
   end
 
   def start_time=(val)
@@ -50,8 +52,9 @@ class Score
       away_score: away_score,
       home_score: home_score,
       progress: progress,
-      time_remaining: time_remaining
-    }
+      time_remaining: time_remaining,
+      line: line
+    }.compact
   end
   add_method_tracer :as_json, 'Score/as_json'
 
