@@ -1,11 +1,4 @@
 GIT
-  remote: git://github.com/getsentry/raven-ruby.git
-  revision: ff3f5a7a9cbb036b13933c6ff3a61ee4b2300aaa
-  specs:
-    sentry-raven (0.12.0)
-      faraday (>= 0.7.6)
-
-GIT
   remote: git://github.com/mikesilvis/espn-scraper.git
   revision: e9a32267b58b558116848f6991a4da302aa187f1
   specs:
@@ -45,6 +38,9 @@ GEM
     addressable (2.3.6)
     arel (5.0.1.20140414130214)
     benchmark-ips (2.1.0)
+    bugsnag (2.5.1)
+      httparty (>= 0.6, < 1.0)
+      multi_json (~> 1.0)
     builder (3.2.2)
     byebug (3.5.1)
       columnize (~> 0.8)
@@ -166,8 +162,10 @@ PLATFORMS
 
 DEPENDENCIES
   benchmark-ips
+  bugsnag
   byebug
   espn_scraper!
+  faraday
   less-rails
   newrelic_rpm
   rack-cache
@@ -175,7 +173,6 @@ DEPENDENCIES
   rails-api
   rails_12factor
   rspec-rails
-  sentry-raven!
   therubyracer
   unicorn-rails
   vcr

@@ -11,11 +11,12 @@ gem 'rails', '4.1.6'
 gem 'rails-api'
 gem 'therubyracer'
 gem 'unicorn-rails'
+gem 'faraday'
 
 group :production do
   gem 'rack-cache', require: 'rack/cache'
+  gem 'bugsnag'
   gem 'rails_12factor'
-  gem 'sentry-raven', github: 'getsentry/raven-ruby'
 end
 
 group :test do
