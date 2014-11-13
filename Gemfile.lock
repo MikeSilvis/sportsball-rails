@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/mikesilvis/espn-scraper.git
-  revision: e9a32267b58b558116848f6991a4da302aa187f1
+  revision: 201efbc1b2f2d20db5c12bacfc24e103a91da404
   specs:
     espn_scraper (1.0.4)
       httparty
@@ -128,7 +128,7 @@ GEM
     rspec-support (3.1.2)
     safe_yaml (1.0.4)
     slop (3.6.0)
-    sprockets (2.11.3)
+    sprockets (2.12.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
@@ -153,7 +153,7 @@ GEM
       rack
       unicorn
     vcr (2.9.3)
-    webmock (1.20.3)
+    webmock (1.20.4)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
 
