@@ -30,6 +30,8 @@ class League
         -score.progress.to_i,
         score.time_remaining.to_s.gsub(':','.').to_f
       ]
+    end.reject do |score|
+      (score.start_time.to_s.to_date != date) && score.start_time.present?
     end
   end
   add_method_tracer :as_json, 'League/scores'
