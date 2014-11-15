@@ -23,21 +23,18 @@ class League
   end
 
   def scores(date = Date.today)
-    hello = query_espn(date).map do |score|
+    query_espn(date).map do |score|
       Score.new(score)
     end.sort_by do |score|
       [
         GAME_ORDER[score.state],
-        #(score.start_time if score.start_time.is_a?(Time)),
-        #(score.start_time.is_a?(Time) ? score.start_time : 1),
+        score.start_time.to_i,
         -score.progress.to_i,
         score.time_remaining.to_s.gsub(':','.').to_f
       ]
     end#.reject do |score|
       #(score.start_time.to_s.to_date != date)
     #end
-    #byebug
-    hello
   end
   add_method_tracer :as_json, 'League/scores'
 
