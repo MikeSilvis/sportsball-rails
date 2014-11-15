@@ -50,7 +50,7 @@ class League
       else
         ESPN.public_send("get_#{name}_scores", date)
       end
-    end
+    end rescue []
   end
   add_method_tracer :query_espn, 'League/query_espn'
 end
