@@ -13,9 +13,9 @@ gem 'therubyracer'
 gem 'unicorn-rails'
 gem 'faraday'
 
+gem 'bugsnag'
 group :production do
   gem 'rack-cache', require: 'rack/cache'
-  gem 'bugsnag'
   gem 'rails_12factor'
 end
 
