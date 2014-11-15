@@ -32,7 +32,7 @@ class Score
   def start_time=(val)
     val.to_s.gsub!('ET', 'EST')
     @start_time = if val
-                    Time.parse(val).utc
+                    Time.parse(val).utc rescue val
                   end
   end
 
