@@ -36,7 +36,7 @@ class League
       #(score.start_time.to_s.to_date != date)
     #end
   end
-  add_method_tracer :as_json, 'League/scores'
+  add_method_tracer :score, 'League/score'
 
   def query_espn(date = Date.today)
     date = Date.today unless date
