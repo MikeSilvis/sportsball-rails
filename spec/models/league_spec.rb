@@ -3,24 +3,27 @@ require 'rails_helper'
 describe League, type: :model do
   describe '.scores' do
     let(:league) { League.new('nhl') }
-    let(:scores) { [score_1, score_2, score_3, score_4, score_5, score_6] }
+    let(:scores) { [score_1, score_2, score_3, score_4, score_5, score_6, score_7] }
     let(:score_1) {
-      { state: 'postgame', id: 1 }
+      { state: 'postgame', id: 1, game_date: Date.today }
     }
     let(:score_2) {
-      { state: 'pregame', start_time: '4:00 ET', id: 2 }
+      { state: 'pregame', start_time: '4:00 ET', id: 2, game_date: Date.today }
     }
     let(:score_3) {
-      { state: 'in-progress', id: 3, progress: '1st', time_remaining: '12:43' }
+      { state: 'in-progress', id: 3, progress: '1st', time_remaining: '12:43', game_date: Date.today }
     }
     let(:score_4) {
-      { state: 'pregame', start_time: '3:00 ET', id: 4 }
+      { state: 'pregame', start_time: '3:00 ET', id: 4, game_date: Date.today }
     }
     let(:score_5) {
-      { state: 'in-progress', id: 5, progress: '2nd' }
+      { state: 'in-progress', id: 5, progress: '2nd', game_date: Date.today }
     }
     let(:score_6) {
-      { state: 'in-progress', id: 6, progress: '1st', time_remaining: '3:43' }
+      { state: 'in-progress', id: 6, progress: '1st', time_remaining: '3:43', game_date: Date.today }
+    }
+    let(:score_7) {
+      { state: 'in-progress', id: 6, progress: '1st', time_remaining: '3:43', game_date: 1.day.from_now }
     }
     before { expect(league).to receive(:query_espn).and_return(scores) }
     let(:score_order) { league.scores.map(&:id) }
