@@ -1,4 +1,4 @@
-class ESPN
+module ESPN
   class << self
     include ::NewRelic::Agent::MethodTracer
 
