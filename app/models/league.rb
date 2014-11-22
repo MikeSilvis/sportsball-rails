@@ -23,7 +23,7 @@ class League
   end
 
   def scores(date = Date.today)
-    query_espn(date).map do |score|
+    query_with_timeout(date).map do |score|
       Score.new(score)
     end.sort_by do |score|
       [
@@ -38,16 +38,22 @@ class League
   end
   add_method_tracer :score, 'League/score'
 
+  def query_with_timeout(date)
+    begin
+      Timeout::timeout(3) { query_espn(date) }
+    rescue Timeout::Error
+      []
+    end
+  end
+
   def query_espn(date = Date.today)
     date = Date.today unless date
-    Timeout::timeout(5) do
-      if WEEK_LEAGUES[name]
-        week = ((date - WEEK_LEAGUES[name][:date]).to_i / 7) + 1
-        ESPN.public_send("get_#{name}_scores", date.year, week)
-      else
-        ESPN.public_send("get_#{name}_scores", date)
-      end
-    end rescue []
+    if WEEK_LEAGUES[name]
+      week = ((date - WEEK_LEAGUES[name][:date]).to_i / 7) + 1
+      ESPN.public_send("get_#{name}_scores", date.year, week)
+    else
+      ESPN.public_send("get_#{name}_scores", date)
+    end
   end
   add_method_tracer :query_espn, 'League/query_espn'
 end
