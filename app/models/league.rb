@@ -1,4 +1,5 @@
 require 'timeout'
+require 'byebug'
 
 class League
   attr_accessor :name

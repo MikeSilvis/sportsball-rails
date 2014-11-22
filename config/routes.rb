@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     end
     resources :leagues, only: [] do
       resources :scores, only: :index
+      resources :boxscores, only: :show
     end
   end
 end

@@ -11,7 +11,9 @@ class Score
                 :time_remaining,
                 :progress,
                 :line,
-                :id
+                :id,
+                :boxscore,
+                :preview
 
   def initialize(attrs)
     self.away_team      = Team.new(attrs, 'away')
@@ -27,6 +29,8 @@ class Score
     self.progress       = attrs[:progress]
     self.line           = attrs[:line]
     self.id             = attrs[:id]
+    self.boxscore       = attrs[:box_score]
+    self.preview        = attrs[:preview]
   end
 
   def start_time=(val)
@@ -49,7 +53,9 @@ class Score
       home_score: home_score,
       progress: progress,
       time_remaining: time_remaining,
-      line: line
+      line: line,
+      boxscore: boxscore,
+      preview: preview
     }.compact
   end
   add_method_tracer :as_json, 'Score/as_json'
