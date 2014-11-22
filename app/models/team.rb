@@ -37,13 +37,19 @@ class Team
   end
 
   module DownloadingLogo
-    def self.score_data(array)
-      array.each do |a|
-        away_team = Team.new(a, 'away')
-        away_team.download_logo(a[:away_team_logo])
+    def self.included(base)
+      base.extend(ClassMethods)
+    end
 
-        home_team = Team.new(a, 'home')
-        home_team.download_logo(a[:home_team_logo])
+    module ClassMethods
+      def score_data(array)
+        array.each do |a|
+          away_team = Team.new(a, 'away')
+          away_team.download_logo(a[:away_team_logo])
+
+          home_team = Team.new(a, 'home')
+          home_team.download_logo(a[:home_team_logo])
+        end
       end
     end
 
