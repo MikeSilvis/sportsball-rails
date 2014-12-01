@@ -29,7 +29,7 @@ class Score
     self.progress       = attrs[:progress]
     self.line           = attrs[:line]
     self.id             = attrs[:id]
-    self.boxscore       = attrs[:box_score]
+    self.boxscore       = attrs[:boxscore]
     self.preview        = attrs[:preview]
   end
 
