@@ -1,4 +1,6 @@
 class Api::ScoresController < ApplicationController
+  before_filter :ensure_valid_league
+
   def index
     render json: { scores: scores }
   end
