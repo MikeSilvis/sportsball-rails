@@ -3,8 +3,8 @@ class Standing
 
   def initialize(attrs)
     self.teams = attrs.map do |team|
-                   Team.new(team)
-                 end
+      Team.new(team)
+    end
   end
 
   def self.find(league)

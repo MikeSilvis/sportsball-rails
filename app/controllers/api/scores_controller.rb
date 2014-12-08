@@ -6,9 +6,7 @@ class Api::ScoresController < ApplicationController
   private
 
   def current_time
-    @current_time ||= if params[:date]
-                        date.in_time_zone('Pacific Time (US & Canada)').to_date
-                      end
+    @current_time ||= date.in_time_zone('Pacific Time (US & Canada)').to_date
   end
 
   def date

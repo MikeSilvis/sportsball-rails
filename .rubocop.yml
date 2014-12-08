@@ -1,8 +1,8 @@
 AllCops:
   Excludes:
-    - db/**
-    - config/**
-    - script/**
+    - db/**/*
+    - config/**/*
+    - script/**/*
 
 Documentation:
   Enabled: false

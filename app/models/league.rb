@@ -49,6 +49,7 @@ class League
 
   def query_espn(date = Date.today)
     date = Date.today unless date
+
     if WEEK_LEAGUES[name]
       week = ((date - WEEK_LEAGUES[name][:date]).to_i / 7) + 1
       ESPN.public_send("get_#{name}_scores", date.year, week)

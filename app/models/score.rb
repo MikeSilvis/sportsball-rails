@@ -35,9 +35,9 @@ class Score
 
   def start_time=(val)
     val.to_s.gsub!('ET', 'EST')
-    @start_time = if val
-                    Time.parse(val).utc rescue val
-                  end
+    @start_time = Time.parse(val.to_s).utc
+  rescue ArgumentError
+    val
   end
 
   def as_json(*)
@@ -64,9 +64,7 @@ class Score
     def check
       time = Time.now
       all = self.all
-      while verify_similar(all)
-        puts 'still cached'
-      end
+      puts 'still cached' while verify_similar(all)
 
       puts "ESPN took: #{Time.now - time} to update"
     end
