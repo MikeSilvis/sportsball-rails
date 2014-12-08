@@ -1,0 +1,20 @@
+AllCops:
+  Excludes:
+    - db/**
+    - config/**
+    - script/**
+
+Documentation:
+  Enabled: false
+
+StringLiterals:
+  Enabled: false
+
+ClassAndModuleChildren:
+  Enabled: false
+
+LineLength:
+  Description:
+  Enabled: true
+  Max: 120
+

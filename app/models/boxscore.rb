@@ -19,7 +19,7 @@ class Boxscore
     self.score_detail   = attrs[:score_detail]
   end
 
-  def as_json(attrs = {})
+  def as_json(*)
     {
       game_date: game_date,
       home_team: home_team,

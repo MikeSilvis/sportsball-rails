@@ -14,7 +14,7 @@ class League
     'nfl' => {
       date: Date.new(2014, 9, 4)
     },
-    'ncf' =>{
+    'ncf' => {
       date: Date.new(2014, 8, 28)
     }
   }
@@ -31,7 +31,7 @@ class League
         GAME_ORDER[score.state],
         score.start_time.to_i,
         -score.progress.to_i,
-        score.time_remaining.to_s.gsub(':','.').to_f
+        score.time_remaining.to_s.gsub(':', '.').to_f
       ]
     end.select do |score|
       score.game_date == date
@@ -41,7 +41,7 @@ class League
 
   def query_with_timeout(date)
     begin
-      Timeout::timeout(3) { query_espn(date) }
+      Timeout.timeout(3) { query_espn(date) }
     rescue Timeout::Error
       []
     end

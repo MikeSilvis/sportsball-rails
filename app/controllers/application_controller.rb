@@ -6,8 +6,6 @@ class ApplicationController < ActionController::API
   end
 
   def ensure_valid_league
-    unless available_leagues.include?(params[:league_id])
-      raise ActionController::RoutingError.new('Not Found')
-    end
+    fail ActionController::RoutingError.new('Not Found') unless available_leagues.include?(params[:league_id])
   end
 end

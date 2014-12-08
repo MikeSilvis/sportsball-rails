@@ -11,6 +11,7 @@ gem 'less-rails'
 gem 'newrelic_rpm'
 gem 'rails', '4.1.6'
 gem 'rails-api'
+gem 'rubocop'
 gem 'therubyracer'
 gem 'unicorn-rails'
 
@@ -24,4 +25,3 @@ group :test do
   gem 'vcr'
   gem 'webmock'
 end
-

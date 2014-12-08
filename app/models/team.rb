@@ -2,38 +2,31 @@ require 'open-uri'
 
 class Team
   include SportsBall
-  attr_accessor :data_name, :name, :logo, :wins, :loses, :record
-  POSSIBLE_TEAMS = %w[away home]
+  attr_accessor :data_name, :name, :logo, :wins, :loses, :record, :rank
 
-  def initialize(attrs, team)
-    return nil unless POSSIBLE_TEAMS.include?(team)
+  def initialize(attrs, team = nil)
+    prefix = team ? "#{team}_" : nil
 
-    self.name      = attrs["#{team}_team_name".to_sym]
-    self.record    = attrs["#{team}_team_record".to_sym]
-    self.data_name = attrs["#{team}_team".to_sym]
+    self.name      = attrs["#{prefix}team_name".to_sym]
+    self.record    = attrs["#{prefix}team_record".to_sym]
+    self.data_name = attrs["#{prefix}team".to_sym]
+    self.rank      = attrs["#{prefix}team_rank".to_sym]
     self.league    = attrs[:league]
   end
 
-  def as_json(attrs = {})
+  def as_json(*)
     {
-      name: self.name,
-      logo: self.logo,
-      record: self.record,
-      data_name: self.data_name
+      name: name,
+      logo: logo,
+      record: record,
+      data_name: data_name,
+      rank: rank
     }.compact
   end
   add_method_tracer :as_json, 'Team/as_json'
 
-  def all
-    @all ||= ESPN.get_teams_in(league) if allowed_sport?
-  end
-
-  def find(team)
-    all.values.flatten.detect { |h| h[:data_name] == team }
-  end
-
-  def logo(rabble_name = nil)
-    ActionController::Base.helpers.image_url("#{league}-teams/#{self.data_name}.png")
+  def logo
+    ActionController::Base.helpers.image_url("#{league}-teams/#{data_name}.png")
   end
 
   module DownloadingLogo

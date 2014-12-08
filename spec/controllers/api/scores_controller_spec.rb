@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe Api::ScoresController, :type => :controller, vcr: true do
+describe Api::ScoresController, type: :controller, vcr: true do
   describe 'GET :index' do
     before { get :index, league_id: league, date: Date.new(2014, 11, 13) }
     context 'nhl' do

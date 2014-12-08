@@ -1,6 +1,4 @@
 class Api::ScoresController < ApplicationController
-  before_filter :ensure_valid_league
-
   def index
     render json: { scores: scores }
   end
@@ -8,7 +6,17 @@ class Api::ScoresController < ApplicationController
   private
 
   def current_time
-    @current_time ||= (params[:date] ? Date.parse(params[:date]) : Time.now).in_time_zone('Pacific Time (US & Canada)').to_date
+    @current_time ||= if params[:date]
+                        date.in_time_zone('Pacific Time (US & Canada)').to_date
+                      end
+  end
+
+  def date
+    @date ||= if params[:date]
+                Date.parse(params[:date])
+              else
+                Time.now
+              end
   end
 
   def scores

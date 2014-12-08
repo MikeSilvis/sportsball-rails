@@ -40,7 +40,7 @@ class Score
                   end
   end
 
-  def as_json(attrs = {})
+  def as_json(*)
     {
       game_date: game_date,
       home_team: home_team.as_json,

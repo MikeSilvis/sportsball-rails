@@ -3,11 +3,11 @@ require 'benchmark/ips'
 
 namespace :speed do
   desc 'Compares various sport providers API response time'
-  task :check => :environment do
+  task check: :environment do
     Benchmark.ips do |x|
       # Configure the number of seconds used during
       # the warmup phase (default 2) and calculation phase (default 5)
-      x.config(:time => 5, :warmup => 2)
+      x.config(time: 5, warmup: 2)
 
       # These parameters can also be configured this way
       x.time = 5
@@ -58,11 +58,11 @@ namespace :speed do
   end
 
   desc 'Compares requests vs object parse time'
-  task :nokogiri => :environment do
+  task nokogiri: :environment do
     Benchmark.ips do |x|
       # Configure the number of seconds used during
       # the warmup phase (default 2) and calculation phase (default 5)
-      x.config(:time => 5, :warmup => 2)
+      x.config(time: 5, warmup: 2)
 
       # These parameters can also be configured this way
       x.time = 5
@@ -85,11 +85,11 @@ namespace :speed do
   end
 
   desc 'Compares the various leagues response times'
-  task :leagues => :environment do
+  task leagues: :environment do
     Benchmark.ips do |x|
       # Configure the number of seconds used during
       # the warmup phase (default 2) and calculation phase (default 5)
-      x.config(:time => 5, :warmup => 2)
+      x.config(time: 5, warmup: 2)
 
       # These parameters can also be configured this way
       x.time = 5
