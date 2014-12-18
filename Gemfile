@@ -14,6 +14,7 @@ gem 'rails-api'
 gem 'rubocop'
 gem 'therubyracer'
 gem 'unicorn-rails'
+gem 'dragonfly'
 
 group :production do
   gem 'rack-cache', require: 'rack/cache'
