@@ -12,6 +12,7 @@ VCR.configure do |c|
   c.default_cassette_options = {
     record: :all
   }
+  #c.debug_logger = File.open(ARGV.first, 'w')
 end
 
 RSpec.configure do |config|

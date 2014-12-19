@@ -22,22 +22,20 @@ http_interactions:
       - IE=edge,chrome=1
       Content-Type:
       - text/html;charset=iso-8859-1
-      Content-Length:
-      - '21003'
-      Accept-Ranges:
-      - bytes
+      Transfer-Encoding:
+      - chunked
       Date:
-      - Thu, 18 Dec 2014 20:35:28 GMT
+      - Fri, 19 Dec 2014 14:48:47 GMT
       Connection:
       - keep-alive
       Cache-Control:
-      - max-age=246
+      - max-age=300
       P3p:
       - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRo
         BUS PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
       Set-Cookie:
-      - SWID=F3AC9AC7-D94B-4363-83D3-6520F6FEE23A; path=/; expires=Wed, 13 Dec 2034
-        20:35:28 GMT; domain=go.com;
+      - SWID=291206A0-1437-4AB9-859D-31160A157199; path=/; expires=Thu, 14 Dec 2034
+        14:48:47 GMT; domain=go.com;
     body:
       encoding: UTF-8
       string: "<!DOCTYPE html>\n<html xmlns:fb=\"http://www.facebook.com/2008/fbml\">\n<head><script
@@ -333,9 +331,9 @@ http_interactions:
         \                       </tr>\n                    </thead>\n                    <tbody>\n
         \                   <tr><td class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/ana/anaheim-ducks\"><strong>ANA</strong></a></td><td
         style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/2310/ryan-getzlaf\">R&nbsp;Getzlaf</a>
-        <b>34</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/3929/matt-beleskey\">M&nbsp;Beleskey</a>
-        <b>14</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/2310/ryan-getzlaf\">R&nbsp;Getzlaf</a>
-        <b>24</b></td></tr><tr><td class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/wpg/winnipeg-jets\"><strong>WPG</strong></a></td><td
+        <b>35</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/3929/matt-beleskey\">M&nbsp;Beleskey</a>
+        <b>15</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/2310/ryan-getzlaf\">R&nbsp;Getzlaf</a>
+        <b>25</b></td></tr><tr><td class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/wpg/winnipeg-jets\"><strong>WPG</strong></a></td><td
         style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/3191/andrew-ladd\">A&nbsp;Ladd</a>
         <b>23</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/3508/bryan-little\">B&nbsp;Little</a>
         <b>12</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/3961/blake-wheeler\">B&nbsp;Wheeler</a>
@@ -748,7 +746,7 @@ http_interactions:
         align=\"right\" width=\"4%\"> FW</th><th align=\"right\" width=\"4%\"> FL</th><th
         align=\"right\" width=\"5%\"> %</th></tr></thead><tbody><tr class=\"odd player-90-3070\"
         align=\"right\"><td style=\"text-align:left;\"><a href=\"http://espn.go.com/nhl/player/_/id/3070/dustin-byfuglien\">D.
-        Byfuglien</a> RW</td><td align=\"right\">1</td><td align=\"right\">0</td><td
+        Byfuglien</a> D </td><td align=\"right\">1</td><td align=\"right\">0</td><td
         align=\"right\">0</td><td align=\"right\">6</td><td align=\"right\">1</td><td
         align=\"right\">0</td><td align=\"right\">1</td><td align=\"right\">2</td><td
         align=\"right\">4</td><td align=\"right\">1</td><td align=\"right\">1</td><td
@@ -951,7 +949,7 @@ http_interactions:
         by the opposing Club. The difference in these numbers is considered the player's
         plus-minus statistic.</span><br /><!-- begin sp links -->\n<div style=\"margin:
         10px 0 0 0;\">\n<!-- CONTENT: boxscore990990, SPORT: nhl--><div style=\"margin:0px
-        0px 5px 0px; text-align: center; width: 614px;\"><ins id=\"splinks-57802\"></ins>\n
+        0px 5px 0px; text-align: center; width: 614px;\"><ins id=\"splinks-85856\"></ins>\n
         \       <script type=\"text/javascript\">\n            (function($) {\n                //
         config params\n                var width = '614',\n                    height
         = '300',\n                    client = 'ca-espn-q-game',\n                    channel
@@ -959,7 +957,7 @@ http_interactions:
         iframe HTML\n                function buildIframe(width, height, client, channel)
         {\n                    var path = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
         \                   // pass params as the hash as they are only needed on
-        the client\n                    var hash = '57802|' + width + '|' + height
+        the client\n                    var hash = '85856|' + width + '|' + height
         + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
         = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
         + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
@@ -975,11 +973,11 @@ http_interactions:
         {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
         || espn.core.android) {\n                            // outside US or not
         on desktop\n                            client = 'ca-espn-nq';\n                        }\n
-        \                       $('#splinks-57802').html(buildIframe(width, height,
-        client, channel));\n                    }).fail(function() {\n                        $('#splinks-57802').html(buildIframe(width,
+        \                       $('#splinks-85856').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-85856').html(buildIframe(width,
         height, 'ca-espn-nq', channel));\n                    });\n                }
         else {\n                    // can't locate them, assume they are outside
-        US\n                    $('#splinks-57802').html(buildIframe(width, height,
+        US\n                    $('#splinks-85856').html(buildIframe(width, height,
         'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
         \   </div></div>\n<!-- end sp links -->\n\n<div id=\"caster\"></div>\n\n<script
         type=\"text/javascript\">\n\tvar settings = {\n\t\t\"gameId\": 400564807,\n\t\t\"seasonType\":
@@ -1227,7 +1225,7 @@ http_interactions:
         a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
         \ //]]>\n</script></body>\n</html>"
     http_version: 
-  recorded_at: Thu, 18 Dec 2014 20:35:28 GMT
+  recorded_at: Fri, 19 Dec 2014 14:48:49 GMT
 - request:
     method: get
     uri: http://espn.go.com/nhl/recap?gameId=400564807
@@ -1250,22 +1248,20 @@ http_interactions:
       - IE=edge,chrome=1
       Content-Type:
       - text/html;charset=iso-8859-1
-      Content-Length:
-      - '19546'
-      Accept-Ranges:
-      - bytes
+      Transfer-Encoding:
+      - chunked
       Date:
-      - Thu, 18 Dec 2014 20:35:29 GMT
+      - Fri, 19 Dec 2014 14:48:48 GMT
       Connection:
       - keep-alive
       Cache-Control:
-      - max-age=155
+      - max-age=300
       P3p:
       - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRo
         BUS PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
       Set-Cookie:
-      - SWID=7F53803D-196E-4742-BEF2-A5BC18E3EC69; path=/; expires=Wed, 13 Dec 2034
-        20:35:29 GMT; domain=go.com;
+      - SWID=AF837427-B737-4998-B13A-A40A4685D7DF; path=/; expires=Thu, 14 Dec 2034
+        14:48:48 GMT; domain=go.com;
     body:
       encoding: UTF-8
       string: "<!DOCTYPE html>\n<html xmlns:fb=\"http://www.facebook.com/2008/fbml\">\n<head><script
@@ -1574,9 +1570,9 @@ http_interactions:
         \                       </tr>\n                    </thead>\n                    <tbody>\n
         \                   <tr><td class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/ana/anaheim-ducks\"><strong>ANA</strong></a></td><td
         style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/2310/ryan-getzlaf\">R&nbsp;Getzlaf</a>
-        <b>34</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/3929/matt-beleskey\">M&nbsp;Beleskey</a>
-        <b>14</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/2310/ryan-getzlaf\">R&nbsp;Getzlaf</a>
-        <b>24</b></td></tr><tr><td class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/wpg/winnipeg-jets\"><strong>WPG</strong></a></td><td
+        <b>35</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/3929/matt-beleskey\">M&nbsp;Beleskey</a>
+        <b>15</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/2310/ryan-getzlaf\">R&nbsp;Getzlaf</a>
+        <b>25</b></td></tr><tr><td class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/wpg/winnipeg-jets\"><strong>WPG</strong></a></td><td
         style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/3191/andrew-ladd\">A&nbsp;Ladd</a>
         <b>23</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/3508/bryan-little\">B&nbsp;Little</a>
         <b>12</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/3961/blake-wheeler\">B&nbsp;Wheeler</a>
@@ -2062,5 +2058,5 @@ http_interactions:
         a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
         \ //]]>\n</script></body>\n</html>"
     http_version: 
-  recorded_at: Thu, 18 Dec 2014 20:35:29 GMT
+  recorded_at: Fri, 19 Dec 2014 14:48:50 GMT
 recorded_with: VCR 2.9.3

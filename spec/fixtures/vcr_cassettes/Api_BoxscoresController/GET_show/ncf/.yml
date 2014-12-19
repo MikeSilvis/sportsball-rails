@@ -22,22 +22,20 @@ http_interactions:
       - text/html; charset=iso-8859-1
       X-Ua-Compatible:
       - IE=edge,chrome=1
-      Content-Length:
-      - '19215'
-      Accept-Ranges:
-      - bytes
+      Transfer-Encoding:
+      - chunked
       Date:
-      - Thu, 18 Dec 2014 20:35:33 GMT
+      - Fri, 19 Dec 2014 14:48:49 GMT
       Connection:
       - keep-alive
       Cache-Control:
-      - max-age=152
+      - max-age=300
       P3p:
       - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRo
         BUS PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
       Set-Cookie:
-      - SWID=88B76BC7-C001-4B2C-BCAB-57350EAF8265; path=/; expires=Wed, 13 Dec 2034
-        20:35:33 GMT; domain=go.com;
+      - SWID=E82EBB44-5862-4DEA-A330-BEEE4B6056D4; path=/; expires=Thu, 14 Dec 2034
+        14:48:49 GMT; domain=go.com;
     body:
       encoding: UTF-8
       string: "<!DOCTYPE html>\n<html xmlns:fb=\"http://www.facebook.com/2008/fbml\">\n<head><script
@@ -1009,7 +1007,7 @@ http_interactions:
         a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
         \ //]]>\n</script></body>\n</html>"
     http_version: 
-  recorded_at: Thu, 18 Dec 2014 20:35:34 GMT
+  recorded_at: Fri, 19 Dec 2014 14:48:51 GMT
 - request:
     method: get
     uri: http://espn.go.com/ncf/recap?gameId=400609076
@@ -1032,22 +1030,20 @@ http_interactions:
       - text/html; charset=iso-8859-1
       X-Ua-Compatible:
       - IE=edge,chrome=1
-      Content-Length:
-      - '25635'
-      Accept-Ranges:
-      - bytes
+      Transfer-Encoding:
+      - chunked
       Date:
-      - Thu, 18 Dec 2014 20:35:34 GMT
+      - Fri, 19 Dec 2014 14:48:50 GMT
       Connection:
       - keep-alive
       Cache-Control:
-      - max-age=236
+      - max-age=300
       P3p:
       - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRo
         BUS PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
       Set-Cookie:
-      - SWID=BA9A4992-CDB2-40D5-8B4C-FC90E7B1B2ED; path=/; expires=Wed, 13 Dec 2034
-        20:35:34 GMT; domain=go.com;
+      - SWID=B5C0BF83-626B-4850-85DF-26FAF3CF0583; path=/; expires=Thu, 14 Dec 2034
+        14:48:50 GMT; domain=go.com;
     body:
       encoding: ASCII-8BIT
       string: !binary |-
@@ -3475,5 +3471,5 @@ http_interactions:
         dChiKSxjKTt9KSgpOwogIC8vXV0+Cjwvc2NyaXB0PjwvYm9keT4KPC9odG1s
         Pg==
     http_version: 
-  recorded_at: Thu, 18 Dec 2014 20:35:34 GMT
+  recorded_at: Fri, 19 Dec 2014 14:48:52 GMT
 recorded_with: VCR 2.9.3
