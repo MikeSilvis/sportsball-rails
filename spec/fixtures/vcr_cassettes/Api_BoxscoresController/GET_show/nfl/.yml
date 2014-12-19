@@ -22,20 +22,22 @@ http_interactions:
       - text/html; charset=iso-8859-1
       X-Ua-Compatible:
       - IE=edge,chrome=1
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '20935'
+      Accept-Ranges:
+      - bytes
       Date:
-      - Fri, 19 Dec 2014 14:48:48 GMT
+      - Fri, 19 Dec 2014 14:53:27 GMT
       Connection:
       - keep-alive
       Cache-Control:
-      - max-age=300
+      - max-age=219
       P3p:
       - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRo
         BUS PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
       Set-Cookie:
-      - SWID=1BEC9E0A-4A45-4310-BA23-5FD6A67018F3; path=/; expires=Thu, 14 Dec 2034
-        14:48:48 GMT; domain=go.com;
+      - SWID=736EFFE4-982C-43E2-A036-B0DA666FCCB0; path=/; expires=Thu, 14 Dec 2034
+        14:53:27 GMT; domain=go.com;
     body:
       encoding: UTF-8
       string: "<!DOCTYPE html>\n<html xmlns:fb=\"http://www.facebook.com/2008/fbml\">\n<head><script
@@ -933,7 +935,7 @@ http_interactions:
         class=\"clearfix\"><div><span class=\"bi\">Attendance:</span> 67,431</div></div><br
         /><!-- begin sp links -->\n<div style=\"margin: 10px 0 0 0;\">\n<!-- CONTENT:
         boxscore990990, SPORT: nfl--><div style=\"margin:0px 0px 5px 0px; text-align:
-        center; width: 614px;\"><ins id=\"splinks-70984\"></ins>\n        <script
+        center; width: 614px;\"><ins id=\"splinks-73156\"></ins>\n        <script
         type=\"text/javascript\">\n            (function($) {\n                //
         config params\n                var width = '614',\n                    height
         = '300',\n                    client = 'ca-espn-q-game',\n                    channel
@@ -941,7 +943,7 @@ http_interactions:
         iframe HTML\n                function buildIframe(width, height, client, channel)
         {\n                    var path = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
         \                   // pass params as the hash as they are only needed on
-        the client\n                    var hash = '70984|' + width + '|' + height
+        the client\n                    var hash = '73156|' + width + '|' + height
         + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
         = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
         + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
@@ -957,11 +959,11 @@ http_interactions:
         {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
         || espn.core.android) {\n                            // outside US or not
         on desktop\n                            client = 'ca-espn-nq';\n                        }\n
-        \                       $('#splinks-70984').html(buildIframe(width, height,
-        client, channel));\n                    }).fail(function() {\n                        $('#splinks-70984').html(buildIframe(width,
+        \                       $('#splinks-73156').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-73156').html(buildIframe(width,
         height, 'ca-espn-nq', channel));\n                    });\n                }
         else {\n                    // can't locate them, assume they are outside
-        US\n                    $('#splinks-70984').html(buildIframe(width, height,
+        US\n                    $('#splinks-73156').html(buildIframe(width, height,
         'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
         \   </div></div>\n<!-- end sp links -->\n\n<script type=\"text/javascript\"
         src=\"http://a.espncdn.com/combiner/c?v=201011241640&js=/espn/espn/javascript/gamepackage10/gamepackageOOTJS?sport=nfl_en,/espn/espn/javascript/gamepackage10/fixedOOTJS,/espn/espn/javascript/gamepackage10/seriesDropdown\"></script></div><!--
@@ -1194,7 +1196,7 @@ http_interactions:
         a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
         \ //]]>\n</script></body>\n</html>"
     http_version: 
-  recorded_at: Fri, 19 Dec 2014 14:48:51 GMT
+  recorded_at: Fri, 19 Dec 2014 14:53:29 GMT
 - request:
     method: get
     uri: http://espn.go.com/nfl/recap?gameId=400554422
@@ -1217,20 +1219,22 @@ http_interactions:
       - text/html; charset=iso-8859-1
       X-Ua-Compatible:
       - IE=edge,chrome=1
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '24559'
+      Accept-Ranges:
+      - bytes
       Date:
-      - Fri, 19 Dec 2014 14:48:49 GMT
+      - Fri, 19 Dec 2014 14:53:27 GMT
       Connection:
       - keep-alive
       Cache-Control:
-      - max-age=300
+      - max-age=22
       P3p:
       - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRo
         BUS PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
       Set-Cookie:
-      - SWID=D63BB325-8778-4575-84EA-B2AA8C66EE3F; path=/; expires=Thu, 14 Dec 2034
-        14:48:49 GMT; domain=go.com;
+      - SWID=7903A358-4744-4D37-8DED-353488FD8FBD; path=/; expires=Thu, 14 Dec 2034
+        14:53:27 GMT; domain=go.com;
     body:
       encoding: UTF-8
       string: "<!DOCTYPE html>\n<html xmlns:fb=\"http://www.facebook.com/2008/fbml\">\n<head><script
@@ -2338,5 +2342,5 @@ http_interactions:
         a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
         \ //]]>\n</script></body>\n</html>"
     http_version: 
-  recorded_at: Fri, 19 Dec 2014 14:48:51 GMT
+  recorded_at: Fri, 19 Dec 2014 14:53:29 GMT
 recorded_with: VCR 2.9.3

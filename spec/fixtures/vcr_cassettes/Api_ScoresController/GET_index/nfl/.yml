@@ -30,7 +30,7 @@ http_interactions:
       Cache-Control:
       - max-age=30
       Date:
-      - Fri, 19 Dec 2014 14:48:53 GMT
+      - Fri, 19 Dec 2014 14:53:31 GMT
       Transfer-Encoding:
       - chunked
       Connection:
@@ -1793,7 +1793,7 @@ http_interactions:
         id=\"400554421-hStat2\">20:11</p></div><p class=\"stat-caption\">TIME POSS</p></div></div><div
         id=\"400554421-gameNote\" class=\"game-notes\" style=\"display:none\"></div></div></div></div></div></div><!--
         CONTENT: 09scoreboard614, SPORT: nfl--><div style=\"margin:0px 0px 5px 0px;
-        text-align: center; width: 614px;\"><ins id=\"splinks-47431\"></ins>\n        <script
+        text-align: center; width: 614px;\"><ins id=\"splinks-70663\"></ins>\n        <script
         type=\"text/javascript\">\n            (function($) {\n                //
         config params\n                var width = '614',\n                    height
         = '300',\n                    client = 'ca-espn-q-scoreboard',\n                    channel
@@ -1801,7 +1801,7 @@ http_interactions:
         builds iframe HTML\n                function buildIframe(width, height, client,
         channel) {\n                    var path = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
         \                   // pass params as the hash as they are only needed on
-        the client\n                    var hash = '47431|' + width + '|' + height
+        the client\n                    var hash = '70663|' + width + '|' + height
         + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
         = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
         + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
@@ -1817,11 +1817,11 @@ http_interactions:
         {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
         || espn.core.android) {\n                            // outside US or not
         on desktop\n                            client = 'ca-espn-nq';\n                        }\n
-        \                       $('#splinks-47431').html(buildIframe(width, height,
-        client, channel));\n                    }).fail(function() {\n                        $('#splinks-47431').html(buildIframe(width,
+        \                       $('#splinks-70663').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-70663').html(buildIframe(width,
         height, 'ca-espn-nq', channel));\n                    });\n                }
         else {\n                    // can't locate them, assume they are outside
-        US\n                    $('#splinks-47431').html(buildIframe(width, height,
+        US\n                    $('#splinks-70663').html(buildIframe(width, height,
         'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
         \   </div></div><div class=\"span-2\"><div class=\"mod-container mod-no-border\"><div
         class=\"mod-content mod-feedback-link\"><p><a href=\"http://espn.qualtrics.com/SE/?SID=SV_cIsNl2g4i6lwwOU\"
@@ -1922,7 +1922,7 @@ http_interactions:
         />26</td><td style=\"color:#555;\"><img src=\"http://a.espncdn.com/i/insider/pickcenter/arrow.png\"
         alt=\"arrow\" />26.8</td></tr></tbody></table><table class=\"favTeam\"><thead><tr><td>Favorite</td><td>Spread</td><td>Money
         Line</td><td>Over/Under</td></tr></thead><tbody><tr><td>DET</td><td style=\"color:#555;\">-8</td><td
-        style=\"color:#555;\">-355</td><td style=\"color:#555;\">44.5</td></tr></tbody></table><div
+        style=\"color:#555;\">-365</td><td style=\"color:#555;\">44.5</td></tr></tbody></table><div
         id=\"scoreboardPCMod-flag\" class=\"flag\"><a href=\"http://insider.espn.go.com/insider/pickcenter/nfl/game?gameid=400554401\">PickCenter
         Details &#187;</a></div><div class=\"col-full\">\n<div class=\"editLinks\"><a
         name=\"&lpos=nflScoreboard&lid=insiderSBPromoModuleEditLink\" href=\"http://insider.espn.go.com/chalk/story/_/id/12036252/nfl-new-england-seattle-denver-tie-first-nfl-vegas-rankings?addata=2014_insdr_xxx_sce_nfl_xxx\">Tuley:
@@ -1945,7 +1945,7 @@ http_interactions:
         style=\"margin-left:-5px;\"><b>CHI</b></td><td></td><td></td></tr><tr><td
         style=\"margin-left:-5px;\"><b>DET</b></td><td></td><td></td></tr></tbody></table><table
         class=\"favTeam\"><thead><tr><td>Favorite</td><td>Open</td><td>Money Line</td><td>Over/Under</td></tr></thead><tbody><tr><td>DET</td><td
-        style=\"color:#555;\">-8</td><td style=\"color:#555;\">-355</td><td style=\"color:#555;\">44.5</td></tr></tbody></table><div
+        style=\"color:#555;\">-8</td><td style=\"color:#555;\">-365</td><td style=\"color:#555;\">44.5</td></tr></tbody></table><div
         id=\"scoreboardPCMod-flag\" class=\"flag\"><a href=\"http://insider.espn.go.com/insider/pickcenter/nfl/game?gameid=400554401\">PickCenter
         Details &#187;</a></div><div class=\"col-full\">\n<div class=\"editLinks\"><a
         name=\"&lpos=nflScoreboard&lid=insiderSBPromoModuleEditLink\" href=\"http://insider.espn.go.com/chalk/story/_/id/12036252/nfl-new-england-seattle-denver-tie-first-nfl-vegas-rankings?addata=2014_insdr_xxx_sce_nfl_xxx\">Tuley:
@@ -2023,7 +2023,7 @@ http_interactions:
         target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nfl/nflscoreboard;pgtyp=nflscoreboard;sp=nfl;sz=300x100,1x1;\"
         border=\"0\" alt=\"\"></a></noscript>\n</div></div><!-- CONTENT: scoreboard-right:304w300h,
         SPORT: nfl--><div style=\"margin:0px 0px 5px 0px; text-align: center; width:
-        304px;\"><ins id=\"splinks-46843\"></ins>\n        <script type=\"text/javascript\">\n
+        304px;\"><ins id=\"splinks-58633\"></ins>\n        <script type=\"text/javascript\">\n
         \           (function($) {\n                // config params\n                var
         width = '304',\n                    height = '300',\n                    client
         = 'ca-espn-q-scoreboard',\n                    channel = 'nfl right',\n                    lang
@@ -2031,7 +2031,7 @@ http_interactions:
         buildIframe(width, height, client, channel) {\n                    var path
         = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
         \                   // pass params as the hash as they are only needed on
-        the client\n                    var hash = '46843|' + width + '|' + height
+        the client\n                    var hash = '58633|' + width + '|' + height
         + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
         = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
         + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
@@ -2047,11 +2047,11 @@ http_interactions:
         {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
         || espn.core.android) {\n                            // outside US or not
         on desktop\n                            client = 'ca-espn-nq';\n                        }\n
-        \                       $('#splinks-46843').html(buildIframe(width, height,
-        client, channel));\n                    }).fail(function() {\n                        $('#splinks-46843').html(buildIframe(width,
+        \                       $('#splinks-58633').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-58633').html(buildIframe(width,
         height, 'ca-espn-nq', channel));\n                    });\n                }
         else {\n                    // can't locate them, assume they are outside
-        US\n                    $('#splinks-46843').html(buildIframe(width, height,
+        US\n                    $('#splinks-58633').html(buildIframe(width, height,
         'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
         \   </div></div></div>\n<div id=\"nav-wrapper\" class=\"container\">\n<div
         id=\"nav-wrapper-container\">\n<div id=\"nav-main\">\n<!-- begin site nav
@@ -2282,5 +2282,5 @@ http_interactions:
         a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
         \ //]]>\n</script></body>\n</html>"
     http_version: 
-  recorded_at: Fri, 19 Dec 2014 14:48:55 GMT
+  recorded_at: Fri, 19 Dec 2014 14:53:33 GMT
 recorded_with: VCR 2.9.3
