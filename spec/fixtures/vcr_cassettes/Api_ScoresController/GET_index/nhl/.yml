@@ -30,7 +30,7 @@ http_interactions:
       Cache-Control:
       - max-age=300
       Date:
-      - Sun, 07 Dec 2014 21:09:09 GMT
+      - Fri, 19 Dec 2014 14:39:20 GMT
       Transfer-Encoding:
       - chunked
       Connection:
@@ -49,7 +49,7 @@ http_interactions:
         c+l+\"/_/id/\"+q;}else{if(s!==\"\"){return c+l+\"/_/page/\"+s;}else{return
         c+l;}}}if(l.match(/\\/blogpostindex$/i)){m=k(\"blogname\",n);if(f.espn&&espn.GLOBALS&&espn.GLOBALS.isCEBlog===true){return;}if(m!==\"\"){return
         c+\"/blog/\"+m;}}if(l.match(/\\/blogpost$/i)){m=k(\"blogname\",n);o=k(\"id\",n);if(f.espn&&espn.GLOBALS&&espn.GLOBALS.isCEBlog===true){return;}if(m!==\"\"&&o!==\"\"){return
-        c+\"/blog/\"+m+\"/post/_/id/\"+o;}}if(l.match(/^\\/blog\\//i)){m=k(\"blogName\",n);o=k(\"id\",n);if(l.match(/\\/blog\\/[^\\/]*?\\/post$/i)){if(o!==\"\"){return
+        c+\"/blog/\"+m+\"/post/_/id/\"+o;}}if(l.match(/^\\/blog\\//i)){m=k(\"blogName\",n);o=k(\"id\",n);if(l.match(/\\/blog\\/.*\\/post$/i)){if(o!==\"\"){return
         c+l+\"/_/id/\"+o;}}else{if(m!==\"\"&&o!==\"\"){return c+\"/blog/\"+m+\"/post/_/id/\"+o;}else{if(m!==\"\"){return
         c+\"/blog/\"+m;}else{return c+l;}}}}if((l===\"\"||l===\"/\")&&!j.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i)){return
         c;}var u=l.match(/^\\/.*?\\/(?:index)?$/i);if(u){v={\"/frontpage/\":true,\"/wireless/\":true,\"/general/\":true,\"/extra/\":true,\"/mobile/\":true,\"/nfl/\":true,\"/nba/\":true,\"/mlb/\":true,\"/nhl/\":true,\"/ncf/\":true,\"/college-football/\":true,\"/ncb/\":true,\"/mens-college-basketball/\":true,\"/ncw/\":true,\"/womenbb/\":true,\"/womens-basketball/\":true,\"/wnba/\":true,\"/golf/\":true,\"/tennis/\":true,\"/general/tennis/\":true,\"/mma/\":true,\"/extra/mma/\":true,\"/racing/\":true,\"/rpm/\":true,\"/racing/nascar/\":true,\"/rpm/nascar/\":true,\"/boxing/\":true,\"/extra/boxing/\":true,\"/college-sports/\":true,\"/ncaa/\":true,\"/extra/ncaa/\":true,\"/olympics/\":true,\"/extra/olympics/\":true,\"/horse-racing/\":true,\"/horse/\":true,\"/general/horse/\":true,\"/poker/\":true,\"/general/poker/\":true,\"/sports/endurance/\":true,\"/extra/endurance/\":true};if(l.match(/\\/index$/i)){l=l.substring(0,l.length-5);}if(v[l]===true){return
@@ -234,8 +234,8 @@ http_interactions:
         gms</span></a></li><li class=\"{date:'Sat Nov 15 2014'} day7 \"><a href=\"?date=20141115\"><span
         class=\"day\">Sat</span> <span class=\"date\">15</span> <span class=\"num-games\">12
         gms</span></a></li></ul></div><a class=\"next\" href=\"#\">&nbsp;</a></div></div>\n\t\t\t\t<script
-        id=\"initCalendarCarousel1417986549129\">\n\t\t\t\t\tjQuery.getScriptCache('http://a.espncdn.com/combiner/c?js=espn.scoreboardCalendar.r8.js',function()
-        {\n\t\t\t\t\t\tespn.core.init.scoreboardCalendar(jQuery('#initCalendarCarousel1417986549129').siblings('.mod-scoreboard-carousel'));\n\t\t\t\t\t});\n\t\t\t\t</script>\n\t\t\t\t</div><div
+        id=\"initCalendarCarousel1418999960806\">\n\t\t\t\t\tjQuery.getScriptCache('http://a.espncdn.com/combiner/c?js=espn.scoreboardCalendar.r8.js',function()
+        {\n\t\t\t\t\t\tespn.core.init.scoreboardCalendar(jQuery('#initCalendarCarousel1418999960806').siblings('.mod-scoreboard-carousel'));\n\t\t\t\t\t});\n\t\t\t\t</script>\n\t\t\t\t</div><div
         class=\"more-info\"><div class=\"dropdown sb_dropdown\"><form class=\"js-goto\"
         style=\"display:inline;\" method=\"get\" action=\"./\"><select><option value=\"#\">More
         Scoreboards</option><option value=\"/nfl/scoreboard\">NFL</option><option
@@ -257,58 +257,59 @@ http_interactions:
         /> [+]</a></div></div></div><div class=\"vid_wrap vid_wrapfull article\" style=\"display:none;\"
         ><div class=\"clear\"></div><div id=\"vid_full\"><div class=\"mod-inline video-player
         full-box with-playlist\"><div class=\"videoplayer videoplayer-scoreboard09\"
-        style=\"margin-top:0px !important;\"><img src=\"http://a.espncdn.com/media/motion/2014/1206/dm_141206_nhl_nyr_Det/dm_141206_nhl_nyr_Det.jpg\"
-        /></div><div id=\"videoInfo\"><h5>Babcock Gets 500th Win</h5><div class=\"mod-video-tags\"><span>Darren
-        Helm and the Red Wings rallied to top the Rangers 3-2 and give coach Mike
-        Babcock his 500th career victory.</span><div class=\"mod-video-tags\"><strong>Tags:</strong>
-        <a href=\"http://search.espn.go.com/nhl/video/6\">NHL</a>, <a href=\"http://search.espn.go.com/new-york-rangers/video/6\">
-        New York Rangers</a>, <a href=\"http://search.espn.go.com/detroit-red-wings/video/6\">
-        Detroit Red Wings</a>, <a href=\"http://search.espn.go.com/darren-helm/video/6\">
-        Darren Helm</a></div></div></div><a id=\"videotoplay\" style=\"display:none;\"
-        class=\"{trackingName: 'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=11990671\">Babcock
-        Gets 500th Win</a><div class=\"mod-video-playlist\"><h6>VIDEO PLAYLIST <img
-        width=\"15\" height=\"8\" alt=\"video\" src=\"http://a.espncdn.com/icons/video2.png\"
+        style=\"margin-top:0px !important;\"><img src=\"http://a.espncdn.com/media/motion/2014/1218/dm_141218_nhl_penguins_avs_highlight/dm_141218_nhl_penguins_avs_highlight.jpg\"
+        /></div><div id=\"videoInfo\"><h5>Penguins Win In Crosby's Return</h5><div
+        class=\"mod-video-tags\"><span>The Penguins beat the Avs 1-0 in overtime in
+        Sidney Crosby's return from the mumps.</span><div class=\"mod-video-tags\"><strong>Tags:</strong>
+        <a href=\"http://search.espn.go.com/colorado-avalanche/video/6\"> Colorado
+        Avalanche</a>, <a href=\"http://search.espn.go.com/blake-comeau/video/6\">
+        Blake Comeau</a>, <a href=\"http://search.espn.go.com/sidney-crosby/video/6\">
+        Sidney Crosby</a>, <a href=\"http://search.espn.go.com/marc-andre-fleury/video/6\">
+        Marc-Andre Fleury</a>, <a href=\"http://search.espn.go.com/nhl/video/6\">NHL</a>,
+        <a href=\"http://search.espn.go.com/pittsburgh-penguins/video/6\"> Pittsburgh
+        Penguins</a></div></div></div><a id=\"videotoplay\" style=\"display:none;\"
+        class=\"{trackingName: 'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=12050128\">Penguins
+        Win In Crosby's Return</a><div class=\"mod-video-playlist\"><h6>VIDEO PLAYLIST
+        <img width=\"15\" height=\"8\" alt=\"video\" src=\"http://a.espncdn.com/icons/video2.png\"
         /></h6><ul class=\"bulletlinks\"><li class=\" first active\"><a class=\"{trackingName:
-        'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=11990671\">Babcock
-        Gets 500th Win</a><span style=\"display:none;\"><h5>Babcock Gets 500th Win</h5><div
-        class=\"mod-video-tags\"><span>Darren Helm and the Red Wings rallied to top
-        the Rangers 3-2 and give coach Mike Babcock his 500th career victory.</span><div
-        class=\"mod-video-tags\"><strong>Tags:</strong> <a href=\"http://search.espn.go.com/nhl/video/6\">NHL</a>,
-        <a href=\"http://search.espn.go.com/new-york-rangers/video/6\"> New York Rangers</a>,
-        <a href=\"http://search.espn.go.com/detroit-red-wings/video/6\"> Detroit Red
-        Wings</a>, <a href=\"http://search.espn.go.com/darren-helm/video/6\"> Darren
-        Helm</a></div></div></span></li><li class=\" next\"><a class=\"{trackingName:
-        'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=11988611\">Brodeur,
-        Stastny Help Blues Rally Past Islanders</a><span style=\"display:none;\"><h5>Brodeur,
-        Stastny Help Blues Rally Past Islanders</h5><div class=\"mod-video-tags\"><span>Paul
-        Stastny scored twice to help Martin Brodeur and the Blues rally for a 6-4
-        win over the Islanders.</span><div class=\"mod-video-tags\"><strong>Tags:</strong>
-        <a href=\"http://search.espn.go.com/nhl/video/6\">NHL</a>, <a href=\"http://search.espn.go.com/st.-louis-blues/video/6\">
-        St. Louis Blues</a>, <a href=\"http://search.espn.go.com/new-york-islanders/video/6\">
-        New York Islanders</a>, <a href=\"http://search.espn.go.com/john-tavares/video/6\">
-        John Tavares</a>, <a href=\"http://search.espn.go.com/paul-stastny/video/6\">
-        Paul Stastny</a>, <a href=\"http://search.espn.go.com/st.-louis-blues/video/6\">
-        St. Louis Blues</a>, <a href=\"http://search.espn.go.com/fantasy-nhl/video/6\">Fantasy
-        NHL</a>, <a href=\"http://search.espn.go.com/patrik-berglund/video/6\"> Patrik
-        Berglund</a>, <a href=\"http://search.espn.go.com/kevin-shattenkirk/video/6\">
-        Kevin Shattenkirk</a>, <a href=\"http://search.espn.go.com/martin-brodeur/video/6\">
-        Martin Brodeur</a></div></div></span></li><li class=\"\"><a class=\"{trackingName:
-        'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=11990561\">Hossa,
-        Blackhawks Topple Predators</a><span style=\"display:none;\"><h5>Hossa, Blackhawks
-        Topple Predators</h5><div class=\"mod-video-tags\"><span>Marian Hossa scored
-        two goals in the Blackhawks' 3-1 win over the Predators.</span><div class=\"mod-video-tags\"><strong>Tags:</strong>
-        <a href=\"http://search.espn.go.com/nhl/video/6\">NHL</a>, <a href=\"http://search.espn.go.com/chicago-blackhawks/video/6\">
-        Chicago Blackhawks</a>, <a href=\"http://search.espn.go.com/nashville-predators/video/6\">
-        Nashville Predators</a>, <a href=\"http://search.espn.go.com/marian-hossa/video/6\">
-        Marian Hossa</a></div></div></span></li><li class=\" last\"><a class=\"{trackingName:
-        'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=11991403\">Marchand,
-        Bruins Stop Slide</a><span style=\"display:none;\"><h5>Marchand, Bruins Stop
-        Slide</h5><div class=\"mod-video-tags\"><span>The Bruins snapped a three-game
-        slide behind two goals from Brad Marchand in a 5-2 win over the Coyotes.</span><div
-        class=\"mod-video-tags\"><strong>Tags:</strong> <a href=\"http://search.espn.go.com/nhl/video/6\">NHL</a>,
-        <a href=\"http://search.espn.go.com/boston-bruins/video/6\"> Boston Bruins</a>,
-        <a href=\"http://search.espn.go.com/arizona-coyotes/video/6\"> Arizona Coyotes</a>,
-        <a href=\"http://search.espn.go.com/brad-marchand/video/6\"> Brad Marchand</a></div></div></span></li></ul></div></div>\n\t\t<script>\n\t\tvar
+        'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=12050128\">Penguins
+        Win In Crosby's Return</a><span style=\"display:none;\"><h5>Penguins Win In
+        Crosby's Return</h5><div class=\"mod-video-tags\"><span>The Penguins beat
+        the Avs 1-0 in overtime in Sidney Crosby's return from the mumps.</span><div
+        class=\"mod-video-tags\"><strong>Tags:</strong> <a href=\"http://search.espn.go.com/colorado-avalanche/video/6\">
+        Colorado Avalanche</a>, <a href=\"http://search.espn.go.com/blake-comeau/video/6\">
+        Blake Comeau</a>, <a href=\"http://search.espn.go.com/sidney-crosby/video/6\">
+        Sidney Crosby</a>, <a href=\"http://search.espn.go.com/marc-andre-fleury/video/6\">
+        Marc-Andre Fleury</a>, <a href=\"http://search.espn.go.com/nhl/video/6\">NHL</a>,
+        <a href=\"http://search.espn.go.com/pittsburgh-penguins/video/6\"> Pittsburgh
+        Penguins</a></div></div></span></li><li class=\" next\"><a class=\"{trackingName:
+        'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=12049964\">Crosby
+        On His Return To The Ice</a><span style=\"display:none;\"><h5>Crosby On His
+        Return To The Ice</h5><div class=\"mod-video-tags\"><span>Sidney Crosby discusses
+        his return to the Penguins after missing three games with the mumps.</span><div
+        class=\"mod-video-tags\"><strong>Tags:</strong> <a href=\"http://search.espn.go.com/sidney-crosby/video/6\">
+        Sidney Crosby</a>, <a href=\"http://search.espn.go.com/nhl/video/6\">NHL</a>,
+        <a href=\"http://search.espn.go.com/pittsburgh-penguins/video/6\"> Pittsburgh
+        Penguins</a></div></div></span></li><li class=\"\"><a class=\"{trackingName:
+        'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=12050635\">Capitals
+        Fight Off Blue Jackets In OT</a><span style=\"display:none;\"><h5>Capitals
+        Fight Off Blue Jackets In OT</h5><div class=\"mod-video-tags\"><span>Eric
+        Fehr's overtime goal lifted the Capitals past the Blue Jackets 5-4 in overtime.</span><div
+        class=\"mod-video-tags\"><strong>Tags:</strong> <a href=\"http://search.espn.go.com/columbus-blue-jackets/video/6\">
+        Columbus Blue Jackets</a>, <a href=\"http://search.espn.go.com/eric-fehr/video/6\">
+        Eric Fehr</a>, <a href=\"http://search.espn.go.com/nhl/video/6\">NHL</a>,
+        <a href=\"http://search.espn.go.com/washington-capitals/video/6\"> Washington
+        Capitals</a></div></div></span></li><li class=\" last\"><a class=\"{trackingName:
+        'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=12050461\">Ducks
+        Edge Canadiens</a><span style=\"display:none;\"><h5>Ducks Edge Canadiens</h5><div
+        class=\"mod-video-tags\"><span>Matt Beleskey's 15th goal of the season lifted
+        the Ducks past the Canadiens 2-1.</span><div class=\"mod-video-tags\"><strong>Tags:</strong>
+        <a href=\"http://search.espn.go.com/anaheim-ducks/video/6\"> Anaheim Ducks</a>,
+        <a href=\"http://search.espn.go.com/matt-beleskey/video/6\"> Matt Beleskey</a>,
+        <a href=\"http://search.espn.go.com/david-desharnais/video/6\"> David Desharnais</a>,
+        <a href=\"http://search.espn.go.com/hampus-lindholm/video/6\"> Hampus Lindholm</a>,
+        <a href=\"http://search.espn.go.com/montreal-canadiens/video/6\"> Montreal
+        Canadiens</a>, <a href=\"http://search.espn.go.com/nhl/video/6\">NHL</a></div></div></span></li></ul></div></div>\n\t\t<script>\n\t\tvar
         ESPN_GLOBALS = {\n\t\t\t\"videoPlayers\":{\n\t\t\t\t\"scoreboard09\":{\n\t\t\t\t\t\"height\":324,\n\t\t\t\t\t\"width\":576,\n\t\t\t\t\t\n\t\t\t\t\t\"autostart\":\"false\",\n\t\t\t\t\t\"trackingName\":\"scoreboard09\"\n\t\t\t\t}\n\t\t\t}\n\t\t};\n\n\t\t\n\t\t</script>\n\t</div><div
         id=\"vid_closeAlert\"><p><strong>Are you sure you want to hide this video?</strong></p><div
         class=\"vid_buttonWrap\"><button class=\"vid_alertButton\" id=\"vid_close\">Hide</button>&nbsp;<button
@@ -610,7 +611,8 @@ http_interactions:
         href=\"/nhl/boxscore?gameId=400564740\">Box Score</a>&nbsp;&#187;&nbsp;  <a
         href=\"/nhl/gamecast?gameId=400564740\">GameCast</a>&nbsp;&#187;&nbsp;  <a
         href=\"/nhl/playbyplay?gameId=400564740\">Play&#8209;By&#8209;Play</a>&nbsp;&#187;&nbsp;
-        \ <a href=\"/nhl/conversation?gameId=400564740\">Conversation</a>&nbsp;&#187;&nbsp;
+        \ <a href=\"/nhl/photos?gameId=400564740\">Photos</a>&nbsp;&#187;&nbsp;  <a
+        href=\"/nhl/conversation?gameId=400564740\">Conversation</a>&nbsp;&#187;&nbsp;
         \ </div><div id=\"400564740-lastPlay\" class=\"last-play border-top\" style=\"display:
         none\"><strong>Last Play: </strong><span id=\"400564740-lastPlayText\">&nbsp;</span></div><div
         id=\"400564740-gameDetails\" class=\"border-top game-info-module\" style=\"display:
@@ -903,7 +905,7 @@ http_interactions:
         style=\"clear:both;\"></div></div><p id=\"400564035-gameNote\" class=\"clear
         border-top\" style=\"display: none\">&nbsp;</p></div></div></div><!-- CONTENT:
         09scoreboard614, SPORT: nhl--><div style=\"margin:0px 0px 5px 0px; text-align:
-        center; width: 614px;\"><ins id=\"splinks-77266\"></ins>\n        <script
+        center; width: 614px;\"><ins id=\"splinks-10613\"></ins>\n        <script
         type=\"text/javascript\">\n            (function($) {\n                //
         config params\n                var width = '614',\n                    height
         = '300',\n                    client = 'ca-espn-q-scoreboard',\n                    channel
@@ -911,7 +913,7 @@ http_interactions:
         builds iframe HTML\n                function buildIframe(width, height, client,
         channel) {\n                    var path = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
         \                   // pass params as the hash as they are only needed on
-        the client\n                    var hash = '77266|' + width + '|' + height
+        the client\n                    var hash = '10613|' + width + '|' + height
         + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
         = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
         + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
@@ -927,11 +929,11 @@ http_interactions:
         {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
         || espn.core.android) {\n                            // outside US or not
         on desktop\n                            client = 'ca-espn-nq';\n                        }\n
-        \                       $('#splinks-77266').html(buildIframe(width, height,
-        client, channel));\n                    }).fail(function() {\n                        $('#splinks-77266').html(buildIframe(width,
+        \                       $('#splinks-10613').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-10613').html(buildIframe(width,
         height, 'ca-espn-nq', channel));\n                    });\n                }
         else {\n                    // can't locate them, assume they are outside
-        US\n                    $('#splinks-77266').html(buildIframe(width, height,
+        US\n                    $('#splinks-10613').html(buildIframe(width, height,
         'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
         \   </div></div><div class=\"span-2 last\"><div class=\"mod-container mod-no-border\"><div
         class=\"mod-content mod-feedback-link\"><p><a href=\"http://espn.qualtrics.com/SE/?SID=SV_cIsNl2g4i6lwwOU\"
@@ -1022,7 +1024,7 @@ http_interactions:
         target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nhl/nhlscoreboard;pgtyp=nhlscoreboard;sp=nhl;sz=300x100,1x1;\"
         border=\"0\" alt=\"\"></a></noscript>\n</div></div><!-- CONTENT: scoreboard-right:304w300h,
         SPORT: nhl--><div style=\"margin:0px 0px 5px 0px; text-align: center; width:
-        304px;\"><ins id=\"splinks-97782\"></ins>\n        <script type=\"text/javascript\">\n
+        304px;\"><ins id=\"splinks-42215\"></ins>\n        <script type=\"text/javascript\">\n
         \           (function($) {\n                // config params\n                var
         width = '304',\n                    height = '300',\n                    client
         = 'ca-espn-q-scoreboard',\n                    channel = 'nhl right',\n                    lang
@@ -1030,7 +1032,7 @@ http_interactions:
         buildIframe(width, height, client, channel) {\n                    var path
         = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
         \                   // pass params as the hash as they are only needed on
-        the client\n                    var hash = '97782|' + width + '|' + height
+        the client\n                    var hash = '42215|' + width + '|' + height
         + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
         = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
         + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
@@ -1046,11 +1048,11 @@ http_interactions:
         {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
         || espn.core.android) {\n                            // outside US or not
         on desktop\n                            client = 'ca-espn-nq';\n                        }\n
-        \                       $('#splinks-97782').html(buildIframe(width, height,
-        client, channel));\n                    }).fail(function() {\n                        $('#splinks-97782').html(buildIframe(width,
+        \                       $('#splinks-42215').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-42215').html(buildIframe(width,
         height, 'ca-espn-nq', channel));\n                    });\n                }
         else {\n                    // can't locate them, assume they are outside
-        US\n                    $('#splinks-97782').html(buildIframe(width, height,
+        US\n                    $('#splinks-42215').html(buildIframe(width, height,
         'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
         \   </div></div><div class=\"clear\"></div></div>\n<div id=\"nav-wrapper\"
         class=\"container\">\n<div id=\"nav-wrapper-container\">\n<div id=\"nav-main\">\n<!--
@@ -1255,7 +1257,7 @@ http_interactions:
         type=\"text/javascript\">\n\tif (typeof(s_omni) === 'undefined') {\n\t\tjQuery(function($)
         {\n\t\t\t// we want to load the analytics files from the cache if possible
         - so, let's use full $.ajax() calls\n\t\t\t$.ajax({\n\t\t\t\ttype:'GET',\n\t\t\t\turl:
-        'http://a.espncdn.com/combiner/c?js=analytics/sOmni.js,analytics/analytics.js,analytics/externalnielsen.js&v=6',\n\t\t\t\tdataType:
+        'http://a.espncdn.com/combiner/c?js=analytics/sOmni.js,analytics/analytics.js,analytics/externalnielsen.js&v=11',\n\t\t\t\tdataType:
         'script',\n\t\t\t\tcache: true,\n\t\t\t\tsuccess: function() {\n\t\t\t\t\tvar
         lgSrc;\n\t\t\t\t\tif(typeof anCV !== undef && anCV === '' && document.getElementById('form-memberarea')
         != null) {\n\t\t\t\t\t\tlgSrc = 'https://r.espn.go.com/members/util/getUserInfo?cb=runOmnitureIndependently';\n\t\t\t\t\t\t$.getScript(lgSrc);
@@ -1293,5 +1295,5 @@ http_interactions:
         a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
         \ //]]>\n</script></body>\n</html>"
     http_version: 
-  recorded_at: Sun, 07 Dec 2014 21:09:09 GMT
+  recorded_at: Fri, 19 Dec 2014 14:39:22 GMT
 recorded_with: VCR 2.9.3

@@ -30,7 +30,7 @@ http_interactions:
       Cache-Control:
       - max-age=30
       Date:
-      - Sun, 07 Dec 2014 21:09:10 GMT
+      - Fri, 19 Dec 2014 14:39:21 GMT
       Transfer-Encoding:
       - chunked
       Connection:
@@ -49,7 +49,7 @@ http_interactions:
         c+l+\"/_/id/\"+q;}else{if(s!==\"\"){return c+l+\"/_/page/\"+s;}else{return
         c+l;}}}if(l.match(/\\/blogpostindex$/i)){m=k(\"blogname\",n);if(f.espn&&espn.GLOBALS&&espn.GLOBALS.isCEBlog===true){return;}if(m!==\"\"){return
         c+\"/blog/\"+m;}}if(l.match(/\\/blogpost$/i)){m=k(\"blogname\",n);o=k(\"id\",n);if(f.espn&&espn.GLOBALS&&espn.GLOBALS.isCEBlog===true){return;}if(m!==\"\"&&o!==\"\"){return
-        c+\"/blog/\"+m+\"/post/_/id/\"+o;}}if(l.match(/^\\/blog\\//i)){m=k(\"blogName\",n);o=k(\"id\",n);if(l.match(/\\/blog\\/[^\\/]*?\\/post$/i)){if(o!==\"\"){return
+        c+\"/blog/\"+m+\"/post/_/id/\"+o;}}if(l.match(/^\\/blog\\//i)){m=k(\"blogName\",n);o=k(\"id\",n);if(l.match(/\\/blog\\/.*\\/post$/i)){if(o!==\"\"){return
         c+l+\"/_/id/\"+o;}}else{if(m!==\"\"&&o!==\"\"){return c+\"/blog/\"+m+\"/post/_/id/\"+o;}else{if(m!==\"\"){return
         c+\"/blog/\"+m;}else{return c+l;}}}}if((l===\"\"||l===\"/\")&&!j.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i)){return
         c;}var u=l.match(/^\\/.*?\\/(?:index)?$/i);if(u){v={\"/frontpage/\":true,\"/wireless/\":true,\"/general/\":true,\"/extra/\":true,\"/mobile/\":true,\"/nfl/\":true,\"/nba/\":true,\"/mlb/\":true,\"/nhl/\":true,\"/ncf/\":true,\"/college-football/\":true,\"/ncb/\":true,\"/mens-college-basketball/\":true,\"/ncw/\":true,\"/womenbb/\":true,\"/womens-basketball/\":true,\"/wnba/\":true,\"/golf/\":true,\"/tennis/\":true,\"/general/tennis/\":true,\"/mma/\":true,\"/extra/mma/\":true,\"/racing/\":true,\"/rpm/\":true,\"/racing/nascar/\":true,\"/rpm/nascar/\":true,\"/boxing/\":true,\"/extra/boxing/\":true,\"/college-sports/\":true,\"/ncaa/\":true,\"/extra/ncaa/\":true,\"/olympics/\":true,\"/extra/olympics/\":true,\"/horse-racing/\":true,\"/horse/\":true,\"/general/horse/\":true,\"/poker/\":true,\"/general/poker/\":true,\"/sports/endurance/\":true,\"/extra/endurance/\":true};if(l.match(/\\/index$/i)){l=l.substring(0,l.length-5);}if(v[l]===true){return
@@ -191,9 +191,6 @@ http_interactions:
         a=b(\"#browser-alert-wrapper\");if(espn.cookie.get(\"browseralert\")!=\"true\"){b('<a
         class=\"btn-close\" href=\"#\">Close</a>').bind(\"click\",function(){a.hide();espn.cookie.set(\"browseralert\",\"true\",30);return
         false}).appendTo(a.find(\".gradient-container\"));a.show();espn.cookie.set(\"browseralert\",\"true\")}},100)})(jQuery);</script><![endif]--><script
-        src=\"http://a.espncdn.com/combiner/c/5?js=analytics/espn.nowTracking.js\"></script><script
-        src=\"http://a.espncdn.com/prod/scripts/now/scoreboard/now-external-noshare.r6.js\"></script><script
-        type=\"text/javascript\" src=\"//platform.twitter.com/widgets.js\"></script><script
         type=\"text/javascript\">\n\tfunction gameObj(gameId, homeTeamId, awayTeamId,
         sortValue)\n\t{\n\t\tthis.gameId = gameId\n\t\tthis.homeTeamId = homeTeamId\n\t\tthis.awayTeamId
         = awayTeamId\n\t\tthis.sortValue = sortValue\n\t}\n\tvar gameList = new Array()\n\tvar
@@ -275,7 +272,7 @@ http_interactions:
         value=\"?seasonYear=2006&seasonType=2&weekNumber=11\">2006</option><option
         value=\"?seasonYear=2005&seasonType=2&weekNumber=11\">2005</option></select></form><span
         class=\"seasontype\" style=\"padding-left: 75px;\"><a href=\"?seasonYear=2014&seasonType=1&weekNumber=1\">Preseason</a>
-        | <span style=\"font-weight: bold;\">Regular Season</span></span></div><div
+        | <span style=\"font-weight: bold;\">Regular Season</span> | <a href=\"?seasonYear=2014&seasonType=3&weekNumber=1\">Postseason</a></span></div><div
         class=\"week\"><div class=\"weekcaption\">Week:</div><a class=\"\"  href=\"?seasonYear=2014&seasonType=2&weekNumber=1\">1</a><a
         class=\"\"  href=\"?seasonYear=2014&seasonType=2&weekNumber=2\">2</a><a class=\"\"
         \ href=\"?seasonYear=2014&seasonType=2&weekNumber=3\">3</a><a class=\"\"  href=\"?seasonYear=2014&seasonType=2&weekNumber=4\">4</a><a
@@ -300,60 +297,72 @@ http_interactions:
         /> [+]</a></div></div></div><div class=\"vid_wrap vid_wrapfull article\" style=\"display:none;\"
         ><div class=\"clear\"></div><div id=\"vid_full\"><div class=\"mod-inline video-player
         full-box with-playlist\"><div class=\"videoplayer videoplayer-scoreboard09\"
-        style=\"margin-top:0px !important;\"><img src=\"http://a.espncdn.com/media/motion/2014/1206/dm_141206_nfl_mnf_pvw/dm_141206_nfl_mnf_pvw.jpg\"
-        /></div><div id=\"videoInfo\"><h5>Matt Ryan Fueling Falcons</h5><div class=\"mod-video-tags\"><span>Mike
-        Tirico and Jon Gruden preview the \"Monday Night Football\" matchup between
-        the Falcons and the Packers.</span><div class=\"mod-video-tags\"><strong>Tags:</strong>
-        <a href=\"http://search.espn.go.com/nfl/video/6\">NFL</a>, <a href=\"http://search.espn.go.com/atlanta-falcons/video/6\">
-        Atlanta Falcons</a>, <a href=\"http://search.espn.go.com/green-bay-packers/video/6\">
-        Green Bay Packers</a>, <a href=\"http://search.espn.go.com/ha-ha-clinton-dix/video/6\">
-        Ha Ha Clinton-Dix</a>, <a href=\"http://search.espn.go.com/matt-ryan/video/6\">
-        Matt Ryan</a></div></div></div><a id=\"videotoplay\" style=\"display:none;\"
-        class=\"{trackingName: 'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=11989580\">Matt
-        Ryan Fueling Falcons</a><div class=\"mod-video-playlist\"><h6>VIDEO PLAYLIST
-        <img width=\"15\" height=\"8\" alt=\"video\" src=\"http://a.espncdn.com/icons/video2.png\"
+        style=\"margin-top:0px !important;\"><img src=\"http://a.espncdn.com/media/motion/2014/1218/dm_141218_nfl_titans_jaguars_highlight/dm_141218_nfl_titans_jaguars_highlight.jpg\"
+        /></div><div id=\"videoInfo\"><h5>Jaguars Run Past Titans</h5><div class=\"mod-video-tags\"><span>The
+        Jaguars topped the Titans 21-13 and handed Tennessee its ninth straight loss.</span><div
+        class=\"mod-video-tags\"><strong>Tags:</strong> <a href=\"http://search.espn.go.com/blake-bortles/video/6\">
+        Blake Bortles</a>, <a href=\"http://search.espn.go.com/toby-gerhart/video/6\">
+        Toby Gerhart</a>, <a href=\"http://search.espn.go.com/jacksonville-jaguars/video/6\">
+        Jacksonville Jaguars</a>, <a href=\"http://search.espn.go.com/marcedes-lewis/video/6\">
+        Marcedes Lewis</a>, <a href=\"http://search.espn.go.com/nfl/video/6\">NFL</a>,
+        <a href=\"http://search.espn.go.com/tennessee-titans/video/6\"> Tennessee
+        Titans</a>, <a href=\"http://search.espn.go.com/jordan-todman/video/6\"> Jordan
+        Todman</a></div></div></div><a id=\"videotoplay\" style=\"display:none;\"
+        class=\"{trackingName: 'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=12050607\">Jaguars
+        Run Past Titans</a><div class=\"mod-video-playlist\"><h6>VIDEO PLAYLIST <img
+        width=\"15\" height=\"8\" alt=\"video\" src=\"http://a.espncdn.com/icons/video2.png\"
         /></h6><ul class=\"bulletlinks\"><li class=\" first active\"><a class=\"{trackingName:
-        'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=11989580\">Matt
-        Ryan Fueling Falcons</a><span style=\"display:none;\"><h5>Matt Ryan Fueling
-        Falcons</h5><div class=\"mod-video-tags\"><span>Mike Tirico and Jon Gruden
-        preview the \"Monday Night Football\" matchup between the Falcons and the
-        Packers.</span><div class=\"mod-video-tags\"><strong>Tags:</strong> <a href=\"http://search.espn.go.com/nfl/video/6\">NFL</a>,
+        'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=12050607\">Jaguars
+        Run Past Titans</a><span style=\"display:none;\"><h5>Jaguars Run Past Titans</h5><div
+        class=\"mod-video-tags\"><span>The Jaguars topped the Titans 21-13 and handed
+        Tennessee its ninth straight loss.</span><div class=\"mod-video-tags\"><strong>Tags:</strong>
+        <a href=\"http://search.espn.go.com/blake-bortles/video/6\"> Blake Bortles</a>,
+        <a href=\"http://search.espn.go.com/toby-gerhart/video/6\"> Toby Gerhart</a>,
+        <a href=\"http://search.espn.go.com/jacksonville-jaguars/video/6\"> Jacksonville
+        Jaguars</a>, <a href=\"http://search.espn.go.com/marcedes-lewis/video/6\">
+        Marcedes Lewis</a>, <a href=\"http://search.espn.go.com/nfl/video/6\">NFL</a>,
+        <a href=\"http://search.espn.go.com/tennessee-titans/video/6\"> Tennessee
+        Titans</a>, <a href=\"http://search.espn.go.com/jordan-todman/video/6\"> Jordan
+        Todman</a></div></div></span></li><li class=\" next\"><a class=\"{trackingName:
+        'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=12051158\">Cousin
+        Sal's Week 16 Picks</a><span style=\"display:none;\"><h5>Cousin Sal's Week
+        16 Picks</h5><div class=\"mod-video-tags\"><span>Cousin Sal sits down with
+        Neil Everett to makes his picks for Week 16 in the NFL.</span><div class=\"mod-video-tags\"><strong>Tags:</strong>
         <a href=\"http://search.espn.go.com/atlanta-falcons/video/6\"> Atlanta Falcons</a>,
-        <a href=\"http://search.espn.go.com/green-bay-packers/video/6\"> Green Bay
-        Packers</a>, <a href=\"http://search.espn.go.com/ha-ha-clinton-dix/video/6\">
-        Ha Ha Clinton-Dix</a>, <a href=\"http://search.espn.go.com/matt-ryan/video/6\">
-        Matt Ryan</a></div></div></span></li><li class=\" next\"><a class=\"{trackingName:
-        'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=11992551\">Bet
-        Sharp With Colin Cowherd</a><span style=\"display:none;\"><h5>Bet Sharp With
-        Colin Cowherd</h5><div class=\"mod-video-tags\"><span>ESPN The Magazine's
-        Chad Millman joins Colin Cowherd to provide betting advice for all of the
-        Week 14 action in the NFL.</span><div class=\"mod-video-tags\"><strong>Tags:</strong>
-        <a href=\"http://search.espn.go.com/nfl/video/6\">NFL</a>, <a href=\"http://search.espn.go.com/indianapolis-colts/video/6\">
-        Indianapolis Colts</a>, <a href=\"http://search.espn.go.com/cleveland-browns/video/6\">
-        Cleveland Browns</a></div></div></span></li><li class=\"\"><a class=\"{trackingName:
-        'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=11992863\">Waiting
-        For Wilson</a><span style=\"display:none;\"><h5>Waiting For Wilson</h5><div
-        class=\"mod-video-tags\"><span>The Seahawks identified their quarterback of
-        the future early in the scouting process and engaged in a cat-and-mouse game
-        to land Russell Wilson.</span><div class=\"mod-video-tags\"><strong>Tags:</strong>
-        <a href=\"http://search.espn.go.com/nfl/video/6\">NFL</a>, <a href=\"http://search.espn.go.com/russell-wilson/video/6\">
-        Russell Wilson</a>, <a href=\"http://search.espn.go.com/seattle-seahawks/video/6\">
-        Seattle Seahawks</a></div></div></span></li><li class=\" last\"><a class=\"{trackingName:
-        'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=11992601\">Antonio
-        Brown: The Double Move</a><span style=\"display:none;\"><h5>Antonio Brown:
-        The Double Move</h5><div class=\"mod-video-tags\"><span>Steelers WR Antonio
-        Brown demonstrates the double move and explains how he finds open space to
-        make big plays.</span><div class=\"mod-video-tags\"><strong>Tags:</strong>
-        <a href=\"http://search.espn.go.com/nfl/video/6\">NFL</a>, <a href=\"http://search.espn.go.com/antonio-brown/video/6\">
-        Antonio Brown</a>, <a href=\"http://search.espn.go.com/pittsburgh-steelers/video/6\">
-        Pittsburgh Steelers</a></div></div></span></li></ul></div></div>\n\t\t<script>\n\t\tvar
+        <a href=\"http://search.espn.go.com/carolina-panthers/video/6\"> Carolina
+        Panthers</a>, <a href=\"http://search.espn.go.com/chicago-bears/video/6\">
+        Chicago Bears</a>, <a href=\"http://search.espn.go.com/cleveland-browns/video/6\">
+        Cleveland Browns</a>, <a href=\"http://search.espn.go.com/detroit-lions/video/6\">
+        Detroit Lions</a>, <a href=\"http://search.espn.go.com/johnny-manziel/video/6\">
+        Johnny Manziel</a>, <a href=\"http://search.espn.go.com/nfl/video/6\">NFL</a>,
+        <a href=\"http://search.espn.go.com/tampa-bay-buccaneers/video/6\"> Tampa
+        Bay Buccaneers</a></div></div></span></li><li class=\"\"><a class=\"{trackingName:
+        'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=12048494\">Cutler
+        Shocked, Disappointed By Benching</a><span style=\"display:none;\"><h5>Cutler
+        Shocked, Disappointed By Benching</h5><div class=\"mod-video-tags\"><span>Bears
+        QB Jay Cutler discusses coach Marc Trestman's decision to bench him.</span><div
+        class=\"mod-video-tags\"><strong>Tags:</strong> <a href=\"http://search.espn.go.com/chicago-bears/video/6\">
+        Chicago Bears</a>, <a href=\"http://search.espn.go.com/jay-cutler/video/6\">
+        Jay Cutler</a>, <a href=\"http://search.espn.go.com/nfl/video/6\">NFL</a></div></div></span></li><li
+        class=\" last\"><a class=\"{trackingName: 'scoreboard09', playRelatedExternally:
+        'false'}\" href=\"http://espn.go.com/video/clip?id=12049206\">NFL Cold Hard
+        Facts</a><span style=\"display:none;\"><h5>NFL Cold Hard Facts</h5><div class=\"mod-video-tags\"><span>Jeff
+        Saturday breaks down how the Cardinals can beat the Seahawks, how the Cowboys
+        can compensate for an injured DeMarco Murray and how the Broncos can get past
+        the Bengals.</span><div class=\"mod-video-tags\"><strong>Tags:</strong> <a
+        href=\"http://search.espn.go.com/arizona-cardinals/video/6\"> Arizona Cardinals</a>,
+        <a href=\"http://search.espn.go.com/dallas-cowboys/video/6\"> Dallas Cowboys</a>,
+        <a href=\"http://search.espn.go.com/denver-broncos/video/6\"> Denver Broncos</a>,
+        <a href=\"http://search.espn.go.com/demarco-murray/video/6\"> DeMarco Murray</a>,
+        <a href=\"http://search.espn.go.com/nfl/video/6\">NFL</a>, <a href=\"http://search.espn.go.com/seattle-seahawks/video/6\">
+        Seattle Seahawks</a></div></div></span></li></ul></div></div>\n\t\t<script>\n\t\tvar
         ESPN_GLOBALS = {\n\t\t\t\"videoPlayers\":{\n\t\t\t\t\"scoreboard09\":{\n\t\t\t\t\t\"height\":324,\n\t\t\t\t\t\"width\":576,\n\t\t\t\t\t\n\t\t\t\t\t\"autostart\":\"false\",\n\t\t\t\t\t\"trackingName\":\"scoreboard09\"\n\t\t\t\t}\n\t\t\t}\n\t\t};\n\n\t\t\n\t\t</script>\n\t</div><div
         id=\"vid_closeAlert\"><p><strong>Are you sure you want to hide this video?</strong></p><div
         class=\"vid_buttonWrap\"><button class=\"vid_alertButton\" id=\"vid_close\">Hide</button>&nbsp;<button
         class=\"vid_alertButton\" id=\"vid_cancel\">Cancel</button></div><p><input
         type=\"checkbox\" name=\"disableVideo\" id=\"disableVideoCheck\" /> Hide future
         scoreboard video content</p></div></div>\n\t<script type=\"text/javascript\">\n\t(function($)
-        {\n\t\tfunction checkWatchChannel(){\n\t\t\tcheckString = \"20141207~\";\n\t\t\tcurEventId
+        {\n\t\tfunction checkWatchChannel(){\n\t\t\tcheckString = \"20141219~\";\n\t\t\tcurEventId
         = \"null\";\n\t\t\tdateObj = new Date();\n\t\t\tcurHours = dateObj.getHours()
         + '';\n\t\t\tif (curHours.length == 1){ curHours = '0' + curHours }\n\t\t\tcurMins
         = dateObj.getMinutes() + '';\n\t\t\tif (curMins.length == 1){ curMins = '0'
@@ -457,7 +466,7 @@ http_interactions:
         hidden; background-color:#04407F\">B<br />U<br />F</div><ul class=\"leaders-cats\"><li>PASS:</li><li>RUSH:</li><li>REC:</li></ul><ul
         class=\"leaders-stats\"><li id=\"400554338-aLeader0\"><span><a href=\"http://espn.go.com/nfl/player/_/id/8520/kyle-orton\">K.
         Orton</a></span> 22-39, 193 YDS, 0 TDS</li><li id=\"400554338-aLeader1\"><span><a
-        href=\"http://espn.go.com/nfl/player/_/id/13212/anthony-dixon\">A. Dixon</a></span>
+        href=\"http://espn.go.com/nfl/player/_/id/13212/boobie-dixon\">B. Dixon</a></span>
         10 RUSH, 35 YDS, 0 TDS</li><li id=\"400554338-aLeader2\"><span><a href=\"http://espn.go.com/nfl/player/_/id/14402/chris-hogan\">C.
         Hogan</a></span> 7 REC, 74 YDS, 0 TDS</li></ul></div><div style=\"clear: both;\"></div><div
         id=\"400554338-hLeaderDisplay\" class=\"leaders\" style=\"overflow: hidden;
@@ -1784,7 +1793,7 @@ http_interactions:
         id=\"400554421-hStat2\">20:11</p></div><p class=\"stat-caption\">TIME POSS</p></div></div><div
         id=\"400554421-gameNote\" class=\"game-notes\" style=\"display:none\"></div></div></div></div></div></div><!--
         CONTENT: 09scoreboard614, SPORT: nfl--><div style=\"margin:0px 0px 5px 0px;
-        text-align: center; width: 614px;\"><ins id=\"splinks-88169\"></ins>\n        <script
+        text-align: center; width: 614px;\"><ins id=\"splinks-77479\"></ins>\n        <script
         type=\"text/javascript\">\n            (function($) {\n                //
         config params\n                var width = '614',\n                    height
         = '300',\n                    client = 'ca-espn-q-scoreboard',\n                    channel
@@ -1792,7 +1801,7 @@ http_interactions:
         builds iframe HTML\n                function buildIframe(width, height, client,
         channel) {\n                    var path = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
         \                   // pass params as the hash as they are only needed on
-        the client\n                    var hash = '88169|' + width + '|' + height
+        the client\n                    var hash = '77479|' + width + '|' + height
         + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
         = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
         + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
@@ -1808,584 +1817,249 @@ http_interactions:
         {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
         || espn.core.android) {\n                            // outside US or not
         on desktop\n                            client = 'ca-espn-nq';\n                        }\n
-        \                       $('#splinks-88169').html(buildIframe(width, height,
-        client, channel));\n                    }).fail(function() {\n                        $('#splinks-88169').html(buildIframe(width,
+        \                       $('#splinks-77479').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-77479').html(buildIframe(width,
         height, 'ca-espn-nq', channel));\n                    });\n                }
         else {\n                    // can't locate them, assume they are outside
-        US\n                    $('#splinks-88169').html(buildIframe(width, height,
+        US\n                    $('#splinks-77479').html(buildIframe(width, height,
         'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
         \   </div></div><div class=\"span-2\"><div class=\"mod-container mod-no-border\"><div
         class=\"mod-content mod-feedback-link\"><p><a href=\"http://espn.qualtrics.com/SE/?SID=SV_cIsNl2g4i6lwwOU\"
-        target=\"_blank\">Tell us what you think &#187;</a></p></div></div><div class=\"mod-container
-        mod-no-footer\"><div class=\"ad-box last\"><!--espn.us.com.nfl sitezone-->\n<script>if(\"undefined\"!=typeof
-        ad_kvps&&\"undefined\"!=typeof ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof
-        ad_ord){if(\"undefined\"==typeof ad_site||\"undefined\"==typeof ad_zone)var
-        ad_site=\"espn.us.com.nfl\",ad_zone=\"nflscoreboard\";var ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=InContent;\"+ad_u+\"dcopt=ist;sz=300x600,300x250,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        target=\"_blank\">Tell us what you think &#187;</a></p></div></div><!--nowFeedFalse--><div
+        class=\"mod-container mod-no-footer\"><div class=\"ad-box last\"><!--espn.us.com.nfl
+        sitezone-->\n<script>if(\"undefined\"!=typeof ad_kvps&&\"undefined\"!=typeof
+        ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof ad_ord){if(\"undefined\"==typeof
+        ad_site||\"undefined\"==typeof ad_zone)var ad_site=\"espn.us.com.nfl\",ad_zone=\"nflscoreboard\";var
+        ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=InContent;\"+ad_u+\"dcopt=ist;sz=300x600,300x250,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
         data-cb-ad-id=\"InContent\" data-cb-dfp-id=\"'+ad_kvps+'sz=300x600,300x250,1x1\"><script
         src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
         href=\"http://ad.Doubleclick.net/jump/espn.us.com.nfl/nflscoreboard;pgtyp=nflscoreboard;sp=nfl;sz=300x600,300x250,1x1;\"
         target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nfl/nflscoreboard;pgtyp=nflscoreboard;sp=nfl;sz=300x600,300x250,1x1;\"
-        border=\"0\" alt=\"\"></a></noscript>\n</div></div><div id=\"now-wrapper\"><header
-        class=\"now-feed-item now-header\"><h1>NFL SUNDAY LIVE</h1></header><section
-        id=\"now-feed\" data-behavior=\"index_now_feed\"><article data-id=\"11994394\"
-        data-time=\"1417986386000\" class=\"now-feed-item\" data-behavior=\" module_bloom
-        fix_broken_images\" data-index=\"1\"><div class=\"now-content\"><p>Le'Veon
-        Bell has three TDs today as the Steelers are running away with the game, currently
-        up 42-21 over the Bengals. Bell is the first RB since 2008 to run for three
-        TDs in a game for Pittsburgh.</p></div><figure class=\"feed-item-figure dim1x1\"><a
-        class=\"img-wrap\" href=\"http://espn.go.com/espn/now?nowId=1-11994394&ex_cid=espnapi_public\"
-        ><picture><!--[if IE 9]><video style=\"display: none;\"><![endif]--><source
-        srcset=\"http://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2014%2F1207%2Fd7a25bf4091b9430670f6a7067004c4b.jpg&w=600\"
-        media=\"(min-width: 1024px)\"><source srcset=\"http://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2014%2F1207%2Fd7a25bf4091b9430670f6a7067004c4b.jpg&w=192,
-        http://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2014%2F1207%2Fd7a25bf4091b9430670f6a7067004c4b.jpg&w=384
-        2x\" media=\"(min-width: 721px)\"><source srcset=\"http://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2014%2F1207%2Fd7a25bf4091b9430670f6a7067004c4b.jpg&w=576\"
-        media=\"(max-width: 720px)\"><source srcset=\"http://a.espncdn.com/photo/2014/1207/d7a25bf4091b9430670f6a7067004c4b.jpg\"
-        ><!--[if IE 9]></video><![endif]--><img srcset=\"http://a.espncdn.com/photo/2014/1207/d7a25bf4091b9430670f6a7067004c4b.jpg\"
-        \ data-image-container=\".feed-item-figure\" data-behavior=\"fix_broken_images\"
-        /></picture></a><span class=\"credit\">AP</span></figure><div class='now-feed_item-meta'
-        data-src=\"http://espn.go.com/espn/now?nowId=1-11994394\" data-original-src=\"http://espn.go.com/espn/now?nowId=1-11994394&ex_cid=espnapi_public\"><span
-        class=\"category\">NFL</span> - <span class=\"timestamp\" data-time=\"2014-12-07T21:06:26Z\"
-        data-behavior=\"date_ago\"></span><div class=\"now-share\" data-behavior=\"now_share_toggle\"><span
-        class=\"share-count\">Share</span><div class=\"share-actions\"><div class=\"btn-close\"></div><ul
-        data-id=\"11994394\" data-name=\"Steelers Bengals Football\" data-type=\"article\"><li><a
-        href=\"https://www.facebook.com/sharer.php?u=http%3A%2F%2Fes.pn%2F1zCxRiH\"
-        class=\"btn-social facebook  Module\"></a></li><li><a href=\"http://twitter.com/intent/tweet?url=http%3A%2F%2Fes.pn%2F1zCxRiH&text=Le%27Veon+Bell+has+three+TDs+today+as+the+Steelers+are+running+away+with+the+game,+currently+up+42%2D21+over+the...\"
-        class=\"btn-social twitter  Module\"></a></li><li><a href=\"http://sendtofriend.espn.go.com/sendtofriend/SendToFriendBeta?type=Module&id=11994394\"
-        class=\"btn-social email  Module\"></a></li></ul></div></div></div></article><article
-        data-id=\"11994374\" data-time=\"1417986243000\" class=\"now-feed-item\" data-behavior=\"
-        module_bloom fix_broken_images\" data-index=\"2\"><div class=\"now-content\"><h1>RAMS
-        24, REDSKINS 0</h1><p>The Rams shut out their opponent for the second straight
-        week, holding the Redskins to 206 total yards to improve to 6-7. <br><br>
-        <a name=\"&lpos=now:module:11994374:2\"  target=\"_blank\" href=\"http://espn.go.com/nfl/boxscore?gameId=400554379\"
-        class=\"\">Complete Stats</a></p></div><figure class=\"feed-item-figure dim1x1\"><a
-        class=\"img-wrap\" href=\"http://espn.go.com/nfl/boxscore?gameId=400554379\"
-        ><picture><!--[if IE 9]><video style=\"display: none;\"><![endif]--><source
-        srcset=\"http://a4.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460110142.jpg&w=600\"
-        media=\"(min-width: 1024px)\"><source srcset=\"http://a4.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460110142.jpg&w=192,
-        http://a4.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460110142.jpg&w=384
-        2x\" media=\"(min-width: 721px)\"><source srcset=\"http://a4.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460110142.jpg&w=576\"
-        media=\"(max-width: 720px)\"><source srcset=\"http://a.espncdn.com/media/gettyphoto/2014/12/07/460110142.jpg\"
-        ><!--[if IE 9]></video><![endif]--><img srcset=\"http://a.espncdn.com/media/gettyphoto/2014/12/07/460110142.jpg\"
-        \ data-image-container=\".feed-item-figure\" data-behavior=\"fix_broken_images\"
-        /></picture></a><span class=\"credit\">Getty</span></figure><div class='now-feed_item-meta'
-        data-src=\"http://espn.go.com/espn/now?nowId=1-11994374\" data-original-src=\"http://espn.go.com/nfl/boxscore?gameId=400554379\"><span
-        class=\"category\">NFL</span> - <span class=\"timestamp\" data-time=\"2014-12-07T21:04:03Z\"
-        data-behavior=\"date_ago\"></span><div class=\"now-share\" data-behavior=\"now_share_toggle\"><span
-        class=\"share-count\">Share</span><div class=\"share-actions\"><div class=\"btn-close\"></div><ul
-        data-id=\"11994374\" data-name=\"St Louis Rams v Washington Redskins\" data-type=\"article\"><li><a
-        href=\"https://www.facebook.com/sharer.php?u=http%3A%2F%2Fes.pn%2F1zCxcha\"
-        class=\"btn-social facebook  Module\"></a></li><li><a href=\"http://twitter.com/intent/tweet?url=http%3A%2F%2Fes.pn%2F1zCxcha&text=The+Rams+shut+out+their+opponent+for+the+second+straight+week,+holding+the+Redskins+to+206+total+yards+to+improve...\"
-        class=\"btn-social twitter  Module\"></a></li><li><a href=\"http://sendtofriend.espn.go.com/sendtofriend/SendToFriendBeta?type=Module&id=11994374\"
-        class=\"btn-social email  Module\"></a></li></ul></div></div></div></article><article
-        data-id=\"11994342\" data-time=\"1417986008000\" class=\"now-feed-item\" data-behavior=\"
-        module_bloom fix_broken_images\" data-index=\"3\"><div class=\"now-content\"><p>Robert
-        Griffin III is back in at quarterback for Washington, replacing an ineffective
-        Colt McCoy (20-of-32, 199 yards, 2 INT).</p></div><figure class=\"feed-item-figure
-        dim1x1\"><a class=\"img-wrap\" href=\"http://espn.go.com/espn/now?nowId=1-11994342&ex_cid=espnapi_public\"
-        ><picture><!--[if IE 9]><video style=\"display: none;\"><![endif]--><source
-        srcset=\"http://a4.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460102560.jpg&w=600\"
-        media=\"(min-width: 1024px)\"><source srcset=\"http://a4.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460102560.jpg&w=192,
-        http://a4.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460102560.jpg&w=384
-        2x\" media=\"(min-width: 721px)\"><source srcset=\"http://a4.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460102560.jpg&w=576\"
-        media=\"(max-width: 720px)\"><source srcset=\"http://a.espncdn.com/media/gettyphoto/2014/12/07/460102560.jpg\"
-        ><!--[if IE 9]></video><![endif]--><img srcset=\"http://a.espncdn.com/media/gettyphoto/2014/12/07/460102560.jpg\"
-        \ data-image-container=\".feed-item-figure\" data-behavior=\"fix_broken_images\"
-        /></picture></a><span class=\"credit\">Getty</span></figure><div class='now-feed_item-meta'
-        data-src=\"http://espn.go.com/espn/now?nowId=1-11994342\" data-original-src=\"http://espn.go.com/espn/now?nowId=1-11994342&ex_cid=espnapi_public\"><span
-        class=\"timestamp\" data-time=\"2014-12-07T21:00:08Z\" data-behavior=\"date_ago\"></span><div
-        class=\"now-share\" data-behavior=\"now_share_toggle\"><span class=\"share-count\">Share</span><div
-        class=\"share-actions\"><div class=\"btn-close\"></div><ul data-id=\"11994342\"
-        data-name=\"St Louis Rams v Washington Redskins\" data-type=\"article\"><li><a
-        href=\"https://www.facebook.com/sharer.php?u=http%3A%2F%2Fes.pn%2F1zCwjVW\"
-        class=\"btn-social facebook  Module\"></a></li><li><a href=\"http://twitter.com/intent/tweet?url=http%3A%2F%2Fes.pn%2F1zCwjVW&text=Robert+Griffin+III+is+back+in+at+quarterback+for+Washington,+replacing+an+ineffective+Colt+McCoy+(20%2Dof%2D32,+199...\"
-        class=\"btn-social twitter  Module\"></a></li><li><a href=\"http://sendtofriend.espn.go.com/sendtofriend/SendToFriendBeta?type=Module&id=11994342\"
-        class=\"btn-social email  Module\"></a></li></ul></div></div></div></article><article
-        data-id=\"541687984895320064\" data-time=\"1417983521000\" class=\"now-feed-item
-        now-feed-tweet\" data-behavior=\" module_bloom fix_broken_images\" data-index=\"4\"><div
-        class=\"now-content\"><a name=\"&lpos=now:tweet:541687984895320064:@ESPNdirocco:4\"
-        href=\"http://twitter.com/ESPNdirocco\" rel=\"nofollow\" target=\"_blank\"><h1>Michael
-        DiRocco <span>@ESPNdirocco</span></h1></a><a name=\"&lpos=now:tweet:541687984895320064:@ESPNdirocco:4\"
-        href=\"http://twitter.com/ESPNdirocco\" rel=\"nofollow\" target=\"_blank\"><div
-        class=\"img-container\"><img class=\"focus-image\" src=\"http://pbs.twimg.com/profile_images/491214496644333568/lptJhFF0_normal.jpeg\"></div></a><p>From
-        ESPN Stats & Info: Blake Bortles' -6 TD-Int differential is the worst in the
-        league. <a name=\"&lpos=now:tweet:541687984895320064:@ESPNdirocco:4\"  target=\"_blank\"
-        href=\"https://twitter.com/ESPNdirocco/status/541687984895320064\" class=\"twitter-timestamp\"><span
-        class=\"timestamp\" data-time=\"2014-12-07T20:17:34Z\" data-behavior=\"date_ago\"></span></a></p></div><div
-        class='now-feed_item-meta' data-src=\"https://twitter.com/ESPNdirocco/status/541687984895320064\"
-        data-original-src=\"https://twitter.com/ESPNdirocco/status/541687984895320064\"><a
-        href='http://www.twitter.com/' target='_blank' class='tweet'><img class=\"nowSocialIcon\"
-        src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"
-        /></a> <span class=\"timestamp\" data-time=\"2014-12-07T20:18:41Z\" data-behavior=\"date_ago\"></span><!--
-        http://twitter.com/intent/favorite?tweet_id=541687984895320064 http://twitter.com/intent/retweet?tweet_id=541687984895320064
-        http://twitter.com/intent/tweet?in_reply_to=541687984895320064&hashtags=espnnow
-        --><div class=\"twitter-controls\"><a href=\"http://twitter.com/intent/tweet?in_reply_to=541687984895320064&hashtags=espnnow\"
-        class='reply' target=\"_blank\">Reply</a> <a href=\"http://twitter.com/intent/retweet?tweet_id=541687984895320064\"
-        class='retweet' target=\"_blank\">Retweet</a> <a href=\"http://twitter.com/intent/favorite?tweet_id=541687984895320064\"
-        class='favorite' target=\"_blank\">Favorite</a></div></div></article><article
-        data-id=\"11993941\" data-time=\"1417983135000\" class=\"now-feed-item\" data-behavior=\"
-        module_bloom fix_broken_images\" data-index=\"5\"><div class=\"now-content\"><div
-        class=\"img-container\"><img class=\"focus-image\" src=\"http://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/stl.png&w=110&h=110\"></div><p>Tavon
-        Austin broke big punt returns of 37 and 28 yards in the second quarter, and
-        his first return of the third quarter goes for 78 yards and a touchdown, as
-        the Rams are making the RG III/Colt McCoy debate irrelevant, beating the Redskins
-        24-0.</p></div><div class='now-feed_item-meta' data-src=\"http://espn.go.com/espn/now?nowId=1-11993941\"
-        data-original-src=\"http://espn.go.com/espn/now?nowId=1-11993941&ex_cid=espnapi_public\"><span
-        class=\"category\">NFL</span> - <span class=\"timestamp\" data-time=\"2014-12-07T20:12:15Z\"
-        data-behavior=\"date_ago\"></span><div class=\"now-share\" data-behavior=\"now_share_toggle\"><span
-        class=\"share-count\">Share</span><div class=\"share-actions\"><div class=\"btn-close\"></div><ul
-        data-id=\"11993941\" data-name=\"ESPN Now\" data-type=\"article\"><li><a href=\"https://www.facebook.com/sharer.php?u=http%3A%2F%2Fes.pn%2F12TflbV\"
-        class=\"btn-social facebook  Module\"></a></li><li><a href=\"http://twitter.com/intent/tweet?url=http%3A%2F%2Fes.pn%2F12TflbV&text=Tavon+Austin+broke+big+punt+returns+of+37+and+28+yards+in+the+second+quarter,+and+his+first+return+of+the+third...\"
-        class=\"btn-social twitter  Module\"></a></li><li><a href=\"http://sendtofriend.espn.go.com/sendtofriend/SendToFriendBeta?type=Module&id=11993941\"
-        class=\"btn-social email  Module\"></a></li></ul></div></div></div></article><article
-        data-id=\"541684732690714625\" data-time=\"1417982859000\" class=\"now-feed-item
-        now-feed-tweet\" data-behavior=\" module_bloom fix_broken_images\" data-index=\"6\"><div
-        class=\"now-content\"><a name=\"&lpos=now:tweet:541684732690714625:@JFowlerESPN:6\"
-        href=\"http://twitter.com/JFowlerESPN\" rel=\"nofollow\" target=\"_blank\"><h1>Jeremy
-        Fowler <span>@JFowlerESPN</span></h1></a><a name=\"&lpos=now:tweet:541684732690714625:@JFowlerESPN:6\"
-        href=\"http://twitter.com/JFowlerESPN\" rel=\"nofollow\" target=\"_blank\"><div
-        class=\"img-container\"><img class=\"focus-image\" src=\"http://pbs.twimg.com/profile_images/521862310936068097/7b7m997v_normal.jpeg\"></div></a><p>Justin
-        Gilbert hasn't played like a No. 8 overall pick this year, but that athleticism
-        is a reason why Browns went and got him.</p></div><div class='now-feed_item-meta'
-        data-src=\"https://twitter.com/JFowlerESPN/status/541684732690714625\" data-original-src=\"https://twitter.com/JFowlerESPN/status/541684732690714625\"><a
-        href='http://www.twitter.com/' target='_blank' class='tweet'><img class=\"nowSocialIcon\"
-        src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"
-        /></a> <span class=\"timestamp\" data-time=\"2014-12-07T20:07:39Z\" data-behavior=\"date_ago\"></span><!--
-        http://twitter.com/intent/favorite?tweet_id=541684732690714625 http://twitter.com/intent/retweet?tweet_id=541684732690714625
-        http://twitter.com/intent/tweet?in_reply_to=541684732690714625&hashtags=espnnow
-        --><div class=\"twitter-controls\"><a href=\"http://twitter.com/intent/tweet?in_reply_to=541684732690714625&hashtags=espnnow\"
-        class='reply' target=\"_blank\">Reply</a> <a href=\"http://twitter.com/intent/retweet?tweet_id=541684732690714625\"
-        class='retweet' target=\"_blank\">Retweet</a> <a href=\"http://twitter.com/intent/favorite?tweet_id=541684732690714625\"
-        class='favorite' target=\"_blank\">Favorite</a></div></div></article><article
-        data-id=\"11993891\" data-time=\"1417982839000\" class=\"now-feed-item\" data-behavior=\"
-        module_bloom fix_broken_images\" data-index=\"7\"><div class=\"now-content\"><p>Andrew
-        Luck has passed Peyton Manning for the most passing yards by a quarterback
-        in his first three seasons, but his latest pass went for a touchdown -- to
-        Browns CB Justin Gilbert, Gilbert's first career interception. Indy trails
-        21-7.</p></div><figure class=\"feed-item-figure dim1x1\"><a class=\"img-wrap\"
-        href=\"http://espn.go.com/espn/now?nowId=1-11993891&ex_cid=espnapi_public\"
-        ><picture><!--[if IE 9]><video style=\"display: none;\"><![endif]--><source
-        srcset=\"http://a1.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460106248.jpg&w=600\"
-        media=\"(min-width: 1024px)\"><source srcset=\"http://a1.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460106248.jpg&w=192,
-        http://a1.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460106248.jpg&w=384
-        2x\" media=\"(min-width: 721px)\"><source srcset=\"http://a1.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460106248.jpg&w=576\"
-        media=\"(max-width: 720px)\"><source srcset=\"http://a.espncdn.com/media/gettyphoto/2014/12/07/460106248.jpg\"
-        ><!--[if IE 9]></video><![endif]--><img srcset=\"http://a.espncdn.com/media/gettyphoto/2014/12/07/460106248.jpg\"
-        \ data-image-container=\".feed-item-figure\" data-behavior=\"fix_broken_images\"
-        /></picture></a><span class=\"credit\">Getty</span></figure><div class='now-feed_item-meta'
-        data-src=\"http://espn.go.com/espn/now?nowId=1-11993891\" data-original-src=\"http://espn.go.com/espn/now?nowId=1-11993891&ex_cid=espnapi_public\"><span
-        class=\"category\">NFL</span> - <span class=\"timestamp\" data-time=\"2014-12-07T20:07:19Z\"
-        data-behavior=\"date_ago\"></span><div class=\"now-share\" data-behavior=\"now_share_toggle\"><span
-        class=\"share-count\">Share</span><div class=\"share-actions\"><div class=\"btn-close\"></div><ul
-        data-id=\"11993891\" data-name=\"Indianapolis Colts v Cleveland Browns\" data-type=\"article\"><li><a
-        href=\"https://www.facebook.com/sharer.php?u=http%3A%2F%2Fes.pn%2F12TecB9\"
-        class=\"btn-social facebook  Module\"></a></li><li><a href=\"http://twitter.com/intent/tweet?url=http%3A%2F%2Fes.pn%2F12TecB9&text=Andrew+Luck+has+passed+Peyton+Manning+for+the+most+passing+yards+by+a+quarterback+in+his+first+three+seasons,+but...\"
-        class=\"btn-social twitter  Module\"></a></li><li><a href=\"http://sendtofriend.espn.go.com/sendtofriend/SendToFriendBeta?type=Module&id=11993891\"
-        class=\"btn-social email  Module\"></a></li></ul></div></div></div></article><article
-        data-id=\"11993903\" data-time=\"1417982668000\" class=\"now-feed-item\" data-behavior=\"
-        module_bloom fix_broken_images\" data-index=\"8\"><div class=\"now-content\"><p>Jared
-        Cook catches his second TD pass of the game -- this one without a Redskins
-        defender within 10 yards of him. Cook had just one receiving TD all season
-        coming into today.</p></div><figure class=\"feed-item-figure dim1x1\"><a class=\"img-wrap\"
-        href=\"http://espn.go.com/espn/now?nowId=1-11993903&ex_cid=espnapi_public\"
-        ><picture><!--[if IE 9]><video style=\"display: none;\"><![endif]--><source
-        srcset=\"http://a2.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460105222.jpg&w=600\"
-        media=\"(min-width: 1024px)\"><source srcset=\"http://a2.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460105222.jpg&w=192,
-        http://a2.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460105222.jpg&w=384
-        2x\" media=\"(min-width: 721px)\"><source srcset=\"http://a2.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460105222.jpg&w=576\"
-        media=\"(max-width: 720px)\"><source srcset=\"http://a.espncdn.com/media/gettyphoto/2014/12/07/460105222.jpg\"
-        ><!--[if IE 9]></video><![endif]--><img srcset=\"http://a.espncdn.com/media/gettyphoto/2014/12/07/460105222.jpg\"
-        \ data-image-container=\".feed-item-figure\" data-behavior=\"fix_broken_images\"
-        /></picture></a><span class=\"credit\">Getty</span></figure><div class='now-feed_item-meta'
-        data-src=\"http://espn.go.com/espn/now?nowId=1-11993903\" data-original-src=\"http://espn.go.com/espn/now?nowId=1-11993903&ex_cid=espnapi_public\"><span
-        class=\"category\">NFL</span> - <span class=\"timestamp\" data-time=\"2014-12-07T20:04:28Z\"
-        data-behavior=\"date_ago\"></span><div class=\"now-share\" data-behavior=\"now_share_toggle\"><span
-        class=\"share-count\">Share</span><div class=\"share-actions\"><div class=\"btn-close\"></div><ul
-        data-id=\"11993903\" data-name=\"St Louis Rams v Washington Redskins\" data-type=\"article\"><li><a
-        href=\"https://www.facebook.com/sharer.php?u=http%3A%2F%2Fes.pn%2F1zCnbRf\"
-        class=\"btn-social facebook  Module\"></a></li><li><a href=\"http://twitter.com/intent/tweet?url=http%3A%2F%2Fes.pn%2F1zCnbRf&text=Jared+Cook+catches+his+second+TD+pass+of+the+game+%2D%2D+this+one+without+a+Redskins+defender+within+10+yards+of+him....\"
-        class=\"btn-social twitter  Module\"></a></li><li><a href=\"http://sendtofriend.espn.go.com/sendtofriend/SendToFriendBeta?type=Module&id=11993903\"
-        class=\"btn-social email  Module\"></a></li></ul></div></div></div></article><article
-        data-id=\"11993894\" data-time=\"1417982649000\" class=\"now-feed-item\" data-behavior=\"
-        module_bloom fix_broken_images\" data-index=\"9\"><div class=\"now-content\"><h1>Detroit's
-        Dynamic Duo</h1><p>Matthew Stafford connects with Calvin Johnson for 53 yards
-        to put the QB over 200 yards and the WR over 100  on the day. Lions lead the
-        Bucs, 20-10.</p></div><figure class=\"feed-item-figure dim1x1\"><a class=\"img-wrap\"
-        href=\"http://espn.go.com/espn/now?nowId=1-11993894&ex_cid=espnapi_public\"
-        ><picture><!--[if IE 9]><video style=\"display: none;\"><![endif]--><source
-        srcset=\"http://a2.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460105542.jpg&w=600\"
-        media=\"(min-width: 1024px)\"><source srcset=\"http://a2.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460105542.jpg&w=192,
-        http://a2.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460105542.jpg&w=384
-        2x\" media=\"(min-width: 721px)\"><source srcset=\"http://a2.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460105542.jpg&w=576\"
-        media=\"(max-width: 720px)\"><source srcset=\"http://a.espncdn.com/media/gettyphoto/2014/12/07/460105542.jpg\"
-        ><!--[if IE 9]></video><![endif]--><img srcset=\"http://a.espncdn.com/media/gettyphoto/2014/12/07/460105542.jpg\"
-        \ data-image-container=\".feed-item-figure\" data-behavior=\"fix_broken_images\"
-        /></picture></a><span class=\"credit\">Getty</span></figure><div class='now-feed_item-meta'
-        data-src=\"http://espn.go.com/espn/now?nowId=1-11993894\" data-original-src=\"http://espn.go.com/espn/now?nowId=1-11993894&ex_cid=espnapi_public\"><span
-        class=\"category\">NFL</span> - <span class=\"timestamp\" data-time=\"2014-12-07T20:04:09Z\"
-        data-behavior=\"date_ago\"></span><div class=\"now-share\" data-behavior=\"now_share_toggle\"><span
-        class=\"share-count\">Share</span><div class=\"share-actions\"><div class=\"btn-close\"></div><ul
-        data-id=\"11993894\" data-name=\"Tampa Bay Buccaneers v Detroit Lions\" data-type=\"article\"><li><a
-        href=\"https://www.facebook.com/sharer.php?u=http%3A%2F%2Fes.pn%2F12Tdi7B\"
-        class=\"btn-social facebook  Module\"></a></li><li><a href=\"http://twitter.com/intent/tweet?url=http%3A%2F%2Fes.pn%2F12Tdi7B&text=Matthew+Stafford+connects+with+Calvin+Johnson+for+53+yards+to+put+the+QB+over+200+yards+and+the+WR+over+100++on...\"
-        class=\"btn-social twitter  Module\"></a></li><li><a href=\"http://sendtofriend.espn.go.com/sendtofriend/SendToFriendBeta?type=Module&id=11993894\"
-        class=\"btn-social email  Module\"></a></li></ul></div></div></div></article><article
-        data-id=\"541683588937568256\" data-time=\"1417982511000\" class=\"now-feed-item
-        now-feed-tweet\" data-behavior=\" module_bloom fix_broken_images\" data-index=\"10\"><div
-        class=\"now-content\"><a name=\"&lpos=now:tweet:541683588937568256:@MikeTriplett:10\"
-        href=\"http://twitter.com/MikeTriplett\" rel=\"nofollow\" target=\"_blank\"><h1>Mike
-        Triplett <span>@MikeTriplett</span></h1></a><a name=\"&lpos=now:tweet:541683588937568256:@MikeTriplett:10\"
-        href=\"http://twitter.com/MikeTriplett\" rel=\"nofollow\" target=\"_blank\"><div
-        class=\"img-container\"><img class=\"focus-image\" src=\"http://pbs.twimg.com/profile_images/378800000760163298/832333ed9ceb756fefab13dec4c5aada_normal.jpeg\"></div></a><p>YEs,
-        It can get WORSE. <a target=\"_blank\" href=\"https://twitter.com/search?q=%23Saints&src=hash\">#Saints</a>
-        just gave up 69-yard TD run to <a target=\"_blank\" href=\"https://twitter.com/search?q=%23Panthers&src=hash\">#Panthers</a>
-        Jonathan Stewart.</p></div><div class='now-feed_item-meta' data-src=\"https://twitter.com/MikeTriplett/status/541683588937568256\"
-        data-original-src=\"https://twitter.com/MikeTriplett/status/541683588937568256\"><a
-        href='http://www.twitter.com/' target='_blank' class='tweet'><img class=\"nowSocialIcon\"
-        src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"
-        /></a> <span class=\"timestamp\" data-time=\"2014-12-07T20:01:51Z\" data-behavior=\"date_ago\"></span><!--
-        http://twitter.com/intent/favorite?tweet_id=541683588937568256 http://twitter.com/intent/retweet?tweet_id=541683588937568256
-        http://twitter.com/intent/tweet?in_reply_to=541683588937568256&hashtags=espnnow
-        --><div class=\"twitter-controls\"><a href=\"http://twitter.com/intent/tweet?in_reply_to=541683588937568256&hashtags=espnnow\"
-        class='reply' target=\"_blank\">Reply</a> <a href=\"http://twitter.com/intent/retweet?tweet_id=541683588937568256\"
-        class='retweet' target=\"_blank\">Retweet</a> <a href=\"http://twitter.com/intent/favorite?tweet_id=541683588937568256\"
-        class='favorite' target=\"_blank\">Favorite</a></div></div></article><article
-        data-id=\"11993852\" data-time=\"1417982357000\" class=\"now-feed-item\" data-behavior=\"
-        module_bloom fix_broken_images\" data-index=\"11\"><div class=\"now-content\"><p>Bengals'
-        A.J. Green has 122 yards receiving today vs. the Steelers and it's only the
-        3rd quarter. This is his 20th career 100-yard receiving game, tied with Isaac
-        Curtis for the 2nd-most in Bengals' history. Only Chad Johnson (31) has more.</p></div><figure
-        class=\"feed-item-figure dim1x1\"><a class=\"img-wrap\" href=\"http://espn.go.com/espn/now?nowId=1-11993852&ex_cid=espnapi_public\"
-        ><picture><!--[if IE 9]><video style=\"display: none;\"><![endif]--><source
-        srcset=\"http://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2014%2F1207%2F35a362bf08a39230670f6a7067003c96.jpg&w=600\"
-        media=\"(min-width: 1024px)\"><source srcset=\"http://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2014%2F1207%2F35a362bf08a39230670f6a7067003c96.jpg&w=192,
-        http://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2014%2F1207%2F35a362bf08a39230670f6a7067003c96.jpg&w=384
-        2x\" media=\"(min-width: 721px)\"><source srcset=\"http://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2014%2F1207%2F35a362bf08a39230670f6a7067003c96.jpg&w=576\"
-        media=\"(max-width: 720px)\"><source srcset=\"http://a.espncdn.com/photo/2014/1207/35a362bf08a39230670f6a7067003c96.jpg\"
-        ><!--[if IE 9]></video><![endif]--><img srcset=\"http://a.espncdn.com/photo/2014/1207/35a362bf08a39230670f6a7067003c96.jpg\"
-        \ data-image-container=\".feed-item-figure\" data-behavior=\"fix_broken_images\"
-        /></picture></a><span class=\"credit\">AP</span></figure><div class='now-feed_item-meta'
-        data-src=\"http://espn.go.com/espn/now?nowId=1-11993852\" data-original-src=\"http://espn.go.com/espn/now?nowId=1-11993852&ex_cid=espnapi_public\"><span
-        class=\"category\">NFL</span> - <span class=\"timestamp\" data-time=\"2014-12-07T19:59:17Z\"
-        data-behavior=\"date_ago\"></span><div class=\"now-share\" data-behavior=\"now_share_toggle\"><span
-        class=\"share-count\">Share</span><div class=\"share-actions\"><div class=\"btn-close\"></div><ul
-        data-id=\"11993852\" data-name=\"Steelers Bengals Football\" data-type=\"article\"><li><a
-        href=\"https://www.facebook.com/sharer.php?u=http%3A%2F%2Fes.pn%2F12TcbEW\"
-        class=\"btn-social facebook  Module\"></a></li><li><a href=\"http://twitter.com/intent/tweet?url=http%3A%2F%2Fes.pn%2F12TcbEW&text=Bengals%27+A.J.+Green+has+122+yards+receiving+today+vs.+the+Steelers+and+it%27s+only+the+3rd+quarter.+This+is+his...\"
-        class=\"btn-social twitter  Module\"></a></li><li><a href=\"http://sendtofriend.espn.go.com/sendtofriend/SendToFriendBeta?type=Module&id=11993852\"
-        class=\"btn-social email  Module\"></a></li></ul></div></div></div></article><article
-        data-id=\"541678772597325824\" data-time=\"1417982165000\" class=\"now-feed-item
-        now-feed-tweet\" data-behavior=\" module_bloom fix_broken_images\" data-index=\"12\"><div
-        class=\"now-content\"><a name=\"&lpos=now:tweet:541678772597325824:@Jeff_Legwold:12\"
-        href=\"http://twitter.com/Jeff_Legwold\" rel=\"nofollow\" target=\"_blank\"><h1>Jeff
-        Legwold <span>@Jeff_Legwold</span></h1></a><a name=\"&lpos=now:tweet:541678772597325824:@Jeff_Legwold:12\"
-        href=\"http://twitter.com/Jeff_Legwold\" rel=\"nofollow\" target=\"_blank\"><div
-        class=\"img-container\"><img class=\"focus-image\" src=\"http://pbs.twimg.com/profile_images/2454587655/r2dmkcqea00zcimqh6tf_normal.jpeg\"></div></a><p><a
-        target=\"_blank\" href=\"https://twitter.com/search?q=%23Broncos&src=hash\">#Broncos</a>
-        inactives (no surprises): Latimer, Hillman, Ball, Webster, Q. Carter, Clark,
-        Schofield.</p></div><div class='now-feed_item-meta' data-src=\"https://twitter.com/Jeff_Legwold/status/541678772597325824\"
-        data-original-src=\"https://twitter.com/Jeff_Legwold/status/541678772597325824\"><a
-        href='http://www.twitter.com/' target='_blank' class='tweet'><img class=\"nowSocialIcon\"
-        src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"
-        /></a> <span class=\"timestamp\" data-time=\"2014-12-07T19:56:05Z\" data-behavior=\"date_ago\"></span><!--
-        http://twitter.com/intent/favorite?tweet_id=541678772597325824 http://twitter.com/intent/retweet?tweet_id=541678772597325824
-        http://twitter.com/intent/tweet?in_reply_to=541678772597325824&hashtags=espnnow
-        --><div class=\"twitter-controls\"><a href=\"http://twitter.com/intent/tweet?in_reply_to=541678772597325824&hashtags=espnnow\"
-        class='reply' target=\"_blank\">Reply</a> <a href=\"http://twitter.com/intent/retweet?tweet_id=541678772597325824\"
-        class='retweet' target=\"_blank\">Retweet</a> <a href=\"http://twitter.com/intent/favorite?tweet_id=541678772597325824\"
-        class='favorite' target=\"_blank\">Favorite</a></div></div></article><article
-        data-id=\"541681526506000385\" data-time=\"1417982057000\" class=\"now-feed-item
-        now-feed-tweet\" data-behavior=\" module_bloom fix_broken_images\" data-index=\"13\"><div
-        class=\"now-content\"><a name=\"&lpos=now:tweet:541681526506000385:@SportsCenter:13\"
-        href=\"http://twitter.com/SportsCenter\" rel=\"nofollow\" target=\"_blank\"><h1>SportsCenter
-        <span>@SportsCenter</span></h1></a><a name=\"&lpos=now:tweet:541681526506000385:@SportsCenter:13\"
-        href=\"http://twitter.com/SportsCenter\" rel=\"nofollow\" target=\"_blank\"><div
-        class=\"img-container\"><img class=\"focus-image\" src=\"http://pbs.twimg.com/profile_images/489621467790082049/Np08P5_r_normal.jpeg\"></div></a><p>Calvin
-        Johnson has 112 receiving yards early in 3rd quarter. His 43rd 100-yard game,
-        most in NFL since 2007. <a target=\"_blank\" href=\"http://t.co/YuYi0HLaNg\">pic.twitter.com/YuYi0HLaNg</a></p></div><figure
-        class=\"feed-item-figure dim1x1\"><a class=\"img-wrap external\" target=\"_blank\"
-        href=\"https://twitter.com/SportsCenter/status/541681526506000385\" ><picture><!--[if
-        IE 9]><video style=\"display: none;\"><![endif]--><source srcset=\"http://pbs.twimg.com/media/B4RwbaBCYAAgA_t.jpg\"
-        ><!--[if IE 9]></video><![endif]--><img srcset=\"http://pbs.twimg.com/media/B4RwbaBCYAAgA_t.jpg\"
-        \ data-image-container=\".feed-item-figure\" data-behavior=\"fix_broken_images\"
-        /></picture></a></figure><div class='now-feed_item-meta' data-src=\"https://twitter.com/SportsCenter/status/541681526506000385\"
-        data-original-src=\"https://twitter.com/SportsCenter/status/541681526506000385\"><a
-        href='http://www.twitter.com/' target='_blank' class='tweet'><img class=\"nowSocialIcon\"
-        src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"
-        /></a> <span class=\"timestamp\" data-time=\"2014-12-07T19:54:17Z\" data-behavior=\"date_ago\"></span><!--
-        http://twitter.com/intent/favorite?tweet_id=541681526506000385 http://twitter.com/intent/retweet?tweet_id=541681526506000385
-        http://twitter.com/intent/tweet?in_reply_to=541681526506000385&hashtags=espnnow
-        --><div class=\"twitter-controls\"><a href=\"http://twitter.com/intent/tweet?in_reply_to=541681526506000385&hashtags=espnnow\"
-        class='reply' target=\"_blank\">Reply</a> <a href=\"http://twitter.com/intent/retweet?tweet_id=541681526506000385\"
-        class='retweet' target=\"_blank\">Retweet</a> <a href=\"http://twitter.com/intent/favorite?tweet_id=541681526506000385\"
-        class='favorite' target=\"_blank\">Favorite</a></div></div></article><article
-        data-id=\"11993823\" data-time=\"1417981971000\" class=\"now-feed-item\" data-behavior=\"
-        module_bloom fix_broken_images\" data-index=\"14\"><div class=\"now-content\"><div
-        class=\"img-container\"><img class=\"focus-image\" src=\"http://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/hou.png&w=110&h=110\"></div><p>J.J.
-        Watt records his second sack of the game and 50th of his career. He's three
-        shy of Mario Williams' franchise record for career sacks.</p></div><div class='now-feed_item-meta'
-        data-src=\"http://espn.go.com/espn/now?nowId=1-11993823\" data-original-src=\"http://espn.go.com/espn/now?nowId=1-11993823&ex_cid=espnapi_public\"><span
-        class=\"category\">NFL</span> - <span class=\"timestamp\" data-time=\"2014-12-07T19:52:51Z\"
-        data-behavior=\"date_ago\"></span><div class=\"now-share\" data-behavior=\"now_share_toggle\"><span
-        class=\"share-count\">Share</span><div class=\"share-actions\"><div class=\"btn-close\"></div><ul
-        data-id=\"11993823\" data-name=\"ESPN Now\" data-type=\"article\"><li><a href=\"https://www.facebook.com/sharer.php?u=http%3A%2F%2Fes.pn%2F1zClKlQ\"
-        class=\"btn-social facebook  Module\"></a></li><li><a href=\"http://twitter.com/intent/tweet?url=http%3A%2F%2Fes.pn%2F1zClKlQ&text=J.J.+Watt+records+his+second+sack+of+the+game+and+50th+of+his+career.+He%27s+three+shy+of+Mario+Williams%27+franchise...\"
-        class=\"btn-social twitter  Module\"></a></li><li><a href=\"http://sendtofriend.espn.go.com/sendtofriend/SendToFriendBeta?type=Module&id=11993823\"
-        class=\"btn-social email  Module\"></a></li></ul></div></div></div></article><article
-        data-id=\"541679064025931776\" data-time=\"1417981365000\" class=\"now-feed-item
-        now-feed-tweet\" data-behavior=\" module_bloom fix_broken_images\" data-index=\"15\"><div
-        class=\"now-content\"><a name=\"&lpos=now:tweet:541679064025931776:@joshweinfuss:15\"
-        href=\"http://twitter.com/joshweinfuss\" rel=\"nofollow\" target=\"_blank\"><h1>Josh
-        Weinfuss <span>@joshweinfuss</span></h1></a><a name=\"&lpos=now:tweet:541679064025931776:@joshweinfuss:15\"
-        href=\"http://twitter.com/joshweinfuss\" rel=\"nofollow\" target=\"_blank\"><div
-        class=\"img-container\"><img class=\"focus-image\" src=\"http://pbs.twimg.com/profile_images/519113455182548992/c3hR3Kui_normal.jpeg\"></div></a><p>Bruce
-        Arians just walked out with the Eric Berry shirt on, too. A lot of support
-        for Chiefs' safety here.</p></div><div class='now-feed_item-meta' data-src=\"https://twitter.com/joshweinfuss/status/541679064025931776\"
-        data-original-src=\"https://twitter.com/joshweinfuss/status/541679064025931776\"><a
-        href='http://www.twitter.com/' target='_blank' class='tweet'><img class=\"nowSocialIcon\"
-        src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"
-        /></a> <span class=\"timestamp\" data-time=\"2014-12-07T19:42:45Z\" data-behavior=\"date_ago\"></span><!--
-        http://twitter.com/intent/favorite?tweet_id=541679064025931776 http://twitter.com/intent/retweet?tweet_id=541679064025931776
-        http://twitter.com/intent/tweet?in_reply_to=541679064025931776&hashtags=espnnow
-        --><div class=\"twitter-controls\"><a href=\"http://twitter.com/intent/tweet?in_reply_to=541679064025931776&hashtags=espnnow\"
-        class='reply' target=\"_blank\">Reply</a> <a href=\"http://twitter.com/intent/retweet?tweet_id=541679064025931776\"
-        class='retweet' target=\"_blank\">Retweet</a> <a href=\"http://twitter.com/intent/favorite?tweet_id=541679064025931776\"
-        class='favorite' target=\"_blank\">Favorite</a></div></div></article><article
-        data-id=\"541677356490833920\" data-time=\"1417980966000\" class=\"now-feed-item
-        now-feed-tweet\" data-behavior=\" module_bloom fix_broken_images\" data-index=\"16\"><div
-        class=\"now-content\"><a name=\"&lpos=now:tweet:541677356490833920:@buffalobills:16\"
-        href=\"http://twitter.com/buffalobills\" rel=\"nofollow\" target=\"_blank\"><h1>Buffalo
-        Bills <span>@buffalobills</span></h1></a><a name=\"&lpos=now:tweet:541677356490833920:@buffalobills:16\"
-        href=\"http://twitter.com/buffalobills\" rel=\"nofollow\" target=\"_blank\"><div
-        class=\"img-container\"><img class=\"focus-image\" src=\"http://pbs.twimg.com/profile_images/531861612689252352/Bt34wntJ_normal.jpeg\"></div></a><p>INACTIVE:
-        19 WR Williams, 30 S Rambo, 38 FB Summers, 58 LB Johnson, 71 OL Kouandjio,
-        89 TE Gragg, 92 DE Wynn. <a target=\"_blank\" href=\"https://twitter.com/search?q=%23BUFvsDEN&src=hash\">#BUFvsDEN</a></p></div><div
-        class='now-feed_item-meta' data-src=\"https://twitter.com/buffalobills/status/541677356490833920\"
-        data-original-src=\"https://twitter.com/buffalobills/status/541677356490833920\"><a
-        href='http://www.twitter.com/' target='_blank' class='tweet'><img class=\"nowSocialIcon\"
-        src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"
-        /></a> <span class=\"timestamp\" data-time=\"2014-12-07T19:36:06Z\" data-behavior=\"date_ago\"></span><!--
-        http://twitter.com/intent/favorite?tweet_id=541677356490833920 http://twitter.com/intent/retweet?tweet_id=541677356490833920
-        http://twitter.com/intent/tweet?in_reply_to=541677356490833920&hashtags=espnnow
-        --><div class=\"twitter-controls\"><a href=\"http://twitter.com/intent/tweet?in_reply_to=541677356490833920&hashtags=espnnow\"
-        class='reply' target=\"_blank\">Reply</a> <a href=\"http://twitter.com/intent/retweet?tweet_id=541677356490833920\"
-        class='retweet' target=\"_blank\">Retweet</a> <a href=\"http://twitter.com/intent/favorite?tweet_id=541677356490833920\"
-        class='favorite' target=\"_blank\">Favorite</a></div></div></article><article
-        data-id=\"541675972073119745\" data-time=\"1417980873000\" class=\"now-feed-item
-        now-feed-tweet\" data-behavior=\" module_bloom fix_broken_images\" data-index=\"17\"><div
-        class=\"now-content\"><a name=\"&lpos=now:tweet:541675972073119745:@PaulKuharskyNFL:17\"
-        href=\"http://twitter.com/PaulKuharskyNFL\" rel=\"nofollow\" target=\"_blank\"><h1>Paul
-        Kuharsky <span>@PaulKuharskyNFL</span></h1></a><a name=\"&lpos=now:tweet:541675972073119745:@PaulKuharskyNFL:17\"
-        href=\"http://twitter.com/PaulKuharskyNFL\" rel=\"nofollow\" target=\"_blank\"><div
-        class=\"img-container\"><img class=\"focus-image\" src=\"http://pbs.twimg.com/profile_images/477221579177197568/MII3FF1n_normal.jpeg\"></div></a><p>Illegal
-        snap on a play where all the <a target=\"_blank\" href=\"https://twitter.com/search?q=%23Titans&src=hash\">#Titans</a>
-        wanted to do was to take a knee. Amazing.</p></div><div class='now-feed_item-meta'
-        data-src=\"https://twitter.com/PaulKuharskyNFL/status/541675972073119745\"
-        data-original-src=\"https://twitter.com/PaulKuharskyNFL/status/541675972073119745\"><a
-        href='http://www.twitter.com/' target='_blank' class='tweet'><img class=\"nowSocialIcon\"
-        src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"
-        /></a> <span class=\"timestamp\" data-time=\"2014-12-07T19:34:33Z\" data-behavior=\"date_ago\"></span><!--
-        http://twitter.com/intent/favorite?tweet_id=541675972073119745 http://twitter.com/intent/retweet?tweet_id=541675972073119745
-        http://twitter.com/intent/tweet?in_reply_to=541675972073119745&hashtags=espnnow
-        --><div class=\"twitter-controls\"><a href=\"http://twitter.com/intent/tweet?in_reply_to=541675972073119745&hashtags=espnnow\"
-        class='reply' target=\"_blank\">Reply</a> <a href=\"http://twitter.com/intent/retweet?tweet_id=541675972073119745\"
-        class='retweet' target=\"_blank\">Retweet</a> <a href=\"http://twitter.com/intent/favorite?tweet_id=541675972073119745\"
-        class='favorite' target=\"_blank\">Favorite</a></div></div></article><article
-        data-id=\"11993618\" data-time=\"1417980834000\" class=\"now-feed-item\" data-behavior=\"
-        module_bloom fix_broken_images\" data-index=\"18\"><div class=\"now-content\"><p>A
-        week after throwing six touchdown passes, Ryan Fitzpatrick has completed just
-        five passes in the first half. He did run for a touchdown, as Houston trails
-        Jacksonville 13-10 at halftime.</p></div><figure class=\"feed-item-figure
-        dim1x1\"><a class=\"img-wrap\" href=\"http://espn.go.com/espn/now?nowId=1-11993618&ex_cid=espnapi_public\"
-        ><picture><!--[if IE 9]><video style=\"display: none;\"><![endif]--><source
-        srcset=\"http://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2014%2F1207%2Febf176d408c69330670f6a706700594c.jpg&w=600\"
-        media=\"(min-width: 1024px)\"><source srcset=\"http://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2014%2F1207%2Febf176d408c69330670f6a706700594c.jpg&w=192,
-        http://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2014%2F1207%2Febf176d408c69330670f6a706700594c.jpg&w=384
-        2x\" media=\"(min-width: 721px)\"><source srcset=\"http://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2014%2F1207%2Febf176d408c69330670f6a706700594c.jpg&w=576\"
-        media=\"(max-width: 720px)\"><source srcset=\"http://a.espncdn.com/photo/2014/1207/ebf176d408c69330670f6a706700594c.jpg\"
-        ><!--[if IE 9]></video><![endif]--><img srcset=\"http://a.espncdn.com/photo/2014/1207/ebf176d408c69330670f6a706700594c.jpg\"
-        \ data-image-container=\".feed-item-figure\" data-behavior=\"fix_broken_images\"
-        /></picture></a><span class=\"credit\">AP</span></figure><div class='now-feed_item-meta'
-        data-src=\"http://espn.go.com/espn/now?nowId=1-11993618\" data-original-src=\"http://espn.go.com/espn/now?nowId=1-11993618&ex_cid=espnapi_public\"><span
-        class=\"category\">NFL</span> - <span class=\"timestamp\" data-time=\"2014-12-07T19:33:54Z\"
-        data-behavior=\"date_ago\"></span><div class=\"now-share\" data-behavior=\"now_share_toggle\"><span
-        class=\"share-count\">Share</span><div class=\"share-actions\"><div class=\"btn-close\"></div><ul
-        data-id=\"11993618\" data-name=\"Texans Jaguars Football\" data-type=\"article\"><li><a
-        href=\"https://www.facebook.com/sharer.php?u=http%3A%2F%2Fes.pn%2F1zCiy9N\"
-        class=\"btn-social facebook  Module\"></a></li><li><a href=\"http://twitter.com/intent/tweet?url=http%3A%2F%2Fes.pn%2F1zCiy9N&text=A+week+after+throwing+six+touchdown+passes,+Ryan+Fitzpatrick+has+completed+just+five+passes+in+the+first+half.+He...\"
-        class=\"btn-social twitter  Module\"></a></li><li><a href=\"http://sendtofriend.espn.go.com/sendtofriend/SendToFriendBeta?type=Module&id=11993618\"
-        class=\"btn-social email  Module\"></a></li></ul></div></div></div></article><article
-        data-id=\"11993646\" data-time=\"1417980813000\" class=\"now-feed-item\" data-behavior=\"
-        module_bloom fix_broken_images\" data-index=\"19\"><div class=\"now-content\"><p>Isaiah
-        Crowell puts the Browns up 14-7 with his 8th rushing TD of the season. That's
-        the third-most by a rookie in Browns history, behind Trent Richardson (11)
-        and Jim Brown (9).</p></div><figure class=\"feed-item-figure dim1x1\"><a class=\"img-wrap\"
-        href=\"http://espn.go.com/espn/now?nowId=1-11993646&ex_cid=espnapi_public\"
-        ><picture><!--[if IE 9]><video style=\"display: none;\"><![endif]--><source
-        srcset=\"http://a2.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460104070.jpg&w=600\"
-        media=\"(min-width: 1024px)\"><source srcset=\"http://a2.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460104070.jpg&w=192,
-        http://a2.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460104070.jpg&w=384
-        2x\" media=\"(min-width: 721px)\"><source srcset=\"http://a2.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460104070.jpg&w=576\"
-        media=\"(max-width: 720px)\"><source srcset=\"http://a.espncdn.com/media/gettyphoto/2014/12/07/460104070.jpg\"
-        ><!--[if IE 9]></video><![endif]--><img srcset=\"http://a.espncdn.com/media/gettyphoto/2014/12/07/460104070.jpg\"
-        \ data-image-container=\".feed-item-figure\" data-behavior=\"fix_broken_images\"
-        /></picture></a><span class=\"credit\">Getty</span></figure><div class='now-feed_item-meta'
-        data-src=\"http://espn.go.com/espn/now?nowId=1-11993646\" data-original-src=\"http://espn.go.com/espn/now?nowId=1-11993646&ex_cid=espnapi_public\"><span
-        class=\"category\">NFL</span> - <span class=\"timestamp\" data-time=\"2014-12-07T19:33:33Z\"
-        data-behavior=\"date_ago\"></span><div class=\"now-share\" data-behavior=\"now_share_toggle\"><span
-        class=\"share-count\">Share</span><div class=\"share-actions\"><div class=\"btn-close\"></div><ul
-        data-id=\"11993646\" data-name=\"Indianapolis Colts v Cleveland Browns\" data-type=\"article\"><li><a
-        href=\"https://www.facebook.com/sharer.php?u=http%3A%2F%2Fes.pn%2F12T6jeO\"
-        class=\"btn-social facebook  Module\"></a></li><li><a href=\"http://twitter.com/intent/tweet?url=http%3A%2F%2Fes.pn%2F12T6jeO&text=Isaiah+Crowell+puts+the+Browns+up+14%2D7+with+his+8th+rushing+TD+of+the+season.+That%27s+the+third%2Dmost+by+a+rookie...\"
-        class=\"btn-social twitter  Module\"></a></li><li><a href=\"http://sendtofriend.espn.go.com/sendtofriend/SendToFriendBeta?type=Module&id=11993646\"
-        class=\"btn-social email  Module\"></a></li></ul></div></div></div></article><article
-        data-id=\"11993623\" data-time=\"1417980694000\" class=\"now-feed-item\" data-behavior=\"
-        module_bloom fix_broken_images\" data-index=\"20\"><div class=\"now-content\"><h1>Production
-        from the rookie wideouts</h1><p>Panthers' Kelvin Benjamin and Bucs' Mike Evans
-        both have receiving touchdowns today, giving them nine each this season, most
-        among rookies.</p></div><figure class=\"feed-item-figure dim1x1\"><a class=\"img-wrap\"
-        href=\"http://espn.go.com/espn/now?nowId=1-11993623&ex_cid=espnapi_public\"
-        ><picture><!--[if IE 9]><video style=\"display: none;\"><![endif]--><source
-        srcset=\"http://a.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460104140.jpg&w=600\"
-        media=\"(min-width: 1024px)\"><source srcset=\"http://a.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460104140.jpg&w=192,
-        http://a.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460104140.jpg&w=384
-        2x\" media=\"(min-width: 721px)\"><source srcset=\"http://a.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460104140.jpg&w=576\"
-        media=\"(max-width: 720px)\"><source srcset=\"http://a.espncdn.com/media/gettyphoto/2014/12/07/460104140.jpg\"
-        ><!--[if IE 9]></video><![endif]--><img srcset=\"http://a.espncdn.com/media/gettyphoto/2014/12/07/460104140.jpg\"
-        \ data-image-container=\".feed-item-figure\" data-behavior=\"fix_broken_images\"
-        /></picture></a><span class=\"credit\">Getty</span></figure><div class='now-feed_item-meta'
-        data-src=\"http://espn.go.com/espn/now?nowId=1-11993623\" data-original-src=\"http://espn.go.com/espn/now?nowId=1-11993623&ex_cid=espnapi_public\"><span
-        class=\"category\">NFL</span> - <span class=\"timestamp\" data-time=\"2014-12-07T19:31:34Z\"
-        data-behavior=\"date_ago\"></span><div class=\"now-share\" data-behavior=\"now_share_toggle\"><span
-        class=\"share-count\">Share</span><div class=\"share-actions\"><div class=\"btn-close\"></div><ul
-        data-id=\"11993623\" data-name=\"Carolina Panthers v New Orleans Saints\"
-        data-type=\"article\"><li><a href=\"https://www.facebook.com/sharer.php?u=http%3A%2F%2Fes.pn%2F12T5Rgw\"
-        class=\"btn-social facebook  Module\"></a></li><li><a href=\"http://twitter.com/intent/tweet?url=http%3A%2F%2Fes.pn%2F12T5Rgw&text=Panthers%27+Kelvin+Benjamin+and+Bucs%27+Mike+Evans+both+have+receiving+touchdowns+today,+giving+them+nine+each+this...\"
-        class=\"btn-social twitter  Module\"></a></li><li><a href=\"http://sendtofriend.espn.go.com/sendtofriend/SendToFriendBeta?type=Module&id=11993623\"
-        class=\"btn-social email  Module\"></a></li></ul></div></div></div></article><article
-        data-id=\"11993577\" data-time=\"1417980410000\" class=\"now-feed-item\" data-behavior=\"
-        module_bloom fix_broken_images\" data-index=\"21\"><div class=\"now-content\"><h1>RAMS
-        KICKING THEMSELVES</h1><div class=\"img-container\"><img class=\"focus-image\"
-        src=\"http://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/stl.png&w=110&h=110\"></div><p>The
-        Redskins trail the Rams 6-0 at halftime, but it could be worse -- Rams K Greg
-        Zuerlein has missed an extra point and two field goals (from 28 and 38 yards).</p></div><div
-        class='now-feed_item-meta' data-src=\"http://espn.go.com/espn/now?nowId=1-11993577\"
-        data-original-src=\"http://espn.go.com/espn/now?nowId=1-11993577&ex_cid=espnapi_public\"><span
-        class=\"category\">NFL</span> - <span class=\"timestamp\" data-time=\"2014-12-07T19:26:50Z\"
-        data-behavior=\"date_ago\"></span><div class=\"now-share\" data-behavior=\"now_share_toggle\"><span
-        class=\"share-count\">2 Shares</span><div class=\"share-actions\"><div class=\"btn-close\"></div><ul
-        data-id=\"11993577\" data-name=\"ESPN Now\" data-type=\"article\"><li><a href=\"https://www.facebook.com/sharer.php?u=http%3A%2F%2Fes.pn%2F1zCh5QW\"
-        class=\"btn-social facebook  Module\"></a></li><li><a href=\"http://twitter.com/intent/tweet?url=http%3A%2F%2Fes.pn%2F1zCh5QW&text=The+Redskins+trail+the+Rams+6%2D0+at+halftime,+but+it+could+be+worse+%2D%2D+Rams+K+Greg+Zuerlein+has+missed+an+extra...\"
-        class=\"btn-social twitter  Module\"></a></li><li><a href=\"http://sendtofriend.espn.go.com/sendtofriend/SendToFriendBeta?type=Module&id=11993577\"
-        class=\"btn-social email  Module\"></a></li></ul></div></div></div></article><article
-        data-id=\"11993552\" data-time=\"1417980170000\" class=\"now-feed-item\" data-behavior=\"
-        module_bloom fix_broken_images\" data-index=\"22\"><div class=\"now-content\"><h1>LUCK
-        SCRAMBLES AGAIN</h1><div class=\"img-container\"><img class=\"focus-image\"
-        src=\"http://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/ind.png&w=110&h=110\"></div><p>Andrew
-        Luck's rushing TD not only evened the score, but it was his 8th scramble TD
-        since entering the league in 2012, the most in the NFL over that span.</p></div><div
-        class='now-feed_item-meta' data-src=\"http://espn.go.com/espn/now?nowId=1-11993552\"
-        data-original-src=\"http://espn.go.com/espn/now?nowId=1-11993552&ex_cid=espnapi_public\"><span
-        class=\"category\">NFL</span> - <span class=\"timestamp\" data-time=\"2014-12-07T19:22:50Z\"
-        data-behavior=\"date_ago\"></span><div class=\"now-share\" data-behavior=\"now_share_toggle\"><span
-        class=\"share-count\">3 Shares</span><div class=\"share-actions\"><div class=\"btn-close\"></div><ul
-        data-id=\"11993552\" data-name=\"NFL - Luck scramble TD\" data-type=\"article\"><li><a
-        href=\"https://www.facebook.com/sharer.php?u=http%3A%2F%2Fes.pn%2F1zCg1w9\"
-        class=\"btn-social facebook  Module\"></a></li><li><a href=\"http://twitter.com/intent/tweet?url=http%3A%2F%2Fes.pn%2F1zCg1w9&text=Andrew+Luck%27s+rushing+TD+not+only+evened+the+score,+but+it+was+his+8th+scramble+TD+since+entering+the+league+in...\"
-        class=\"btn-social twitter  Module\"></a></li><li><a href=\"http://sendtofriend.espn.go.com/sendtofriend/SendToFriendBeta?type=Module&id=11993552\"
-        class=\"btn-social email  Module\"></a></li></ul></div></div></div></article><article
-        data-id=\"541673162233352193\" data-time=\"1417980115000\" class=\"now-feed-item
-        now-feed-tweet\" data-behavior=\" module_bloom fix_broken_images\" data-index=\"23\"><div
-        class=\"now-content\"><a name=\"&lpos=now:tweet:541673162233352193:@HoustonTexans:23\"
-        href=\"http://twitter.com/HoustonTexans\" rel=\"nofollow\" target=\"_blank\"><h1>Houston
-        Texans <span>@HoustonTexans</span></h1></a><a name=\"&lpos=now:tweet:541673162233352193:@HoustonTexans:23\"
-        href=\"http://twitter.com/HoustonTexans\" rel=\"nofollow\" target=\"_blank\"><div
-        class=\"img-container\"><img class=\"focus-image\" src=\"http://pbs.twimg.com/profile_images/1556313213/real_logo_normal.png\"></div></a><p>Andre
-        Johnson is out for the rest of the game and is being evaluated for a concussion.</p></div><div
-        class='now-feed_item-meta' data-src=\"https://twitter.com/HoustonTexans/status/541673162233352193\"
-        data-original-src=\"https://twitter.com/HoustonTexans/status/541673162233352193\"><a
-        href='http://www.twitter.com/' target='_blank' class='tweet'><img class=\"nowSocialIcon\"
-        src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"
-        /></a> <span class=\"timestamp\" data-time=\"2014-12-07T19:21:55Z\" data-behavior=\"date_ago\"></span><!--
-        http://twitter.com/intent/favorite?tweet_id=541673162233352193 http://twitter.com/intent/retweet?tweet_id=541673162233352193
-        http://twitter.com/intent/tweet?in_reply_to=541673162233352193&hashtags=espnnow
-        --><div class=\"twitter-controls\"><a href=\"http://twitter.com/intent/tweet?in_reply_to=541673162233352193&hashtags=espnnow\"
-        class='reply' target=\"_blank\">Reply</a> <a href=\"http://twitter.com/intent/retweet?tweet_id=541673162233352193\"
-        class='retweet' target=\"_blank\">Retweet</a> <a href=\"http://twitter.com/intent/favorite?tweet_id=541673162233352193\"
-        class='favorite' target=\"_blank\">Favorite</a></div></div></article><article
-        data-id=\"11993551\" data-time=\"1417980079000\" class=\"now-feed-item\" data-behavior=\"
-        module_bloom fix_broken_images\" data-index=\"24\"><div class=\"now-content\"><h1>Dalton's
-        speed soars him into second</h1><p>The 20-yard Andy Dalton TD run became the
-        QB's 11th career rushing TD, breaking the tie with Jeff Blake for 2nd-most
-        by a QB in Bengals' history. Ken Anderson has the most with 20.</p></div><figure
-        class=\"feed-item-figure dim1x1\"><a class=\"img-wrap\" href=\"http://espn.go.com/espn/now?nowId=1-11993551&ex_cid=espnapi_public\"
-        ><picture><!--[if IE 9]><video style=\"display: none;\"><![endif]--><source
-        srcset=\"http://a1.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460105424.jpg&w=600\"
-        media=\"(min-width: 1024px)\"><source srcset=\"http://a1.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460105424.jpg&w=192,
-        http://a1.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460105424.jpg&w=384
-        2x\" media=\"(min-width: 721px)\"><source srcset=\"http://a1.espncdn.com/combiner/i?img=%2Fmedia%2Fgettyphoto%2F2014%2F12%2F07%2F460105424.jpg&w=576\"
-        media=\"(max-width: 720px)\"><source srcset=\"http://a.espncdn.com/media/gettyphoto/2014/12/07/460105424.jpg\"
-        ><!--[if IE 9]></video><![endif]--><img srcset=\"http://a.espncdn.com/media/gettyphoto/2014/12/07/460105424.jpg\"
-        \ data-image-container=\".feed-item-figure\" data-behavior=\"fix_broken_images\"
-        /></picture></a><span class=\"credit\">Getty</span></figure><div class='now-feed_item-meta'
-        data-src=\"http://espn.go.com/espn/now?nowId=1-11993551\" data-original-src=\"http://espn.go.com/espn/now?nowId=1-11993551&ex_cid=espnapi_public\"><span
-        class=\"category\">NFL</span> - <span class=\"timestamp\" data-time=\"2014-12-07T19:21:19Z\"
-        data-behavior=\"date_ago\"></span><div class=\"now-share\" data-behavior=\"now_share_toggle\"><span
-        class=\"share-count\">Share</span><div class=\"share-actions\"><div class=\"btn-close\"></div><ul
-        data-id=\"11993551\" data-name=\"Pittsburgh Steelers v Cincinnati Bengals\"
-        data-type=\"article\"><li><a href=\"https://www.facebook.com/sharer.php?u=http%3A%2F%2Fes.pn%2F1zCfJph\"
-        class=\"btn-social facebook  Module\"></a></li><li><a href=\"http://twitter.com/intent/tweet?url=http%3A%2F%2Fes.pn%2F1zCfJph&text=The+20%2Dyard+Andy+Dalton+TD+run+became+the+QB%27s+11th+career+rushing+TD,+breaking+the+tie+with+Jeff+Blake+for...\"
-        class=\"btn-social twitter  Module\"></a></li><li><a href=\"http://sendtofriend.espn.go.com/sendtofriend/SendToFriendBeta?type=Module&id=11993551\"
-        class=\"btn-social email  Module\"></a></li></ul></div></div></div></article><article
-        data-id=\"541672541249871873\" data-time=\"1417979931000\" class=\"now-feed-item
-        now-feed-tweet\" data-behavior=\" module_bloom fix_broken_images\" data-index=\"25\"><div
-        class=\"now-content\"><a name=\"&lpos=now:tweet:541672541249871873:@MikeWellsNFL:25\"
-        href=\"http://twitter.com/MikeWellsNFL\" rel=\"nofollow\" target=\"_blank\"><h1>Mike
-        Wells <span>@MikeWellsNFL</span></h1></a><a name=\"&lpos=now:tweet:541672541249871873:@MikeWellsNFL:25\"
-        href=\"http://twitter.com/MikeWellsNFL\" rel=\"nofollow\" target=\"_blank\"><div
-        class=\"img-container\"><img class=\"focus-image\" src=\"http://pbs.twimg.com/profile_images/528673831066828800/jBjpcFr3_normal.jpeg\"></div></a><p>Andrew
-        Luck, with nobody open, tucks the ball, puts on an old-school slow motion
-        juke and dives in the end zone. Tied up at 7-7.</p></div><div class='now-feed_item-meta'
-        data-src=\"https://twitter.com/MikeWellsNFL/status/541672541249871873\" data-original-src=\"https://twitter.com/MikeWellsNFL/status/541672541249871873\"><a
-        href='http://www.twitter.com/' target='_blank' class='tweet'><img class=\"nowSocialIcon\"
-        src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"
-        /></a> <span class=\"timestamp\" data-time=\"2014-12-07T19:18:51Z\" data-behavior=\"date_ago\"></span><!--
-        http://twitter.com/intent/favorite?tweet_id=541672541249871873 http://twitter.com/intent/retweet?tweet_id=541672541249871873
-        http://twitter.com/intent/tweet?in_reply_to=541672541249871873&hashtags=espnnow
-        --><div class=\"twitter-controls\"><a href=\"http://twitter.com/intent/tweet?in_reply_to=541672541249871873&hashtags=espnnow\"
-        class='reply' target=\"_blank\">Reply</a> <a href=\"http://twitter.com/intent/retweet?tweet_id=541672541249871873\"
-        class='retweet' target=\"_blank\">Retweet</a> <a href=\"http://twitter.com/intent/favorite?tweet_id=541672541249871873\"
-        class='favorite' target=\"_blank\">Favorite</a></div></div></article></section></div></div>\n<div
-        id=\"fb-root\"></div>\n<script>\n\t(function(d, s, id) {\n  \tvar js, fjs
-        = d.getElementsByTagName(s)[0];\n  \tif (d.getElementById(id)) return;\n  \tjs
-        = d.createElement(s); js.id = id;\n  \tjs.src = \"//connect.facebook.net/en_US/all.js#xfbml=1&appId=122606941204676\";\n
-        \ \tfjs.parentNode.insertBefore(js, fjs);\n\t}(document, 'script', 'facebook-jssdk'));\n</script>\n<!--
-        Twitter js -->\n<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=\"https://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>\n\t\t\t\n\t\t<div
-        id=\"casterListener\"></div>\n\t\t<script type=\"text/javascript\">\n\t\t(function($){\n\t\t\tvar
-        snapshotId = 1040082;\n\t\t\tvar pollDuration = 10000; //time between requests\n\t\t\tvar
-        sessionId = 'nflScoreboard';\n\t\t\tvar flashVersion = swfobject.getFlashPlayerVersion();\n\t\t\tif(flashVersion!==undefined
-        && flashVersion.major!==undefined && flashVersion.major>=8){\n\t\t\t\tvar
-        casterObj=new flashObj();\n\t\t\t\tcasterObj.flashFile='http://assets.espn.go.com/swf/caster/snapshotCasterClientv2.swf';\n\t\t\t\tcasterObj.flashVars
-        = \"&sessionName=\"+sessionId+\"&duration=\"+pollDuration+\"&pollMode=absolute&baseURL=scores.espn.go.com/nfl/caster/snapshot&host=site.caster.espn.go.com&port=80&currentSnapshotId=\"+snapshotId;\n\t\t\t\tcasterObj.wmode
-        = \"window\";\n\t\t\t\tcasterObj.width = \"1\";\n\t\t\t\tcasterObj.height
-        = \"1\";\n\t\t\t\tcasterObj.quality = \"best\"; \n\t\t\t\tcasterObj.FlashVer
-        = 8;\n\t\t\t\tcasterObj.DenyIEdl = 'TRUE';\n\t\t\t\tcasterObj.cabVersion =
-        \"8,0,0,0\";\n\t\t\t\tcasterObj.useDOM = true; \n\t\t\t\tcasterObj.targetElement
-        = 'casterListener';\n\t\t\t\t//$('#caster').html(casterObj.render());\n\t\t\t\t$(casterObj.render(true));\n\t\t\t}\n\t\t\telse{\n\t\t\t\t$(fauxCast());
-        \n\t\t\t}\n\n\t\t\tvar casterInterval;\n\t\t\tfunction fauxCast(){\n\t\t\t\tvar
-        snapshotURL = '/nfl/caster/json?sessionId='+sessionId+'&masterSnap='+snapshotId+'&rand='+new
-        Date().getTime();\n\n\t\t\t\t$.ajax({\n\t\t\t\t\ttype: \"GET\",\n\t\t\t\t\turl:
-        snapshotURL,\n\t\t\t\t\tdataType: \"json\",\n\t\t\t\t\tsuccess: function(data){\n\t\t\t\t\t\tif(data!==undefined
-        && data.snapshotId!==undefined){\n\t\t\t\t\t\t\thandleCasterMessage(data.snapshotId,
-        data.snapshots);\n\t\t\t\t\t\t\tsnapshotId = data.snapshotId;\n\t\t\t\t\t\t}\n\t\t\t\t\t\tcasterInterval
-        = setTimeout(fauxCast, pollDuration);\n\t\t\t\t\t},\n\t\t\t\t\terror: function(){\n\t\t\t\t\t\tcasterInterval
-        = setTimeout(fauxCast, pollDuration);\n\t\t\t\t\t}\n\t\t\t\t});\n\t\t\t}\n\t\t})(jQuery)\n\t\t</script>\n\t</div>\n<div
-        id=\"nav-wrapper\" class=\"container\">\n<div id=\"nav-wrapper-container\">\n<div
-        id=\"nav-main\">\n<!-- begin site nav -->\n<ul class=\"top\">\n<!-- begin
-        site nav -->\n<p><!-- begin site nav --></p>\n<ul class=\"top\" id=\"nav-main-list\"><!--
-        start: Menuitem :: MyTAB -->\n<li class=\"last myespn\" id=\"menu-myespn\"><a
-        class=\"myespn\" ref=\"#\">MyESPN</a></li>\n<!-- start: Menuitem :: NFL -->\n<li
-        class=\"sport-menu default t-nfl selected\" data-sportid=\"28\" id=\"menu-nfl\"><a
-        href=\"http://espn.go.com/nfl/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nfl\">NFL</a></li>\n<!--
+        border=\"0\" alt=\"\"></a></noscript>\n</div></div><!--espn.us.com.nfl sitezone-->\n<script>if(\"undefined\"!=typeof
+        ad_kvps&&\"undefined\"!=typeof ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof
+        ad_ord){if(\"undefined\"==typeof ad_site||\"undefined\"==typeof ad_zone)var
+        ad_site=\"espn.us.com.nfl\",ad_zone=\"nflscoreboard\";var ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=SponsoredByLogo17;\"+ad_u+\"sz=298x80,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"SponsoredByLogo17\" data-cb-dfp-id=\"'+ad_kvps+'sz=298x80,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nfl/nflscoreboard;pgtyp=nflscoreboard;sp=nfl;sz=298x80,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nfl/nflscoreboard;pgtyp=nflscoreboard;sp=nfl;sz=298x80,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n<div class=\"mod-container mod-scoreboard\"><div
+        class=\"mod-header\"><h4>QUALITY PERFORMERS</h4></div><div class=\"mod-content\"><!--espn.us.com.nfl
+        sitezone-->\n<script>if(\"undefined\"!=typeof ad_kvps&&\"undefined\"!=typeof
+        ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof ad_ord){if(\"undefined\"==typeof
+        ad_site||\"undefined\"==typeof ad_zone)var ad_site=\"espn.us.com.nfl\",ad_zone=\"nflscoreboard\";var
+        ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=Module_Logo;\"+ad_u+\"sz=298x80,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"Module_Logo\" data-cb-dfp-id=\"'+ad_kvps+'sz=298x80,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nfl/nflscoreboard;pgtyp=nflscoreboard;sp=nfl;sz=298x80,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nfl/nflscoreboard;pgtyp=nflscoreboard;sp=nfl;sz=298x80,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n<ul class=\"top-performer\"><li class=\"first\"
+        id=\"leader-1\"><a href=\"http://espn.go.com/nfl/player/_/id/8439/aaron-rodgers\"
+        id=\"8439-leader-1\"><img height=\"48\" width=\"35\" border=\"0\" title=\"A.
+        Rodgers\" alt=\"A. Rodgers\" onerror=\"loadDefaultHS('8439-leader-1');\" src=\"http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/8439.png&w=34&h=48&scale=crop&background=0xcccccc&transparent=false\"/></a><ul
+        class=\"top-performers\"><li><a href=\"/nfl/players/profile?playerId=8439\">A.
+        Rodgers</a> GB - QB</li><li id=\"leader-1-stats\">22-36, 341 YDS, 3 TDS</li><li
+        id=\"leader-1-game\"><a href=\"/nfl/boxscore?gameId=400554345\">vs PHI | Final</a></li></ul></li><li
+        class=\"alt\" id=\"leader-2\"><a href=\"http://espn.go.com/nfl/player/_/id/15364/jonas-gray\"
+        id=\"15364-leader-2\"><img height=\"48\" width=\"35\" border=\"0\" title=\"J.
+        Gray\" alt=\"J. Gray\" onerror=\"loadDefaultHS('15364-leader-2');\" src=\"http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/15364.png&w=34&h=48&scale=crop&background=0xcccccc&transparent=false\"/></a><ul
+        class=\"top-performers\"><li><a href=\"/nfl/players/profile?playerId=15364\">J.
+        Gray</a> NE - RB</li><li id=\"leader-2-stats\">37 RUSH, 201 YDS, 4 TDS</li><li
+        id=\"leader-2-game\"><a href=\"/nfl/boxscore?gameId=400554417\">@ IND | Final</a></li></ul></li><li
+        \ id=\"leader-3\"><a href=\"http://espn.go.com/nfl/player/_/id/16737/mike-evans\"
+        id=\"16737-leader-3\"><img height=\"48\" width=\"35\" border=\"0\" title=\"M.
+        Evans\" alt=\"M. Evans\" onerror=\"loadDefaultHS('16737-leader-3');\" src=\"http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/16737.png&w=34&h=48&scale=crop&background=0xcccccc&transparent=false\"/></a><ul
+        class=\"top-performers\"><li><a href=\"/nfl/players/profile?playerId=16737\">M.
+        Evans</a> TB - WR</li><li id=\"leader-3-stats\">7 REC, 209 YDS, 2 TDS</li><li
+        id=\"leader-3-game\"><a href=\"/nfl/boxscore?gameId=400554378\">@ WSH | Final</a></li></ul></li></ul></div><div
+        class=\"mod-footer\"><p><a href=\"/nfl/weekly/leaders?year=2014&seasontype=2&week=11&type=all\">Weekly
+        Leaders &#187;</a> <a href=\"/nfl/players\">Find a player &#187;</a></p>\n\t\t\t\t\t<style
+        type=\"text/css\">\n\t\t\t\t\t\t.mod-footer .mod-footer-ad {\n\t\t\t\t\t\t\ttext-align:center;\n\t\t\t\t\t\t\tmargin:0
+        2px 2px;\n\t\t\t\t\t\t}\n\t\t\t\t\t\t.mod-footer .mod-footer-ad a {\n\t\t\t\t\t\t\tpadding:0;\n\t\t\t\t\t\t}\n\t\t\t\t\t</style>\n\t\t\t\t<div
+        class=\"mod-footer-ad\"><!--espn.us.com.nfl sitezone-->\n<script>if(\"undefined\"!=typeof
+        ad_kvps&&\"undefined\"!=typeof ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof
+        ad_ord){if(\"undefined\"==typeof ad_site||\"undefined\"==typeof ad_zone)var
+        ad_site=\"espn.us.com.nfl\",ad_zone=\"nflscoreboard\";var ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=Module_Logo_Bottom;\"+ad_u+\"sz=298x30,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"Module_Logo_Bottom\" data-cb-dfp-id=\"'+ad_kvps+'sz=298x30,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nfl/nflscoreboard;pgtyp=nflscoreboard;sp=nfl;sz=298x30,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nfl/nflscoreboard;pgtyp=nflscoreboard;sp=nfl;sz=298x30,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</div></div></div><!--espn.us.com.nfl
+        sitezone-->\n<script>if(\"undefined\"!=typeof ad_kvps&&\"undefined\"!=typeof
+        ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof ad_ord){if(\"undefined\"==typeof
+        ad_site||\"undefined\"==typeof ad_zone)var ad_site=\"espn.us.com.nfl\",ad_zone=\"nflscoreboard\";var
+        ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=SponsoredByLogo18;\"+ad_u+\"sz=298x30,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"SponsoredByLogo18\" data-cb-dfp-id=\"'+ad_kvps+'sz=298x30,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nfl/nflscoreboard;pgtyp=nflscoreboard;sp=nfl;sz=298x30,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nfl/nflscoreboard;pgtyp=nflscoreboard;sp=nfl;sz=298x30,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n\n\t\t\t\t<style>\n\t\t\t\t\t.col-full
+        .editLinks{\n\t\t\t\t\t\twhite-space:nowrap;\n\t\t\t\t\t\toverflow:hidden;\n\t\t\t\t\t\ttext-overflow:
+        ellipsis;\n\t\t\t\t\t\tmargin-right: 3px;\n\t\t\t\t\t\ttext-align: center;\n\t\t\t\t\t}\n\t\t\t\t\t.gradient-container{background:none
+        !important;}\n\t\t\t\t\ttable.favTeam tbody tr td{border:none !important;}\n\t\t\t\t</style>\n\n\t\t\t\t<link
+        rel=\"stylesheet\" href=\"http://a.espncdn.com/prod/styles/insider/pickcenter/line_analysis_module.r10.css\"
+        type=\"text/css\" media=\"screen\" charset=\"utf-8\" /><div class=\"mod-container
+        mod-no-footer mod-open mod-open-gamepack mod-nfl-scorebox\" id=\"insiderTrue\"
+        style=\"display:none;\"><div class=\"mod-header\"><img src=\"http://a.espncdn.com/combiner/i?img=/i/insider/pickcenter/logo_insider_pickcenter.png?w=53&h=14\"
+        style=\"margin: 5px 10px 0px 10px; float: left;\" alt=\"Insider\" /><h4>LINE
+        ANALYSIS</h4></div><div class=\"mod-content\"><div class=\"gradient-container\"><img
+        src=\"http://a.espncdn.com/i/insider/pickcenter/tournament/pickcenter.png\"
+        style=\"margin: 15px 0px 8px 68px; float: left;\"><div class=\"winning-team\"><div
+        class=\"percentage-block\"><div class=\"percentage-team\"><b>Detroit </b></div><div
+        class=\"percentage-bg\"><div class=\"percentage\" style=\"width:82%\">82%</div></div></div></div><div
+        class=\"pickcenter-pick-all\"><div class=\"pickcenter-pick\">Spread Consensus
+        Pick<a style=\"font-weight:bold; font-size:12px; width:20px;\" href=\"#\"
+        class=\"tooltip\">[?]</a><div style=\"position: absolute; display: none; z-index:10;
+        text-transform:none; margin:5px 0px 0px 75px;\" class=\"tooltip-content\"><p
+        style=\"color:inherit;\"><p>The Consensus Pick is derived from data accumulated
+        from sportsbooks. The percentage and pick provides insight as to what side
+        the public is taking in this game. </p>This data is provided by SportsInsights.</p></div></div></div><table
+        class=\"trnf\"><thead><tr style=\"border-bottom:1px solid #ccc;\"><td>Teams</td><td>Team
+        Rankings</td><td>numberFire</td></tr></thead><tbody><tr><td style=\"margin-left:-5px;\"><b>CHI</b></td><td
+        style=\"color:#555;\">18.1</td><td style=\"color:#555;\">18.5</td></tr><tr><td
+        style=\"margin-left:-5px;\"><b>DET</b></td><td style=\"color:#555;\"><img
+        src=\"http://a.espncdn.com/i/insider/pickcenter/arrow.png\" alt=\"arrow\"
+        />26</td><td style=\"color:#555;\"><img src=\"http://a.espncdn.com/i/insider/pickcenter/arrow.png\"
+        alt=\"arrow\" />26.8</td></tr></tbody></table><table class=\"favTeam\"><thead><tr><td>Favorite</td><td>Spread</td><td>Money
+        Line</td><td>Over/Under</td></tr></thead><tbody><tr><td>DET</td><td style=\"color:#555;\">-8</td><td
+        style=\"color:#555;\">-365</td><td style=\"color:#555;\">44.5</td></tr></tbody></table><div
+        id=\"scoreboardPCMod-flag\" class=\"flag\"><a href=\"http://insider.espn.go.com/insider/pickcenter/nfl/game?gameid=400554401\">PickCenter
+        Details &#187;</a></div><div class=\"col-full\">\n<div class=\"editLinks\"><a
+        name=\"&lpos=nflScoreboard&lid=insiderSBPromoModuleEditLink\" href=\"http://insider.espn.go.com/chalk/story/_/id/12036252/nfl-new-england-seattle-denver-tie-first-nfl-vegas-rankings?addata=2014_insdr_xxx_sce_nfl_xxx\">Tuley:
+        Cowboys move up in Vegas Rankings &#187;</a></div>\n<div class=\"editLinks\"><a
+        name=\"&lpos=nflScoreboard&lid=insiderSBPromoModuleEditLink\" href=\"http://insider.espn.go.com/chalk/story/_/id/12031795/betting-analyzing-early-week-16-line-moves-gambling-recap?addata=2014_insdr_xxx_sce_nfl_xxx\">Tuley:
+        Early line moves for Week 16 &#187;</a></div>\n</div></div></div></div><div
+        class=\"mod-container mod-no-footer mod-open mod-open-gamepack mod-nfl-scorebox\"
+        id=\"insiderFalse\" style=\"display:none;\"><div class=\"mod-header\"><img
+        src=\"http://a.espncdn.com/combiner/i?img=/i/insider/pickcenter/logo_insider_pickcenter.png?w=53&h=13\"
+        style=\"margin: 5px 10px 0px 10px; float: left;\" alt=\"Insider\" /><h4>LINE
+        ANALYSIS</h4></div><div class=\"mod-content\"><div class=\"gradient-container\"><div
+        class=\"subscribe-container\"><div class=\"subscribe\"><a href=\"http://insider.espn.go.com/insider/promo/offer?addata=insdr_pc_prev_mod\"><img
+        src=\"http://a.espncdn.com/i/insider/pickcenter/subscribe_new.png\" /></a></div></div><img
+        src=\"http://a.espncdn.com/i/insider/pickcenter/tournament/pickcenter.png\"
+        style=\"margin: 15px 0px 8px 68px; float: left;\"><div class=\"winning-team\"
+        style=\"height:50px;\"><div class=\"percentage-block\"><div class=\"percentage-team\"><b>Detroit
+        </b></div><div class=\"percentage-bg\"></div></div></div><div class=\"pickcenter-pick-all\"><div
+        class=\"pickcenter-pick\">Spread Consensus Pick</div></div><table class=\"trnf\"><thead><tr
+        style=\"border-bottom:1px solid #ccc;\"><td>Teams</td><td>Team Rankings</td><td>numberFire</td></tr></thead><tbody><tr><td
+        style=\"margin-left:-5px;\"><b>CHI</b></td><td></td><td></td></tr><tr><td
+        style=\"margin-left:-5px;\"><b>DET</b></td><td></td><td></td></tr></tbody></table><table
+        class=\"favTeam\"><thead><tr><td>Favorite</td><td>Open</td><td>Money Line</td><td>Over/Under</td></tr></thead><tbody><tr><td>DET</td><td
+        style=\"color:#555;\">-8</td><td style=\"color:#555;\">-365</td><td style=\"color:#555;\">44.5</td></tr></tbody></table><div
+        id=\"scoreboardPCMod-flag\" class=\"flag\"><a href=\"http://insider.espn.go.com/insider/pickcenter/nfl/game?gameid=400554401\">PickCenter
+        Details &#187;</a></div><div class=\"col-full\">\n<div class=\"editLinks\"><a
+        name=\"&lpos=nflScoreboard&lid=insiderSBPromoModuleEditLink\" href=\"http://insider.espn.go.com/chalk/story/_/id/12036252/nfl-new-england-seattle-denver-tie-first-nfl-vegas-rankings?addata=2014_insdr_xxx_sce_nfl_xxx\">Tuley:
+        Cowboys move up in Vegas Rankings &#187;</a></div>\n<div class=\"editLinks\"><a
+        name=\"&lpos=nflScoreboard&lid=insiderSBPromoModuleEditLink\" href=\"http://insider.espn.go.com/chalk/story/_/id/12031795/betting-analyzing-early-week-16-line-moves-gambling-recap?addata=2014_insdr_xxx_sce_nfl_xxx\">Tuley:
+        Early line moves for Week 16 &#187;</a></div>\n</div></div></div></div>\n\t\t\t<!--Tooltip-->\n\t\t\t<script>\n\t\t\t\tjQuery(document).ready(function()
+        {\n\t\t\t\t\tjQuery(\".tooltip\").hover(\n\t\t\t\t\t\tfunction () {\n\t\t\t\t\t\t\tjQuery(this).siblings('.tooltip-content').show();\n\t\t\t\t\t\t},\n\t\t\t\t\t\tfunction
+        () {\n\t\t\t\t\t\t\tjQuery(this).siblings('.tooltip-content').hide();\n\t\t\t\t\t\t}\n\t\t\t\t\t);\n\t\t\t\t})\n\t\t\t</script>\n\t\t\t\n\t\t<script>\n\t\t(function($){\n\t\t//checking
+        insider access for insider module on preview page\n\t    \t$(document).ready(function(){\n\t\t
+        \   \tvar insiderAccess = false;\n\t\t\t    if(espn.core.loggedIn == true){\n\t\t\t
+        \       szprem = espn.storage.getItem('szpremToken');\n\t\t\t        insiderDirect
+        = espn.storage.getItem('insiderDirectToken');\n\t\t\t        if(szprem ==
+        true || insiderDirect == true){\n\t\t\t            insiderAccess = true;\n\t\t\t
+        \       }\n\t\t\t    }\n\t\t\t    if(insiderAccess){\n\t\t\t    \t$(\"div#insiderTrue\").show();\n\t\t\t
+        \   }\n\t\t\t    if(!insiderAccess){\n\t\t\t    \t$(\"div#insiderFalse\").show();\n\t\t\t
+        \   \t$(\"div#insiderTrue\").html('');\n\t\t\t    }\n\t\t\t});\n    \t}(jQuery));\n\t\t</script><div
+        class=\"mod-container mod-no-header-footer\">\n<div class=\"mod-content mod-open\">\n<div
+        class=\"stubhub-in gradient-container\" style=\"background:#FFFFFF url(http://a.espncdn.com/i/advertising/stubhub/fanBg_sportIndex.jpg)
+        repeat-x scroll center bottom;\">\n<div class=\"h-cont\">\n<a href=\"http://www.stubhub.com/\"
+        onclick=\"this.href=this.href+'?gcid=C12289x444&keyword=Ticket+Center'\" title=\"StubHub
+        Tickets\"><img src=\"http://a.espncdn.com/i/advertising/stubhub/h_sportIndex.gif\"
+        style=\"border: 0pt none !important;\" /></a>\n</div>\n<p class=\"tick-cont\">Find
+        Tickets:</p>\n<form>\n<select name=\"find tickets\" class=\"select-box\" style=\"width:100%;\"
+        onChange=\"gotosite(this.options[this.selectedIndex].value+'?gcid=C12289x444&keyword='+this.options[this.selectedIndex].innerHTML.replace('
+        ','+')+'+Ticket+Center');\">\n<option selected>Search by Team:</option>\n<option
+        value=\"http://www.stubhub.com/san-francisco-49ers-tickets/\">49ers</option>\n<option
+        value=\"http://www.stubhub.com/chicago-bears-tickets/\">Bears</option>\n<option
+        value=\"http://www.stubhub.com/cincinnati-bengals-tickets/\">Bengals</option>\n<option
+        value=\"http://www.stubhub.com/buffalo-bills-tickets/\">Bills</option>\n<option
+        value=\"http://www.stubhub.com/denver-broncos-tickets/\">Broncos</option>\n<option
+        value=\"http://www.stubhub.com/cleveland-browns-tickets/\">Browns</option>\n<option
+        value=\"http://www.stubhub.com/tampa-bay-buccaneers-tickets/\">Buccaneers</option>\n<option
+        value=\"http://www.stubhub.com/arizona-cardinals-tickets/\">Cardinals</option>\n<option
+        value=\"http://www.stubhub.com/san-diego-chargers-tickets/\">Chargers</option>\n<option
+        value=\"http://www.stubhub.com/kansas-city-chiefs-tickets/\">Chiefs</option>\n<option
+        value=\"http://www.stubhub.com/indianapolis-colts-tickets/\">Colts</option>\n<option
+        value=\"http://www.stubhub.com/dallas-cowboys-tickets/\">Cowboys</option>\n<option
+        value=\"http://www.stubhub.com/miami-dolphins-tickets/\">Dolphins</option>\n<option
+        value=\"http://www.stubhub.com/philadelphia-eagles-tickets/\">Eagles</option>\n<option
+        value=\"http://www.stubhub.com/atlanta-falcons-tickets/\">Falcons</option>\n<option
+        value=\"http://www.stubhub.com/new-york-giants-tickets/\">Giants</option>\n<option
+        value=\"http://www.stubhub.com/jacksonville-jaguars-tickets/\">Jaguars</option>\n<option
+        value=\"http://www.stubhub.com/new-york-jets-tickets/\">Jets</option>\n<option
+        value=\"http://www.stubhub.com/detroit-lions-tickets/\">Lions</option>\n<option
+        value=\"http://www.stubhub.com/green-bay-packers-tickets/\">Packers</option>\n<option
+        value=\"http://www.stubhub.com/carolina-panthers-tickets/\">Panthers</option>\n<option
+        value=\"http://www.stubhub.com/new-england-patriots-tickets/\">Patriots</option>\n<option
+        value=\"http://www.stubhub.com/oakland-raiders-tickets/\">Raiders</option>\n<option
+        value=\"http://www.stubhub.com/st-louis-rams-tickets/\">Rams</option>\n<option
+        value=\"http://www.stubhub.com/baltimore-ravens-tickets/\">Ravens</option>\n<option
+        value=\"http://www.stubhub.com/washington-redskins-tickets/\">Redskins</option>\n<option
+        value=\"http://www.stubhub.com/new-orleans-saints-tickets/\">Saints</option>\n<option
+        value=\"http://www.stubhub.com/seattle-seahawks-tickets/\">Seahawks</option>\n<option
+        value=\"http://www.stubhub.com/pittsburgh-steelers-tickets/\">Steelers</option>\n<option
+        value=\"http://www.stubhub.com/houston-texans-tickets/\">Texans</option>\n<option
+        value=\"http://www.stubhub.com/tennessee-titans-tickets/\">Titans</option>\n<option
+        value=\"http://www.stubhub.com/minnesota-vikings-tickets/\">Vikings</option>\n</select>\n</form>\n<div
+        style=\"clear: both;\"></div>\n<p class=\"text-cont\"><a href=\"http://www.stubhub.com/nfl-tickets/\"
+        onclick=this.href=this.href+'?gcid=C12289x444&keyword=Ticket+Center' title=\"NFL
+        Tickets\" rel=\"nofollow\">NFL Tickets &#187;</a>\n<a href=\"http://www.stubhub.com/football-tickets/\"
+        onclick=this.href=this.href+'?gcid=C12289x444&keyword=Ticket+Center' title=\"Football
+        Tickets\" rel=\"nofollow\">Football Tickets &#187;</a>\n<a href=\"http://www.stubhub.com/\"
+        onclick=this.href=this.href+'?gcid=C12289x444&keyword=Ticket+Center' title=\"StubHub\"
+        rel=\"nofollow\">All Tickets &#187;</a></p>\n<p class=\"action-cont\"><img
+        src=\"http://a.espncdn.com/i/advertising/stubhub/arrow.gif\" /><a href=\"http://www.stubhub.com/\"
+        onclick=\"this.href=this.href+'?gcid=C12289x444&keyword=Ticket+Center'\" title=\"StubHub
+        Tickets\">See all tickets</a></p></div>\n</div>\n</div>\n<div class=\"mod-container
+        mod-no-footer\"><div class=\"ad-box last\"><!--espn.us.com.nfl sitezone-->\n<script>if(\"undefined\"!=typeof
+        ad_kvps&&\"undefined\"!=typeof ad_u&&\"undefined\"!=typeof ad_counter&&\"undefined\"!=typeof
+        ad_ord){if(\"undefined\"==typeof ad_site||\"undefined\"==typeof ad_zone)var
+        ad_site=\"espn.us.com.nfl\",ad_zone=\"nflscoreboard\";var ad_finalString=\"http://ad.Doubleclick.net/adj/\"+ad_site+\"/\"+ad_zone+\";\"+ad_kvps+\"pos=PromoBox_Marketing;\"+ad_u+\"sz=300x100,1x1;tile=\"+ad_counter+\";ord=\"+ad_ord;document.write('<div
+        data-cb-ad-id=\"PromoBox_Marketing\" data-cb-dfp-id=\"'+ad_kvps+'sz=300x100,1x1\"><script
+        src='+ad_finalString+'>\\x3c/script></div>');ad_counter++};</script>\n<noscript><a
+        href=\"http://ad.Doubleclick.net/jump/espn.us.com.nfl/nflscoreboard;pgtyp=nflscoreboard;sp=nfl;sz=300x100,1x1;\"
+        target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nfl/nflscoreboard;pgtyp=nflscoreboard;sp=nfl;sz=300x100,1x1;\"
+        border=\"0\" alt=\"\"></a></noscript>\n</div></div><!-- CONTENT: scoreboard-right:304w300h,
+        SPORT: nfl--><div style=\"margin:0px 0px 5px 0px; text-align: center; width:
+        304px;\"><ins id=\"splinks-22873\"></ins>\n        <script type=\"text/javascript\">\n
+        \           (function($) {\n                // config params\n                var
+        width = '304',\n                    height = '300',\n                    client
+        = 'ca-espn-q-scoreboard',\n                    channel = 'nfl right',\n                    lang
+        = 'null';\n\n                // builds iframe HTML\n                function
+        buildIframe(width, height, client, channel) {\n                    var path
+        = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
+        \                   // pass params as the hash as they are only needed on
+        the client\n                    var hash = '22873|' + width + '|' + height
+        + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
+        = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
+        + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
+        \                   return iframe;\n                }\n\n                //
+        handles messages from child iframe\n                function handleMessage(event)
+        {\n                    if (event.origin === 'http://sports-ak.espn.go.com')
+        {\n                        $('#splinks-' + event.data).html('<!-- no ads served
+        -->');\n                    }\n                }\n\n                if (typeof
+        window.addEventListener === 'function') {\n                    window.addEventListener('message',
+        handleMessage, false);\n                } else {\n                    window.attachEvent('onmessage',
+        handleMessage);\n                }\n\n                // insert the iframe\n
+        \               if (espn.geo) {\n                    espn.geo.getLocation().done(function(loc)
+        {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
+        || espn.core.android) {\n                            // outside US or not
+        on desktop\n                            client = 'ca-espn-nq';\n                        }\n
+        \                       $('#splinks-22873').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-22873').html(buildIframe(width,
+        height, 'ca-espn-nq', channel));\n                    });\n                }
+        else {\n                    // can't locate them, assume they are outside
+        US\n                    $('#splinks-22873').html(buildIframe(width, height,
+        'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
+        \   </div></div></div>\n<div id=\"nav-wrapper\" class=\"container\">\n<div
+        id=\"nav-wrapper-container\">\n<div id=\"nav-main\">\n<!-- begin site nav
+        -->\n<ul class=\"top\">\n<!-- begin site nav -->\n<p><!-- begin site nav --></p>\n<ul
+        class=\"top\" id=\"nav-main-list\"><!-- start: Menuitem :: MyTAB -->\n<li
+        class=\"last myespn\" id=\"menu-myespn\"><a class=\"myespn\" ref=\"#\">MyESPN</a></li>\n<!--
+        start: Menuitem :: NFL -->\n<li class=\"sport-menu default t-nfl selected\"
+        data-sportid=\"28\" id=\"menu-nfl\"><a href=\"http://espn.go.com/nfl/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_nfl\">NFL</a></li>\n<!--
         start: Menuitem :: MLB -->\n<li class=\"sport-menu default t-mlb\" data-sportid=\"10\"
         id=\"menu-mlb\"><a href=\"http://espn.go.com/mlb/\" name=\"&amp;lpos=sitenavdefault&amp;lid=sitenav_mlb\">MLB</a></li>\n<!--
         start: Menuitem :: NBA -->\n<li class=\"sport-menu default t-nba\" data-sportid=\"46\"
@@ -2570,7 +2244,7 @@ http_interactions:
         type=\"text/javascript\">\n\tif (typeof(s_omni) === 'undefined') {\n\t\tjQuery(function($)
         {\n\t\t\t// we want to load the analytics files from the cache if possible
         - so, let's use full $.ajax() calls\n\t\t\t$.ajax({\n\t\t\t\ttype:'GET',\n\t\t\t\turl:
-        'http://a.espncdn.com/combiner/c?js=analytics/sOmni.js,analytics/analytics.js,analytics/externalnielsen.js&v=6',\n\t\t\t\tdataType:
+        'http://a.espncdn.com/combiner/c?js=analytics/sOmni.js,analytics/analytics.js,analytics/externalnielsen.js&v=11',\n\t\t\t\tdataType:
         'script',\n\t\t\t\tcache: true,\n\t\t\t\tsuccess: function() {\n\t\t\t\t\tvar
         lgSrc;\n\t\t\t\t\tif(typeof anCV !== undef && anCV === '' && document.getElementById('form-memberarea')
         != null) {\n\t\t\t\t\t\tlgSrc = 'https://r.espn.go.com/members/util/getUserInfo?cb=runOmnitureIndependently';\n\t\t\t\t\t\t$.getScript(lgSrc);
@@ -2608,5 +2282,5 @@ http_interactions:
         a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
         \ //]]>\n</script></body>\n</html>"
     http_version: 
-  recorded_at: Sun, 07 Dec 2014 21:09:10 GMT
+  recorded_at: Fri, 19 Dec 2014 14:39:23 GMT
 recorded_with: VCR 2.9.3
