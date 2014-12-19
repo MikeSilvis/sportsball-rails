@@ -27,17 +27,17 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 19 Dec 2014 14:53:27 GMT
+      - Fri, 19 Dec 2014 14:53:47 GMT
       Connection:
       - keep-alive
       Cache-Control:
-      - max-age=22
+      - max-age=3
       P3p:
       - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRo
         BUS PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
       Set-Cookie:
-      - SWID=CF97E641-35E6-4FB9-AE18-C3FC3310302E; path=/; expires=Thu, 14 Dec 2034
-        14:53:27 GMT; domain=go.com;
+      - SWID=A24ACF91-42B9-4C0C-A98C-FF2284654AAF; path=/; expires=Thu, 14 Dec 2034
+        14:53:47 GMT; domain=go.com;
     body:
       encoding: UTF-8
       string: "<!DOCTYPE html>\n<html xmlns:fb=\"http://www.facebook.com/2008/fbml\">\n<head><script
@@ -1009,7 +1009,7 @@ http_interactions:
         a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
         \ //]]>\n</script></body>\n</html>"
     http_version: 
-  recorded_at: Fri, 19 Dec 2014 14:53:30 GMT
+  recorded_at: Fri, 19 Dec 2014 14:53:49 GMT
 - request:
     method: get
     uri: http://espn.go.com/ncf/recap?gameId=400609076
@@ -1037,17 +1037,17 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 19 Dec 2014 14:53:28 GMT
+      - Fri, 19 Dec 2014 14:53:47 GMT
       Connection:
       - keep-alive
       Cache-Control:
-      - max-age=22
+      - max-age=199
       P3p:
       - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRo
         BUS PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
       Set-Cookie:
-      - SWID=876520AD-E8E7-4F01-822A-36C8763289D8; path=/; expires=Thu, 14 Dec 2034
-        14:53:28 GMT; domain=go.com;
+      - SWID=C73A694C-4A97-4BB6-BA78-18239E5ED42B; path=/; expires=Thu, 14 Dec 2034
+        14:53:47 GMT; domain=go.com;
     body:
       encoding: ASCII-8BIT
       string: !binary |-
@@ -3475,5 +3475,5 @@ http_interactions:
         dChiKSxjKTt9KSgpOwogIC8vXV0+Cjwvc2NyaXB0PjwvYm9keT4KPC9odG1s
         Pg==
     http_version: 
-  recorded_at: Fri, 19 Dec 2014 14:53:31 GMT
+  recorded_at: Fri, 19 Dec 2014 14:53:49 GMT
 recorded_with: VCR 2.9.3

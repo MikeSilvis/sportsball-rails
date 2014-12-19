@@ -28,9 +28,9 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Cache-Control:
-      - max-age=30
+      - max-age=12
       Date:
-      - Fri, 19 Dec 2014 14:53:31 GMT
+      - Fri, 19 Dec 2014 14:53:48 GMT
       Transfer-Encoding:
       - chunked
       Connection:
@@ -2282,5 +2282,5 @@ http_interactions:
         a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
         \ //]]>\n</script></body>\n</html>"
     http_version: 
-  recorded_at: Fri, 19 Dec 2014 14:53:33 GMT
+  recorded_at: Fri, 19 Dec 2014 14:53:50 GMT
 recorded_with: VCR 2.9.3

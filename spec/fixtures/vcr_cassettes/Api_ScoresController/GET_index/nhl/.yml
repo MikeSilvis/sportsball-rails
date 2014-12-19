@@ -28,9 +28,9 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Cache-Control:
-      - max-age=22
+      - max-age=282
       Date:
-      - Fri, 19 Dec 2014 14:53:29 GMT
+      - Fri, 19 Dec 2014 14:53:48 GMT
       Transfer-Encoding:
       - chunked
       Connection:
@@ -234,8 +234,8 @@ http_interactions:
         gms</span></a></li><li class=\"{date:'Sat Nov 15 2014'} day7 \"><a href=\"?date=20141115\"><span
         class=\"day\">Sat</span> <span class=\"date\">15</span> <span class=\"num-games\">12
         gms</span></a></li></ul></div><a class=\"next\" href=\"#\">&nbsp;</a></div></div>\n\t\t\t\t<script
-        id=\"initCalendarCarousel1419000531275\">\n\t\t\t\t\tjQuery.getScriptCache('http://a.espncdn.com/combiner/c?js=espn.scoreboardCalendar.r8.js',function()
-        {\n\t\t\t\t\t\tespn.core.init.scoreboardCalendar(jQuery('#initCalendarCarousel1419000531275').siblings('.mod-scoreboard-carousel'));\n\t\t\t\t\t});\n\t\t\t\t</script>\n\t\t\t\t</div><div
+        id=\"initCalendarCarousel1419000810047\">\n\t\t\t\t\tjQuery.getScriptCache('http://a.espncdn.com/combiner/c?js=espn.scoreboardCalendar.r8.js',function()
+        {\n\t\t\t\t\t\tespn.core.init.scoreboardCalendar(jQuery('#initCalendarCarousel1419000810047').siblings('.mod-scoreboard-carousel'));\n\t\t\t\t\t});\n\t\t\t\t</script>\n\t\t\t\t</div><div
         class=\"more-info\"><div class=\"dropdown sb_dropdown\"><form class=\"js-goto\"
         style=\"display:inline;\" method=\"get\" action=\"./\"><select><option value=\"#\">More
         Scoreboards</option><option value=\"/nfl/scoreboard\">NFL</option><option
@@ -905,7 +905,7 @@ http_interactions:
         style=\"clear:both;\"></div></div><p id=\"400564035-gameNote\" class=\"clear
         border-top\" style=\"display: none\">&nbsp;</p></div></div></div><!-- CONTENT:
         09scoreboard614, SPORT: nhl--><div style=\"margin:0px 0px 5px 0px; text-align:
-        center; width: 614px;\"><ins id=\"splinks-14179\"></ins>\n        <script
+        center; width: 614px;\"><ins id=\"splinks-91269\"></ins>\n        <script
         type=\"text/javascript\">\n            (function($) {\n                //
         config params\n                var width = '614',\n                    height
         = '300',\n                    client = 'ca-espn-q-scoreboard',\n                    channel
@@ -913,7 +913,7 @@ http_interactions:
         builds iframe HTML\n                function buildIframe(width, height, client,
         channel) {\n                    var path = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
         \                   // pass params as the hash as they are only needed on
-        the client\n                    var hash = '14179|' + width + '|' + height
+        the client\n                    var hash = '91269|' + width + '|' + height
         + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
         = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
         + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
@@ -929,11 +929,11 @@ http_interactions:
         {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
         || espn.core.android) {\n                            // outside US or not
         on desktop\n                            client = 'ca-espn-nq';\n                        }\n
-        \                       $('#splinks-14179').html(buildIframe(width, height,
-        client, channel));\n                    }).fail(function() {\n                        $('#splinks-14179').html(buildIframe(width,
+        \                       $('#splinks-91269').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-91269').html(buildIframe(width,
         height, 'ca-espn-nq', channel));\n                    });\n                }
         else {\n                    // can't locate them, assume they are outside
-        US\n                    $('#splinks-14179').html(buildIframe(width, height,
+        US\n                    $('#splinks-91269').html(buildIframe(width, height,
         'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
         \   </div></div><div class=\"span-2 last\"><div class=\"mod-container mod-no-border\"><div
         class=\"mod-content mod-feedback-link\"><p><a href=\"http://espn.qualtrics.com/SE/?SID=SV_cIsNl2g4i6lwwOU\"
@@ -1024,7 +1024,7 @@ http_interactions:
         target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nhl/nhlscoreboard;pgtyp=nhlscoreboard;sp=nhl;sz=300x100,1x1;\"
         border=\"0\" alt=\"\"></a></noscript>\n</div></div><!-- CONTENT: scoreboard-right:304w300h,
         SPORT: nhl--><div style=\"margin:0px 0px 5px 0px; text-align: center; width:
-        304px;\"><ins id=\"splinks-21509\"></ins>\n        <script type=\"text/javascript\">\n
+        304px;\"><ins id=\"splinks-88053\"></ins>\n        <script type=\"text/javascript\">\n
         \           (function($) {\n                // config params\n                var
         width = '304',\n                    height = '300',\n                    client
         = 'ca-espn-q-scoreboard',\n                    channel = 'nhl right',\n                    lang
@@ -1032,7 +1032,7 @@ http_interactions:
         buildIframe(width, height, client, channel) {\n                    var path
         = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
         \                   // pass params as the hash as they are only needed on
-        the client\n                    var hash = '21509|' + width + '|' + height
+        the client\n                    var hash = '88053|' + width + '|' + height
         + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
         = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
         + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
@@ -1048,11 +1048,11 @@ http_interactions:
         {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
         || espn.core.android) {\n                            // outside US or not
         on desktop\n                            client = 'ca-espn-nq';\n                        }\n
-        \                       $('#splinks-21509').html(buildIframe(width, height,
-        client, channel));\n                    }).fail(function() {\n                        $('#splinks-21509').html(buildIframe(width,
+        \                       $('#splinks-88053').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-88053').html(buildIframe(width,
         height, 'ca-espn-nq', channel));\n                    });\n                }
         else {\n                    // can't locate them, assume they are outside
-        US\n                    $('#splinks-21509').html(buildIframe(width, height,
+        US\n                    $('#splinks-88053').html(buildIframe(width, height,
         'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
         \   </div></div><div class=\"clear\"></div></div>\n<div id=\"nav-wrapper\"
         class=\"container\">\n<div id=\"nav-wrapper-container\">\n<div id=\"nav-main\">\n<!--
@@ -1295,5 +1295,5 @@ http_interactions:
         a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
         \ //]]>\n</script></body>\n</html>"
     http_version: 
-  recorded_at: Fri, 19 Dec 2014 14:53:31 GMT
+  recorded_at: Fri, 19 Dec 2014 14:53:49 GMT
 recorded_with: VCR 2.9.3
