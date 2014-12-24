@@ -1,17 +1,20 @@
 class Recap
   attr_accessor :league,
                 :game_id,
-                :content
+                :content,
+                :headline
 
   def initialize(attrs)
-    self.league  = attrs[:league]
-    self.game_id = attrs[:game_id]
-    self.content = attrs[:content]
+    self.league   = attrs[:league]
+    self.game_id  = attrs[:game_id]
+    self.content  = attrs[:content]
+    self.headline = attrs[:headline]
   end
 
   def as_json(*)
     {
-      content: content
+      content: content,
+      headline: headline
     }.compact
   end
 
