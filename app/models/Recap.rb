@@ -15,9 +15,9 @@ class Recap
 
   def as_json(*)
     {
-      content: content,
+      url: url,
       headline: headline,
-      url: url
+      content: content
     }.compact
   end
 
