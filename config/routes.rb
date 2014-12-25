@@ -1,10 +1,7 @@
 Rails.application.routes.draw do
-  namespace :api do
-    resources :league, only: [] do
-      resources :scores, only: :index
-    end
 
-    resources :leagues, only: [] do
+  namespace :api do
+    resources :leagues, only: :index do
       get "image/:team" => Dragonfly.app.endpoint { |params, app|
         size = params[:size] ? params[:size] : '60x60'
         app.fetch_file("app/assets/images/#{params[:league_id]}-teams/#{params[:team]}.png").thumb(size)
@@ -18,4 +15,5 @@ Rails.application.routes.draw do
       end
     end
   end
+
 end
