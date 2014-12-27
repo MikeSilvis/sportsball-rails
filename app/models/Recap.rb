@@ -1,4 +1,4 @@
-class Recap
+class Recap < QueryBase
   attr_accessor :league,
                 :game_id,
                 :content,
@@ -11,14 +11,6 @@ class Recap
     self.content  = attrs[:content]
     self.headline = attrs[:headline]
     self.url      = attrs[:url]
-  end
-
-  def as_json(*)
-    {
-      url: url,
-      headline: headline,
-      content: content
-    }.compact
   end
 
   def self.find(league, game_id)

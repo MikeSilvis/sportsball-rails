@@ -1,8 +1,12 @@
 require 'timeout'
 require 'byebug'
 
-class League
-  attr_accessor :name
+class League < QueryBase
+  attr_accessor :name,
+                :logo,
+                :header_image,
+                :header_blurred_image,
+                :schedule
 
   def initialize(name)
     self.name = name
@@ -16,15 +20,16 @@ class League
     ]
   end
 
-  def as_json(*)
-    {
-      name => {
-        logo: Rails.application.routes.url_helpers.api_image_url("leagues/#{name}"),
-        header_image: Rails.application.routes.url_helpers.api_image_url("leagues/#{name}-header"),
-        header_blurred_image: Rails.application.routes.url_helpers.api_image_url("leagues/#{name}-header-blurred"),
-        schedule: schedule
-      }
-    }.compact
+  def logo
+    @logo ||= api_image_url("leagues/#{name}")
+  end
+
+  def header_image
+    @header_image ||= api_image_url("leagues/#{name}-header")
+  end
+
+  def header_blurred_image
+    @header_blurred_image ||= api_image_url("leagues/#{name}-header-blurred")
   end
 
   def schedule

@@ -1,8 +1,15 @@
 require 'open-uri'
 
-class Team
+class Team < QueryBase
   include SportsBall
-  attr_accessor :data_name, :name, :logo, :wins, :loses, :record, :rank
+  attr_accessor :data_name,
+                :name,
+                :logo,
+                :wins,
+                :loses,
+                :record,
+                :rank,
+                :logo
 
   def initialize(attrs, team = nil)
     prefix = team ? "#{team}_" : nil
@@ -13,17 +20,6 @@ class Team
     self.rank      = attrs["#{prefix}team_rank".to_sym]
     self.league    = attrs[:league]
   end
-
-  def as_json(*)
-    {
-      name: name,
-      logo: logo,
-      record: record,
-      data_name: data_name,
-      rank: rank
-    }.compact
-  end
-  add_method_tracer :as_json, 'Team/as_json'
 
   def logo
     Rails.application.routes.url_helpers.api_image_url("#{league}-teams/#{data_name}")
