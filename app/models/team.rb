@@ -26,7 +26,7 @@ class Team
   add_method_tracer :as_json, 'Team/as_json'
 
   def logo
-    Rails.application.routes.url_helpers.api_league_team_logo_url(league, data_name)
+    Rails.application.routes.url_helpers.api_image_url("#{league}-teams/#{data_name}")
   end
 
   module DownloadingLogo

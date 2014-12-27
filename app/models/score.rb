@@ -15,6 +15,14 @@ class Score
                 :boxscore,
                 :preview
 
+  GAME_ORDER = {
+    'pregame'     => 2,
+    'in-progress' => 1,
+    'postgame'    => 3
+  }
+
+  WEEK_LEAGUES = %w[nfl ncf]
+
   def initialize(attrs)
     self.away_team      = Team.new(attrs, 'away')
     self.home_team      = Team.new(attrs, 'home')
@@ -40,12 +48,16 @@ class Score
     val
   end
 
+  def start_time
+    @start_time.to_i
+  end
+
   def as_json(*)
     {
       game_date: game_date,
-      home_team: home_team.as_json,
-      away_team: away_team.as_json,
-      start_time: start_time.to_i,
+      home_team: home_team,
+      away_team: away_team,
+      start_time: start_time,
       state: state,
       ended_in: ended_in,
       league: league,
@@ -73,4 +85,38 @@ class Score
       all == self.all
     end
   end
+
+  def self.all(league_id, date)
+    query_with_timeout(league_id, date).map do |score|
+      Score.new(score)
+    end.sort_by do |score|
+      [
+        GAME_ORDER[score.state],
+        score.start_time.to_i,
+        -score.progress.to_i,
+        score.time_remaining.to_s.gsub(':', '.').to_f
+      ]
+    end.select do |score|
+      score.game_date == date
+    end
+  end
+
+  def self.query_with_timeout(league_id, date)
+    begin
+      Timeout.timeout(3) { query_espn(league_id, date) }
+    rescue Timeout::Error
+      []
+    end
+  end
+
+  def self.query_espn(league_id, date)
+    if WEEK_LEAGUES.include?(league_id)
+      week = ((date - League.new(league_id).schedule.first).to_i / 7) + 1
+      ESPN.public_send("get_#{league_id}_scores", date.year, week)
+    else
+      ESPN.public_send("get_#{league_id}_scores", date)
+    end
+  end
+  add_method_tracer :query_espn, 'Score/query_espn'
+
 end
