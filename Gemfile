@@ -5,6 +5,8 @@ ruby '2.1.5'
 gem 'benchmark-ips'
 gem 'bugsnag'
 gem 'byebug'
+gem 'dalli'
+gem 'dragonfly'
 gem 'espn_scraper', github: 'mikesilvis/espn-scraper'
 gem 'faraday'
 gem 'less-rails'
@@ -14,7 +16,6 @@ gem 'rails-api'
 gem 'rubocop'
 gem 'therubyracer'
 gem 'unicorn-rails'
-gem 'dragonfly'
 
 group :production do
   gem 'rack-cache', require: 'rack/cache'
@@ -26,3 +27,4 @@ group :test do
   gem 'vcr'
   gem 'webmock'
 end
+

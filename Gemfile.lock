@@ -55,6 +55,7 @@ GEM
     commonjs (0.2.7)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
+    dalli (2.7.2)
     debugger-linecache (1.2.0)
     diff-lcs (1.2.5)
     dragonfly (1.0.7)
@@ -185,6 +186,7 @@ DEPENDENCIES
   benchmark-ips
   bugsnag
   byebug
+  dalli
   dragonfly
   espn_scraper!
   faraday

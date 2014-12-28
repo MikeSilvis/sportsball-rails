@@ -25,6 +25,10 @@ Rails.application.configure do
   config.action_controller.asset_host = "https://getbaryab.com"
   Rails.application.routes.default_url_options[:host] = "https://getbaryab.com"
 
+  if ENV["MEMCACHEDCLOUD_SERVERS"]
+    config.cache_store = :dalli_store, ENV["MEMCACHEDCLOUD_SERVERS"].split(','), { :username => ENV["MEMCACHEDCLOUD_USERNAME"], :password => ENV["MEMCACHEDCLOUD_PASSWORD"] }
+  end
+
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
