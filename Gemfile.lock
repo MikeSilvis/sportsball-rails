@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/mikesilvis/espn-scraper.git
-  revision: c17f4cc1c340400c25b6fb789249ad28ec29db48
+  revision: d444ecc177aa271da880e2e8767ce0ccbc2255ce
   specs:
     espn_scraper (1.0.4)
       activesupport
@@ -89,7 +89,7 @@ GEM
     newrelic_rpm (3.9.8.273)
     nokogiri (1.6.5)
       mini_portile (~> 0.6.0)
-    parser (2.2.0)
+    parser (2.2.0.1)
       ast (>= 1.1, < 3.0)
       slop (~> 3.4, >= 3.4.5)
     powerpack (0.0.9)

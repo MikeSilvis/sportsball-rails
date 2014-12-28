@@ -25,7 +25,7 @@ describe League, type: :model do
     let(:score_7) do
       { state: 'in-progress', id: 6, progress: '1st', time_remaining: '3:43', game_date: 1.day.from_now }
     end
-    before { expect(league).to receive(:query_espn).and_return(scores) }
+    before { expect(Score).to receive(:query_espn).and_return(scores) }
     let(:score_order) { league.scores.map(&:id) }
     it 'sorts the games by state, time, & duration' do
       expect(score_order).to eq([

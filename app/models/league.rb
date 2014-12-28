@@ -1,6 +1,3 @@
-require 'timeout'
-require 'byebug'
-
 class League < QueryBase
   attr_accessor :name,
                 :logo,
@@ -14,9 +11,9 @@ class League < QueryBase
 
   def self.all
     [
+      League.new('nhl'),
       League.new('nfl'),
-      League.new('ncf'),
-      League.new('nhl')
+      League.new('ncf')
     ]
   end
 
