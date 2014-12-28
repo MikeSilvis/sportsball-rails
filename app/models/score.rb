@@ -21,8 +21,6 @@ class Score < QueryBase
     'postgame'    => 3
   }
 
-  WEEK_LEAGUES = %w[nfl ncf]
-
   def initialize(attrs)
     self.game_date      = attrs[:game_date]
     self.home_team      = Team.new(attrs, 'home')
@@ -96,12 +94,7 @@ class Score < QueryBase
       end
 
       def query_espn(league_id, date)
-        if WEEK_LEAGUES.include?(league_id)
-          week = ((date - League.new(league_id).schedule.first).to_i / 7) + 1
-          ESPN.public_send("get_#{league_id}_scores", date.year, week)
-        else
-          ESPN.public_send("get_#{league_id}_scores", date)
-        end
+        ESPN.public_send("get_#{league_id}_scores_by_date", date)
       end
       add_method_tracer :query_espn, 'Score/query_espn'
     end
