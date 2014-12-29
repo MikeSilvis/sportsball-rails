@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://scores.espn.go.com/nfl/scoreboard?confId=80&seasonType=2&seasonYear=2014&weekNumber=11
+    uri: http://espn.go.com/nfl/scoreboard?seasonType=2&seasonYear=2014&weekNumber=11
     body:
       encoding: US-ASCII
       string: ''
@@ -22,20 +22,20 @@ http_interactions:
       - text/html; charset=iso-8859-1
       X-Ua-Compatible:
       - IE=edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Mon, 29 Dec 2014 04:29:31 GMT
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=30
       P3p:
       - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRo
         BUS PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
-      Vary:
-      - Accept-Encoding
-      Cache-Control:
-      - max-age=12
-      Date:
-      - Fri, 19 Dec 2014 14:53:48 GMT
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - Transfer-Encoding
-      - keep-alive
+      Set-Cookie:
+      - SWID=B06DE2AC-35B5-4A5D-B36B-735FBEAF37F3; path=/; expires=Sun, 24 Dec 2034
+        04:29:31 GMT; domain=go.com;
     body:
       encoding: UTF-8
       string: "<!DOCTYPE html>\n<html xmlns:fb=\"http://www.facebook.com/2008/fbml\">\n<head><script
@@ -297,72 +297,64 @@ http_interactions:
         /> [+]</a></div></div></div><div class=\"vid_wrap vid_wrapfull article\" style=\"display:none;\"
         ><div class=\"clear\"></div><div id=\"vid_full\"><div class=\"mod-inline video-player
         full-box with-playlist\"><div class=\"videoplayer videoplayer-scoreboard09\"
-        style=\"margin-top:0px !important;\"><img src=\"http://a.espncdn.com/media/motion/2014/1218/dm_141218_nfl_titans_jaguars_highlight/dm_141218_nfl_titans_jaguars_highlight.jpg\"
-        /></div><div id=\"videoInfo\"><h5>Jaguars Run Past Titans</h5><div class=\"mod-video-tags\"><span>The
-        Jaguars topped the Titans 21-13 and handed Tennessee its ninth straight loss.</span><div
-        class=\"mod-video-tags\"><strong>Tags:</strong> <a href=\"http://search.espn.go.com/blake-bortles/video/6\">
-        Blake Bortles</a>, <a href=\"http://search.espn.go.com/toby-gerhart/video/6\">
-        Toby Gerhart</a>, <a href=\"http://search.espn.go.com/jacksonville-jaguars/video/6\">
-        Jacksonville Jaguars</a>, <a href=\"http://search.espn.go.com/marcedes-lewis/video/6\">
-        Marcedes Lewis</a>, <a href=\"http://search.espn.go.com/nfl/video/6\">NFL</a>,
-        <a href=\"http://search.espn.go.com/tennessee-titans/video/6\"> Tennessee
-        Titans</a>, <a href=\"http://search.espn.go.com/jordan-todman/video/6\"> Jordan
-        Todman</a></div></div></div><a id=\"videotoplay\" style=\"display:none;\"
-        class=\"{trackingName: 'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=12050607\">Jaguars
-        Run Past Titans</a><div class=\"mod-video-playlist\"><h6>VIDEO PLAYLIST <img
-        width=\"15\" height=\"8\" alt=\"video\" src=\"http://a.espncdn.com/icons/video2.png\"
+        style=\"margin-top:0px !important;\"><img src=\"http://a.espncdn.com/media/motion/2014/1228/dm_141228_DoubleCheck/dm_141228_DoubleCheck.jpg\"
+        /></div><div id=\"videoInfo\"><h5>Sunday Double Check: Ravens Rally</h5><div
+        class=\"mod-video-tags\"><span>Jim Basquil and Eric Allen break down two key
+        plays that helped the Ravens get a week 17 win over the Browns.</span><div
+        class=\"mod-video-tags\"><strong>Tags:</strong> <a href=\"http://search.espn.go.com/nfl/video/6\">NFL</a>,
+        <a href=\"http://search.espn.go.com/cleveland-browns/video/6\"> Cleveland
+        Browns</a>, <a href=\"http://search.espn.go.com/baltimore-ravens/video/6\">
+        Baltimore Ravens</a></div></div></div><a id=\"videotoplay\" style=\"display:none;\"
+        class=\"{trackingName: 'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=12090069\">Sunday
+        Double Check: Ravens Rally</a><div class=\"mod-video-playlist\"><h6>VIDEO
+        PLAYLIST <img width=\"15\" height=\"8\" alt=\"video\" src=\"http://a.espncdn.com/icons/video2.png\"
         /></h6><ul class=\"bulletlinks\"><li class=\" first active\"><a class=\"{trackingName:
-        'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=12050607\">Jaguars
-        Run Past Titans</a><span style=\"display:none;\"><h5>Jaguars Run Past Titans</h5><div
-        class=\"mod-video-tags\"><span>The Jaguars topped the Titans 21-13 and handed
-        Tennessee its ninth straight loss.</span><div class=\"mod-video-tags\"><strong>Tags:</strong>
-        <a href=\"http://search.espn.go.com/blake-bortles/video/6\"> Blake Bortles</a>,
-        <a href=\"http://search.espn.go.com/toby-gerhart/video/6\"> Toby Gerhart</a>,
-        <a href=\"http://search.espn.go.com/jacksonville-jaguars/video/6\"> Jacksonville
-        Jaguars</a>, <a href=\"http://search.espn.go.com/marcedes-lewis/video/6\">
-        Marcedes Lewis</a>, <a href=\"http://search.espn.go.com/nfl/video/6\">NFL</a>,
-        <a href=\"http://search.espn.go.com/tennessee-titans/video/6\"> Tennessee
-        Titans</a>, <a href=\"http://search.espn.go.com/jordan-todman/video/6\"> Jordan
-        Todman</a></div></div></span></li><li class=\" next\"><a class=\"{trackingName:
-        'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=12051158\">Cousin
-        Sal's Week 16 Picks</a><span style=\"display:none;\"><h5>Cousin Sal's Week
-        16 Picks</h5><div class=\"mod-video-tags\"><span>Cousin Sal sits down with
-        Neil Everett to makes his picks for Week 16 in the NFL.</span><div class=\"mod-video-tags\"><strong>Tags:</strong>
-        <a href=\"http://search.espn.go.com/atlanta-falcons/video/6\"> Atlanta Falcons</a>,
-        <a href=\"http://search.espn.go.com/carolina-panthers/video/6\"> Carolina
-        Panthers</a>, <a href=\"http://search.espn.go.com/chicago-bears/video/6\">
-        Chicago Bears</a>, <a href=\"http://search.espn.go.com/cleveland-browns/video/6\">
-        Cleveland Browns</a>, <a href=\"http://search.espn.go.com/detroit-lions/video/6\">
-        Detroit Lions</a>, <a href=\"http://search.espn.go.com/johnny-manziel/video/6\">
-        Johnny Manziel</a>, <a href=\"http://search.espn.go.com/nfl/video/6\">NFL</a>,
-        <a href=\"http://search.espn.go.com/tampa-bay-buccaneers/video/6\"> Tampa
-        Bay Buccaneers</a></div></div></span></li><li class=\"\"><a class=\"{trackingName:
-        'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=12048494\">Cutler
-        Shocked, Disappointed By Benching</a><span style=\"display:none;\"><h5>Cutler
-        Shocked, Disappointed By Benching</h5><div class=\"mod-video-tags\"><span>Bears
-        QB Jay Cutler discusses coach Marc Trestman's decision to bench him.</span><div
-        class=\"mod-video-tags\"><strong>Tags:</strong> <a href=\"http://search.espn.go.com/chicago-bears/video/6\">
-        Chicago Bears</a>, <a href=\"http://search.espn.go.com/jay-cutler/video/6\">
-        Jay Cutler</a>, <a href=\"http://search.espn.go.com/nfl/video/6\">NFL</a></div></div></span></li><li
-        class=\" last\"><a class=\"{trackingName: 'scoreboard09', playRelatedExternally:
-        'false'}\" href=\"http://espn.go.com/video/clip?id=12049206\">NFL Cold Hard
-        Facts</a><span style=\"display:none;\"><h5>NFL Cold Hard Facts</h5><div class=\"mod-video-tags\"><span>Jeff
-        Saturday breaks down how the Cardinals can beat the Seahawks, how the Cowboys
-        can compensate for an injured DeMarco Murray and how the Broncos can get past
-        the Bengals.</span><div class=\"mod-video-tags\"><strong>Tags:</strong> <a
-        href=\"http://search.espn.go.com/arizona-cardinals/video/6\"> Arizona Cardinals</a>,
-        <a href=\"http://search.espn.go.com/dallas-cowboys/video/6\"> Dallas Cowboys</a>,
-        <a href=\"http://search.espn.go.com/denver-broncos/video/6\"> Denver Broncos</a>,
-        <a href=\"http://search.espn.go.com/demarco-murray/video/6\"> DeMarco Murray</a>,
-        <a href=\"http://search.espn.go.com/nfl/video/6\">NFL</a>, <a href=\"http://search.espn.go.com/seattle-seahawks/video/6\">
-        Seattle Seahawks</a></div></div></span></li></ul></div></div>\n\t\t<script>\n\t\tvar
+        'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=12090069\">Sunday
+        Double Check: Ravens Rally</a><span style=\"display:none;\"><h5>Sunday Double
+        Check: Ravens Rally</h5><div class=\"mod-video-tags\"><span>Jim Basquil and
+        Eric Allen break down two key plays that helped the Ravens get a week 17 win
+        over the Browns.</span><div class=\"mod-video-tags\"><strong>Tags:</strong>
+        <a href=\"http://search.espn.go.com/nfl/video/6\">NFL</a>, <a href=\"http://search.espn.go.com/cleveland-browns/video/6\">
+        Cleveland Browns</a>, <a href=\"http://search.espn.go.com/baltimore-ravens/video/6\">
+        Baltimore Ravens</a></div></div></span></li><li class=\" next\"><a class=\"{trackingName:
+        'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=12089848\">Harbaugh
+        Reflects On Time With 49ers</a><span style=\"display:none;\"><h5>Harbaugh
+        Reflects On Time With 49ers</h5><div class=\"mod-video-tags\"><span>Jim Harbaugh
+        addressed the media after the 49ers finished their season with a win over
+        the Cardinals.</span><div class=\"mod-video-tags\"><strong>Tags:</strong>
+        <a href=\"http://search.espn.go.com/nfl/video/6\">NFL</a>, <a href=\"http://search.espn.go.com/san-francisco-49ers/video/6\">
+        San Francisco 49ers</a>, <a href=\"http://search.espn.go.com/michigan-wolverines/video/6\">
+        Michigan Wolverines</a>, <a href=\"http://search.espn.go.com/ncf/video/6\">NCF</a></div></div></span></li><li
+        class=\"\"><a class=\"{trackingName: 'scoreboard09', playRelatedExternally:
+        'false'}\" href=\"http://espn.go.com/video/clip?id=12089539\">Panthers Dominate
+        Falcons, Win NFC South</a><span style=\"display:none;\"><h5>Panthers Dominate
+        Falcons, Win NFC South</h5><div class=\"mod-video-tags\"><span>Cam Newton
+        threw a touchdown pass to Ed Dickson and ran for another, and the Carolina's
+        defense forced three turnovers and scored two touchdowns in the Panthers'
+        34-3 win over the Falcons.</span><div class=\"mod-video-tags\"><strong>Tags:</strong>
+        <a href=\"http://search.espn.go.com/nfl/video/6\">NFL</a>, <a href=\"http://search.espn.go.com/carolina-panthers/video/6\">
+        Carolina Panthers</a>, <a href=\"http://search.espn.go.com/atlanta-falcons/video/6\">
+        Atlanta Falcons</a>, <a href=\"http://search.espn.go.com/cam-newton/video/6\">
+        Cam Newton</a></div></div></span></li><li class=\" last\"><a class=\"{trackingName:
+        'scoreboard09', playRelatedExternally: 'false'}\" href=\"http://espn.go.com/video/clip?id=12088729\">Ravens
+        Clinch Playoff Berth</a><span style=\"display:none;\"><h5>Ravens Clinch Playoff
+        Berth</h5><div class=\"mod-video-tags\"><span>Joe Flacco threw for 312 yards
+        and two touchdowns to lead the Ravens to a wild-card berth with a 20-10 victory
+        over the Browns. </span><div class=\"mod-video-tags\"><strong>Tags:</strong>
+        <a href=\"http://search.espn.go.com/nfl/video/6\">NFL</a>, <a href=\"http://search.espn.go.com/cleveland-browns/video/6\">
+        Cleveland Browns</a>, <a href=\"http://search.espn.go.com/baltimore-ravens/video/6\">
+        Baltimore Ravens</a>, <a href=\"http://search.espn.go.com/connor-shaw/video/6\">
+        Connor Shaw</a>, <a href=\"http://search.espn.go.com/joe-flacco/video/6\">
+        Joe Flacco</a>, <a href=\"http://search.espn.go.com/terrance-west/video/6\">
+        Terrance West</a>, <a href=\"http://search.espn.go.com/kamar-aiken/video/6\">
+        Kamar Aiken</a></div></div></span></li></ul></div></div>\n\t\t<script>\n\t\tvar
         ESPN_GLOBALS = {\n\t\t\t\"videoPlayers\":{\n\t\t\t\t\"scoreboard09\":{\n\t\t\t\t\t\"height\":324,\n\t\t\t\t\t\"width\":576,\n\t\t\t\t\t\n\t\t\t\t\t\"autostart\":\"false\",\n\t\t\t\t\t\"trackingName\":\"scoreboard09\"\n\t\t\t\t}\n\t\t\t}\n\t\t};\n\n\t\t\n\t\t</script>\n\t</div><div
         id=\"vid_closeAlert\"><p><strong>Are you sure you want to hide this video?</strong></p><div
         class=\"vid_buttonWrap\"><button class=\"vid_alertButton\" id=\"vid_close\">Hide</button>&nbsp;<button
         class=\"vid_alertButton\" id=\"vid_cancel\">Cancel</button></div><p><input
         type=\"checkbox\" name=\"disableVideo\" id=\"disableVideoCheck\" /> Hide future
         scoreboard video content</p></div></div>\n\t<script type=\"text/javascript\">\n\t(function($)
-        {\n\t\tfunction checkWatchChannel(){\n\t\t\tcheckString = \"20141219~\";\n\t\t\tcurEventId
+        {\n\t\tfunction checkWatchChannel(){\n\t\t\tcheckString = \"20141228~\";\n\t\t\tcurEventId
         = \"null\";\n\t\t\tdateObj = new Date();\n\t\t\tcurHours = dateObj.getHours()
         + '';\n\t\t\tif (curHours.length == 1){ curHours = '0' + curHours }\n\t\t\tcurMins
         = dateObj.getMinutes() + '';\n\t\t\tif (curMins.length == 1){ curMins = '0'
@@ -1793,7 +1785,7 @@ http_interactions:
         id=\"400554421-hStat2\">20:11</p></div><p class=\"stat-caption\">TIME POSS</p></div></div><div
         id=\"400554421-gameNote\" class=\"game-notes\" style=\"display:none\"></div></div></div></div></div></div><!--
         CONTENT: 09scoreboard614, SPORT: nfl--><div style=\"margin:0px 0px 5px 0px;
-        text-align: center; width: 614px;\"><ins id=\"splinks-70663\"></ins>\n        <script
+        text-align: center; width: 614px;\"><ins id=\"splinks-53398\"></ins>\n        <script
         type=\"text/javascript\">\n            (function($) {\n                //
         config params\n                var width = '614',\n                    height
         = '300',\n                    client = 'ca-espn-q-scoreboard',\n                    channel
@@ -1801,7 +1793,7 @@ http_interactions:
         builds iframe HTML\n                function buildIframe(width, height, client,
         channel) {\n                    var path = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
         \                   // pass params as the hash as they are only needed on
-        the client\n                    var hash = '70663|' + width + '|' + height
+        the client\n                    var hash = '53398|' + width + '|' + height
         + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
         = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
         + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
@@ -1817,11 +1809,11 @@ http_interactions:
         {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
         || espn.core.android) {\n                            // outside US or not
         on desktop\n                            client = 'ca-espn-nq';\n                        }\n
-        \                       $('#splinks-70663').html(buildIframe(width, height,
-        client, channel));\n                    }).fail(function() {\n                        $('#splinks-70663').html(buildIframe(width,
+        \                       $('#splinks-53398').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-53398').html(buildIframe(width,
         height, 'ca-espn-nq', channel));\n                    });\n                }
         else {\n                    // can't locate them, assume they are outside
-        US\n                    $('#splinks-70663').html(buildIframe(width, height,
+        US\n                    $('#splinks-53398').html(buildIframe(width, height,
         'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
         \   </div></div><div class=\"span-2\"><div class=\"mod-container mod-no-border\"><div
         class=\"mod-content mod-feedback-link\"><p><a href=\"http://espn.qualtrics.com/SE/?SID=SV_cIsNl2g4i6lwwOU\"
@@ -1905,8 +1897,8 @@ http_interactions:
         ANALYSIS</h4></div><div class=\"mod-content\"><div class=\"gradient-container\"><img
         src=\"http://a.espncdn.com/i/insider/pickcenter/tournament/pickcenter.png\"
         style=\"margin: 15px 0px 8px 68px; float: left;\"><div class=\"winning-team\"><div
-        class=\"percentage-block\"><div class=\"percentage-team\"><b>Detroit </b></div><div
-        class=\"percentage-bg\"><div class=\"percentage\" style=\"width:82%\">82%</div></div></div></div><div
+        class=\"percentage-block\"><div class=\"percentage-team\"><b>Baltimore </b></div><div
+        class=\"percentage-bg\"><div class=\"percentage\" style=\"width:62%\">62%</div></div></div></div><div
         class=\"pickcenter-pick-all\"><div class=\"pickcenter-pick\">Spread Consensus
         Pick<a style=\"font-weight:bold; font-size:12px; width:20px;\" href=\"#\"
         class=\"tooltip\">[?]</a><div style=\"position: absolute; display: none; z-index:10;
@@ -1915,20 +1907,19 @@ http_interactions:
         from sportsbooks. The percentage and pick provides insight as to what side
         the public is taking in this game. </p>This data is provided by SportsInsights.</p></div></div></div><table
         class=\"trnf\"><thead><tr style=\"border-bottom:1px solid #ccc;\"><td>Teams</td><td>Team
-        Rankings</td><td>numberFire</td></tr></thead><tbody><tr><td style=\"margin-left:-5px;\"><b>CHI</b></td><td
-        style=\"color:#555;\">18.1</td><td style=\"color:#555;\">18.5</td></tr><tr><td
-        style=\"margin-left:-5px;\"><b>DET</b></td><td style=\"color:#555;\"><img
-        src=\"http://a.espncdn.com/i/insider/pickcenter/arrow.png\" alt=\"arrow\"
-        />26</td><td style=\"color:#555;\"><img src=\"http://a.espncdn.com/i/insider/pickcenter/arrow.png\"
-        alt=\"arrow\" />26.8</td></tr></tbody></table><table class=\"favTeam\"><thead><tr><td>Favorite</td><td>Spread</td><td>Money
-        Line</td><td>Over/Under</td></tr></thead><tbody><tr><td>DET</td><td style=\"color:#555;\">-8</td><td
-        style=\"color:#555;\">-365</td><td style=\"color:#555;\">44.5</td></tr></tbody></table><div
-        id=\"scoreboardPCMod-flag\" class=\"flag\"><a href=\"http://insider.espn.go.com/insider/pickcenter/nfl/game?gameid=400554401\">PickCenter
+        Rankings</td><td>numberFire</td></tr></thead><tbody><tr><td style=\"margin-left:-5px;\"><b>BAL</b></td><td
+        style=\"color:#555;\"><img src=\"http://a.espncdn.com/i/insider/pickcenter/arrow.png\"
+        alt=\"arrow\" />27.8</td><td style=\"color:#555;\"><img src=\"http://a.espncdn.com/i/insider/pickcenter/arrow.png\"
+        alt=\"arrow\" />26.6</td></tr><tr><td style=\"margin-left:-5px;\"><b>CLE</b></td><td
+        style=\"color:#555;\">13.5</td><td style=\"color:#555;\">14.9</td></tr></tbody></table><table
+        class=\"favTeam\"><thead><tr><td>Favorite</td><td>Spread</td><td>Money Line</td><td>Over/Under</td></tr></thead><tbody><tr><td>BAL</td><td
+        style=\"color:#555;\">-14</td><td style=\"color:#555;\">-1000</td><td style=\"color:#555;\">40</td></tr></tbody></table><div
+        id=\"scoreboardPCMod-flag\" class=\"flag\"><a href=\"http://insider.espn.go.com/insider/pickcenter/nfl/game?gameid=400554405\">PickCenter
         Details &#187;</a></div><div class=\"col-full\">\n<div class=\"editLinks\"><a
-        name=\"&lpos=nflScoreboard&lid=insiderSBPromoModuleEditLink\" href=\"http://insider.espn.go.com/chalk/story/_/id/12036252/nfl-new-england-seattle-denver-tie-first-nfl-vegas-rankings?addata=2014_insdr_xxx_sce_nfl_xxx\">Tuley:
-        Cowboys move up in Vegas Rankings &#187;</a></div>\n<div class=\"editLinks\"><a
-        name=\"&lpos=nflScoreboard&lid=insiderSBPromoModuleEditLink\" href=\"http://insider.espn.go.com/chalk/story/_/id/12031795/betting-analyzing-early-week-16-line-moves-gambling-recap?addata=2014_insdr_xxx_sce_nfl_xxx\">Tuley:
-        Early line moves for Week 16 &#187;</a></div>\n</div></div></div></div><div
+        name=\"&lpos=nflScoreboard&lid=insiderSBPromoModuleEditLink\" href=\"http://insider.espn.go.com/chalk/story/_/id/12065689/betting-early-week-17-nfl-line-moves-week-16-takeaways?addata=2014_insdr_xxx_sce_nfl_xxx\">Tuley:
+        Early Week 17 line moves &#187;</a></div>\n<div class=\"editLinks\"><a name=\"&lpos=nflScoreboard&lid=insiderSBPromoModuleEditLink\"
+        href=\"http://insider.espn.go.com/chalk/story/_/id/12057178/betting-how-vegas-experts-view-denver-cincinnati-matchup?addata=2014_insdr_xxx_sce_nfl_xxx\">Gold:
+        How Vegas experts view DEN-CIN &#187;</a></div>\n</div></div></div></div><div
         class=\"mod-container mod-no-footer mod-open mod-open-gamepack mod-nfl-scorebox\"
         id=\"insiderFalse\" style=\"display:none;\"><div class=\"mod-header\"><img
         src=\"http://a.espncdn.com/combiner/i?img=/i/insider/pickcenter/logo_insider_pickcenter.png?w=53&h=13\"
@@ -1938,20 +1929,20 @@ http_interactions:
         src=\"http://a.espncdn.com/i/insider/pickcenter/subscribe_new.png\" /></a></div></div><img
         src=\"http://a.espncdn.com/i/insider/pickcenter/tournament/pickcenter.png\"
         style=\"margin: 15px 0px 8px 68px; float: left;\"><div class=\"winning-team\"
-        style=\"height:50px;\"><div class=\"percentage-block\"><div class=\"percentage-team\"><b>Detroit
+        style=\"height:50px;\"><div class=\"percentage-block\"><div class=\"percentage-team\"><b>Baltimore
         </b></div><div class=\"percentage-bg\"></div></div></div><div class=\"pickcenter-pick-all\"><div
         class=\"pickcenter-pick\">Spread Consensus Pick</div></div><table class=\"trnf\"><thead><tr
         style=\"border-bottom:1px solid #ccc;\"><td>Teams</td><td>Team Rankings</td><td>numberFire</td></tr></thead><tbody><tr><td
-        style=\"margin-left:-5px;\"><b>CHI</b></td><td></td><td></td></tr><tr><td
-        style=\"margin-left:-5px;\"><b>DET</b></td><td></td><td></td></tr></tbody></table><table
-        class=\"favTeam\"><thead><tr><td>Favorite</td><td>Open</td><td>Money Line</td><td>Over/Under</td></tr></thead><tbody><tr><td>DET</td><td
-        style=\"color:#555;\">-8</td><td style=\"color:#555;\">-365</td><td style=\"color:#555;\">44.5</td></tr></tbody></table><div
-        id=\"scoreboardPCMod-flag\" class=\"flag\"><a href=\"http://insider.espn.go.com/insider/pickcenter/nfl/game?gameid=400554401\">PickCenter
+        style=\"margin-left:-5px;\"><b>BAL</b></td><td></td><td></td></tr><tr><td
+        style=\"margin-left:-5px;\"><b>CLE</b></td><td></td><td></td></tr></tbody></table><table
+        class=\"favTeam\"><thead><tr><td>Favorite</td><td>Open</td><td>Money Line</td><td>Over/Under</td></tr></thead><tbody><tr><td>BAL</td><td
+        style=\"color:#555;\">-14</td><td style=\"color:#555;\">-1000</td><td style=\"color:#555;\">40</td></tr></tbody></table><div
+        id=\"scoreboardPCMod-flag\" class=\"flag\"><a href=\"http://insider.espn.go.com/insider/pickcenter/nfl/game?gameid=400554405\">PickCenter
         Details &#187;</a></div><div class=\"col-full\">\n<div class=\"editLinks\"><a
-        name=\"&lpos=nflScoreboard&lid=insiderSBPromoModuleEditLink\" href=\"http://insider.espn.go.com/chalk/story/_/id/12036252/nfl-new-england-seattle-denver-tie-first-nfl-vegas-rankings?addata=2014_insdr_xxx_sce_nfl_xxx\">Tuley:
-        Cowboys move up in Vegas Rankings &#187;</a></div>\n<div class=\"editLinks\"><a
-        name=\"&lpos=nflScoreboard&lid=insiderSBPromoModuleEditLink\" href=\"http://insider.espn.go.com/chalk/story/_/id/12031795/betting-analyzing-early-week-16-line-moves-gambling-recap?addata=2014_insdr_xxx_sce_nfl_xxx\">Tuley:
-        Early line moves for Week 16 &#187;</a></div>\n</div></div></div></div>\n\t\t\t<!--Tooltip-->\n\t\t\t<script>\n\t\t\t\tjQuery(document).ready(function()
+        name=\"&lpos=nflScoreboard&lid=insiderSBPromoModuleEditLink\" href=\"http://insider.espn.go.com/chalk/story/_/id/12065689/betting-early-week-17-nfl-line-moves-week-16-takeaways?addata=2014_insdr_xxx_sce_nfl_xxx\">Tuley:
+        Early Week 17 line moves &#187;</a></div>\n<div class=\"editLinks\"><a name=\"&lpos=nflScoreboard&lid=insiderSBPromoModuleEditLink\"
+        href=\"http://insider.espn.go.com/chalk/story/_/id/12057178/betting-how-vegas-experts-view-denver-cincinnati-matchup?addata=2014_insdr_xxx_sce_nfl_xxx\">Gold:
+        How Vegas experts view DEN-CIN &#187;</a></div>\n</div></div></div></div>\n\t\t\t<!--Tooltip-->\n\t\t\t<script>\n\t\t\t\tjQuery(document).ready(function()
         {\n\t\t\t\t\tjQuery(\".tooltip\").hover(\n\t\t\t\t\t\tfunction () {\n\t\t\t\t\t\t\tjQuery(this).siblings('.tooltip-content').show();\n\t\t\t\t\t\t},\n\t\t\t\t\t\tfunction
         () {\n\t\t\t\t\t\t\tjQuery(this).siblings('.tooltip-content').hide();\n\t\t\t\t\t\t}\n\t\t\t\t\t);\n\t\t\t\t})\n\t\t\t</script>\n\t\t\t\n\t\t<script>\n\t\t(function($){\n\t\t//checking
         insider access for insider module on preview page\n\t    \t$(document).ready(function(){\n\t\t
@@ -2023,7 +2014,7 @@ http_interactions:
         target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nfl/nflscoreboard;pgtyp=nflscoreboard;sp=nfl;sz=300x100,1x1;\"
         border=\"0\" alt=\"\"></a></noscript>\n</div></div><!-- CONTENT: scoreboard-right:304w300h,
         SPORT: nfl--><div style=\"margin:0px 0px 5px 0px; text-align: center; width:
-        304px;\"><ins id=\"splinks-58633\"></ins>\n        <script type=\"text/javascript\">\n
+        304px;\"><ins id=\"splinks-71023\"></ins>\n        <script type=\"text/javascript\">\n
         \           (function($) {\n                // config params\n                var
         width = '304',\n                    height = '300',\n                    client
         = 'ca-espn-q-scoreboard',\n                    channel = 'nfl right',\n                    lang
@@ -2031,7 +2022,7 @@ http_interactions:
         buildIframe(width, height, client, channel) {\n                    var path
         = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
         \                   // pass params as the hash as they are only needed on
-        the client\n                    var hash = '58633|' + width + '|' + height
+        the client\n                    var hash = '71023|' + width + '|' + height
         + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
         = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
         + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
@@ -2047,11 +2038,11 @@ http_interactions:
         {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
         || espn.core.android) {\n                            // outside US or not
         on desktop\n                            client = 'ca-espn-nq';\n                        }\n
-        \                       $('#splinks-58633').html(buildIframe(width, height,
-        client, channel));\n                    }).fail(function() {\n                        $('#splinks-58633').html(buildIframe(width,
+        \                       $('#splinks-71023').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-71023').html(buildIframe(width,
         height, 'ca-espn-nq', channel));\n                    });\n                }
         else {\n                    // can't locate them, assume they are outside
-        US\n                    $('#splinks-58633').html(buildIframe(width, height,
+        US\n                    $('#splinks-71023').html(buildIframe(width, height,
         'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
         \   </div></div></div>\n<div id=\"nav-wrapper\" class=\"container\">\n<div
         id=\"nav-wrapper-container\">\n<div id=\"nav-main\">\n<!-- begin site nav
@@ -2167,11 +2158,12 @@ http_interactions:
         href=\"http://espn.go.com/espn/chalk/\" name=\"&lpos=subnav&lid=subnav_betting\">Odds
         info</a></li>\n<li><a href=\"http://espn.go.com/blog/nflnation\" name=\"&lpos=subnav&lid=subnav_blog\">NFL
         Nation </a></li>\n<li><a href=\"http://espn.go.com/nfl/draft\" name=\"&lpos=subnav&lid=subnav_NFL_Draft\">Draft</a></li>\n<li><a
-        href=\"http://espn.go.com/nfl/mnf\">MN HQ</a></li>\n<li><a href=\"http://insider.espn.go.com/nfl/features/rumors\"
-        name=\"&lpos=subnav&lid=subnav_NFL_Rumors\">Rumors</a></li>\n<li><a href=\"http://www.tsn.ca/cfl/\">CFL</a></li>\n<li
-        class=\"expandable\"><a href=\"javascript:void(0);\"><span>Resources</span></a><div><dl><dd><a
-        href=\"http://espn.go.com/blog/nflinjurywire/\" name=\"&lpos=subnav&lid=subnav_NFL_Preview\">Injury
-        Wire</a></dd><dd><a href=\"http://espn.go.com/nfl/transactions\" name=\"&lpos=subnav&lid=subnav_NFL_transactions\">Transactions</a></dd><!--<dd><a
+        href=\"http://espn.go.com/nfl/playoffs/2014/story/_/id/12010333/nfl-playoffs-postseason-schedule-dates-s-calendar-2014-2015\">Playoffs</a></li>\n<li><a
+        href=\"http://insider.espn.go.com/nfl/features/rumors\" name=\"&lpos=subnav&lid=subnav_NFL_Rumors\">Rumors</a></li>\n<li><a
+        href=\"http://www.tsn.ca/cfl/\">CFL</a></li>\n<li class=\"expandable\"><a
+        href=\"javascript:void(0);\"><span>Resources</span></a><div><dl><dd><a href=\"http://espn.go.com/blog/nflinjurywire/\"
+        name=\"&lpos=subnav&lid=subnav_NFL_Preview\">Injury Wire</a></dd><dd><a href=\"http://espn.go.com/nfl/transactions\"
+        name=\"&lpos=subnav&lid=subnav_NFL_transactions\">Transactions</a></dd><!--<dd><a
         href=\"http://espn.go.com/nfl/lines\">Daily line</a></dd>--><dd><a href=\"http://espn.go.com/nfl/attendance\"
         name=\"&lpos=subnav&lid=subnav_NFL_Attendance\">Attendance</a></dd><dd><a
         href=\"http://espn.go.com/nfl/coaches\" name=\"&lpos=subnav&lid=subnav_NFL_Coaches\">Coaches</a></dd><!--<dd><a
@@ -2282,5 +2274,5 @@ http_interactions:
         a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
         \ //]]>\n</script></body>\n</html>"
     http_version: 
-  recorded_at: Fri, 19 Dec 2014 14:53:50 GMT
+  recorded_at: Mon, 29 Dec 2014 04:29:32 GMT
 recorded_with: VCR 2.9.3
