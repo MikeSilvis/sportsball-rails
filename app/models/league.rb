@@ -30,9 +30,7 @@ class League < QueryBase
   end
 
   def schedule
-    Rails.cache.fetch("schedule_#{name}", expires_in: 1.year) do
-      ESPN::Schedule.find(name)
-    end
+    ESPN::Schedule.find(name)
   end
 
   def scores(date = Date.today)
