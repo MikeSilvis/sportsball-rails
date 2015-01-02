@@ -13,6 +13,10 @@ class Recap < QueryBase
     self.url      = attrs[:url]
   end
 
+  def content
+    @content.gsub(/^\n/, '')
+  end
+
   def self.find(league, game_id)
     new(ESPN::Recap.find(league, game_id))
   end
