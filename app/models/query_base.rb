@@ -22,6 +22,6 @@ class QueryBase
   end
 
   def api_image_url(path)
-    Rails.application.routes.url_helpers.api_image_url(path)
+    Rails.application.routes.url_helpers.api_image_url("#{path}.png")
   end
 end

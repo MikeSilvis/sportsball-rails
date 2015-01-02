@@ -22,7 +22,7 @@ class Team < QueryBase
   end
 
   def logo
-    Rails.application.routes.url_helpers.api_image_url("#{league}-teams/#{data_name}")
+    api_image_url("#{league}-teams/#{data_name}")
   end
 
   module DownloadingLogo
