@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/mikesilvis/espn-scraper.git
-  revision: b0dcc64d32f4d20207d80a476784606e738950bf
+  revision: 71e42242033db3464a02b78492074348349e706c
   specs:
     espn_scraper (1.0.4)
       activesupport
