@@ -17,6 +17,10 @@ class Recap < QueryBase
     @content.gsub(/^\n/, '')
   end
 
+  def url
+    "http://m.espn.go.com/#{league}/gamecast?gameId=#{game_id}"
+  end
+
   def self.find(league, game_id)
     new(ESPN::Recap.find(league, game_id))
   end
