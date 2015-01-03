@@ -18,6 +18,7 @@ class Recap < QueryBase
   end
 
   def url
+    byebug
     "http://m.espn.go.com/#{league}/gamecast?gameId=#{game_id}"
   end
 
