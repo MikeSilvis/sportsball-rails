@@ -14,7 +14,7 @@ class Recap < QueryBase
   end
 
   def content
-    @content.gsub(/^\n/, '')
+    @content.gsub(/\n/, '')
   end
 
   def url
