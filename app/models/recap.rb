@@ -18,7 +18,7 @@ class Recap < QueryBase
   end
 
   def url
-    "http://m.espn.go.com/#{league}/gamecast?gameId=#{game_id}"
+    "http://m.espn.go.com/#{league}/gamecast?gameId=#{game_id}&appsrc=sc"
   end
 
   def self.find(league, game_id)
