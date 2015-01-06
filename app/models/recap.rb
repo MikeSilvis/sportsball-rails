@@ -27,7 +27,7 @@ class Recap < QueryBase
   end
 
   def photo
-    "#{photos[:photos].first}&h=150"
+    "#{photos[:photos].first}&h=200"
   end
 
   private
