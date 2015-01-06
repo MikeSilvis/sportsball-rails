@@ -99,7 +99,9 @@ class Score < QueryBase
         espn_scores = if Rails.cache.read(cache_key)
                         Rails.cache.read(cache_key)
                       else
-                        ESPN.public_send("get_#{league_id}_scores_by_date", date)
+                        ESPN.public_send("get_#{league_id}_scores_by_date", date).select do |score|
+                          score[:game_date] == date
+                        end
                       end
 
         if espn_scores.all? { |score| score[:state] == 'postgame' }
