@@ -94,7 +94,19 @@ class Score < QueryBase
       end
 
       def query_espn(league_id, date)
-        ESPN.public_send("get_#{league_id}_scores_by_date", date)
+        cache_key = "score_cache_#{league_id}_#{date}"
+
+        espn_scores = if Rails.cache.read(cache_key)
+                        Rails.cache.read(cache_key)
+                      else
+                        ESPN.public_send("get_#{league_id}_scores_by_date", date)
+                      end
+
+        if espn_scores.all? { |score| score[:state] == 'postgame' }
+          Rails.cache.write(cache_key, espn_scores)
+        end
+
+        espn_scores
       end
       add_method_tracer :query_espn, 'Score/query_espn'
     end

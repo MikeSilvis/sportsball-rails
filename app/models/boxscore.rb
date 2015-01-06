@@ -39,6 +39,18 @@ class Boxscore < QueryBase
   end
 
   def self.find(league, game_id)
-    new(ESPN::Boxscore.find(league, game_id))
+    cache_key = "boxscore_cache_#{league}_#{game_id}"
+
+    espn_boxscore = if Rails.cache.read(cache_key)
+                      Rails.cache.read(cache_key)
+                    else
+                      ESPN::Boxscore.find(league, game_id)
+                    end
+
+    if espn_boxscore[:state] == 'postgame'
+      Rails.cache.write(cache_key, espn_boxscore)
+    end
+
+    new(espn_boxscore)
   end
 end
