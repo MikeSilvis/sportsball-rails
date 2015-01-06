@@ -27,9 +27,7 @@ class Boxscore < QueryBase
   end
 
   def recap
-    if state == 'postgame'
-      Recap.find(league, game_id)
-    end
+    Recap.find(league, game_id) if state == 'postgame'
   end
 
   def self.find(league, game_id)
