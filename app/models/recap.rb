@@ -3,7 +3,8 @@ class Recap < QueryBase
                 :game_id,
                 :content,
                 :headline,
-                :url
+                :url,
+                :photo
 
   def initialize(attrs)
     self.league   = attrs[:league]
@@ -23,5 +24,15 @@ class Recap < QueryBase
 
   def self.find(league, game_id)
     new(ESPN::Recap.find(league, game_id))
+  end
+
+  def photo
+    "#{photos[:photos].first}&w=200&h=200"
+  end
+
+  private
+
+  def photos
+    @photos ||= ESPN::Photo.find(league, game_id)
   end
 end
