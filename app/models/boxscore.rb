@@ -12,18 +12,26 @@ class Boxscore < QueryBase
                 :state,
                 :league,
                 :game_id,
-                :recap
+                :recap,
+                :time_remaining_summary
 
   def initialize(attrs)
-    self.away_team      = Team.new(attrs, 'away')
-    self.home_team      = Team.new(attrs, 'home')
-    self.game_date      = attrs[:game_date]
-    self.arena          = attrs[:arena]
-    self.score_summary  = attrs[:score_summary]
-    self.score_detail   = attrs[:score_detail]
-    self.state          = attrs[:state]
-    self.league         = attrs[:league]
-    self.game_id        = attrs[:game_id]
+    self.away_team              = Team.new(attrs, 'away')
+    self.home_team              = Team.new(attrs, 'home')
+    self.game_date              = attrs[:game_date]
+    self.arena                  = attrs[:arena]
+    self.score_summary          = attrs[:score_summary]
+    self.score_detail           = attrs[:score_detail]
+    self.state                  = attrs[:state]
+    self.league                 = attrs[:league]
+    self.game_id                = attrs[:game_id]
+    self.time_remaining_summary = attrs[:time_remaining_summary]
+  end
+
+  def score_summary
+    @score_summary.tap do |score_summary|
+      score_summary[0][0] = time_remaining_summary.strip
+    end
   end
 
   def recap
