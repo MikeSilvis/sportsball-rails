@@ -30,7 +30,7 @@ class Boxscore < QueryBase
 
   def score_summary
     @score_summary.tap do |score_summary|
-      score_summary[0][0] = time_remaining_summary.strip
+      score_summary[0][0] = time_remaining_summary.gsub('In Progress -', '').strip
     end
   end
 
