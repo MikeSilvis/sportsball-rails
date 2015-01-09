@@ -1,5 +1,6 @@
 class Preview < QueryBase
   attr_accessor :content,
+                :headline,
                 :start_time,
                 :location,
                 :home_team,
@@ -10,6 +11,7 @@ class Preview < QueryBase
     self.away_team  = Team.new(attrs, 'away')
     self.home_team  = Team.new(attrs, 'home')
     self.content    = attrs[:content]
+    self.headline   = attrs[:headline]
     self.start_time = attrs[:start_time]
     self.channel    = attrs[:channel]
     self.location   = attrs[:location]
