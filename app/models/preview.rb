@@ -7,7 +7,9 @@ class Preview < QueryBase
                 :away_team,
                 :channel,
                 :url,
-                :series
+                :series,
+                :game_id,
+                :league
 
   def initialize(attrs)
     self.away_team  = Team.new(attrs, 'away')
@@ -19,6 +21,12 @@ class Preview < QueryBase
     self.location   = attrs[:location]
     self.url        = attrs[:url]
     self.series     = attrs[:series]
+    self.game_id    = attrs[:game_id]
+    self.league     = attrs[:league]
+  end
+
+  def url
+    "http://m.espn.go.com/#{league}/gamecast?gameId=#{game_id}&appsrc=sc"
   end
 
   def self.find(league, game_id)
