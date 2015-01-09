@@ -5,7 +5,9 @@ class Preview < QueryBase
                 :location,
                 :home_team,
                 :away_team,
-                :channel
+                :channel,
+                :url,
+                :series
 
   def initialize(attrs)
     self.away_team  = Team.new(attrs, 'away')
@@ -15,6 +17,8 @@ class Preview < QueryBase
     self.start_time = attrs[:start_time]
     self.channel    = attrs[:channel]
     self.location   = attrs[:location]
+    self.url        = attrs[:url]
+    self.series     = attrs[:series]
   end
 
   def self.find(league, game_id)
