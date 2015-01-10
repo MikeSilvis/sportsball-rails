@@ -87,32 +87,12 @@ class Score < QueryBase
 
       def query_with_timeout(league_id, date)
         begin
-          Timeout.timeout(3) { query_espn(league_id, date) }
+          Timeout.timeout(3) { ESPN::Scores.find(league_id, date) }
         rescue Timeout::Error
           []
         end
       end
-
-      def query_espn(league_id, date)
-        cache_key = "score_cache_#{league_id}_#{date}"
-
-        espn_scores = if Rails.cache.read(cache_key)
-                        Rails.cache.read(cache_key)
-                      else
-                        ESPN.public_send("get_#{league_id}_scores_by_date", date).select do |score|
-                          score[:game_date] == date
-                        end
-                      end
-
-        if espn_scores.all? { |score| score[:state] == 'postgame' }
-          Rails.cache.write(cache_key, espn_scores)
-        end
-
-        espn_scores
-      end
-      add_method_tracer :query_espn, 'Score/query_espn'
     end
   end
   include ScoreFinder
-
 end
