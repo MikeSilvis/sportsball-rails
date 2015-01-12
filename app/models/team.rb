@@ -22,6 +22,10 @@ class Team < QueryBase
   end
 
   def logo
+    self.class.logo(league, data_name)
+  end
+
+  def self.logo(league, data_name)
     api_image_url("#{league}-teams/#{data_name}")
   end
 
