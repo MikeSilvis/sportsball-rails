@@ -22,7 +22,7 @@ class QueryBase
   end
 
   def api_image_url(path)
-    self.api_image_url(path)
+    self.class.api_image_url(path)
   end
 
   def self.api_image_url(path)
