@@ -35,6 +35,10 @@ class Preview < QueryBase
     @away_team_schedule ||= Schedule.find(self.league, self.away_team.data_name)
   end
 
+  def start_time
+    @start_time.to_i
+  end
+
   def url
     "http://m.espn.go.com/#{league}/gamecast?gameId=#{game_id}&appsrc=sc"
   end
