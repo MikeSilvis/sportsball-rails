@@ -1,6 +1,6 @@
 class Api::SchedulesController < ApplicationController
   def show
-    render json: { schedule: schedule }
+    render json: { schedule: schedule.games }
   end
 
   private

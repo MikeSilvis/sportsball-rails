@@ -2,7 +2,7 @@ class Schedule < QueryBase
   attr_accessor :games
 
   def initialize(attrs)
-    self.games = attrs[:games]
+    self.games = attrs
   end
 
   def self.find(league, team_data_name)
