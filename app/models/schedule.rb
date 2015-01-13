@@ -8,9 +8,17 @@ class Schedule < QueryBase
     self.team_data_name = attrs[:team_name]
 
     self.games = attrs[:games].map do |game|
-      game.tap do |gm|
-        gm[:opponent_logo] = Team.logo(self.league, gm[:opponent])
-      end
+      {
+        opponent: {
+          logo: Team.logo(self.league, game[:opponent]),
+          name: game[:opponent_name],
+          data_name: game[:opponent]
+        },
+        date: game[:date],
+        over: game[:over],
+        result: game[:result],
+        win: game[:win]
+      }
     end
   end
 
