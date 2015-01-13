@@ -18,7 +18,7 @@ class Schedule < QueryBase
         over: game[:over],
         result: game[:result],
         win: game[:win]
-      }
+      }.compact
     end
   end
 
