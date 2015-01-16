@@ -19,7 +19,7 @@ class Schedule < QueryBase
         result: game[:result],
         win: game[:win],
         is_away: game[:is_away],
-        time: game[:time].to_i
+        start_time: game[:time].to_i
       }.compact
     end
   end
