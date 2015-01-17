@@ -31,7 +31,7 @@ class League < QueryBase
   end
 
   def monthly_schedule
-    league == 'nhl'
+    name == 'nhl'
   end
 
   def schedule
