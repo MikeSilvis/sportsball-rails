@@ -3,7 +3,8 @@ class League < QueryBase
                 :logo,
                 :header_image,
                 :header_blurred_image,
-                :schedule
+                :schedule,
+                :monthly_schedule
 
   def initialize(name)
     self.name = name
@@ -27,6 +28,10 @@ class League < QueryBase
 
   def header_blurred_image
     @header_blurred_image ||= api_image_url("leagues/#{name}-header-blurred")
+  end
+
+  def monthly_schedule
+    league == 'nhl'
   end
 
   def schedule

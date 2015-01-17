@@ -1,19 +1,19 @@
 class Score < QueryBase
   include SportsBall
   attr_accessor :away_team,
-    :home_team,
-    :game_date,
-    :away_score,
-    :home_score,
-    :state,
-    :ended_in,
-    :start_time,
-    :time_remaining,
-    :progress,
-    :line,
-    :id,
-    :boxscore,
-    :preview
+                :home_team,
+                :game_date,
+                :away_score,
+                :home_score,
+                :state,
+                :ended_in,
+                :start_time,
+                :time_remaining,
+                :progress,
+                :line,
+                :id,
+                :boxscore,
+                :preview
 
   GAME_ORDER = {
     'pregame'     => 2,
