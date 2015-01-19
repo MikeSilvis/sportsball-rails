@@ -10,7 +10,7 @@ class Boxscore < QueryBase
                 :state,
                 :league,
                 :game_id,
-                #:recap,
+                :recap,
                 :time_remaining_summary
 
   def initialize(attrs)
@@ -33,7 +33,10 @@ class Boxscore < QueryBase
   end
 
   def recap
-    Recap.find(league, game_id) if state == 'postgame'
+    return nil unless state =='postgame'
+    Recap.find(league, game_id).tap do |recap|
+      return nil if recap.headline.to_s.match(/No recap/)
+    end
   end
 
   def self.find(league, game_id)
