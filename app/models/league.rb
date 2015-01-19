@@ -1,6 +1,8 @@
 class League < QueryBase
   attr_accessor :name,
                 :logo,
+                :header_images,
+                :header_blurred_images,
                 :header_image,
                 :header_blurred_image,
                 :schedule,
@@ -22,12 +24,30 @@ class League < QueryBase
     @logo ||= api_image_url("leagues/#{name}")
   end
 
+  # TODO: Remove upon submitting new build
   def header_image
-    @header_image ||= api_image_url("leagues/#{name}-header")
+    @header_image ||= header_images.values.first
   end
 
+  # TODO: Remove upon submitting new build
   def header_blurred_image
-    @header_blurred_image ||= api_image_url("leagues/#{name}-header-blurred")
+    @header_blurred_image ||= header_blurred_images.values.first
+  end
+
+  def header_images
+    @header_images ||= find_images('headers')
+  end
+
+  def header_blurred_images
+    @header_blurred_images ||= find_images('blurred-headers')
+  end
+
+  def find_images(location)
+    Dir["#{Rails.root}/app/assets/images/#{name}-teams/#{location}/*.png"].inject({}) do |hash, file|
+      team_name = file.split('/').last.gsub(/.png/, '')
+      hash[team_name] = api_image_url("#{name}-teams/#{location}/#{team_name}")
+      hash
+    end
   end
 
   def monthly_schedule

@@ -1,6 +1,20 @@
 require 'rails_helper'
 
 describe League, type: :model do
+  describe '.header_blurred_image' do
+    let(:league) { League.new('nhl') }
+    context 'includes all files in the specified folder' do
+      it { expect(league.header_blurred_images.keys.size).to eq(1) }
+      it { expect(league.header_blurred_images.values.first).to eq('https://localhost:3000/api/images/nhl-teams%2Fblurred-headers%2Fpit.png') }
+    end
+  end
+  describe '.header_image' do
+    let(:league) { League.new('nhl') }
+    context 'includes all files in the specified folder' do
+      it { expect(league.header_images.keys.size).to eq(1) }
+      it { expect(league.header_images.values.first).to eq('https://localhost:3000/api/images/nhl-teams%2Fheaders%2Fpit.png') }
+    end
+  end
   describe '.scores' do
     let(:league) { League.new('nhl') }
     let(:scores) { [score_1, score_2, score_3, score_4, score_5, score_6, score_7] }

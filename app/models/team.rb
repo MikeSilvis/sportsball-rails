@@ -26,7 +26,7 @@ class Team < QueryBase
   end
 
   def self.logo(league, data_name)
-    api_image_url("#{league}-teams/#{data_name}")
+    api_image_url("#{league}-teams/logos/#{data_name}")
   end
 
   module DownloadingLogo
