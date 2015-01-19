@@ -26,12 +26,12 @@ class League < QueryBase
 
   # TODO: Remove upon submitting new build
   def header_image
-    @header_image ||= header_images.values.first
+    @header_image ||= header_images.values.sample
   end
 
   # TODO: Remove upon submitting new build
   def header_blurred_image
-    @header_blurred_image ||= header_blurred_images.values.first
+    @header_blurred_image ||= header_blurred_images.values.sample
   end
 
   def header_images
