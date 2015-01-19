@@ -10,7 +10,7 @@ class Boxscore < QueryBase
                 :state,
                 :league,
                 :game_id,
-                :recap,
+                #:recap,
                 :time_remaining_summary
 
   def initialize(attrs)
