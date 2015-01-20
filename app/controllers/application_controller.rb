@@ -8,6 +8,7 @@ class ApplicationController < ActionController::API
 
   def fix_college
     params[:league_id] = 'ncf' if params[:league_id] == 'college-football'
+    params[:league_id] = 'ncb' if params[:league_id] == 'mens-college-basketball'
   end
 
   def ensure_valid_league
