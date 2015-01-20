@@ -16,7 +16,8 @@ class League < QueryBase
     [
       League.new('nhl'),
       League.new('nfl'),
-      League.new('ncf')
+      League.new('ncf'),
+      League.new('ncb')
     ]
   end
 
