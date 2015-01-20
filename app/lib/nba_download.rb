@@ -7,6 +7,7 @@ class NBADownload
       team_attrs = {
         team: team[:data_name],
         team_name: team[:name],
+        league: 'nba'
       }
       Team.new(team_attrs).download_logo(images[team[:name]])
     end
