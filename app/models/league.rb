@@ -13,12 +13,9 @@ class League < QueryBase
   end
 
   def self.all
-    [
-      League.new('nhl'),
-      League.new('nfl'),
-      League.new('ncf'),
-      League.new('ncb')
-    ]
+    %w[nhl nfl ncb nba ncf].map do |league|
+      League.new(league)
+    end
   end
 
   def logo
@@ -27,12 +24,12 @@ class League < QueryBase
 
   # TODO: Remove upon submitting new build
   def header_image
-    @header_image ||= header_images.values.sample
+    @header_image ||= header_images.values.first
   end
 
   # TODO: Remove upon submitting new build
   def header_blurred_image
-    @header_blurred_image ||= header_blurred_images.values.sample
+    @header_blurred_image ||= header_blurred_images.values.first
   end
 
   def header_images
