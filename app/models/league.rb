@@ -13,7 +13,7 @@ class League < QueryBase
   end
 
   def self.all
-    %w[nhl nfl ncb nba].map do |league|
+    %w[nhl nfl ncf ncb nba].map do |league|
       League.new(league)
     end
   end
