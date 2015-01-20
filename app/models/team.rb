@@ -47,7 +47,7 @@ class Team < QueryBase
     end
 
     def download_logo(url)
-      open("app/assets/images/#{league}-teams/#{data_name}.png", 'wb') do |file|
+      open("app/assets/images/#{league}-teams/logos/#{data_name}.png", 'wb') do |file|
         file << open(url).read
       end
     end
