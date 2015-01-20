@@ -49,7 +49,7 @@ class League < QueryBase
   end
 
   def monthly_schedule
-    name == 'nhl'
+    %w[nhl nba ncb].include? name
   end
 
   def schedule
