@@ -15,7 +15,6 @@ class NBADownload
 
   def images
     team_markup.inject({}) do |hash, t|
-      byebug if get_team_name(t) == 'class'
       hash[get_team_name(t)] = get_team_logo(t)
       hash
     end
