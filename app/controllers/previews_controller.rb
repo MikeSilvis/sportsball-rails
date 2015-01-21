@@ -1,4 +1,4 @@
-class Api::PreviewsController < ApplicationController
+class PreviewsController < ApplicationController
   def show
     render json: { preview: preview }
   end

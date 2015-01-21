@@ -1,4 +1,4 @@
-class Api::LeaguesController < ApplicationController
+class LeaguesController < ApplicationController
   skip_before_filter :ensure_valid_league
 
   def index

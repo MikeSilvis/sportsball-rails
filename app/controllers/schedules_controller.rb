@@ -1,4 +1,4 @@
-class Api::SchedulesController < ApplicationController
+class SchedulesController < ApplicationController
   def show
     render json: { schedule: schedule.games }
   end

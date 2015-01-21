@@ -1,4 +1,4 @@
-class Api::ScoresController < ApplicationController
+class ScoresController < ApplicationController
   def index
     render json: { scores: scores }
   end

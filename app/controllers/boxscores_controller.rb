@@ -1,4 +1,4 @@
-class Api::BoxscoresController < ApplicationController
+class BoxscoresController < ApplicationController
   def show
     render json: { boxscore: boxscore }
   end
