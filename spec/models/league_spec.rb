@@ -5,14 +5,14 @@ describe League, type: :model do
     let(:league) { League.new('nhl') }
     context 'includes all files in the specified folder' do
       it { expect(league.header_blurred_images.keys.size).to eq(2) }
-      it { expect(league.header_blurred_images.values.first).to eq('https://localhost:3000/api/images/nhl-teams%2Fblurred-headers%2Fchi.png') }
+      it { expect(league.header_blurred_images.values.first).to eq('https://localhost:3000/images/nhl-teams%2Fblurred-headers%2Fchi.png') }
     end
   end
   describe '.header_image' do
     let(:league) { League.new('nhl') }
     context 'includes all files in the specified folder' do
       it { expect(league.header_images.keys.size).to eq(2) }
-      it { expect(league.header_images.values.first).to eq('https://localhost:3000/api/images/nhl-teams%2Fheaders%2Fchi.png') }
+      it { expect(league.header_images.values.first).to eq('https://localhost:3000/images/nhl-teams%2Fheaders%2Fchi.png') }
     end
   end
   describe '.scores' do
