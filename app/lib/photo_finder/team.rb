@@ -1,3 +1,5 @@
+require 'open-uri'
+
 class PhotoFinder::Team
   attr_accessor :league, :team
 
@@ -21,7 +23,8 @@ class PhotoFinder::Team
 
   def save(index)
     open("app/assets/images/#{league}-teams/headers/#{team[:data_name]}.png", 'wb') do |file|
-      file << open(photos[index]).read
+      byebug
+      file << open(photos[index.to_i]).read
     end
   end
 
