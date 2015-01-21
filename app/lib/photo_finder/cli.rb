@@ -1,8 +1,12 @@
 class PhotoFinder::Cli
   def self.run
-    PhotoFinder::League.new('nhl').get_photos do |photo_finder|
+    league = 'nhl'
+
+    PhotoFinder::League.new(league).get_photos do |photo_finder|
+      next if photo_finder.has_photo?
+
       photo_array = photo_finder.photos
-      puts "Finding Photos for NHL & team #{photo_finder.team[:name]} \n "
+      puts "Finding Photos for #{league} & team #{photo_finder.team[:name]} \n "
       photo_array.each_with_index do |photo, index|
         puts "#{index}    #{photo}"
         #`open #{photo}`

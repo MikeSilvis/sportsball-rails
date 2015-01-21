@@ -22,12 +22,20 @@ class PhotoFinder::Team
   end
 
   def save(index)
-    open("app/assets/images/#{league}-teams/headers/#{team[:data_name]}.png", 'wb') do |file|
+    open(file_location, 'wb') do |file|
       file << open(photos[index.to_i]).read
     end
   end
 
+  def has_photo?
+    File.exists? file_location
+  end
+
   private
+
+  def file_location
+    "app/assets/images/#{league}-teams/headers/#{team[:data_name]}.png"
+  end
 
   def markup
     @markup ||= ESPN.get("#{league}/team/photos/_/name/#{team[:data_name]}")
