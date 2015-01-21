@@ -13,7 +13,7 @@ class TeamImageCsvGenerator
   end
 
   def generate
-    CSV.open("#{nfl_teams}.csv", "wb") do |csv|
+    CSV.open("nhl.csv", "wb") do |csv|
       csv << ['League', 'Team Name', 'File URL']
       teams.each do |team|
         csv << [league, team[:name], '']
