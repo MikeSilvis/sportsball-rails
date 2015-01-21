@@ -8,13 +8,14 @@ class PhotoFinder::Cli
       photo_array = photo_finder.photos
       puts "Finding Photos for #{league} & team #{photo_finder.team[:name]} \n "
       photo_array.each_with_index do |photo, index|
-        puts "#{index}    #{photo}"
-        #`open #{photo}`
+        puts "#{index}    #{photo} \n"
+        sleep 0.05
+        system("open #{photo}")
       end
 
       puts "Which photo? :"
       chosen_index = gets.chomp[0]
-      photo_finder.save(chosen_index)
+      Thread.new { photo_finder.save(chosen_index) }
     end
   end
 end
