@@ -1,7 +1,5 @@
 class PhotoFinder::Cli
-  def self.run
-    league = 'nhl'
-
+  def self.run(league)
     PhotoFinder::League.new(league).get_photos do |photo_finder|
       next if photo_finder.has_photo?
 
