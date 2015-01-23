@@ -12,9 +12,8 @@ class PhotoFinder::Cli
       end
 
       puts "Which photo? :"
-      chosen_index = gets.chomp[0]
-      url = photo_array[chosen_index.to_i] ? photo_array[chosen_index.to_i] : chosen_index
-      Thread.new { photo_finder.save_by_url(url) }
+      chosen_index = gets.chomp
+      Thread.new { photo_finder.save_by_url(chosen_index) }
     end
   end
 end
