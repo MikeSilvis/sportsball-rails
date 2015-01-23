@@ -21,9 +21,9 @@ class PhotoFinder::Team
                 end
   end
 
-  def save(index)
+  def save_by_url(url)
     open(file_location, 'wb') do |file|
-      file << open(photos[index.to_i]).read
+      file << open(url).read
     end
   end
 
