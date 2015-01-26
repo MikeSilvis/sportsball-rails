@@ -18,12 +18,14 @@ class Recap < QueryBase
     @content.gsub(/\n/, '')
   end
 
-  def url
-    "http://m.espn.go.com/#{league}/gamecast?gameId=#{game_id}&appsrc=sc"
-  end
+  def self.find(league, game_id, away_team_name, home_team_name, game_date)
+    data = if league == 'nhl'
+             Nhl::Recap.find_by(away_team_name, home_team_name, game_date)
+           else
+             ESPN::Recap.find(league, game_id)
+           end
 
-  def self.find(league, game_id)
-    new(ESPN::Recap.find(league, game_id))
+    new(data)
   end
 
   def photo

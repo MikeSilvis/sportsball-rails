@@ -11,7 +11,13 @@ class Nhl::GameId
   end
 
   def self.find(away_team, home_team, date)
-    new(away_team, home_team, date).game_id
+    new(away_team, home_team, date).game_id_with_cache
+  end
+
+  def game_id_with_cache
+    Rails.cache.fetch("nhl_game_id_#{away_team}_#{home_team}_#{date_string}") do
+      game_id
+    end
   end
 
   def game_id

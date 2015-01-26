@@ -34,7 +34,8 @@ class Boxscore < QueryBase
 
   def recap
     return nil unless state =='postgame'
-    Recap.find(league, game_id).tap do |recap|
+
+    Recap.find(league, game_id, self.away_team.name, self.home_team.name, self.game_date).tap do |recap|
       return nil if recap.headline.to_s.match(/No recap/)
     end
   end

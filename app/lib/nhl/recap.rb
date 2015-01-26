@@ -7,6 +7,10 @@ class Nhl::Recap
     self.data     = {}
   end
 
+  def self.find_by(away_team_name, home_team_name, game_date)
+    new(Nhl::GameId.find(away_team_name, home_team_name, game_date)).get_data_with_cache
+  end
+
   def self.find(game_id)
     new(game_id).get_data_with_cache
   end
