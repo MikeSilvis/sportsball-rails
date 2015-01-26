@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://www.nhl.com/ice/schedulebyday.htm?date=01/21/2015&season=20142015
+    uri: http://www.nhl.com/ice/schedulebyday.htm?date=01/21/2015
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Etag:
-      - '"KXFMICPOMGPXSXKUPX"'
+      - '"KXFMICPOMGLPVXYTPX"'
       Content-Type:
       - text/html;charset=UTF-8
       Server:
@@ -27,13 +27,13 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Expires:
-      - Mon, 26 Jan 2015 06:38:33 GMT
+      - Mon, 26 Jan 2015 07:50:38 GMT
       Cache-Control:
       - max-age=0, no-cache, no-store
       Pragma:
       - no-cache
       Date:
-      - Mon, 26 Jan 2015 06:38:33 GMT
+      - Mon, 26 Jan 2015 07:50:38 GMT
       Transfer-Encoding:
       - chunked
       Connection:
@@ -49,8 +49,8 @@ http_interactions:
         d3d3LmZhY2Vib29rLmNvbS8yMDA4L2ZibWwiIHhtbG5zPSJodHRwOi8vd3d3
         LnczLm9yZy8xOTk5L3hodG1sIj48aGVhZD48IS0tIEFwcGxpY2F0aW9uOiBO
         YXRpb25hbCBIb2NrZXkgTGVhZ3VlIC0gTkhMLmNvbSAtLT48IS0tIFBhZ2U6
-        IFNjaGVkdWxlQnlEYXktLT48IS0tIFJlbmRlcmVkOiBNb24gSmFuIDI2IDAx
-        OjM4OjMzIEVTVCAyMDE1LS0+PG1ldGEgY29udGVudD0idGV4dC9odG1sO2No
+        IFNjaGVkdWxlQnlEYXktLT48IS0tIFJlbmRlcmVkOiBNb24gSmFuIDI2IDAy
+        OjUwOjM4IEVTVCAyMDE1LS0+PG1ldGEgY29udGVudD0idGV4dC9odG1sO2No
         YXJzZXQ9VVRGLTgiIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIgLz48dGl0
         bGU+TkhMIEhvY2tleSBTY2hlZHVsZSBmb3IgSmFudWFyeSAyMSwgMjAxNSAt
         IE5ITC5jb20gLSBTY2hlZHVsZTwvdGl0bGU+PG1ldGEgY29udGVudD0iMjAx
@@ -292,7 +292,7 @@ http_interactions:
         IiwKCQkJZW5nYWdlZF9kYXlzX21vbnRoOiIiLAoJCQlldmVudF9mbGFnOiAi
         IiwKCQkJCgkJCWV4dGVybmFsX2N1c3RvbWVyX2lkX3R5cGUgOiAiIiwKCQkJ
         ZmJfdXNlciA6ICIiLAoJCQlnZW9fcmF3X2RhdGEgOiAiIiwKCQkJCgkJCWhp
-        ZXJhcmNoeTogInNjaGVkdWxlLGRhaWx5IiwKCQkJaG91cl9vZl9kYXk6ICIx
+        ZXJhcmNoeTogInNjaGVkdWxlLGRhaWx5IiwKCQkJaG91cl9vZl9kYXk6ICIy
         OjAwIiwKCQkJaW50ZXJuYWxfY2FtcGFpZ25zOiAiIiwgLy9lVmFyMgoJCQlp
         bnRlcm5hbF9zZWFyY2hfdGVybXMgOiAiIiwKCQkJbG9jYXRpb25fc2Vydmlj
         ZXM6ICIiLAoJCQltZXJjaGFuZGlzaW5nX2NhdGVnb3J5OiAiIiwKCQkJbmF2
@@ -1593,5 +1593,5 @@ http_interactions:
         YWRvcHMuY29tL2hvc3RlZC9nbG9iYWwuanMiPjwvc2NyaXB0PjwvYm9keT48
         L2h0bWw+
     http_version: 
-  recorded_at: Mon, 26 Jan 2015 06:38:33 GMT
+  recorded_at: Mon, 26 Jan 2015 07:50:38 GMT
 recorded_with: VCR 2.9.3

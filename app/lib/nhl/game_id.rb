@@ -1,5 +1,4 @@
 class Nhl::GameId
-  SEASON = 20142015
   attr_accessor :home_team,
                 :away_team,
                 :date
@@ -22,7 +21,10 @@ class Nhl::GameId
 
   def game_id
     markup.css('tbody tr').each do |row|
-      if (row.css('.teamName').map(&:content) & [away_team, home_team]).empty?
+      nhl_teams = row.css('.team-logo').map { |t| t.attributes['title'].value }
+      next if nhl_teams.empty?
+
+      if nhl_teams.first.match(/#{away_team}/i) && nhl_teams.last.match(/#{home_team}/i)
         query = Addressable::URI::parse(row.css('.skedLinks a').first.attributes['href'].value).query
         return CGI::parse(query)['id'].first.to_i
       end
@@ -40,6 +42,6 @@ class Nhl::GameId
   end
 
   def client
-    @client ||= Faraday.get("http://www.nhl.com/ice/schedulebyday.htm?date=#{date_string}&season=#{SEASON}")
+    @client ||= Faraday.get("http://www.nhl.com/ice/schedulebyday.htm?date=#{date_string}")
   end
 end

@@ -87,7 +87,7 @@ class Score < QueryBase
 
       def query_with_timeout(league_id, date)
         begin
-          Timeout.timeout(3) { ESPN::Scores.find(league_id, date) }
+          Timeout.timeout(4) { ESPN::Scores.find(league_id, date) }
         rescue Timeout::Error
           []
         end
