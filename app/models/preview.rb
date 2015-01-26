@@ -39,8 +39,8 @@ class Preview < QueryBase
     @start_time.to_i
   end
 
-  def url
-    "http://m.espn.go.com/#{league}/gamecast?gameId=#{game_id}&appsrc=sc"
+  def content
+    @content.gsub(/\n/, '')
   end
 
   def self.find(league, game_id)
