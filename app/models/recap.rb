@@ -25,7 +25,9 @@ class Recap < QueryBase
              ESPN::Recap.find(league, game_id)
            end
 
-    new(data)
+    new(data).tap do |recap|
+      recap.game_id = game_id
+    end
   end
 
   def photo
