@@ -14,7 +14,8 @@ class Boxscore < QueryBase
                 :time_remaining_summary,
                 :channel,
                 :location,
-                :start_time
+                :start_time,
+                :game_info
 
   def initialize(attrs)
     self.away_team              = Team.new(attrs, 'away')
@@ -27,9 +28,9 @@ class Boxscore < QueryBase
     self.league                 = attrs[:league]
     self.game_id                = attrs[:game_id]
     self.time_remaining_summary = attrs[:time_remaining_summary]
-    self.channel    = attrs[:channel]
-    self.location   = attrs[:location]
-    self.start_time = attrs[:start_time]
+    self.channel                = attrs[:channel]
+    self.location               = attrs[:location]
+    self.start_time             = attrs[:start_time]
   end
 
   def start_time
@@ -48,6 +49,16 @@ class Boxscore < QueryBase
     Recap.find(league, game_id, self.away_team.name, self.home_team.name, self.game_date).tap do |recap|
       return nil if recap.headline.to_s.match(/No recap/)
     end
+  end
+
+  def game_info
+    @game_info ||= GameInfo.new(
+      {
+        start_time: start_time,
+        channel: channel,
+        location: location
+      }
+    )
   end
 
   def self.find(league, game_id)

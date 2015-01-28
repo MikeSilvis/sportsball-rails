@@ -11,7 +11,8 @@ class Preview < QueryBase
                 :game_id,
                 :league,
                 :away_team_schedule,
-                :home_team_schedule
+                :home_team_schedule,
+                :game_info
 
   def initialize(attrs)
     self.away_team  = Team.new(attrs, 'away')
@@ -45,5 +46,15 @@ class Preview < QueryBase
 
   def self.find(league, game_id)
     new(ESPN::Preview.find(league, game_id))
+  end
+
+  def game_info
+    @game_info ||= GameInfo.new(
+      {
+        start_time: start_time,
+        channel: channel,
+        location: location
+      }
+    )
   end
 end
