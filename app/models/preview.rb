@@ -41,7 +41,15 @@ class Preview < QueryBase
   end
 
   def content
-    @content.gsub(/\n/, '')
+    league == 'nhl' ? nhl_preview[:content] : @content.gsub(/\n/, '')
+  end
+
+  def headline
+    league == 'nhl' ? nhl_preview[:headline] : @headline
+  end
+
+  def url
+    league == 'nhl' ? nhl_preview[:url] : @url
   end
 
   def self.find(league, game_id)
@@ -56,5 +64,9 @@ class Preview < QueryBase
         location: location
       }
     )
+  end
+
+  def nhl_preview
+    @nhl_preview ||= Nhl::Preview.find_by(self.away_team.name, self.home_team.name, @start_time.to_date)
   end
 end
