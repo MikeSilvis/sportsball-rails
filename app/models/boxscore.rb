@@ -11,7 +11,10 @@ class Boxscore < QueryBase
                 :league,
                 :game_id,
                 :recap,
-                :time_remaining_summary
+                :time_remaining_summary,
+                :channel,
+                :location,
+                :start_time
 
   def initialize(attrs)
     self.away_team              = Team.new(attrs, 'away')
@@ -24,6 +27,13 @@ class Boxscore < QueryBase
     self.league                 = attrs[:league]
     self.game_id                = attrs[:game_id]
     self.time_remaining_summary = attrs[:time_remaining_summary]
+    self.channel    = attrs[:channel]
+    self.location   = attrs[:location]
+    self.start_time = attrs[:start_time]
+  end
+
+  def start_time
+    @start_time.to_i
   end
 
   def score_summary
