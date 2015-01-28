@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     resources :boxscores, only: :show
     resources :previews, only: :show
     resources :standings, only: :index
+    resources :schedules, only: :index
     resources :teams, only: [] do
       resource :schedule, only: :show
     end

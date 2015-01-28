@@ -19,4 +19,8 @@ describe SchedulesController, type: :controller, vcr: true do
       it { expect(response).to have_http_status(:ok) }
     end
   end
+  describe 'GET :index' do
+    before { get :index, league_id: 'nhl', teams: ['pit', 'chi'] }
+    it { expect(response).to have_http_status(:ok) }
+  end
 end
