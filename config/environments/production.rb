@@ -22,11 +22,11 @@ Rails.application.configure do
   # Disable Rails's static asset server (Apache or nginx will already do this).
   config.serve_static_assets = true
   config.static_cache_control = "public, max-age=31536000"
-  config.action_controller.asset_host = "https://getbaryab.com"
-  Rails.application.routes.default_url_options[:host] = "https://getbaryab.com"
+  config.action_controller.asset_host = "https://api.jumbotron.io"
+  Rails.application.routes.default_url_options[:host] = "https://api.jumbotron.io"
 
-  if ENV["MEMCACHEDCLOUD_SERVERS"]
-    config.cache_store = :dalli_store, ENV["MEMCACHEDCLOUD_SERVERS"].split(','), { :username => ENV["MEMCACHEDCLOUD_USERNAME"], :password => ENV["MEMCACHEDCLOUD_PASSWORD"] }
+  if ENV['MEMCACHEDCLOUD_SERVERS']
+    config.cache_store = :dalli_store, ENV["MEMCACHEDCLOUD_SERVERS"].split(','), { username: ENV['MEMCACHEDCLOUD_USERNAME'], password: ENV['MEMCACHEDCLOUD_PASSWORD'] }
   end
 
   # Compress JavaScripts and CSS.
@@ -37,7 +37,7 @@ Rails.application.configure do
   config.assets.compile = false
 
   # Generate digests for assets URLs.
-  config.assets.digest = true
+  config.assets.digest = false
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
