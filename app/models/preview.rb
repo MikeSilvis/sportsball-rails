@@ -41,7 +41,7 @@ class Preview < QueryBase
   end
 
   def content
-    (league == 'nhl' ? nhl_preview[:content] : @content).gsub('\n', '')
+    (league == 'nhl' ? nhl_preview[:content] : @content).gsub('\n', '').gsub(/\n/, '')
   end
 
   def headline

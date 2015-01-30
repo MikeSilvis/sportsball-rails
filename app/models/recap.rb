@@ -15,7 +15,7 @@ class Recap < QueryBase
   end
 
   def content
-    @content.gsub('\n', '')
+    @content.gsub('\n', '').gsub(/\n/, '')
   end
 
   def self.find(league, game_id, away_team_name, home_team_name, game_date)
