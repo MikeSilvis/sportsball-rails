@@ -18,6 +18,17 @@ class Boxscore < QueryBase
                 :game_info,
                 :game_stats
 
+  FIXED_GAME_STAT_HEADERS = {
+    'FGM-A' => 'Field Goals',
+    '3PM-A' => '3 Pointers',
+    'FTM-A' => 'Free Throws',
+    'REB'   => 'Rebounds',
+    'AST'   => 'Assists',
+    'STL'   => 'Steals',
+    'BLK'   => 'Blocks',
+    'PTS'   => 'Points'
+  }
+
   def initialize(attrs)
     self.away_team              = Team.new(attrs, 'away')
     self.home_team              = Team.new(attrs, 'home')
@@ -55,18 +66,9 @@ class Boxscore < QueryBase
 
   def game_stats
     @game_stats.tap do |stats|
-      stats[:header] = [
-        'Field Goals',
-        '3-Pointers',
-        'Free Throws',
-        'Rebounds',
-        'Assists',
-        'Steals',
-        'Blocks',
-        'Turnovers',
-        'PF',
-        'Points'
-      ]
+      stats[:header] = stats[:header].map do |header|
+                         FIXED_GAME_STAT_HEADERS[header] || header
+                       end
     end
   end
 
