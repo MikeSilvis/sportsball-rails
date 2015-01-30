@@ -68,6 +68,8 @@ class Boxscore < QueryBase
   end
 
   def game_stats
+    return nil unless @game_stats
+
     @game_stats.tap do |stats|
       stats[:header] = stats[:header].map do |header|
                          FIXED_GAME_STAT_HEADERS[header] || header
