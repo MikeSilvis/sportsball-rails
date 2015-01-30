@@ -53,6 +53,23 @@ class Boxscore < QueryBase
     end
   end
 
+  def game_stats
+    @game_stats.tap do |stats|
+      stats[:header] = [
+        'Field Goals',
+        '3-Pointers',
+        'Free Throws',
+        'Rebounds',
+        'Assists',
+        'Steals',
+        'Blocks',
+        'Turnovers',
+        'PF',
+        'Points'
+      ]
+    end
+  end
+
   def game_info
     @game_info ||= GameInfo.new(
       {
