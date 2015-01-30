@@ -14,7 +14,7 @@ class Team < QueryBase
   def initialize(attrs, team = nil)
     prefix = team ? "#{team}_" : nil
 
-    self.name      = attrs["#{prefix}team_name".to_sym].strip
+    self.name      = attrs["#{prefix}team_name".to_sym].to_s.strip
     self.record    = attrs["#{prefix}team_record".to_sym]
     self.data_name = attrs["#{prefix}team".to_sym]
     self.rank      = attrs["#{prefix}team_rank".to_sym]
