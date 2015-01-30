@@ -26,7 +26,10 @@ class Boxscore < QueryBase
     'AST'   => 'Assists',
     'STL'   => 'Steals',
     'BLK'   => 'Blocks',
-    'PTS'   => 'Points'
+    'TO'    => 'Turn Overs',
+    'PTS'   => 'Points',
+    'OREB'  => 'Offensive',
+    'DREB'  => 'Deffensive'
   }
 
   def initialize(attrs)
