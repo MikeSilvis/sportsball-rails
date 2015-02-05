@@ -36,8 +36,15 @@ class Preview < QueryBase
     @away_team_schedule ||= Schedule.find(self.league, self.away_team.data_name)
   end
 
+  def start_time=(val)
+    val.to_s.gsub!('ET', 'EST')
+    @start_time = Time.parse(val.to_s).utc
+  rescue ArgumentError
+    val
+  end
+
   def start_time
-    @start_time.utc.to_i
+    @start_time.to_i
   end
 
   def content

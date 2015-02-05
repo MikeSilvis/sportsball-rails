@@ -50,7 +50,7 @@ class Boxscore < QueryBase
   end
 
   def start_time
-    @start_time.utc.to_i
+    @start_time.to_i
   end
 
   def score_summary
@@ -65,6 +65,13 @@ class Boxscore < QueryBase
     Recap.find(league, game_id, self.away_team.name, self.home_team.name, self.game_date).tap do |recap|
       return nil if recap.headline.to_s.match(/No recap/)
     end
+  end
+
+  def start_time=(val)
+    val.to_s.gsub!('ET', 'EST')
+    @start_time = Time.parse(val.to_s).utc
+  rescue ArgumentError
+    val
   end
 
   def game_stats
