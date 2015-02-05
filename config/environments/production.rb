@@ -20,7 +20,7 @@ Rails.application.configure do
   # config.action_dispatch.rack_cache = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
-  config.config.serve_static_files = true
+  config.serve_static_files = true
   config.static_cache_control = "public, max-age=31536000"
   config.action_controller.asset_host = "https://api.jumbotron.io"
   Rails.application.routes.default_url_options[:host] = "https://api.jumbotron.io"
