@@ -74,6 +74,6 @@ class Preview < QueryBase
   end
 
   def nhl_preview
-    @nhl_preview ||= Nhl::Preview.find_by(self.away_team.name, self.home_team.name, @start_time.to_date)
+    @nhl_preview ||= Nhl::Preview.find_by(self.away_team.name, self.home_team.name, @start_time.in_time_zone('Central Time (US & Canada)').to_date)
   end
 end
