@@ -16,7 +16,7 @@ class Nhl::Info
   end
 
   def get_data_with_cache
-    Rails.cache.fetch("cache_recap_#{game_id}") do
+    Rails.cache.fetch(cache_key) do
       get_data
     end
   end
@@ -43,5 +43,9 @@ class Nhl::Info
 
   def url
     raise "Must be implemented by super class"
+  end
+
+  def cache_key
+    raise "must be implemtend by super class"
   end
 end

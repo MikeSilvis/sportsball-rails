@@ -50,7 +50,7 @@ class Boxscore < QueryBase
   end
 
   def start_time
-    @start_time.to_i
+    @start_time.utc.to_i
   end
 
   def score_summary
