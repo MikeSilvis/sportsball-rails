@@ -1,6 +1,6 @@
 class StandingsController < ApplicationController
   def index
-    render json: { standings: standings }
+    render json: { standings: standings }, callback: params[:callback]
   end
 
   private

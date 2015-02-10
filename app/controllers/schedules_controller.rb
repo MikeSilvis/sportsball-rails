@@ -1,10 +1,10 @@
 class SchedulesController < ApplicationController
   def index
-    render json: { schedules: schedules }
+    render json: { schedules: schedules }, callback: params[:callback]
   end
 
   def show
-    render json: { schedule: schedule.games }
+    render json: { schedule: schedule.games }, callback: params[:callback]
   end
 
   private

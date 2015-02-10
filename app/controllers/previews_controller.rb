@@ -1,6 +1,6 @@
 class PreviewsController < ApplicationController
   def show
-    render json: { preview: preview }
+    render json: { preview: preview }, callback: params[:callback]
   end
 
   private
