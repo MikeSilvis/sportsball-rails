@@ -1,6 +1,6 @@
 class BoxscoresController < ApplicationController
   def show
-    render json: { boxscore: boxscore }
+    render json: { boxscore: boxscore }, callback: params[:callback]
   end
 
   private
