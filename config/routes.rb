@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   get "images/:path" => Dragonfly.app.endpoint { |params, app|
     size = params[:size] ? params[:size] : '70x70'
-    app.fetch_file("app/assets/images/#{params[:path]}.png").thumb(size)
+    app.fetch_url("https://s3.amazonaws.com/jumbotron/#{params[:path]}.png").thumb(size)
   }, as: 'image'
 
   resources :leagues, only: :index do
