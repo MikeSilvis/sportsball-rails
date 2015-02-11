@@ -48,10 +48,21 @@ class League < QueryBase
   end
 
   def find_images(location)
-    Dir["#{Rails.root}/app/assets/images/#{name}-teams/#{location}/*.png"].inject({}) do |hash, file|
+    get_files(location).inject({}) do |hash, file|
       team_name = file.split('/').last.gsub(/.png/, '')
       hash[team_name] = api_image_url("#{name}-teams/#{location}/#{team_name}")
       hash
+    end
+  end
+
+  def get_files(location)
+    connection = Fog::Storage.new(
+      provider: 'AWS',
+      aws_access_key_id: ENV['AWS_ACCESS_KEY_ID'],
+      aws_secret_access_key: ENV['AWS_SECRET_ACCESS_KEY']
+    )
+    connection.directories.get('jumbotron', prefix: "#{name}-teams/#{location}").files.map do |file|
+      file.key
     end
   end
 

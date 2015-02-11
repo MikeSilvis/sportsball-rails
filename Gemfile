@@ -17,6 +17,7 @@ gem 'rails-api'
 gem 'rubocop'
 gem 'therubyracer'
 gem 'unicorn-rails'
+gem 'fog'
 
 group :production do
   gem 'rails_12factor'
