@@ -63,6 +63,8 @@ class League < QueryBase
     )
     connection.directories.get('jumbotron', prefix: "#{name}-teams/#{location}").files.map do |file|
       file.key
+    end.select do |file|
+      file.match('.png')
     end
   end
 
