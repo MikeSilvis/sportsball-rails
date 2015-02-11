@@ -105,8 +105,6 @@ GEM
       ast (>= 1.1, < 3.0)
     powerpack (0.0.9)
     rack (1.6.0)
-    rack-cache (1.2)
-      rack (>= 0.4)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.0)
@@ -213,7 +211,6 @@ DEPENDENCIES
   faraday
   less-rails
   newrelic_rpm
-  rack-cache
   rails (= 4.2.0)
   rails-api
   rails_12factor
