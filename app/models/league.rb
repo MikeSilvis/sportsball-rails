@@ -7,13 +7,20 @@ class League < QueryBase
                 :header_blurred_image,
                 :schedule,
                 :monthly_schedule
+  LEAGUES = [
+    'nhl',
+    #'nfl'
+    #'ncf'
+    'ncb',
+    'nba',
+  ]
 
   def initialize(name)
     self.name = name
   end
 
   def self.all
-    %w[nhl nfl ncf ncb nba].map do |league|
+    LEAGUES.map do |league|
       League.new(league)
     end
   end
