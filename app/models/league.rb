@@ -26,7 +26,8 @@ class League < QueryBase
   end
 
   def logo
-    @logo ||= api_image_url("leagues/#{name}")
+    #@logo ||= api_image_url("leagues/#{name}")
+    nil
   end
 
   # TODO: Remove upon submitting new build
