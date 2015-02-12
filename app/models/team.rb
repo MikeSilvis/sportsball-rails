@@ -22,8 +22,7 @@ class Team < QueryBase
   end
 
   def logo
-    #self.class.logo(league, data_name)
-    nil
+    self.class.logo(league, data_name)
   end
 
   def self.logo(league, data_name)
