@@ -1,6 +1,7 @@
 class League < QueryBase
   attr_accessor :name,
                 :logo,
+                :secondary_logo,
                 :header_images,
                 :header_blurred_images,
                 :header_image,
@@ -27,6 +28,10 @@ class League < QueryBase
 
   def logo
     @logo ||= api_image_url("leagues/#{name}")
+  end
+
+  def secondary_logo
+    @logo ||= api_image_url("leagues/secondary/#{name}")
   end
 
   # TODO: Remove upon submitting new build
