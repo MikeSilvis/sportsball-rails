@@ -31,7 +31,7 @@ class League < QueryBase
   end
 
   def secondary_logo
-    @logo ||= api_image_url("leagues/secondary/#{name}")
+    @secondary_logo ||= api_image_url("leagues/secondary/#{name}")
   end
 
   # TODO: Remove upon submitting new build
