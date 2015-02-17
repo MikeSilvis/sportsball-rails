@@ -9,7 +9,8 @@ class Team < QueryBase
                 :loses,
                 :record,
                 :rank,
-                :logo
+                :logo,
+                :abbr
 
   def initialize(attrs, team = nil)
     prefix = team ? "#{team}_" : nil
@@ -18,6 +19,7 @@ class Team < QueryBase
     self.record    = attrs["#{prefix}team_record".to_sym]
     self.data_name = attrs["#{prefix}team".to_sym]
     self.rank      = attrs["#{prefix}team_rank".to_sym]
+    self.abbr      = attrs["#{prefix}team_abbr".to_sym]
     self.league    = attrs[:league]
   end
 
