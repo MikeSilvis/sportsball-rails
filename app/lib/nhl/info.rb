@@ -24,6 +24,8 @@ class Nhl::Info
   private
 
   def get_data
+    return nil unless markup.at_css('.contentPad.article h1')
+
     data[:headline] = markup.at_css('.contentPad.article h1').content
     data[:content]  = markup.css('.contentPad.article p').map(&:content).join('\n')
     data[:url]      = url
