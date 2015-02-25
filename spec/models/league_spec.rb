@@ -1,18 +1,20 @@
 require 'rails_helper'
 
-describe League, type: :model do
+describe League, type: :model, vcr: true do
   describe '.header_blurred_image' do
     let(:league) { League.new('nhl') }
     context 'includes all files in the specified folder' do
+      let(:url) { QueryBase.api_image_url('nhl-teams/blurred-headers/ana') }
       it { expect(league.header_blurred_images.keys.size).to eq(30) }
-      it { expect(league.header_blurred_images.values.first).to eq('https://localhost:3000/images/nhl-teams%2Fblurred-headers%2Fana.png') }
+      it { expect(league.header_blurred_images.values.first).to eq(url) }
     end
   end
   describe '.header_image' do
     let(:league) { League.new('nhl') }
     context 'includes all files in the specified folder' do
+      let(:url) { QueryBase.api_image_url('nhl-teams/headers/ana') }
       it { expect(league.header_images.keys.size).to eq(30) }
-      it { expect(league.header_images.values.first).to eq('https://localhost:3000/images/nhl-teams%2Fheaders%2Fana.png') }
+      it { expect(league.header_images.values.first).to eq(url) }
     end
   end
   describe '.scores' do
