@@ -16,13 +16,13 @@ class Nhl::Info
   end
 
   def get_data_with_cache
-    recap = if ESPN::Cache.read(cache_key)
-              ESPN::Cache.read(cache_key)
+    recap = if Rails.cache.read(cache_key)
+              Rails.cache.read(cache_key)
             else
               get_data
             end
 
-    ESPN::Cache.write(cache_key, recap) unless get[:content].blank?
+    Rails.cache.write(cache_key, recap) unless get_data[:content].blank?
 
     recap
   end
