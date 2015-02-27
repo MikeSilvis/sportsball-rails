@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/mikesilvis/espn-scraper.git
-  revision: e943fefde4462022debb9203535d20c37d699efc
+  revision: e640235113842a094d130db636e820ba03f38f82
   specs:
     espn_scraper (1.0.4)
       activesupport
@@ -53,7 +53,7 @@ GEM
     astrolabe (1.3.0)
       parser (>= 2.2.0.pre.3, < 3.0)
     benchmark-ips (2.1.1)
-    bugsnag (2.7.1)
+    bugsnag (2.8.1)
       multi_json (~> 1.0)
     builder (3.2.2)
     byebug (3.5.1)
@@ -72,12 +72,12 @@ GEM
       multi_json (~> 1.0)
       rack
     erubis (2.7.0)
-    excon (0.44.2)
+    excon (0.44.3)
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
     fission (0.5.0)
       CFPropertyList (~> 2.2)
-    fog (1.27.0)
+    fog (1.28.0)
       fog-atmos
       fog-aws (~> 0.0)
       fog-brightbox (~> 0.4)
@@ -86,6 +86,7 @@ GEM
       fog-json
       fog-profitbricks
       fog-radosgw (>= 0.0.2)
+      fog-riakcs
       fog-sakuracloud (>= 0.0.4)
       fog-serverlove
       fog-softlayer
@@ -99,7 +100,7 @@ GEM
     fog-atmos (0.1.0)
       fog-core
       fog-xml
-    fog-aws (0.1.0)
+    fog-aws (0.1.1)
       fog-core (~> 1.27)
       fog-json (~> 1.0)
       fog-xml (~> 0.1)
@@ -108,7 +109,7 @@ GEM
       fog-core (~> 1.22)
       fog-json
       inflecto (~> 0.0.2)
-    fog-core (1.28.0)
+    fog-core (1.29.0)
       builder
       excon (~> 0.38)
       formatador (~> 0.2)
@@ -128,6 +129,10 @@ GEM
       fog-core (>= 1.21.0)
       fog-json
       fog-xml (>= 0.0.1)
+    fog-riakcs (0.1.0)
+      fog-core
+      fog-json
+      fog-xml
     fog-sakuracloud (1.0.0)
       fog-core
       fog-json
@@ -183,7 +188,7 @@ GEM
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.2)
-    newrelic_rpm (3.9.9.275)
+    newrelic_rpm (3.10.0.279)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     parser (2.2.0.3)
@@ -228,23 +233,23 @@ GEM
     raindrops (0.13.0)
     rake (10.4.2)
     ref (1.0.5)
-    rspec-core (3.2.0)
+    rspec-core (3.2.1)
       rspec-support (~> 3.2.0)
     rspec-expectations (3.2.0)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.2.0)
-    rspec-mocks (3.2.0)
+    rspec-mocks (3.2.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.2.0)
-    rspec-rails (3.2.0)
-      actionpack (>= 3.0, <= 4.2)
-      activesupport (>= 3.0, <= 4.2)
-      railties (>= 3.0, <= 4.2)
+    rspec-rails (3.2.1)
+      actionpack (>= 3.0, < 4.3)
+      activesupport (>= 3.0, < 4.3)
+      railties (>= 3.0, < 4.3)
       rspec-core (~> 3.2.0)
       rspec-expectations (~> 3.2.0)
       rspec-mocks (~> 3.2.0)
       rspec-support (~> 3.2.0)
-    rspec-support (3.2.1)
+    rspec-support (3.2.2)
     rubocop (0.29.1)
       astrolabe (~> 1.3)
       parser (>= 2.2.0.1, < 3.0)
