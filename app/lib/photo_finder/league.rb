@@ -11,13 +11,7 @@ class PhotoFinder::League
     end
   end
 
-  private
-
-  def markup_for(team)
-    ESPN.get("#{league}/team/photos/_/name/#{team}")
-  end
-
   def teams
-    @teams ||= ESPN.get_teams_in(league).values.flatten
+    @teams ||= ESPN::Team.find(league).values.flatten
   end
 end
