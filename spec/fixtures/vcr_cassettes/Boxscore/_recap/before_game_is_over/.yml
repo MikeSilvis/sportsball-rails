@@ -25,7 +25,7 @@ http_interactions:
       Transfer-Encoding:
       - chunked
       Date:
-      - Wed, 25 Feb 2015 19:16:45 GMT
+      - Fri, 27 Feb 2015 06:01:29 GMT
       Connection:
       - keep-alive
       Cache-Control:
@@ -34,8 +34,8 @@ http_interactions:
       - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRo
         BUS PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
       Set-Cookie:
-      - SWID=A31482ED-32F2-43C5-9A98-36FB1AE799A9; path=/; expires=Tue, 20 Feb 2035
-        19:16:45 GMT; domain=go.com;
+      - SWID=AD1C7EBA-2F2B-41CF-BA09-F843538571C7; path=/; expires=Thu, 22 Feb 2035
+        06:01:29 GMT; domain=go.com;
     body:
       encoding: UTF-8
       string: "<!DOCTYPE html>\n<html xmlns:fb=\"http://www.facebook.com/2008/fbml\">\n<head><script
@@ -44,17 +44,17 @@ http_interactions:
         \   \n    if(true && navigator && navigator.userAgent.toLowerCase().indexOf(\"teamstream\")
         >= 0) {\n        window.location = 'http://a.m.espn.go.com/mobilecache/general/apps/sc';\n
         \   }\n</script><script type=\"text/javascript\">\nvar espn=window.espn||{};espn.beta=function(a,b,c){function
-        d(b){var d,e,g,h,i,m,n,o,p;if(b!==c&&(k=b,d=b.match(/http:\\/\\/([^\\/]*)([^?]*).*/),d&&3===d.length&&(l=d[2])),l.match(/\\/story$/i)||l.match(/\\/story\\//i))return
+        d(b){var d,e,g,h,i,m,n,o,p,q;if(b!==c&&(k=b,d=b.match(/http:\\/\\/([^\\/]*)([^?]*).*/),d&&3===d.length&&(l=d[2])),l.match(/\\/story$/i)||l.match(/\\/story\\//i))return
         h=f(\"storyId\",b)||f(\"id\",b),i=f(\"storyPage\",b)||f(\"page\",b),\"\"!==h?j+l+\"/_/id/\"+h:\"\"!==i?i.indexOf(\"/\")>-1?j+l+\"?page=\"+i:j+l+\"/_/page/\"+i:j+l;if(l.match(/\\/blogpostindex$/i)){if(e=f(\"blogname\",b),a.espn&&espn.GLOBALS&&espn.GLOBALS.isCEBlog===!0)return;if(\"\"!==e)return
         j+\"/blog/\"+e}if(l.match(/\\/blogpost$/i)){if(e=f(\"blogname\",b),g=f(\"id\",b),a.espn&&espn.GLOBALS&&espn.GLOBALS.isCEBlog===!0)return;if(\"\"!==e&&\"\"!==g)return
         j+\"/blog/\"+e+\"/post/_/id/\"+g}if(l.match(/^\\/blog\\//i)){if(e=f(\"blogName\",b),g=f(\"id\",b),!l.match(/\\/blog\\/.*\\/post$/i))return\"\"!==e&&\"\"!==g?j+\"/blog/\"+e+\"/post/_/id/\"+g:\"\"!==e?j+\"/blog/\"+e:j+l;if(\"\"!==g)return
         j+l+\"/_/id/\"+g}if(!(\"\"!==l&&\"/\"!==l||k.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i)||k.match(/^https?:\\/\\/search\\.espn\\.go\\.com/i)))return
-        j;var q=l.match(/^\\/.*?\\/(?:index)?$/i);if(q&&(m={\"/frontpage/\":!0,\"/wireless/\":!0,\"/general/\":!0,\"/extra/\":!0,\"/mobile/\":!0,\"/nfl/\":!0,\"/nba/\":!0,\"/mlb/\":!0,\"/nhl/\":!0,\"/ncf/\":!0,\"/college-football/\":!0,\"/ncb/\":!0,\"/mens-college-basketball/\":!0,\"/ncw/\":!0,\"/womenbb/\":!0,\"/womens-basketball/\":!0,\"/wnba/\":!0,\"/golf/\":!0,\"/tennis/\":!0,\"/general/tennis/\":!0,\"/mma/\":!0,\"/extra/mma/\":!0,\"/racing/\":!0,\"/rpm/\":!0,\"/racing/nascar/\":!0,\"/rpm/nascar/\":!0,\"/boxing/\":!0,\"/extra/boxing/\":!0,\"/college-sports/\":!0,\"/ncaa/\":!0,\"/extra/ncaa/\":!0,\"/olympics/\":!0,\"/extra/olympics/\":!0,\"/horse-racing/\":!0,\"/horse/\":!0,\"/general/horse/\":!0,\"/poker/\":!0,\"/general/poker/\":!0,\"/sports/endurance/\":!0,\"/extra/endurance/\":!0},l.match(/\\/index$/i)&&(l=l.substring(0,l.length-5)),m[l]===!0))return
+        j;var r=l.match(/^\\/.*?\\/(?:index)?$/i);if(r&&(m={\"/frontpage/\":!0,\"/wireless/\":!0,\"/general/\":!0,\"/extra/\":!0,\"/mobile/\":!0,\"/nfl/\":!0,\"/nba/\":!0,\"/mlb/\":!0,\"/nhl/\":!0,\"/ncf/\":!0,\"/college-football/\":!0,\"/ncb/\":!0,\"/mens-college-basketball/\":!0,\"/ncw/\":!0,\"/womenbb/\":!0,\"/womens-basketball/\":!0,\"/wnba/\":!0,\"/golf/\":!0,\"/tennis/\":!0,\"/general/tennis/\":!0,\"/mma/\":!0,\"/extra/mma/\":!0,\"/racing/\":!0,\"/rpm/\":!0,\"/racing/nascar/\":!0,\"/rpm/nascar/\":!0,\"/boxing/\":!0,\"/extra/boxing/\":!0,\"/college-sports/\":!0,\"/ncaa/\":!0,\"/extra/ncaa/\":!0,\"/olympics/\":!0,\"/extra/olympics/\":!0,\"/horse-racing/\":!0,\"/horse/\":!0,\"/general/horse/\":!0,\"/poker/\":!0,\"/general/poker/\":!0,\"/sports/endurance/\":!0,\"/extra/endurance/\":!0},l.match(/\\/index$/i)&&(l=l.substring(0,l.length-5)),m[l]===!0))return
         j+l;if((l.match(/\\/nflpreview$/i)||l.match(/\\/preview$/i))&&(n=f(\"gameId\",b),\"\"!==n))return
         l.match(/\\/nflpreview$/i)?j+\"/nfl/preview?gameId=\"+n:j+l+\"?gameId=\"+n;if(l.match(/\\/recap$/i)&&(n=f(\"gameId\",b),\"\"!==n))return
         j+l+\"?gameId=\"+n;if(\"/general/video\"===l){if(o=f(\"cid\",b),p=f(\"vid\",b),\"\"!==o)return
         j+\"/video/clip?id=\"+o;if(\"\"!==p)return j+\"/video/clip?id=\"+p}return
-        l.match(/^\\/(?:videohub\\/video|video)\\/clip$/i)&&(o=f(\"id\",b),\"\"!==o)?j+l+\"?id=\"+o:void
+        l.match(/^\\/(?:videohub\\/video|video)\\/clip$/i)&&(o=f(\"id\",b),\"\"!==o)?j+l+\"?id=\"+o:l.match(/^\\/nba\\/scoreboard$/i)?(q=f(\"date\",b),q?j+l+\"?date=\"+q:j+l):l.match(/^\\/nba\\/standings/i)?(l=l.replace(\"/year/\",\"/season/\"),j+l):l.match(/^\\/nba\\/team\\//i)?j+l:l.match(/^\\/nba\\/clubhouse$/i)&&(teamId=f(\"teamId\",b),teamId)?j+\"/nba/team/_/id/\"+teamId:l.match(/^\\/nba\\/schedule$/i)?(q=f(\"date\",b),q?j+l+\"?date=\"+q:j+l):void
         0}function e(a){var b=d(a),c=k.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i)||a&&a.match(/^https?:\\/\\/insider\\.espn\\.go\\.com/i)||espn&&espn.GLOBALS&&espn.GLOBALS.isPremium;return
         b&&(b=b.replace(\"/wireless/\",\"/\"),b=b.replace(\"/general/\",\"/\"),b=b.replace(\"/extra/\",\"/\"),b=b.replace(\"/mobile/\",\"/\"),b=b.replace(\"/frontpage/\",\"/\"),b=b.replace(\"/videohub/\",\"/\"),b=b.replace(\"/ncf/\",\"/college-football/\"),b=b.replace(\"/rpm/\",\"/racing/\"),b=b.replace(\"/ncb/\",\"/mens-college-basketball/\"),b=b.replace(\"/ncw/\",\"/womens-basketball/\"),b=b.replace(\"/wnba/\",\"/womens-basketball/\"),b=b.replace(\"/ncaa/\",\"/college-sports/\"),c&&(b=b.replace(\"/story/\",\"/insider/story/\"),b=b.replace(\"/post/\",\"/insider/post/\"),b.match(/\\/blog\\/[^_]*$/i)&&(b+=\"/\"===b.charAt(b.length-1)?\"insider/\":\"/insider/\"))),b}function
         f(a,b){var d=location.search;if(b!==c){var e=b.indexOf(\"?\");e>-1&&(d=b.substr(e))}a=a.replace(/[\\[]/,\"\\\\[\").replace(/[\\]]/,\"\\\\]\");var
@@ -348,7 +348,7 @@ http_interactions:
         <b>37</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/3506/derick-brassard\">D&nbsp;Brassard</a>
         <b>35</b></td></tr><tr><td class=\"team\"><a href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins\"><strong>PIT</strong></a></td><td
         style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/3114/sidney-crosby\">S&nbsp;Crosby</a>
-        <b>61</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/3124/evgeni-malkin\">E&nbsp;Malkin</a>
+        <b>62</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/3124/evgeni-malkin\">E&nbsp;Malkin</a>
         <b>24</b></td><td style=\"text-align:left\" ><a href=\"http://espn.go.com/nhl/player/_/id/3114/sidney-crosby\">S&nbsp;Crosby</a>
         <b>42</b></td></tr>\n                    </tbody>\n                </table>\n
         \               \n            \n\n\n        </div>\n\n        <!-- end line
@@ -941,7 +941,7 @@ http_interactions:
         in these numbers is considered the player's plus-minus statistic.</span><br
         /><!-- begin sp links -->\n<div style=\"margin: 10px 0 0 0;\">\n<!-- CONTENT:
         boxscore990990, SPORT: nhl--><div style=\"margin:0px 0px 5px 0px; text-align:
-        center; width: 614px;\"><ins id=\"splinks-66012\"></ins>\n        <script
+        center; width: 614px;\"><ins id=\"splinks-19678\"></ins>\n        <script
         type=\"text/javascript\">\n            (function($) {\n                //
         config params\n                var width = '614',\n                    height
         = '300',\n                    client = 'ca-espn-q-game',\n                    channel
@@ -949,7 +949,7 @@ http_interactions:
         iframe HTML\n                function buildIframe(width, height, client, channel)
         {\n                    var path = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
         \                   // pass params as the hash as they are only needed on
-        the client\n                    var hash = '66012|' + width + '|' + height
+        the client\n                    var hash = '19678|' + width + '|' + height
         + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
         = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
         + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
@@ -965,11 +965,11 @@ http_interactions:
         {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
         || espn.core.android) {\n                            // outside US or not
         on desktop\n                            client = 'ca-espn-nq';\n                        }\n
-        \                       $('#splinks-66012').html(buildIframe(width, height,
-        client, channel));\n                    }).fail(function() {\n                        $('#splinks-66012').html(buildIframe(width,
+        \                       $('#splinks-19678').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-19678').html(buildIframe(width,
         height, 'ca-espn-nq', channel));\n                    });\n                }
         else {\n                    // can't locate them, assume they are outside
-        US\n                    $('#splinks-66012').html(buildIframe(width, height,
+        US\n                    $('#splinks-19678').html(buildIframe(width, height,
         'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
         \   </div></div>\n<!-- end sp links -->\n\n<div id=\"caster\"></div>\n\n<script
         type=\"text/javascript\">\n\tvar settings = {\n\t\t\"gameId\": 400564392,\n\t\t\"seasonType\":
@@ -1094,22 +1094,25 @@ http_interactions:
         href=\"http://games.espn.go.com/frontpage/hockey\" name=\"&lpos=subnav&lid=subnav_NHL+Fantasy\">Fantasy</a></li><!--<li><a
         href=\"http://espn.go.com/nhl/lines\" name=\"&lpos=subnav&lid=subnav_NHL+Odds\">Odds</a></li>--><li
         class=\"expandable\"><a href=\"javascript:void(0);\"><span>Resources</span></a><div><dl><dd><a
-        href=\"http://espn.go.com/nhl/injuries\" name=\"&lpos=subnav&lid=subnav_NHL_Injuries\">Injuries</a></dd><dd><a
-        href=\"http://espn.go.com/nhl/story/_/id/12243664/2014-15-nhl-suspensions-fines\">Suspensions
-        & Fines</a></dd><dd><a href=\"http://espn.go.com/nhl/glance\" name=\"&lpos=subnav&lid=subnav_NHL_Glance\">Daily
+        href=\"http://espn.go.com/nhl/story/_/id/12312403/2014-15-nhl-trade-tracker\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Trade\">Trade Tracker</a></dd><dd><a href=\"http://espn.go.com/nhl/injuries\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Injuries\">Injuries</a></dd><dd><a href=\"http://espn.go.com/nhl/story/_/id/12243664/2014-15-nhl-suspensions-fines\"
+        name=\"&lpos=subnav&lid=subnav_NHL_Suspensions_Fines\">Suspensions & Fines</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/playoffs/matchups\" name=\"&lpos=subnav&lid=subnav_NHL_Matchups\">Projected
+        Matchups</a></dd><dd><a href=\"http://espn.go.com/nhl/glance\" name=\"&lpos=subnav&lid=subnav_NHL_Glance\">Daily
         Glance</a></dd><dd><a href=\"http://espn.go.com/nhl/stats/dailyleaders\" name=\"&lpos=subnav&lid=subnav_NHL_Leaders\">Daily
-        Leaders</a></dd><dd><a href=\"http://espn.go.com/nhl/story/_/id/12312403/2014-15-nhl-trade-tracker\"
-        name=\"&lpos=subnav&lid=subnav_NHL_Trade\">Trade Tracker</a></dd><dd><a href=\"http://espn.go.com/nhl/playoffs/matchups\"
-        name=\"&lpos=subnav&lid=subnav_NHL_Matchups\">Projected Matchups</a></dd><dd><a
-        href=\"http://espn.go.com/nhl/history/leaders\" name=\"&lpos=subnav&lid=subnav_NHL_History\">Career
+        Leaders</a></dd><dd><a href=\"http://espn.go.com/nhl/history/leaders\" name=\"&lpos=subnav&lid=subnav_NHL_History\">Career
         Leaders</a></dd><dd><a href=\"http://espn.go.com/nhl/stats/rpi\" name=\"&lpos=subnav&lid=subnav_NHL_RPI\">Relative
         Power Index</a></dd><dd><a href=\"http://espn.go.com/nhl/attendance\" name=\"&lpos=subnav&lid=subnav_NHL_Attendance\">Attendance</a></dd><dd><a
         href=\"http://espn.go.com/nhl/freeagents/_/type/signed/sort/signDate\" name=\"&lpos=subnav&lid=subnav_NHL+Tracker\">Free-Agent
-        Tracker</a></dd><dd><a href=\"http://sports.espn.go.com/nhl/playoffs/2011/news/story?page=cupchamps11\"
+        Tracker</a></dd><dd><a href=\"http://insider.espn.go.com/nhl/features/rumors\"
+        name=\"&lpos=subnav&lid=subnav_NHL+Rumor+Central\">Rumor Central</a></dd><dd><a
+        href=\"http://sports.espn.go.com/nhl/playoffs/2011/news/story?page=cupchamps11\"
         name=\"&lpos=subnav&lid=subnav_NHL_Stanley_Cup_Winners\">Stanley Cup Winners</a></dd></dl><dl
         class=\"last\">                <dd><a href=\"http://espn.go.com/nhl/transactions\"
-        name=\"&lpos=subnav&lid=subnav_Transactions\">Transactions</a></dd>                <dd><a
-        href=\"http://espn.go.com/nhl/story/_/page/calendar2014/2014-15-nhl-calendar\"
+        name=\"&lpos=subnav&lid=subnav_Transactions\">Transactions</a></dd><dd><a
+        href=\"http://espn.go.com/nhl/story/_/id/12386853/2015-nhl-draft-picks-team\">2015
+        Draft Picks</a></dd>                <dd><a href=\"http://espn.go.com/nhl/story/_/page/calendar2014/2014-15-nhl-calendar\"
         name=\"&lpos=subnav&lid=subnav_Dates\">Key Dates</a></dd><dd><a href=\"http://espn.go.com/nhl/preview2014/\"
         name=\"&lpos=subnav&lid=subnav_NHL_Preview\">2014-15 Season Preview</a></dd><dd><a
         href=\"http://espn.go.com/nhl/winterclassic15/\" name=\"&lpos=subnav&lid=subnav_NHL_2015_Winter_Classic\">2015
@@ -1219,5 +1222,5 @@ http_interactions:
         a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
         \ //]]>\n</script></body>\n</html>"
     http_version: 
-  recorded_at: Wed, 25 Feb 2015 19:16:48 GMT
+  recorded_at: Fri, 27 Feb 2015 06:01:37 GMT
 recorded_with: VCR 2.9.3

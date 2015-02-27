@@ -4,6 +4,7 @@ describe League, type: :model, vcr: true do
   describe '.header_blurred_image' do
     let(:league) { League.new('nhl') }
     context 'includes all files in the specified folder' do
+      before { Rails.cache.clear }
       let(:url) { QueryBase.api_image_url('nhl-teams/blurred-headers/ana') }
       it { expect(league.header_blurred_images.keys.size).to eq(30) }
       it { expect(league.header_blurred_images.values.first).to eq(url) }
