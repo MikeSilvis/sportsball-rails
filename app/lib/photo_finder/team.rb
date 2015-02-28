@@ -23,7 +23,7 @@ class PhotoFinder::Team
 
   def save_by_url(url)
     open(file_location, 'wb') do |file|
-      file << open(url).read
+      file << open(URI.parse(URI.encode(url.strip))).read
     end
   end
 

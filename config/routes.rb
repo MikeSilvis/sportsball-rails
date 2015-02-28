@@ -7,7 +7,9 @@ Rails.application.routes.draw do
   }, as: 'image'
 
   resources :leagues, only: :index do
-    resources :image_downloader, only: [:update, :show, :index]
+    resources :image_downloader, only: [:update, :show, :index] do
+      get :get_update
+    end
     resources :scores, only: :index
     resources :boxscores, only: :show
     resources :previews, only: :show
