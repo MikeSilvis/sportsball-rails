@@ -1,4 +1,5 @@
 require 'open-uri'
+require 'league'
 
 class PhotoFinder::Team
   attr_accessor :league, :team
@@ -28,7 +29,11 @@ class PhotoFinder::Team
   end
 
   def has_photo?
-    File.exists? file_location
+    File.exists?(file_location) || s3_photos.include?(team[:data_name])
+  end
+
+  def s3_photos
+    @s3_photos ||= League.new(league).header_images.keys.to_set
   end
 
   private
