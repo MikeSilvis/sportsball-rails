@@ -39,10 +39,14 @@ class PhotoFinder::Team
   private
 
   def file_location
-    "app/assets/images/#{league}-teams/headers/#{team[:data_name]}.png"
+    "app/assets/images/#{league}-teams/headers/#{team[:data_name]}.jpg"
   end
 
   def markup
-    @markup ||= ESPN.get("#{league}/team/photos/_/name/#{team[:data_name]}")
+    @markup ||= ESPN.get("#{league}/team/photos/_/#{by}/#{team[:data_name]}")
+  end
+
+  def by
+    league == 'ncb' ? 'id' : 'name'
   end
 end
