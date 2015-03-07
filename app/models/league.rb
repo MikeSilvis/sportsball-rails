@@ -14,6 +14,7 @@ class League < QueryBase
     #'ncf'
     'ncb',
     'nba',
+    'mlb'
   ]
 
   def initialize(name)
@@ -74,7 +75,7 @@ class League < QueryBase
   end
 
   def monthly_schedule
-    %w[nhl nba ncb].include? name
+    %w[nhl nba ncb mlb].include? name
   end
 
   def schedule

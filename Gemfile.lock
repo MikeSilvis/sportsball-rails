@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/mikesilvis/espn-scraper.git
-  revision: 4714d2063177d2427038bbe58f5e9ece8ef68b34
+  revision: 6f69858eb6799a3cb36b2cdda77971c91bb5fe91
   specs:
     espn_scraper (1.0.4)
       activesupport
@@ -72,7 +72,7 @@ GEM
       multi_json (~> 1.0)
       rack
     erubis (2.7.0)
-    excon (0.44.3)
+    excon (0.44.4)
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
     fission (0.5.0)
@@ -182,7 +182,7 @@ GEM
     mime-types (2.4.3)
     mini_portile (0.6.2)
     minitest (5.5.1)
-    multi_json (1.10.1)
+    multi_json (1.11.0)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
     net-scp (1.2.1)

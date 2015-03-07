@@ -23,7 +23,10 @@ describe ImageDownloaderController, type: :controller, vcr: true do
   end
 
   describe 'GET :index' do
-    before { get :index, league_id: 'nhl' }
+    before do
+        allow_any_instance_of(PhotoFinder::Team).to receive(:has_photo?).and_return(false)
+      get :index, league_id: 'nhl'
+    end
     it { expect(response_body['teams'].length).to eq(30) }
   end
 end
