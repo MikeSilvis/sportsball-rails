@@ -31,7 +31,7 @@ class Recap < QueryBase
   end
 
   def photo
-    "#{photos[:photos].first}&h=400"
+    "#{photos[:photos].first}&h=400" if photos[:photos].present?
   end
 
   private
