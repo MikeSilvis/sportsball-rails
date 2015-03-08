@@ -8,6 +8,6 @@ class Standing
   end
 
   def self.find(league)
-    new(ESPN::Standings.find(league))
+    new(ESPN::Standing.find(league))
   end
 end
