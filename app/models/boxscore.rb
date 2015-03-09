@@ -68,7 +68,7 @@ class Boxscore < QueryBase
   end
 
   def start_time=(val)
-    @start_time = Time.parse(val.to_s).utc
+    @start_time = ActiveSupport::TimeZone['America/New_York'].parse(val.to_s).utc
   rescue ArgumentError
     val
   end
