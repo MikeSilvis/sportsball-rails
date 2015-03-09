@@ -1,5 +1,5 @@
 class QueryBase
-  ASSET_STRING = 'ASSET_STRING_1'
+  ASSET_STRING = 'ASSET_STRING_2'
   ASSET_HASH = Digest::MD5.hexdigest(ASSET_STRING)
 
   def self.attr_accessor(*vars)
