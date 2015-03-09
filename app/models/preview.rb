@@ -37,7 +37,6 @@ class Preview < QueryBase
   end
 
   def start_time=(val)
-    val.to_s.gsub!('ET', 'EST')
     @start_time = Time.parse(val.to_s).utc
   rescue ArgumentError
     val
