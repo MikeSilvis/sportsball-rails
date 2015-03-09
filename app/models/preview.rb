@@ -37,9 +37,7 @@ class Preview < QueryBase
   end
 
   def start_time=(val)
-    @start_time = ActiveSupport::TimeZone['America/New_York'].parse(val.to_s).utc
-  rescue ArgumentError
-    val
+    @start_time = ActiveSupport::TimeZone['America/New_York'].parse(val.to_s).utc if val
   end
 
   def start_time
