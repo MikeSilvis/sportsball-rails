@@ -39,12 +39,6 @@ class Score < QueryBase
     self.preview        = attrs[:preview]
   end
 
-  def start_time=(val)
-    @start_time = ActiveSupport::TimeZone['America/New_York'].parse(val.to_s).utc
-  rescue ArgumentError
-    val
-  end
-
   def start_time
     @start_time.to_i
   end

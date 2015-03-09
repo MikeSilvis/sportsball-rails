@@ -36,12 +36,6 @@ class Preview < QueryBase
     @away_team_schedule ||= Schedule.find(self.league, self.away_team.data_name)
   end
 
-  def start_time=(val)
-    @start_time = ActiveSupport::TimeZone['America/New_York'].parse(val.to_s).utc
-  rescue ArgumentError
-    val
-  end
-
   def start_time
     @start_time.to_i
   end
