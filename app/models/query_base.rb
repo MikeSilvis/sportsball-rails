@@ -24,13 +24,6 @@ class QueryBase
     end.compact
   end
 
-  def start_time=(val)
-    @start_time = ActiveSupport::TimeZone['America/New_York'].parse(val.to_s).utc
-  rescue ArgumentError
-    val
-  end
-
-
   def api_image_url(path)
     self.class.api_image_url(path)
   end

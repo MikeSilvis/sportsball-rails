@@ -67,6 +67,12 @@ class Boxscore < QueryBase
     end
   end
 
+  def start_time=(val)
+    @start_time = ActiveSupport::TimeZone['America/New_York'].parse(val.to_s).utc
+  rescue ArgumentError
+    val
+  end
+
   def game_stats
     return nil unless @game_stats
 
