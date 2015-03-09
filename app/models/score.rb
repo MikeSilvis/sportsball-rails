@@ -73,8 +73,6 @@ class Score < QueryBase
             -score.progress.to_i,
             score.time_remaining.to_s.gsub(':', '.').to_f
           ]
-        end.select do |score|
-          score.game_date == date
         end
       end
 
