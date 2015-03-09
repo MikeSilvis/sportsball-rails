@@ -46,11 +46,11 @@ class League < QueryBase
   end
 
   def header_images
-    @header_images ||= Rails.cache.fetch("header_images_#{name}") { find_images('headers') }
+    @header_images ||= find_images('headers')
   end
 
   def header_blurred_images
-    @header_blurred_images ||= Rails.cache.fetch("burred_header_images_#{name}") { find_images('blurred-headers') }
+    @header_blurred_images ||= find_images('blurred-headers')
   end
 
   def find_images(location)
@@ -62,15 +62,17 @@ class League < QueryBase
   end
 
   def get_files(location)
-    connection = Fog::Storage.new(
-      provider: 'AWS',
-      aws_access_key_id: ENV['AWS_ACCESS_KEY_ID'],
-      aws_secret_access_key: ENV['AWS_SECRET_ACCESS_KEY']
-    )
-    connection.directories.get('jumbotron', prefix: "#{name}-teams/#{location}").files.map do |file|
-      file.key
-    end.select do |file|
-      file.match('.png')
+    Rails.cache.fetch(location) do
+      connection = Fog::Storage.new(
+        provider: 'AWS',
+        aws_access_key_id: ENV['AWS_ACCESS_KEY_ID'],
+        aws_secret_access_key: ENV['AWS_SECRET_ACCESS_KEY']
+      )
+      connection.directories.get('jumbotron', prefix: "#{name}-teams/#{location}").files.map do |file|
+        file.key
+      end.select do |file|
+        file.match('.png')
+      end
     end
   end
 
