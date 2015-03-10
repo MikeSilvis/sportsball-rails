@@ -62,7 +62,7 @@ class League < QueryBase
   end
 
   def get_files(location)
-    Rails.cache.fetch(location) do
+    Rails.cache.fetch("#{location}-#{name}") do
       connection = Fog::Storage.new(
         provider: 'AWS',
         aws_access_key_id: ENV['AWS_ACCESS_KEY_ID'],
