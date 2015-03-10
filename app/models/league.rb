@@ -7,22 +7,35 @@ class League < QueryBase
                 :header_image,
                 :header_blurred_image,
                 :schedule,
-                :monthly_schedule
-  LEAGUES = [
-    'nhl',
-    #'nfl'
-    #'ncf'
-    'ncb',
-    'nba',
-    'mlb'
-  ]
+                :monthly_schedule,
+                :english_name
+  LEAGUES = {
+    'nhl' => {
+      english_name: 'NHL'
+    },
+    #'nfl' => {
+      #english_name: 'NFL'
+    #},
+    #'ncf' => {
+      #english_name: 'NCAAF'
+    #},
+    'ncb' => {
+      english_name: 'NCAAB'
+    },
+    'nba' => {
+      english_name: 'NBA'
+    },
+    'mlb' => {
+      english_name: 'MLB'
+    }
+  }
 
   def initialize(name)
     self.name = name
   end
 
   def self.all
-    LEAGUES.map do |league|
+    LEAGUES.map do |league, _|
       League.new(league)
     end
   end
@@ -51,6 +64,10 @@ class League < QueryBase
 
   def header_blurred_images
     @header_blurred_images ||= find_images('blurred-headers')
+  end
+
+  def english_name
+    @english_name ||= LEAGUES[name][:english_name]
   end
 
   def find_images(location)
