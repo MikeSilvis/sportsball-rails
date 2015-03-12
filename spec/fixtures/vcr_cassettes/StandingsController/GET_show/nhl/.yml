@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://espn.go.com/nhl/standings/_/group/1
+    uri: http://espn.go.com/nhl/standings/_/group/3
     body:
       encoding: US-ASCII
       string: ''
@@ -25,7 +25,7 @@ http_interactions:
       Transfer-Encoding:
       - chunked
       Date:
-      - Sun, 08 Mar 2015 15:07:08 GMT
+      - Thu, 12 Mar 2015 15:27:10 GMT
       Connection:
       - keep-alive
       Cache-Control:
@@ -34,8 +34,8 @@ http_interactions:
       - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRo
         BUS PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
       Set-Cookie:
-      - SWID=E92C72DE-2508-4284-B1F6-573A797107A7; path=/; expires=Sat, 03 Mar 2035
-        15:07:08 GMT; domain=go.com;
+      - SWID=38D25F31-56E2-425F-80A4-668241DC0D22; path=/; expires=Wed, 07 Mar 2035
+        15:27:10 GMT; domain=go.com;
     body:
       encoding: UTF-8
       string: "<!DOCTYPE html>\n<html xmlns:fb=\"http://www.facebook.com/2008/fbml\">\n<head><script
@@ -66,16 +66,16 @@ http_interactions:
         f.substring(c.length,f.length)}return null}function i(){\"beta\"===f(\"rand\")?espn.beta.recheck=!0:g()}var
         j=\"http://beta.espn.go.com\",k=a.location.href,l=b.location.pathname;return{init:function(){i()},test:function(a){return
         e(a)}}}(this,this.document),espn.beta.init();\n</script><title>2014-15 NHL
-        Regular Season League Standings - National Hockey League - ESPN</title>\n<meta
+        Regular Season Divisional Standings - National Hockey League - ESPN</title>\n<meta
         name=\"google-site-verification\" content=\"xuj1ODRluWa0frM-BjIr_aSHoUC7HB5C1MgmYAM_GkA\"
         />\n<meta name=\"msvalidate.01\" content=\"B1FEB7C682C46C8FCDA3130F3D18AC28\"
         />\n<meta name=\"googlebot\" content=\"noodp\" />\n<meta name=\"robots\" content=\"index,
         follow\" />\n<meta name=\"description\" content=\"Find out the 2014-15 NHL
-        Regular Season League Standings right here on ESPN.com. We have your NHL standings
-        covered from every angle.\" />\n<meta name=\"keywords\" content=\"nhl standings,
-        2014-15 nhl standings, Regular Season nhl standings, nhlLeaguestandings, pro
-        hockey standings\" />\n<meta property=\"fb:app_id\" content=\"116656161708917\">\n<meta
-        property=\"og:site_name\" content=\"ESPN.com\">\n<link rel=\"canonical\" href=\"http://espn.go.com/nhl/standings/_/group/1\"
+        Regular Season Divisional Standings right here on ESPN.com. We have your NHL
+        standings covered from every angle.\" />\n<meta name=\"keywords\" content=\"nhl
+        standings, 2014-15 nhl standings, Regular Season nhl standings, nhlDivisionalstandings,
+        pro hockey standings\" />\n<meta property=\"fb:app_id\" content=\"116656161708917\">\n<meta
+        property=\"og:site_name\" content=\"ESPN.com\">\n<link rel=\"canonical\" href=\"http://espn.go.com/nhl/standings\"
         />\n\n\t\t<script>var _sf_startpt=(new Date()).getTime();</script>\n<link
         rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"http://a.espncdn.com/search/opensearch.xml\"
         title=\"ESPN Search\" />\n<link rel=\"stylesheet\" href=\"http://a.espncdn.com/combiner/c/201401211964?css=global_reset.r1.css,base.r236.css,modules.r462.css,global_header.r44.css,header_topbar.r1.css,modules/global_nav.r54.css,modules/insider_enhanced.r1.css,modules/mem/mem.r12.1.css,modules/mem/mem_espn360.r8.4.css,modules/mem/skirmish.r8.css,modules/twin.r1.css,modules/facebook/button.r2.css,universal_overlay/universal_overlay.css,universal_overlay/media_overlay.css,universal_overlay/video_overlay.css,universal_overlay/photo_overlay.css,universal_overlay/dyk_overlay.css,fonts/bentonsans.css\"
@@ -189,49 +189,49 @@ http_interactions:
         \   <div class=\"span-6\">\n        <div class=\"mod-container mod-tabs mod-tabs-section
         mod-no-header-footer mod-page-header mod-page-header-tabs\">\n        <div
         class=\"mod-content\">\n            <h2>NHL Standings - 2014-15</h2>\n            <div
-        class=\"floatleft\">\n                    Group: League | <a href=\"http://espn.go.com/nhl/standings/_/group/2\">Conference</a>
-        | <a href=\"http://espn.go.com/nhl/standings\">Division</a><br/>\nSeason:
-        <form class=\"js-goto\" style=\"display:inline;\"><select class=\"tablesm\"><option
-        value=\"#\">Select One</option><option value=\"http://espn.go.com/nhl/standings/_/group/1\"
-        selected>2014-15 Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2014/group/1\">2013-14
-        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2013/group/1\">2012-13
-        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2012/group/1\">2011-12
-        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2011/group/1\">2010-11
-        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2010/group/1\">2009-10
-        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2009/group/1\">2008-09
-        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2008/group/1\">2007-08
-        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2007/group/1\">2006-07
-        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2006/group/1\">2005-06
-        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2004/group/1\">2003-04
-        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2003/group/1\">2002-03
-        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2002/group/1\">2001-02
-        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/seasontype/1/group/1\">2014-15
-        Preseason</option><option value=\"http://espn.go.com/nhl/standings/_/year/2014/seasontype/1/group/1\">2013-14
-        Preseason</option><option value=\"http://espn.go.com/nhl/standings/_/year/2013/seasontype/1/group/1\">2012-13
-        Preseason</option><option value=\"http://espn.go.com/nhl/standings/_/year/2012/seasontype/1/group/1\">2011-12
-        Preseason</option><option value=\"http://espn.go.com/nhl/standings/_/year/2011/seasontype/1/group/1\">2010-11
-        Preseason</option><option value=\"http://espn.go.com/nhl/standings/_/year/2010/seasontype/1/group/1\">2009-10
-        Preseason</option><option value=\"http://espn.go.com/nhl/standings/_/year/2009/seasontype/1/group/1\">2008-09
-        Preseason</option><option value=\"http://espn.go.com/nhl/standings/_/year/2008/seasontype/1/group/1\">2007-08
-        Preseason</option><option value=\"http://espn.go.com/nhl/standings/_/year/2007/seasontype/1/group/1\">2006-07
-        Preseason</option><option value=\"http://espn.go.com/nhl/standings/_/year/2006/seasontype/1/group/1\">2005-06
-        Preseason</option><option value=\"http://espn.go.com/nhl/standings/_/year/2004/seasontype/1/group/1\">2003-04
-        Preseason</option><option value=\"http://espn.go.com/nhl/standings/_/year/2003/seasontype/1/group/1\">2002-03
+        class=\"floatleft\">\n                    Group: <a href=\"http://espn.go.com/nhl/standings/_/group/1\">League</a>
+        | <a href=\"http://espn.go.com/nhl/standings/_/group/2\">Conference</a> |
+        Division<br/>\nSeason: <form class=\"js-goto\" style=\"display:inline;\"><select
+        class=\"tablesm\"><option value=\"#\">Select One</option><option value=\"http://espn.go.com/nhl/standings\"
+        selected>2014-15 Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2014\">2013-14
+        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2013\">2012-13
+        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2012\">2011-12
+        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2011\">2010-11
+        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2010\">2009-10
+        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2009\">2008-09
+        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2008\">2007-08
+        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2007\">2006-07
+        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2006\">2005-06
+        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2004\">2003-04
+        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2003\">2002-03
+        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/year/2002\">2001-02
+        Regular Season</option><option value=\"http://espn.go.com/nhl/standings/_/seasontype/1\">2014-15
+        Preseason</option><option value=\"http://espn.go.com/nhl/standings/_/year/2014/seasontype/1\">2013-14
+        Preseason</option><option value=\"http://espn.go.com/nhl/standings/_/year/2013/seasontype/1\">2012-13
+        Preseason</option><option value=\"http://espn.go.com/nhl/standings/_/year/2012/seasontype/1\">2011-12
+        Preseason</option><option value=\"http://espn.go.com/nhl/standings/_/year/2011/seasontype/1\">2010-11
+        Preseason</option><option value=\"http://espn.go.com/nhl/standings/_/year/2010/seasontype/1\">2009-10
+        Preseason</option><option value=\"http://espn.go.com/nhl/standings/_/year/2009/seasontype/1\">2008-09
+        Preseason</option><option value=\"http://espn.go.com/nhl/standings/_/year/2008/seasontype/1\">2007-08
+        Preseason</option><option value=\"http://espn.go.com/nhl/standings/_/year/2007/seasontype/1\">2006-07
+        Preseason</option><option value=\"http://espn.go.com/nhl/standings/_/year/2006/seasontype/1\">2005-06
+        Preseason</option><option value=\"http://espn.go.com/nhl/standings/_/year/2004/seasontype/1\">2003-04
+        Preseason</option><option value=\"http://espn.go.com/nhl/standings/_/year/2003/seasontype/1\">2002-03
         Preseason</option></select></form>\n                </div>\n                <div
         class=\"floatright cross-links\">\n                \t\n\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t<li><a
         href=\"http://espn.go.com/nhl/playoffs/matchups\">Playoff Scenarios &#187;</a></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t\n
         \               </div>\n                <div class=\"clear\"></div>\n                <ul
-        class=\"ui-tabs-nav\"><li class=\"ui-tabs-selected\"><a href=\"http://espn.go.com/nhl/standings/_/group/1\"title=\"Includes
+        class=\"ui-tabs-nav\"><li class=\"ui-tabs-selected\"><a href=\"http://espn.go.com/nhl/standings\"title=\"Includes
         Games Played, Wins, Losses, Overtime Losses, Points, Regulation and Overtime
         Wins, Shootout Wins, Shootout Losses, Home Record, Road Record, Goals For,
         Goals Against, Goal differential, Record Last Ten, Streak\">Standings</a></li><li
-        class=\"ui-tabs-disabled\"><a href=\"http://espn.go.com/nhl/standings/_/type/expanded/group/1\"title=\"Includes
+        class=\"ui-tabs-disabled\"><a href=\"http://espn.go.com/nhl/standings/_/type/expanded\"title=\"Includes
         Games Played, Wins, Losses, Overtime Losses, Points, Power Play Goals, Power
         Play Opportunities, Power Play Percentage, Power Play Goals Against, Power
         Play Opportunities Against, Penalty Killing Percentage\">Expanded Standings</a></li><li
-        class=\"ui-tabs-disabled\"><a href=\"http://espn.go.com/nhl/standings/_/type/vs-division/group/1\"title=\"Includes
+        class=\"ui-tabs-disabled\"><a href=\"http://espn.go.com/nhl/standings/_/type/vs-division\"title=\"Includes
         Games Played, Wins, Losses, Overtime Losses, Points, null\">Vs. Division Standings</a></li><li
-        class=\"ui-tabs-disabled\"><a href=\"http://espn.go.com/nhl/standings/_/type/wildcard/group/1\"title=\"Includes
+        class=\"ui-tabs-disabled\"><a href=\"http://espn.go.com/nhl/standings/_/type/wildcard\"title=\"Includes
         Games Played, Wins, Losses, Overtime Losses, Points, Regulation and Overtime
         Wins, Shootout Wins, Shootout Losses, Home Record, Road Record, Goals For,
         Goals Against, Goal differential, Record Last Ten, Streak\">Wild Card Standings</a></li></ul>\n
@@ -239,112 +239,158 @@ http_interactions:
         \       <div class=\"col-main\" id=\"my-teams-table\">\n        <div class=\"mod-container
         mod-table mod-no-header\">\n            <div class=\"mod-content\">\n                    <table
         class=\"tablehead\" cellpadding=\"3\" cellspacing=\"1\">\n<tr class=\"stathead\"><td
-        colspan=\"16\">National Hockey League</td></tr><tr align=\"right\" class=\"colhead\"><td
-        align=\"left\">NHL</td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/gamesPlayed/group/1\"
-        title=\"Games Played\">GP</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/wins/group/1\"
-        title=\"Wins\">W</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/losses/group/1\"
-        title=\"Losses\">L</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/otLosses/group/1\"
-        title=\"Overtime Losses\">OTL</a></td><td class=\"sortcell\"><a href=\"http://espn.go.com/nhl/standings/_/group/1/order/false\"
-        title=\"Points\">PTS</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/winsExcludingShootout/group/1\"
-        title=\"Regulation and Overtime Wins\">ROW</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/shootoutWins/group/1\"
-        title=\"Shootout Wins\">SOW</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/shootoutLosses/group/1\"
-        title=\"Shootout Losses\">SOL</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/homeWinPercent/group/1\"
-        title=\"Home Record\">HOME</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/roadWinPercent/group/1\"
-        title=\"Road Record\">ROAD</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/pointsFor/group/1\"
-        title=\"Goals For\">GF</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/pointsAgainst/group/1/order/false\"
+        colspan=\"16\">Eastern Conference</td></tr><tr align=\"right\" class=\"colhead\"><td
+        align=\"left\">ATLANTIC</td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/gamesPlayed\"
+        title=\"Games Played\">GP</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/wins\"
+        title=\"Wins\">W</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/losses\"
+        title=\"Losses\">L</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/otLosses\"
+        title=\"Overtime Losses\">OTL</a></td><td class=\"sortcell\"><a href=\"http://espn.go.com/nhl/standings/_/order/false\"
+        title=\"Points\">PTS</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/winsExcludingShootout\"
+        title=\"Regulation and Overtime Wins\">ROW</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/shootoutWins\"
+        title=\"Shootout Wins\">SOW</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/shootoutLosses\"
+        title=\"Shootout Losses\">SOL</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/homeWinPercent\"
+        title=\"Home Record\">HOME</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/roadWinPercent\"
+        title=\"Road Record\">ROAD</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/pointsFor\"
+        title=\"Goals For\">GF</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/pointsAgainst/order/false\"
         title=\"Goals Against\">GA</a></td><td><span title=\"Goal differential\">DIFF</span></td><td><span
-        title=\"Record Last Ten\">L10</span></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/streak/group/1\"
-        title=\"Streak\">STRK</a></td></tr><tr class=\"oddrow team-90-25\" align=\"right\"><td
-        align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/ana/anaheim-ducks\">Anaheim</a>\n</td>\n<td>67</td><td>42</td><td>18</td><td>7</td><td
-        class=\"sortcell\">91</td><td>34</td><td>8</td><td>5</td><td>22-10-3</td><td>20-8-4</td><td>198</td><td>184</td><td><span
-        class=\"greenfont\">+14</span></td><td>7-3-0</td><td>Lost 1</td></tr>\n<tr
-        class=\"evenrow team-90-10\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/mtl/montreal-canadiens\">Montreal</a>\n</td>\n<td>66</td><td>42</td><td>18</td><td>6</td><td
-        class=\"sortcell\">90</td><td>36</td><td>6</td><td>3</td><td>22-7-4</td><td>20-11-2</td><td>177</td><td>146</td><td><span
-        class=\"greenfont\">+31</span></td><td>5-3-2</td><td>Won 1</td></tr>\n<tr
-        class=\"oddrow team-90-27\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/nsh/nashville-predators\">Nashville</a>\n</td>\n<td>67</td><td>41</td><td>19</td><td>7</td><td
-        class=\"sortcell\">89</td><td>35</td><td>6</td><td>5</td><td>26-7-1</td><td>15-12-6</td><td>197</td><td>165</td><td><span
-        class=\"greenfont\">+32</span></td><td>2-7-1</td><td>Lost 6</td></tr>\n<tr
-        class=\"evenrow team-90-12\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders\">NY
-        Islanders</a>\n</td>\n<td>67</td><td>42</td><td>21</td><td>4</td><td class=\"sortcell\">88</td><td>35</td><td>7</td><td>3</td><td>23-9-0</td><td>19-12-4</td><td>214</td><td>189</td><td><span
-        class=\"greenfont\">+25</span></td><td>5-2-3</td><td>Lost 1</td></tr>\n<tr
-        class=\"oddrow team-90-20\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/tb/tampa-bay-lightning\">Tampa
-        Bay</a>\n</td>\n<td>67</td><td>41</td><td>20</td><td>6</td><td class=\"sortcell\">88</td><td>39</td><td>2</td><td>4</td><td>26-6-1</td><td>15-14-5</td><td>222</td><td>177</td><td><span
-        class=\"greenfont\">+45</span></td><td>7-3-0</td><td>Won 3</td></tr>\n<tr
-        class=\"evenrow team-90-19\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/stl/st-louis-blues\">St.
-        Louis</a>\n</td>\n<td>65</td><td>41</td><td>19</td><td>5</td><td class=\"sortcell\">87</td><td>33</td><td>8</td><td>3</td><td>22-8-2</td><td>19-11-3</td><td>204</td><td>163</td><td><span
-        class=\"greenfont\">+41</span></td><td>5-4-1</td><td>Won 1</td></tr>\n<tr
-        class=\"oddrow team-90-13\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/nyr/new-york-rangers\">NY
-        Rangers</a>\n</td>\n<td>63</td><td>39</td><td>17</td><td>7</td><td class=\"sortcell\">85</td><td>36</td><td>3</td><td>5</td><td>21-7-5</td><td>18-10-2</td><td>197</td><td>155</td><td><span
-        class=\"greenfont\">+42</span></td><td>7-1-2</td><td>Lost 1</td></tr>\n<tr
-        class=\"evenrow team-90-16\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins\">Pittsburgh</a>\n</td>\n<td>65</td><td>38</td><td>18</td><td>9</td><td
-        class=\"sortcell\">85</td><td>35</td><td>3</td><td>5</td><td>20-10-3</td><td>18-8-6</td><td>188</td><td>160</td><td><span
-        class=\"greenfont\">+28</span></td><td>6-3-1</td><td>Won 2</td></tr>\n<tr
-        class=\"oddrow team-90-5\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/det/detroit-red-wings\">Detroit</a>\n</td>\n<td>63</td><td>36</td><td>16</td><td>11</td><td
-        class=\"sortcell\">83</td><td>33</td><td>3</td><td>9</td><td>18-6-7</td><td>18-10-4</td><td>184</td><td>165</td><td><span
-        class=\"greenfont\">+19</span></td><td>5-3-2</td><td>Lost 1</td></tr>\n<tr
-        class=\"evenrow team-90-4\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/chi/chicago-blackhawks\">Chicago</a>\n</td>\n<td>65</td><td>39</td><td>21</td><td>5</td><td
-        class=\"sortcell\">83</td><td>30</td><td>9</td><td>3</td><td>21-9-4</td><td>18-12-1</td><td>190</td><td>153</td><td><span
-        class=\"greenfont\">+37</span></td><td>6-3-1</td><td>Won 2</td></tr>\n<tr
-        class=\"oddrow team-90-23\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/wsh/washington-capitals\">Washington</a>\n</td>\n<td>67</td><td>36</td><td>21</td><td>10</td><td
-        class=\"sortcell\">82</td><td>33</td><td>3</td><td>4</td><td>19-9-5</td><td>17-12-5</td><td>200</td><td>165</td><td><span
-        class=\"greenfont\">+35</span></td><td>6-4-0</td><td>Won 1</td></tr>\n<tr
-        class=\"evenrow team-90-30\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/min/minnesota-wild\">Minnesota</a>\n</td>\n<td>65</td><td>36</td><td>22</td><td>7</td><td
-        class=\"sortcell\">79</td><td>33</td><td>3</td><td>2</td><td>18-8-5</td><td>18-14-2</td><td>184</td><td>165</td><td><span
-        class=\"greenfont\">+19</span></td><td>8-2-0</td><td>Won 5</td></tr>\n<tr
-        class=\"oddrow team-90-22\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/van/vancouver-canucks\">Vancouver</a>\n</td>\n<td>65</td><td>37</td><td>24</td><td>4</td><td
-        class=\"sortcell\">78</td><td>33</td><td>4</td><td>2</td><td>17-12-1</td><td>20-12-3</td><td>187</td><td>178</td><td><span
-        class=\"greenfont\">+9</span></td><td>6-3-1</td><td>Won 1</td></tr>\n<tr class=\"evenrow
-        team-90-28\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/wpg/winnipeg-jets\">Winnipeg</a>\n</td>\n<td>66</td><td>33</td><td>21</td><td>12</td><td
-        class=\"sortcell\">78</td><td>27</td><td>6</td><td>5</td><td>17-11-5</td><td>16-10-7</td><td>183</td><td>176</td><td><span
-        class=\"greenfont\">+7</span></td><td>5-3-2</td><td>Won 1</td></tr>\n<tr class=\"oddrow
-        team-90-3\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/cgy/calgary-flames\">Calgary</a>\n</td>\n<td>65</td><td>36</td><td>25</td><td>4</td><td
-        class=\"sortcell\">76</td><td>32</td><td>4</td><td>1</td><td>17-12-3</td><td>19-13-1</td><td>187</td><td>167</td><td><span
-        class=\"greenfont\">+20</span></td><td>6-3-1</td><td>Won 3</td></tr>\n<tr
-        class=\"evenrow team-90-8\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/la/los-angeles-kings\">Los
-        Angeles</a>\n</td>\n<td>65</td><td>31</td><td>21</td><td>13</td><td class=\"sortcell\">75</td><td>29</td><td>2</td><td>7</td><td>21-7-7</td><td>10-14-6</td><td>175</td><td>168</td><td><span
-        class=\"greenfont\">+7</span></td><td>6-3-1</td><td>Lost 1</td></tr>\n<tr
-        class=\"oddrow team-90-1\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/bos/boston-bruins\">Boston</a>\n</td>\n<td>64</td><td>32</td><td>22</td><td>10</td><td
-        class=\"sortcell\">74</td><td>30</td><td>2</td><td>7</td><td>19-10-5</td><td>13-12-5</td><td>171</td><td>167</td><td><span
-        class=\"greenfont\">+4</span></td><td>4-3-3</td><td>Won 1</td></tr>\n<tr class=\"evenrow
-        team-90-18\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/sj/san-jose-sharks\">San
-        Jose</a>\n</td>\n<td>66</td><td>32</td><td>26</td><td>8</td><td class=\"sortcell\">72</td><td>30</td><td>2</td><td>5</td><td>15-15-5</td><td>17-11-3</td><td>187</td><td>186</td><td><span
-        class=\"greenfont\">+1</span></td><td>4-6-0</td><td>Lost 1</td></tr>\n<tr
-        class=\"oddrow team-90-26\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/fla/florida-panthers\">Florida</a>\n</td>\n<td>66</td><td>29</td><td>23</td><td>14</td><td
+        title=\"Record Last Ten\">L10</span></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/streak\"
+        title=\"Streak\">STRK</a></td></tr><tr class=\"oddrow team-90-10\" align=\"right\"><td
+        align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/mtl/montreal-canadiens\">Montreal</a>\n</td>\n<td>67</td><td>42</td><td>18</td><td>7</td><td
+        class=\"sortcell\">91</td><td>36</td><td>6</td><td>3</td><td>22-7-5</td><td>20-11-2</td><td>177</td><td>147</td><td><span
+        class=\"greenfont\">+30</span></td><td>5-2-3</td><td>Lost 1</td></tr>\n<tr
+        class=\"evenrow team-90-20\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/tb/tampa-bay-lightning\">Tampa
+        Bay</a>\n</td>\n<td>68</td><td>42</td><td>20</td><td>6</td><td class=\"sortcell\">90</td><td>40</td><td>2</td><td>4</td><td>26-6-1</td><td>16-14-5</td><td>223</td><td>177</td><td><span
+        class=\"greenfont\">+46</span></td><td>7-3-0</td><td>Won 4</td></tr>\n<tr
+        class=\"oddrow team-90-5\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/det/detroit-red-wings\">Detroit</a>\n</td>\n<td>65</td><td>37</td><td>17</td><td>11</td><td
+        class=\"sortcell\">85</td><td>34</td><td>3</td><td>9</td><td>19-6-7</td><td>18-11-4</td><td>192</td><td>172</td><td><span
+        class=\"greenfont\">+20</span></td><td>6-3-1</td><td>Won 1</td></tr>\n<tr
+        class=\"evenrow team-90-1\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/bos/boston-bruins\">Boston</a>\n</td>\n<td>66</td><td>34</td><td>22</td><td>10</td><td
+        class=\"sortcell\">78</td><td>32</td><td>2</td><td>7</td><td>20-10-5</td><td>14-12-5</td><td>179</td><td>171</td><td><span
+        class=\"greenfont\">+8</span></td><td>6-2-2</td><td>Won 3</td></tr>\n<tr class=\"oddrow
+        team-90-26\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/fla/florida-panthers\">Florida</a>\n</td>\n<td>66</td><td>29</td><td>23</td><td>14</td><td
         class=\"sortcell\">72</td><td>22</td><td>7</td><td>10</td><td>15-10-7</td><td>14-13-7</td><td>163</td><td>188</td><td><span
         class=\"redfont\">-25</span></td><td>4-4-2</td><td>Won 1</td></tr>\n<tr class=\"evenrow
-        team-90-14\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/ott/ottawa-senators\">Ottawa</a>\n</td>\n<td>63</td><td>29</td><td>23</td><td>11</td><td
-        class=\"sortcell\">69</td><td>26</td><td>3</td><td>6</td><td>15-10-5</td><td>14-13-6</td><td>179</td><td>169</td><td><span
-        class=\"greenfont\">+10</span></td><td>8-1-1</td><td>Won 2</td></tr>\n<tr
-        class=\"oddrow team-90-17\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/col/colorado-avalanche\">Colorado</a>\n</td>\n<td>65</td><td>29</td><td>25</td><td>11</td><td
-        class=\"sortcell\">69</td><td>21</td><td>8</td><td>4</td><td>17-13-3</td><td>12-12-8</td><td>174</td><td>183</td><td><span
-        class=\"redfont\">-9</span></td><td>7-3-0</td><td>Won 2</td></tr>\n<tr class=\"evenrow
-        team-90-15\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/phi/philadelphia-flyers\">Philadelphia</a>\n</td>\n<td>66</td><td>28</td><td>25</td><td>13</td><td
-        class=\"sortcell\">69</td><td>25</td><td>3</td><td>7</td><td>19-8-6</td><td>9-17-7</td><td>175</td><td>190</td><td><span
-        class=\"redfont\">-15</span></td><td>4-3-3</td><td>Lost 1</td></tr>\n<tr class=\"oddrow
-        team-90-9\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/dal/dallas-stars\">Dallas</a>\n</td>\n<td>66</td><td>29</td><td>27</td><td>10</td><td
-        class=\"sortcell\">68</td><td>26</td><td>3</td><td>3</td><td>13-13-8</td><td>16-14-2</td><td>207</td><td>220</td><td><span
-        class=\"redfont\">-13</span></td><td>3-5-2</td><td>Lost 1</td></tr>\n<tr class=\"evenrow
+        team-90-14\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/ott/ottawa-senators\">Ottawa</a>\n</td>\n<td>65</td><td>30</td><td>24</td><td>11</td><td
+        class=\"sortcell\">71</td><td>26</td><td>4</td><td>6</td><td>16-11-5</td><td>14-13-6</td><td>185</td><td>176</td><td><span
+        class=\"greenfont\">+9</span></td><td>8-1-1</td><td>Lost 1</td></tr>\n<tr
+        class=\"oddrow team-90-21\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/tor/toronto-maple-leafs\">Toronto</a>\n</td>\n<td>68</td><td>27</td><td>35</td><td>6</td><td
+        class=\"sortcell\">60</td><td>23</td><td>4</td><td>3</td><td>19-14-1</td><td>8-21-5</td><td>183</td><td>212</td><td><span
+        class=\"redfont\">-29</span></td><td>4-5-1</td><td>Won 1</td></tr>\n<tr class=\"evenrow
+        team-90-2\" align=\"right\"><td align=\"left\">e - <a href=\"http://espn.go.com/nhl/team/_/name/buf/buffalo-sabres\">Buffalo</a>\n</td>\n<td>67</td><td>19</td><td>42</td><td>6</td><td
+        class=\"sortcell\">44</td><td>12</td><td>7</td><td>4</td><td>12-18-3</td><td>7-24-3</td><td>129</td><td>228</td><td><span
+        class=\"redfont\">-99</span></td><td>3-5-2</td><td>Lost 5</td></tr>\n<tr align=\"right\"
+        class=\"colhead\"><td align=\"left\">METROPOLITAN</td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/gamesPlayed\"
+        title=\"Games Played\">GP</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/wins\"
+        title=\"Wins\">W</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/losses\"
+        title=\"Losses\">L</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/otLosses\"
+        title=\"Overtime Losses\">OTL</a></td><td class=\"sortcell\"><a href=\"http://espn.go.com/nhl/standings/_/order/false\"
+        title=\"Points\">PTS</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/winsExcludingShootout\"
+        title=\"Regulation and Overtime Wins\">ROW</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/shootoutWins\"
+        title=\"Shootout Wins\">SOW</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/shootoutLosses\"
+        title=\"Shootout Losses\">SOL</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/homeWinPercent\"
+        title=\"Home Record\">HOME</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/roadWinPercent\"
+        title=\"Road Record\">ROAD</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/pointsFor\"
+        title=\"Goals For\">GF</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/pointsAgainst/order/false\"
+        title=\"Goals Against\">GA</a></td><td><span title=\"Goal differential\">DIFF</span></td><td><span
+        title=\"Record Last Ten\">L10</span></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/streak\"
+        title=\"Streak\">STRK</a></td></tr><tr class=\"oddrow team-90-13\" align=\"right\"><td
+        align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/nyr/new-york-rangers\">NY
+        Rangers</a>\n</td>\n<td>66</td><td>42</td><td>17</td><td>7</td><td class=\"sortcell\">91</td><td>39</td><td>3</td><td>5</td><td>21-7-5</td><td>21-10-2</td><td>203</td><td>157</td><td><span
+        class=\"greenfont\">+46</span></td><td>8-1-1</td><td>Won 3</td></tr>\n<tr
+        class=\"evenrow team-90-12\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/nyi/new-york-islanders\">NY
+        Islanders</a>\n</td>\n<td>69</td><td>43</td><td>22</td><td>4</td><td class=\"sortcell\">90</td><td>36</td><td>7</td><td>3</td><td>23-10-0</td><td>20-12-4</td><td>219</td><td>194</td><td><span
+        class=\"greenfont\">+25</span></td><td>4-3-3</td><td>Lost 1</td></tr>\n<tr
+        class=\"oddrow team-90-16\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/pit/pittsburgh-penguins\">Pittsburgh</a>\n</td>\n<td>66</td><td>38</td><td>18</td><td>10</td><td
+        class=\"sortcell\">86</td><td>35</td><td>3</td><td>6</td><td>20-10-3</td><td>18-8-7</td><td>189</td><td>162</td><td><span
+        class=\"greenfont\">+27</span></td><td>6-3-1</td><td>Lost 1</td></tr>\n<tr
+        class=\"evenrow team-90-23\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/wsh/washington-capitals\">Washington</a>\n</td>\n<td>68</td><td>36</td><td>22</td><td>10</td><td
+        class=\"sortcell\">82</td><td>33</td><td>3</td><td>4</td><td>19-10-5</td><td>17-12-5</td><td>201</td><td>168</td><td><span
+        class=\"greenfont\">+33</span></td><td>5-5-0</td><td>Lost 1</td></tr>\n<tr
+        class=\"oddrow team-90-15\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/phi/philadelphia-flyers\">Philadelphia</a>\n</td>\n<td>68</td><td>28</td><td>27</td><td>13</td><td
+        class=\"sortcell\">69</td><td>25</td><td>3</td><td>7</td><td>19-9-6</td><td>9-18-7</td><td>178</td><td>197</td><td><span
+        class=\"redfont\">-19</span></td><td>4-4-2</td><td>Lost 3</td></tr>\n<tr class=\"evenrow
         team-90-11\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/nj/new-jersey-devils\">New
-        Jersey</a>\n</td>\n<td>65</td><td>27</td><td>28</td><td>10</td><td class=\"sortcell\">64</td><td>23</td><td>4</td><td>6</td><td>16-10-8</td><td>11-18-2</td><td>146</td><td>168</td><td><span
-        class=\"redfont\">-22</span></td><td>6-3-1</td><td>Lost 1</td></tr>\n<tr class=\"oddrow
-        team-90-29\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/cbj/columbus-blue-jackets\">Columbus</a>\n</td>\n<td>65</td><td>27</td><td>34</td><td>4</td><td
-        class=\"sortcell\">58</td><td>23</td><td>4</td><td>2</td><td>12-19-2</td><td>15-15-2</td><td>166</td><td>207</td><td><span
-        class=\"redfont\">-41</span></td><td>2-7-1</td><td>Lost 1</td></tr>\n<tr class=\"evenrow
-        team-90-21\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/tor/toronto-maple-leafs\">Toronto</a>\n</td>\n<td>66</td><td>26</td><td>35</td><td>5</td><td
-        class=\"sortcell\">57</td><td>23</td><td>3</td><td>3</td><td>18-14-0</td><td>8-21-5</td><td>176</td><td>205</td><td><span
-        class=\"redfont\">-29</span></td><td>3-6-1</td><td>Lost 2</td></tr>\n<tr class=\"oddrow
-        team-90-7\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/car/carolina-hurricanes\">Carolina</a>\n</td>\n<td>63</td><td>24</td><td>32</td><td>7</td><td
-        class=\"sortcell\">55</td><td>20</td><td>4</td><td>5</td><td>14-12-3</td><td>10-20-4</td><td>145</td><td>170</td><td><span
-        class=\"redfont\">-25</span></td><td>5-5-0</td><td>Lost 2</td></tr>\n<tr class=\"evenrow
-        team-90-24\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/ari/arizona-coyotes\">Arizona</a>\n</td>\n<td>66</td><td>21</td><td>38</td><td>7</td><td
-        class=\"sortcell\">49</td><td>16</td><td>5</td><td>5</td><td>10-18-4</td><td>11-20-3</td><td>142</td><td>222</td><td><span
-        class=\"redfont\">-80</span></td><td>1-9-0</td><td>Lost 1</td></tr>\n<tr class=\"oddrow
-        team-90-6\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/edm/edmonton-oilers\">Edmonton</a>\n</td>\n<td>65</td><td>18</td><td>36</td><td>11</td><td
-        class=\"sortcell\">47</td><td>13</td><td>5</td><td>5</td><td>10-20-2</td><td>8-16-9</td><td>146</td><td>215</td><td><span
-        class=\"redfont\">-69</span></td><td>3-5-2</td><td>Lost 3</td></tr>\n<tr class=\"evenrow
-        team-90-2\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/buf/buffalo-sabres\">Buffalo</a>\n</td>\n<td>66</td><td>19</td><td>42</td><td>5</td><td
-        class=\"sortcell\">43</td><td>12</td><td>7</td><td>3</td><td>12-18-3</td><td>7-24-2</td><td>126</td><td>224</td><td><span
-        class=\"redfont\">-98</span></td><td>3-5-2</td><td>Lost 4</td></tr>\n</table>\n\n\n
+        Jersey</a>\n</td>\n<td>67</td><td>28</td><td>29</td><td>10</td><td class=\"sortcell\">66</td><td>24</td><td>4</td><td>6</td><td>17-10-8</td><td>11-19-2</td><td>153</td><td>176</td><td><span
+        class=\"redfont\">-23</span></td><td>6-3-1</td><td>Lost 1</td></tr>\n<tr class=\"oddrow
+        team-90-29\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/cbj/columbus-blue-jackets\">Columbus</a>\n</td>\n<td>66</td><td>28</td><td>34</td><td>4</td><td
+        class=\"sortcell\">60</td><td>23</td><td>5</td><td>2</td><td>12-19-2</td><td>16-15-2</td><td>170</td><td>210</td><td><span
+        class=\"redfont\">-40</span></td><td>2-7-1</td><td>Won 1</td></tr>\n<tr class=\"evenrow
+        team-90-7\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/car/carolina-hurricanes\">Carolina</a>\n</td>\n<td>65</td><td>25</td><td>32</td><td>8</td><td
+        class=\"sortcell\">58</td><td>21</td><td>4</td><td>6</td><td>15-12-4</td><td>10-20-4</td><td>155</td><td>178</td><td><span
+        class=\"redfont\">-23</span></td><td>5-4-1</td><td>Lost 1</td></tr>\n<tr class=\"stathead\"><td
+        colspan=\"16\">Western Conference</td></tr><tr align=\"right\" class=\"colhead\"><td
+        align=\"left\">CENTRAL</td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/gamesPlayed\"
+        title=\"Games Played\">GP</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/wins\"
+        title=\"Wins\">W</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/losses\"
+        title=\"Losses\">L</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/otLosses\"
+        title=\"Overtime Losses\">OTL</a></td><td class=\"sortcell\"><a href=\"http://espn.go.com/nhl/standings/_/order/false\"
+        title=\"Points\">PTS</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/winsExcludingShootout\"
+        title=\"Regulation and Overtime Wins\">ROW</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/shootoutWins\"
+        title=\"Shootout Wins\">SOW</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/shootoutLosses\"
+        title=\"Shootout Losses\">SOL</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/homeWinPercent\"
+        title=\"Home Record\">HOME</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/roadWinPercent\"
+        title=\"Road Record\">ROAD</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/pointsFor\"
+        title=\"Goals For\">GF</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/pointsAgainst/order/false\"
+        title=\"Goals Against\">GA</a></td><td><span title=\"Goal differential\">DIFF</span></td><td><span
+        title=\"Record Last Ten\">L10</span></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/streak\"
+        title=\"Streak\">STRK</a></td></tr><tr class=\"oddrow team-90-27\" align=\"right\"><td
+        align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/nsh/nashville-predators\">Nashville</a>\n</td>\n<td>68</td><td>42</td><td>19</td><td>7</td><td
+        class=\"sortcell\">91</td><td>36</td><td>6</td><td>5</td><td>26-7-1</td><td>16-12-6</td><td>199</td><td>166</td><td><span
+        class=\"greenfont\">+33</span></td><td>3-6-1</td><td>Won 1</td></tr>\n<tr
+        class=\"evenrow team-90-19\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/stl/st-louis-blues\">St.
+        Louis</a>\n</td>\n<td>66</td><td>42</td><td>19</td><td>5</td><td class=\"sortcell\">89</td><td>34</td><td>8</td><td>3</td><td>23-8-2</td><td>19-11-3</td><td>209</td><td>167</td><td><span
+        class=\"greenfont\">+42</span></td><td>5-4-1</td><td>Won 2</td></tr>\n<tr
+        class=\"oddrow team-90-4\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/chi/chicago-blackhawks\">Chicago</a>\n</td>\n<td>66</td><td>39</td><td>21</td><td>6</td><td
+        class=\"sortcell\">84</td><td>30</td><td>9</td><td>3</td><td>21-9-5</td><td>18-12-1</td><td>190</td><td>154</td><td><span
+        class=\"greenfont\">+36</span></td><td>5-3-2</td><td>Lost 1</td></tr>\n<tr
+        class=\"evenrow team-90-30\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/min/minnesota-wild\">Minnesota</a>\n</td>\n<td>67</td><td>37</td><td>23</td><td>7</td><td
+        class=\"sortcell\">81</td><td>34</td><td>3</td><td>2</td><td>19-9-5</td><td>18-14-2</td><td>192</td><td>170</td><td><span
+        class=\"greenfont\">+22</span></td><td>8-2-0</td><td>Won 1</td></tr>\n<tr
+        class=\"oddrow team-90-28\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/wpg/winnipeg-jets\">Winnipeg</a>\n</td>\n<td>67</td><td>33</td><td>22</td><td>12</td><td
+        class=\"sortcell\">78</td><td>27</td><td>6</td><td>5</td><td>17-11-5</td><td>16-11-7</td><td>187</td><td>181</td><td><span
+        class=\"greenfont\">+6</span></td><td>5-3-2</td><td>Lost 1</td></tr>\n<tr
+        class=\"evenrow team-90-17\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/col/colorado-avalanche\">Colorado</a>\n</td>\n<td>67</td><td>30</td><td>26</td><td>11</td><td
+        class=\"sortcell\">71</td><td>22</td><td>8</td><td>4</td><td>17-14-3</td><td>13-12-8</td><td>179</td><td>190</td><td><span
+        class=\"redfont\">-11</span></td><td>6-4-0</td><td>Lost 1</td></tr>\n<tr class=\"oddrow
+        team-90-9\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/dal/dallas-stars\">Dallas</a>\n</td>\n<td>67</td><td>30</td><td>27</td><td>10</td><td
+        class=\"sortcell\">70</td><td>27</td><td>3</td><td>3</td><td>13-13-8</td><td>17-14-2</td><td>209</td><td>221</td><td><span
+        class=\"redfont\">-12</span></td><td>3-5-2</td><td>Won 1</td></tr>\n<tr align=\"right\"
+        class=\"colhead\"><td align=\"left\">PACIFIC</td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/gamesPlayed\"
+        title=\"Games Played\">GP</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/wins\"
+        title=\"Wins\">W</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/losses\"
+        title=\"Losses\">L</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/otLosses\"
+        title=\"Overtime Losses\">OTL</a></td><td class=\"sortcell\"><a href=\"http://espn.go.com/nhl/standings/_/order/false\"
+        title=\"Points\">PTS</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/winsExcludingShootout\"
+        title=\"Regulation and Overtime Wins\">ROW</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/shootoutWins\"
+        title=\"Shootout Wins\">SOW</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/shootoutLosses\"
+        title=\"Shootout Losses\">SOL</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/homeWinPercent\"
+        title=\"Home Record\">HOME</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/roadWinPercent\"
+        title=\"Road Record\">ROAD</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/pointsFor\"
+        title=\"Goals For\">GF</a></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/pointsAgainst/order/false\"
+        title=\"Goals Against\">GA</a></td><td><span title=\"Goal differential\">DIFF</span></td><td><span
+        title=\"Record Last Ten\">L10</span></td><td><a href=\"http://espn.go.com/nhl/standings/_/sort/streak\"
+        title=\"Streak\">STRK</a></td></tr><tr class=\"evenrow team-90-25\" align=\"right\"><td
+        align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/ana/anaheim-ducks\">Anaheim</a>\n</td>\n<td>69</td><td>42</td><td>20</td><td>7</td><td
+        class=\"sortcell\">91</td><td>34</td><td>8</td><td>5</td><td>22-10-3</td><td>20-10-4</td><td>202</td><td>192</td><td><span
+        class=\"greenfont\">+10</span></td><td>6-4-0</td><td>Lost 3</td></tr>\n<tr
+        class=\"oddrow team-90-22\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/van/vancouver-canucks\">Vancouver</a>\n</td>\n<td>66</td><td>38</td><td>24</td><td>4</td><td
+        class=\"sortcell\">80</td><td>34</td><td>4</td><td>2</td><td>18-12-1</td><td>20-12-3</td><td>189</td><td>179</td><td><span
+        class=\"greenfont\">+10</span></td><td>6-3-1</td><td>Won 2</td></tr>\n<tr
+        class=\"evenrow team-90-3\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/cgy/calgary-flames\">Calgary</a>\n</td>\n<td>67</td><td>37</td><td>25</td><td>5</td><td
+        class=\"sortcell\">79</td><td>33</td><td>4</td><td>2</td><td>18-12-3</td><td>19-13-2</td><td>197</td><td>175</td><td><span
+        class=\"greenfont\">+22</span></td><td>5-3-2</td><td>Won 1</td></tr>\n<tr
+        class=\"oddrow team-90-8\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/la/los-angeles-kings\">Los
+        Angeles</a>\n</td>\n<td>66</td><td>32</td><td>21</td><td>13</td><td class=\"sortcell\">77</td><td>30</td><td>2</td><td>7</td><td>21-7-7</td><td>11-14-6</td><td>180</td><td>170</td><td><span
+        class=\"greenfont\">+10</span></td><td>6-3-1</td><td>Won 1</td></tr>\n<tr
+        class=\"evenrow team-90-18\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/sj/san-jose-sharks\">San
+        Jose</a>\n</td>\n<td>67</td><td>33</td><td>26</td><td>8</td><td class=\"sortcell\">74</td><td>30</td><td>3</td><td>5</td><td>16-15-5</td><td>17-11-3</td><td>189</td><td>187</td><td><span
+        class=\"greenfont\">+2</span></td><td>4-6-0</td><td>Won 1</td></tr>\n<tr class=\"oddrow
+        team-90-24\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nhl/team/_/name/ari/arizona-coyotes\">Arizona</a>\n</td>\n<td>67</td><td>21</td><td>38</td><td>8</td><td
+        class=\"sortcell\">50</td><td>16</td><td>5</td><td>5</td><td>10-18-5</td><td>11-20-3</td><td>143</td><td>224</td><td><span
+        class=\"redfont\">-81</span></td><td>1-8-1</td><td>Lost 2</td></tr>\n<tr class=\"evenrow
+        team-90-6\" align=\"right\"><td align=\"left\">e - <a href=\"http://espn.go.com/nhl/team/_/name/edm/edmonton-oilers\">Edmonton</a>\n</td>\n<td>67</td><td>18</td><td>38</td><td>11</td><td
+        class=\"sortcell\">47</td><td>13</td><td>5</td><td>5</td><td>10-20-2</td><td>8-18-9</td><td>152</td><td>227</td><td><span
+        class=\"redfont\">-75</span></td><td>2-6-2</td><td>Lost 5</td></tr>\n</table>\n\n\n
         \           </div>\n            <div class=\"mod-footer\">\n                <div
         class=\"foot-header stathead\">\n                    <h5>Glossary</h5>\n                </div>\n
         \               <div class=\"foot-content\">\n                    <ul><li><span>GP:</span>
@@ -356,21 +402,25 @@ http_interactions:
         Goals Against</li><li><span>DIFF:</span> Goal differential</li><li><span>L10:</span>
         Record Last Ten</li><li><span>STRK:</span> Streak</li></ul><p style=\"float:
         right; text-align: right;\"><a href=\"http://sports.espn.go.com/nhl/news/story?page=nhl/tiebreakers\">Tiebreaking
-        Procedures &#187;</a></p>\n                </div>\n\n                <div
-        class=\"foot-footer\">\n                    <p>Standings are updated with
-        the completion of each game</p>\n                </div>\n            </div>\n\n
-        \       </div>\n        <!-- begin sponsored links -->\n<div id=\"sponsored\"
-        class=\"mod-container mod-no-footer\">\n<!-- begin sp links -->\n<div style=\"margin:
-        10px 0 0 0;\">\n<!-- CONTENT: 09standings758, SPORT: nhl--><div style=\"margin:0px
-        0px 5px 0px; text-align: center; width: 758px;\"><ins id=\"splinks-21983\"></ins>\n
-        \       <script type=\"text/javascript\">\n            (function($) {\n                //
-        config params\n                var width = '758',\n                    height
-        = '300',\n                    client = 'ca-espn-q-standings',\n                    channel
-        = 'nhl bottom',\n                    lang = 'null';\n\n                //
-        builds iframe HTML\n                function buildIframe(width, height, client,
-        channel) {\n                    var path = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
+        Procedures &#187;</a></p><ul class=\"horizontal\"><li><span>z</span> - Clinched
+        Best Record in Conference</li><li><span>y</span> - Clinched Division Title
+        </li><li><span>x</span> - Clinched Playoff Berth</li><li><span>w</span> -
+        Clinched Wild Card</li><li><span>e</span> - Eliminated from Playoff Contention</li><li><span>*</span>
+        - Clinched Presidents' Trophy (Best Regular-Season Record)</li></ul>\n                </div>\n\n
+        \               <div class=\"foot-footer\">\n                    <p>Standings
+        are updated with the completion of each game</p>\n                </div>\n
+        \           </div>\n\n        </div>\n        <!-- begin sponsored links -->\n<div
+        id=\"sponsored\" class=\"mod-container mod-no-footer\">\n<!-- begin sp links
+        -->\n<div style=\"margin: 10px 0 0 0;\">\n<!-- CONTENT: 09standings758, SPORT:
+        nhl--><div style=\"margin:0px 0px 5px 0px; text-align: center; width: 758px;\"><ins
+        id=\"splinks-84127\"></ins>\n        <script type=\"text/javascript\">\n            (function($)
+        {\n                // config params\n                var width = '758',\n
+        \                   height = '300',\n                    client = 'ca-espn-q-standings',\n
+        \                   channel = 'nhl bottom',\n                    lang = 'null';\n\n
+        \               // builds iframe HTML\n                function buildIframe(width,
+        height, client, channel) {\n                    var path = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
         \                   // pass params as the hash as they are only needed on
-        the client\n                    var hash = '21983|' + width + '|' + height
+        the client\n                    var hash = '84127|' + width + '|' + height
         + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
         = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
         + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
@@ -386,11 +436,11 @@ http_interactions:
         {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
         || espn.core.android) {\n                            // outside US or not
         on desktop\n                            client = 'ca-espn-nq';\n                        }\n
-        \                       $('#splinks-21983').html(buildIframe(width, height,
-        client, channel));\n                    }).fail(function() {\n                        $('#splinks-21983').html(buildIframe(width,
+        \                       $('#splinks-84127').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-84127').html(buildIframe(width,
         height, 'ca-espn-nq', channel));\n                    });\n                }
         else {\n                    // can't locate them, assume they are outside
-        US\n                    $('#splinks-21983').html(buildIframe(width, height,
+        US\n                    $('#splinks-84127').html(buildIframe(width, height,
         'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
         \   </div></div>\n<!-- end sp links -->\n</div>\n<!-- end sponsored links
         -->\n\n\n        </div>\n\n        <div class=\"col-ad-160\">\n            <div
@@ -405,7 +455,7 @@ http_interactions:
         target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nhl/nhlstandings;pgtyp=nhlstandings;sp=espn;sz=160x600,1x1;\"
         border=\"0\" alt=\"\"></a></noscript>\n</div><!-- end Poster -->\n</div><div><!--
         CONTENT: 09storyright160, SPORT: nhl--><div style=\"margin:0px 0px 5px 0px;
-        text-align: center; width: 160px;\"><ins id=\"splinks-28284\"></ins>\n        <script
+        text-align: center; width: 160px;\"><ins id=\"splinks-44544\"></ins>\n        <script
         type=\"text/javascript\">\n            (function($) {\n                //
         config params\n                var width = '160',\n                    height
         = '400',\n                    client = 'ca-espn-q-standings',\n                    channel
@@ -413,7 +463,7 @@ http_interactions:
         iframe HTML\n                function buildIframe(width, height, client, channel)
         {\n                    var path = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
         \                   // pass params as the hash as they are only needed on
-        the client\n                    var hash = '28284|' + width + '|' + height
+        the client\n                    var hash = '44544|' + width + '|' + height
         + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
         = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
         + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
@@ -429,11 +479,11 @@ http_interactions:
         {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
         || espn.core.android) {\n                            // outside US or not
         on desktop\n                            client = 'ca-espn-nq';\n                        }\n
-        \                       $('#splinks-28284').html(buildIframe(width, height,
-        client, channel));\n                    }).fail(function() {\n                        $('#splinks-28284').html(buildIframe(width,
+        \                       $('#splinks-44544').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-44544').html(buildIframe(width,
         height, 'ca-espn-nq', channel));\n                    });\n                }
         else {\n                    // can't locate them, assume they are outside
-        US\n                    $('#splinks-28284').html(buildIframe(width, height,
+        US\n                    $('#splinks-44544').html(buildIframe(width, height,
         'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
         \   </div></div>\n        </div>\n\n    </div>\n\n    <div class=\"clear\"></div>\n\n
         \   <!-- begin bottom nav -->\n<!-- begin bottom nav/sitemap -->\n<div class=\"mod-container
@@ -743,5 +793,5 @@ http_interactions:
         a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
         \ //]]>\n</script></body>\n</html>"
     http_version: 
-  recorded_at: Sun, 08 Mar 2015 15:07:07 GMT
+  recorded_at: Thu, 12 Mar 2015 15:27:18 GMT
 recorded_with: VCR 2.9.3

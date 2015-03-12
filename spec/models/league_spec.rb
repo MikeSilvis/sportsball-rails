@@ -20,7 +20,7 @@ describe League, type: :model, vcr: true do
   end
   describe '.scores' do
     let(:league) { League.new('nhl') }
-    let(:scores) { [score_1, score_2, score_3, score_4, score_5, score_6, score_7] }
+    let(:scores) { [score_1, score_2, score_3, score_4, score_5, score_6] }
     let(:score_1) do
       { state: 'postgame', id: 1, game_date: Date.today }
     end
@@ -38,9 +38,6 @@ describe League, type: :model, vcr: true do
     end
     let(:score_6) do
       { state: 'in-progress', id: 6, progress: '1st', time_remaining: '3:43', game_date: Date.today }
-    end
-    let(:score_7) do
-      { state: 'in-progress', id: 6, progress: '1st', time_remaining: '3:43', game_date: 1.day.from_now }
     end
     before { expect(Score).to receive(:query_with_timeout).and_return(scores) }
     let(:score_order) { league.scores.map(&:id) }

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://espn.go.com/nfl/standings/_/group/1
+    uri: http://espn.go.com/nfl/standings/_/group/3
     body:
       encoding: US-ASCII
       string: ''
@@ -25,7 +25,7 @@ http_interactions:
       Transfer-Encoding:
       - chunked
       Date:
-      - Sun, 08 Mar 2015 15:07:08 GMT
+      - Thu, 12 Mar 2015 15:27:11 GMT
       Connection:
       - keep-alive
       Cache-Control:
@@ -34,8 +34,8 @@ http_interactions:
       - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRo
         BUS PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
       Set-Cookie:
-      - SWID=DBD47B70-5BE5-4144-83A0-0DB7913F9090; path=/; expires=Sat, 03 Mar 2035
-        15:07:08 GMT; domain=go.com;
+      - SWID=033ED005-3269-494E-B30E-CAB57A32B013; path=/; expires=Wed, 07 Mar 2035
+        15:27:11 GMT; domain=go.com;
     body:
       encoding: UTF-8
       string: "<!DOCTYPE html>\n<html xmlns:fb=\"http://www.facebook.com/2008/fbml\">\n<head><script
@@ -66,15 +66,15 @@ http_interactions:
         f.substring(c.length,f.length)}return null}function i(){\"beta\"===f(\"rand\")?espn.beta.recheck=!0:g()}var
         j=\"http://beta.espn.go.com\",k=a.location.href,l=b.location.pathname;return{init:function(){i()},test:function(a){return
         e(a)}}}(this,this.document),espn.beta.init();\n</script><title>2014 NFL Regular
-        Season League Standings - National Football League - ESPN</title>\n<meta name=\"google-site-verification\"
-        content=\"xuj1ODRluWa0frM-BjIr_aSHoUC7HB5C1MgmYAM_GkA\" />\n<meta name=\"msvalidate.01\"
-        content=\"B1FEB7C682C46C8FCDA3130F3D18AC28\" />\n<meta name=\"googlebot\"
-        content=\"noodp\" />\n<meta name=\"robots\" content=\"index, follow\" />\n<meta
-        name=\"description\" content=\"Check out the 2014 regular season league standings
-        throughout NFL pro football\" />\n<meta name=\"keywords\" content=\"nfl, national
-        football league, pro football, 2014 nfl regular season league standings\"
-        />\n<meta property=\"fb:app_id\" content=\"116656161708917\">\n<meta property=\"og:site_name\"
-        content=\"ESPN.com\">\n<link rel=\"canonical\" href=\"http://espn.go.com/nfl/standings/_/group/1\"
+        Season Divisional Standings - National Football League - ESPN</title>\n<meta
+        name=\"google-site-verification\" content=\"xuj1ODRluWa0frM-BjIr_aSHoUC7HB5C1MgmYAM_GkA\"
+        />\n<meta name=\"msvalidate.01\" content=\"B1FEB7C682C46C8FCDA3130F3D18AC28\"
+        />\n<meta name=\"googlebot\" content=\"noodp\" />\n<meta name=\"robots\" content=\"index,
+        follow\" />\n<meta name=\"description\" content=\"Check out the 2014 regular
+        season divisional standings throughout NFL pro football\" />\n<meta name=\"keywords\"
+        content=\"nfl, national football league, pro football, 2014 nfl regular season
+        divisional standings\" />\n<meta property=\"fb:app_id\" content=\"116656161708917\">\n<meta
+        property=\"og:site_name\" content=\"ESPN.com\">\n<link rel=\"canonical\" href=\"http://espn.go.com/nfl/standings\"
         />\n\n\t\t<script>var _sf_startpt=(new Date()).getTime();</script>\n<link
         rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"http://a.espncdn.com/search/opensearch.xml\"
         title=\"ESPN Search\" />\n<link rel=\"stylesheet\" href=\"http://a.espncdn.com/combiner/c/201401211964?css=global_reset.r1.css,base.r236.css,modules.r462.css,global_header.r44.css,header_topbar.r1.css,modules/global_nav.r54.css,modules/insider_enhanced.r1.css,modules/mem/mem.r12.1.css,modules/mem/mem_espn360.r8.4.css,modules/mem/skirmish.r8.css,modules/twin.r1.css,modules/facebook/button.r2.css,universal_overlay/universal_overlay.css,universal_overlay/media_overlay.css,universal_overlay/video_overlay.css,universal_overlay/photo_overlay.css,universal_overlay/dyk_overlay.css,fonts/bentonsans.css\"
@@ -190,46 +190,45 @@ http_interactions:
         \   <div class=\"mod-container mod-tabs mod-tabs-section mod-no-header-footer
         mod-page-header mod-page-header-tabs\">\n        <div class=\"mod-content\">\n
         \       \t<h1 class=\"h2\">NFL  Standings - 2014</h1>\n        \t<div class=\"floatleft\">\n\t\t\t\tGroup:
-        League | <a href=\"http://espn.go.com/nfl/standings/_/group/2\">Conference</a>
-        | <a href=\"http://espn.go.com/nfl/standings\">Division</a><br/>\nSeason:
-        <form class=\"js-goto\" style=\"display:inline;\"><select class=\"tablesm\"><option
-        value=\"#\">Select One</option><option value=\"http://espn.go.com/nfl/standings/_/group/1\"
-        selected>2014 Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2013/group/1\">2013
-        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2012/group/1\">2012
-        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2011/group/1\">2011
-        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2010/group/1\">2010
-        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2009/group/1\">2009
-        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2008/group/1\">2008
-        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2007/group/1\">2007
-        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2006/group/1\">2006
-        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2005/group/1\">2005
-        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2004/group/1\">2004
-        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2003/group/1\">2003
-        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2002/group/1\">2002
-        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/seasontype/1/group/1\">2014
-        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2013/seasontype/1/group/1\">2013
-        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2012/seasontype/1/group/1\">2012
-        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2011/seasontype/1/group/1\">2011
-        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2010/seasontype/1/group/1\">2010
-        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2009/seasontype/1/group/1\">2009
-        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2008/seasontype/1/group/1\">2008
-        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2007/seasontype/1/group/1\">2007
-        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2006/seasontype/1/group/1\">2006
-        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2005/seasontype/1/group/1\">2005
-        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2004/seasontype/1/group/1\">2004
-        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2003/seasontype/1/group/1\">2003
-        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2002/seasontype/1/group/1\">2002
+        <a href=\"http://espn.go.com/nfl/standings/_/group/1\">League</a> | <a href=\"http://espn.go.com/nfl/standings/_/group/2\">Conference</a>
+        | Division<br/>\nSeason: <form class=\"js-goto\" style=\"display:inline;\"><select
+        class=\"tablesm\"><option value=\"#\">Select One</option><option value=\"http://espn.go.com/nfl/standings\"
+        selected>2014 Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2013\">2013
+        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2012\">2012
+        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2011\">2011
+        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2010\">2010
+        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2009\">2009
+        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2008\">2008
+        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2007\">2007
+        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2006\">2006
+        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2005\">2005
+        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2004\">2004
+        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2003\">2003
+        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/year/2002\">2002
+        Regular Season</option><option value=\"http://espn.go.com/nfl/standings/_/seasontype/1\">2014
+        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2013/seasontype/1\">2013
+        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2012/seasontype/1\">2012
+        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2011/seasontype/1\">2011
+        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2010/seasontype/1\">2010
+        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2009/seasontype/1\">2009
+        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2008/seasontype/1\">2008
+        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2007/seasontype/1\">2007
+        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2006/seasontype/1\">2006
+        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2005/seasontype/1\">2005
+        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2004/seasontype/1\">2004
+        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2003/seasontype/1\">2003
+        Preseason</option><option value=\"http://espn.go.com/nfl/standings/_/year/2002/seasontype/1\">2002
         Preseason</option></select></form>\n\t\t\t</div>\n\t\t\t\n\t\t\t<div class=\"clear\"></div>\n\t\t\t<ul
-        class=\"ui-tabs-nav\"><li class=\"ui-tabs-selected\"><a href=\"http://espn.go.com/nfl/standings/_/group/1\"title=\"Includes
+        class=\"ui-tabs-nav\"><li class=\"ui-tabs-selected\"><a href=\"http://espn.go.com/nfl/standings\"title=\"Includes
         Wins, Losses, Ties, Win Percentage, Home Record, Road Record, Division Record,
         Conference Record, Points For, Points Against, Point differential, Streak\">
-        Standings</a></li><li class=\"ui-tabs-disabled\"><a href=\"http://espn.go.com/nfl/standings/_/type/playoffs/sort/conferenceRank/group/1/order/false\"title=\"Includes
+        Standings</a></li><li class=\"ui-tabs-disabled\"><a href=\"http://espn.go.com/nfl/standings/_/type/playoffs/sort/conferenceRank/order/false\"title=\"Includes
         Wins, Losses, Ties, Win Percentage, Division Record, Conference Record, Strength
         of schedule, Strength of victory, Conference rank reason\">Playoff Standings</a></li><li
-        class=\"ui-tabs-disabled\"><a href=\"http://espn.go.com/nfl/standings/_/type/expanded/group/1\"title=\"Includes
+        class=\"ui-tabs-disabled\"><a href=\"http://espn.go.com/nfl/standings/_/type/expanded\"title=\"Includes
         Wins, Losses, Ties, Win Percentage, In day games, In night games, On grass,
         On artifcial turf, Indoors, Outdoors, Overtime\">Expanded Standings</a></li><li
-        class=\"ui-tabs-disabled\"><a href=\"http://espn.go.com/nfl/standings/_/type/vs-division/group/1\"title=\"Includes
+        class=\"ui-tabs-disabled\"><a href=\"http://espn.go.com/nfl/standings/_/type/vs-division\"title=\"Includes
         Wins, Losses, Ties, Win Percentage, Vs. NFC East, Vs. NFC North, Vs. NFC South,
         Vs. NFC West, Vs. AFC East, Vs. AFC North, Vs. AFC South, Vs. AFC West\">Vs.
         Division Standings</a></li><style>.widget-tab img { display: none; }</style><li
@@ -237,115 +236,200 @@ http_interactions:
         \   <div class=\"col-main\" id=\"my-teams-table\">\n    \t<div class=\"mod-container
         mod-table mod-no-header\">\n        \t<div class=\"mod-content\">\n\t\t\t\t<table
         class=\"tablehead\" cellpadding=\"3\" cellspacing=\"1\">\n<tr class=\"stathead\"><td
-        colspan=\"13\">National Football League</td></tr><tr align=\"right\" class=\"colhead\"><td
-        align=\"left\">NFL</td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/wins/group/1\"
-        title=\"Wins\">W</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/losses/group/1\"
-        title=\"Losses\">L</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/ties/group/1\"
-        title=\"Ties\">T</a></td><td class=\"sortcell\"><a href=\"http://espn.go.com/nfl/standings/_/group/1/order/false\"
-        title=\"Win Percentage\">PCT</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/homeWinPercent/group/1\"
-        title=\"Home Record\">HOME</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/roadWinPercent/group/1\"
-        title=\"Road Record\">ROAD</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/divisionWinPercent/group/1\"
-        title=\"Division Record\">DIV</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/leagueWinPercent/group/1\"
-        title=\"Conference Record\">CONF</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/pointsFor/group/1\"
-        title=\"Points For\">PF</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/pointsAgainst/group/1/order/false\"
+        colspan=\"13\">National Football Conference</td></tr><tr align=\"right\" class=\"colhead\"><td
+        align=\"left\">NFC EAST</td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/wins\"
+        title=\"Wins\">W</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/losses\"
+        title=\"Losses\">L</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/ties\"
+        title=\"Ties\">T</a></td><td class=\"sortcell\"><a href=\"http://espn.go.com/nfl/standings/_/order/false\"
+        title=\"Win Percentage\">PCT</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/homeWinPercent\"
+        title=\"Home Record\">HOME</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/roadWinPercent\"
+        title=\"Road Record\">ROAD</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/divisionWinPercent\"
+        title=\"Division Record\">DIV</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/leagueWinPercent\"
+        title=\"Conference Record\">CONF</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/pointsFor\"
+        title=\"Points For\">PF</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/pointsAgainst/order/false\"
         title=\"Points Against\">PA</a></td><td><span title=\"Point differential\">DIFF</span></td><td><a
-        href=\"http://espn.go.com/nfl/standings/_/sort/streak/group/1\" title=\"Streak\">STRK</a></td></tr><tr
-        class=\"oddrow team-28-17\" align=\"right\"><td align=\"left\">** - <a href=\"http://espn.go.com/nfl/team/_/name/ne/new-england-patriots\">New
-        England</a>\n</td>\n<td>12</td><td>4</td><td>0</td><td class=\"sortcell\">.750</td><td>7-1</td><td>5-3</td><td>4-2</td><td>9-3</td><td>468</td><td>313</td><td><span
-        class=\"greenfont\">+155</span></td><td>Lost 1</td></tr>\n<tr class=\"evenrow
-        team-28-6\" align=\"right\"><td align=\"left\">z - <a href=\"http://espn.go.com/nfl/team/_/name/dal/dallas-cowboys\">Dallas</a>\n</td>\n<td>12</td><td>4</td><td>0</td><td
+        href=\"http://espn.go.com/nfl/standings/_/sort/streak\" title=\"Streak\">STRK</a></td></tr><tr
+        class=\"oddrow team-28-6\" align=\"right\"><td align=\"left\">z - <a href=\"http://espn.go.com/nfl/team/_/name/dal/dallas-cowboys\">Dallas</a>\n</td>\n<td>12</td><td>4</td><td>0</td><td
         class=\"sortcell\">.750</td><td>4-4</td><td>8-0</td><td>4-2</td><td>8-4</td><td>467</td><td>352</td><td><span
-        class=\"greenfont\">+115</span></td><td>Won 4</td></tr>\n<tr class=\"oddrow
-        team-28-7\" align=\"right\"><td align=\"left\">* - <a href=\"http://espn.go.com/nfl/team/_/name/den/denver-broncos\">Denver</a>\n</td>\n<td>12</td><td>4</td><td>0</td><td
-        class=\"sortcell\">.750</td><td>8-0</td><td>4-4</td><td>6-0</td><td>10-2</td><td>482</td><td>354</td><td><span
-        class=\"greenfont\">+128</span></td><td>Won 1</td></tr>\n<tr class=\"evenrow
-        team-28-26\" align=\"right\"><td align=\"left\">** - <a href=\"http://espn.go.com/nfl/team/_/name/sea/seattle-seahawks\">Seattle</a>\n</td>\n<td>12</td><td>4</td><td>0</td><td
-        class=\"sortcell\">.750</td><td>7-1</td><td>5-3</td><td>5-1</td><td>10-2</td><td>394</td><td>254</td><td><span
-        class=\"greenfont\">+140</span></td><td>Won 6</td></tr>\n<tr class=\"oddrow
-        team-28-9\" align=\"right\"><td align=\"left\">* - <a href=\"http://espn.go.com/nfl/team/_/name/gb/green-bay-packers\">Green
+        class=\"greenfont\">+115</span></td><td>Won 4</td></tr>\n<tr class=\"evenrow
+        team-28-21\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/phi/philadelphia-eagles\">Philadelphia</a>\n</td>\n<td>10</td><td>6</td><td>0</td><td
+        class=\"sortcell\">.625</td><td>6-2</td><td>4-4</td><td>4-2</td><td>6-6</td><td>474</td><td>400</td><td><span
+        class=\"greenfont\">+74</span></td><td>Won 1</td></tr>\n<tr class=\"oddrow
+        team-28-19\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/nyg/new-york-giants\">NY
+        Giants</a>\n</td>\n<td>6</td><td>10</td><td>0</td><td class=\"sortcell\">.375</td><td>3-5</td><td>3-5</td><td>2-4</td><td>4-8</td><td>380</td><td>400</td><td><span
+        class=\"redfont\">-20</span></td><td>Lost 1</td></tr>\n<tr class=\"evenrow
+        team-28-28\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/wsh/washington-redskins\">Washington</a>\n</td>\n<td>4</td><td>12</td><td>0</td><td
+        class=\"sortcell\">.250</td><td>3-5</td><td>1-7</td><td>2-4</td><td>2-10</td><td>301</td><td>438</td><td><span
+        class=\"redfont\">-137</span></td><td>Lost 1</td></tr>\n<tr align=\"right\"
+        class=\"colhead\"><td align=\"left\">NFC NORTH</td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/wins\"
+        title=\"Wins\">W</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/losses\"
+        title=\"Losses\">L</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/ties\"
+        title=\"Ties\">T</a></td><td class=\"sortcell\"><a href=\"http://espn.go.com/nfl/standings/_/order/false\"
+        title=\"Win Percentage\">PCT</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/homeWinPercent\"
+        title=\"Home Record\">HOME</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/roadWinPercent\"
+        title=\"Road Record\">ROAD</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/divisionWinPercent\"
+        title=\"Division Record\">DIV</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/leagueWinPercent\"
+        title=\"Conference Record\">CONF</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/pointsFor\"
+        title=\"Points For\">PF</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/pointsAgainst/order/false\"
+        title=\"Points Against\">PA</a></td><td><span title=\"Point differential\">DIFF</span></td><td><a
+        href=\"http://espn.go.com/nfl/standings/_/sort/streak\" title=\"Streak\">STRK</a></td></tr><tr
+        class=\"oddrow team-28-9\" align=\"right\"><td align=\"left\">* - <a href=\"http://espn.go.com/nfl/team/_/name/gb/green-bay-packers\">Green
         Bay</a>\n</td>\n<td>12</td><td>4</td><td>0</td><td class=\"sortcell\">.750</td><td>8-0</td><td>4-4</td><td>5-1</td><td>9-3</td><td>486</td><td>348</td><td><span
         class=\"greenfont\">+138</span></td><td>Won 2</td></tr>\n<tr class=\"evenrow
-        team-28-23\" align=\"right\"><td align=\"left\">z - <a href=\"http://espn.go.com/nfl/team/_/name/pit/pittsburgh-steelers\">Pittsburgh</a>\n</td>\n<td>11</td><td>5</td><td>0</td><td
-        class=\"sortcell\">.688</td><td>6-2</td><td>5-3</td><td>4-2</td><td>9-3</td><td>436</td><td>368</td><td><span
-        class=\"greenfont\">+68</span></td><td>Won 4</td></tr>\n<tr class=\"oddrow
-        team-28-11\" align=\"right\"><td align=\"left\">z - <a href=\"http://espn.go.com/nfl/team/_/name/ind/indianapolis-colts\">Indianapolis</a>\n</td>\n<td>11</td><td>5</td><td>0</td><td
-        class=\"sortcell\">.688</td><td>6-2</td><td>5-3</td><td>6-0</td><td>9-3</td><td>458</td><td>369</td><td><span
-        class=\"greenfont\">+89</span></td><td>Won 1</td></tr>\n<tr class=\"evenrow
+        team-28-8\" align=\"right\"><td align=\"left\">y - <a href=\"http://espn.go.com/nfl/team/_/name/det/detroit-lions\">Detroit</a>\n</td>\n<td>11</td><td>5</td><td>0</td><td
+        class=\"sortcell\">.688</td><td>7-1</td><td>4-4</td><td>5-1</td><td>9-3</td><td>321</td><td>282</td><td><span
+        class=\"greenfont\">+39</span></td><td>Lost 1</td></tr>\n<tr class=\"oddrow
+        team-28-16\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/min/minnesota-vikings\">Minnesota</a>\n</td>\n<td>7</td><td>9</td><td>0</td><td
+        class=\"sortcell\">.438</td><td>5-3</td><td>2-6</td><td>1-5</td><td>6-6</td><td>325</td><td>343</td><td><span
+        class=\"redfont\">-18</span></td><td>Won 1</td></tr>\n<tr class=\"evenrow
+        team-28-3\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/chi/chicago-bears\">Chicago</a>\n</td>\n<td>5</td><td>11</td><td>0</td><td
+        class=\"sortcell\">.313</td><td>2-6</td><td>3-5</td><td>1-5</td><td>4-8</td><td>319</td><td>442</td><td><span
+        class=\"redfont\">-123</span></td><td>Lost 5</td></tr>\n<tr align=\"right\"
+        class=\"colhead\"><td align=\"left\">NFC SOUTH</td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/wins\"
+        title=\"Wins\">W</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/losses\"
+        title=\"Losses\">L</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/ties\"
+        title=\"Ties\">T</a></td><td class=\"sortcell\"><a href=\"http://espn.go.com/nfl/standings/_/order/false\"
+        title=\"Win Percentage\">PCT</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/homeWinPercent\"
+        title=\"Home Record\">HOME</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/roadWinPercent\"
+        title=\"Road Record\">ROAD</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/divisionWinPercent\"
+        title=\"Division Record\">DIV</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/leagueWinPercent\"
+        title=\"Conference Record\">CONF</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/pointsFor\"
+        title=\"Points For\">PF</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/pointsAgainst/order/false\"
+        title=\"Points Against\">PA</a></td><td><span title=\"Point differential\">DIFF</span></td><td><a
+        href=\"http://espn.go.com/nfl/standings/_/sort/streak\" title=\"Streak\">STRK</a></td></tr><tr
+        class=\"oddrow team-28-29\" align=\"right\"><td align=\"left\">z - <a href=\"http://espn.go.com/nfl/team/_/name/car/carolina-panthers\">Carolina</a>\n</td>\n<td>7</td><td>8</td><td>1</td><td
+        class=\"sortcell\">.469</td><td>4-4</td><td>3-4-1</td><td>4-2</td><td>6-6</td><td>339</td><td>374</td><td><span
+        class=\"redfont\">-35</span></td><td>Won 4</td></tr>\n<tr class=\"evenrow
+        team-28-18\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/no/new-orleans-saints\">New
+        Orleans</a>\n</td>\n<td>7</td><td>9</td><td>0</td><td class=\"sortcell\">.438</td><td>3-5</td><td>4-4</td><td>3-3</td><td>6-6</td><td>401</td><td>424</td><td><span
+        class=\"redfont\">-23</span></td><td>Won 1</td></tr>\n<tr class=\"oddrow team-28-1\"
+        align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/atl/atlanta-falcons\">Atlanta</a>\n</td>\n<td>6</td><td>10</td><td>0</td><td
+        class=\"sortcell\">.375</td><td>3-5</td><td>3-5</td><td>5-1</td><td>6-6</td><td>381</td><td>417</td><td><span
+        class=\"redfont\">-36</span></td><td>Lost 1</td></tr>\n<tr class=\"evenrow
+        team-28-27\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/tb/tampa-bay-buccaneers\">Tampa
+        Bay</a>\n</td>\n<td>2</td><td>14</td><td>0</td><td class=\"sortcell\">.125</td><td>0-8</td><td>2-6</td><td>0-6</td><td>1-11</td><td>277</td><td>410</td><td><span
+        class=\"redfont\">-133</span></td><td>Lost 6</td></tr>\n<tr align=\"right\"
+        class=\"colhead\"><td align=\"left\">NFC WEST</td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/wins\"
+        title=\"Wins\">W</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/losses\"
+        title=\"Losses\">L</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/ties\"
+        title=\"Ties\">T</a></td><td class=\"sortcell\"><a href=\"http://espn.go.com/nfl/standings/_/order/false\"
+        title=\"Win Percentage\">PCT</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/homeWinPercent\"
+        title=\"Home Record\">HOME</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/roadWinPercent\"
+        title=\"Road Record\">ROAD</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/divisionWinPercent\"
+        title=\"Division Record\">DIV</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/leagueWinPercent\"
+        title=\"Conference Record\">CONF</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/pointsFor\"
+        title=\"Points For\">PF</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/pointsAgainst/order/false\"
+        title=\"Points Against\">PA</a></td><td><span title=\"Point differential\">DIFF</span></td><td><a
+        href=\"http://espn.go.com/nfl/standings/_/sort/streak\" title=\"Streak\">STRK</a></td></tr><tr
+        class=\"oddrow team-28-26\" align=\"right\"><td align=\"left\">** - <a href=\"http://espn.go.com/nfl/team/_/name/sea/seattle-seahawks\">Seattle</a>\n</td>\n<td>12</td><td>4</td><td>0</td><td
+        class=\"sortcell\">.750</td><td>7-1</td><td>5-3</td><td>5-1</td><td>10-2</td><td>394</td><td>254</td><td><span
+        class=\"greenfont\">+140</span></td><td>Won 6</td></tr>\n<tr class=\"evenrow
         team-28-22\" align=\"right\"><td align=\"left\">y - <a href=\"http://espn.go.com/nfl/team/_/name/ari/arizona-cardinals\">Arizona</a>\n</td>\n<td>11</td><td>5</td><td>0</td><td
         class=\"sortcell\">.688</td><td>7-1</td><td>4-4</td><td>3-3</td><td>8-4</td><td>310</td><td>299</td><td><span
         class=\"greenfont\">+11</span></td><td>Lost 2</td></tr>\n<tr class=\"oddrow
-        team-28-8\" align=\"right\"><td align=\"left\">y - <a href=\"http://espn.go.com/nfl/team/_/name/det/detroit-lions\">Detroit</a>\n</td>\n<td>11</td><td>5</td><td>0</td><td
-        class=\"sortcell\">.688</td><td>7-1</td><td>4-4</td><td>5-1</td><td>9-3</td><td>321</td><td>282</td><td><span
-        class=\"greenfont\">+39</span></td><td>Lost 1</td></tr>\n<tr class=\"evenrow
+        team-28-25\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/sf/san-francisco-49ers\">San
+        Francisco</a>\n</td>\n<td>8</td><td>8</td><td>0</td><td class=\"sortcell\">.500</td><td>4-4</td><td>4-4</td><td>2-4</td><td>7-5</td><td>306</td><td>340</td><td><span
+        class=\"redfont\">-34</span></td><td>Won 1</td></tr>\n<tr class=\"evenrow
+        team-28-14\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/stl/st.-louis-rams\">St.
+        Louis</a>\n</td>\n<td>6</td><td>10</td><td>0</td><td class=\"sortcell\">.375</td><td>3-5</td><td>3-5</td><td>2-4</td><td>4-8</td><td>324</td><td>354</td><td><span
+        class=\"redfont\">-30</span></td><td>Lost 3</td></tr>\n<tr class=\"stathead\"><td
+        colspan=\"13\">American Football Conference</td></tr><tr align=\"right\" class=\"colhead\"><td
+        align=\"left\">AFC EAST</td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/wins\"
+        title=\"Wins\">W</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/losses\"
+        title=\"Losses\">L</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/ties\"
+        title=\"Ties\">T</a></td><td class=\"sortcell\"><a href=\"http://espn.go.com/nfl/standings/_/order/false\"
+        title=\"Win Percentage\">PCT</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/homeWinPercent\"
+        title=\"Home Record\">HOME</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/roadWinPercent\"
+        title=\"Road Record\">ROAD</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/divisionWinPercent\"
+        title=\"Division Record\">DIV</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/leagueWinPercent\"
+        title=\"Conference Record\">CONF</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/pointsFor\"
+        title=\"Points For\">PF</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/pointsAgainst/order/false\"
+        title=\"Points Against\">PA</a></td><td><span title=\"Point differential\">DIFF</span></td><td><a
+        href=\"http://espn.go.com/nfl/standings/_/sort/streak\" title=\"Streak\">STRK</a></td></tr><tr
+        class=\"oddrow team-28-17\" align=\"right\"><td align=\"left\">** - <a href=\"http://espn.go.com/nfl/team/_/name/ne/new-england-patriots\">New
+        England</a>\n</td>\n<td>12</td><td>4</td><td>0</td><td class=\"sortcell\">.750</td><td>7-1</td><td>5-3</td><td>4-2</td><td>9-3</td><td>468</td><td>313</td><td><span
+        class=\"greenfont\">+155</span></td><td>Lost 1</td></tr>\n<tr class=\"evenrow
+        team-28-2\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/buf/buffalo-bills\">Buffalo</a>\n</td>\n<td>9</td><td>7</td><td>0</td><td
+        class=\"sortcell\">.563</td><td>5-3</td><td>4-4</td><td>4-2</td><td>5-7</td><td>343</td><td>289</td><td><span
+        class=\"greenfont\">+54</span></td><td>Won 1</td></tr>\n<tr class=\"oddrow
+        team-28-15\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/mia/miami-dolphins\">Miami</a>\n</td>\n<td>8</td><td>8</td><td>0</td><td
+        class=\"sortcell\">.500</td><td>4-4</td><td>4-4</td><td>3-3</td><td>6-6</td><td>388</td><td>373</td><td><span
+        class=\"greenfont\">+15</span></td><td>Lost 1</td></tr>\n<tr class=\"evenrow
+        team-28-20\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/nyj/new-york-jets\">NY
+        Jets</a>\n</td>\n<td>4</td><td>12</td><td>0</td><td class=\"sortcell\">.250</td><td>2-6</td><td>2-6</td><td>1-5</td><td>4-8</td><td>283</td><td>401</td><td><span
+        class=\"redfont\">-118</span></td><td>Won 1</td></tr>\n<tr align=\"right\"
+        class=\"colhead\"><td align=\"left\">AFC NORTH</td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/wins\"
+        title=\"Wins\">W</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/losses\"
+        title=\"Losses\">L</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/ties\"
+        title=\"Ties\">T</a></td><td class=\"sortcell\"><a href=\"http://espn.go.com/nfl/standings/_/order/false\"
+        title=\"Win Percentage\">PCT</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/homeWinPercent\"
+        title=\"Home Record\">HOME</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/roadWinPercent\"
+        title=\"Road Record\">ROAD</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/divisionWinPercent\"
+        title=\"Division Record\">DIV</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/leagueWinPercent\"
+        title=\"Conference Record\">CONF</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/pointsFor\"
+        title=\"Points For\">PF</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/pointsAgainst/order/false\"
+        title=\"Points Against\">PA</a></td><td><span title=\"Point differential\">DIFF</span></td><td><a
+        href=\"http://espn.go.com/nfl/standings/_/sort/streak\" title=\"Streak\">STRK</a></td></tr><tr
+        class=\"oddrow team-28-23\" align=\"right\"><td align=\"left\">z - <a href=\"http://espn.go.com/nfl/team/_/name/pit/pittsburgh-steelers\">Pittsburgh</a>\n</td>\n<td>11</td><td>5</td><td>0</td><td
+        class=\"sortcell\">.688</td><td>6-2</td><td>5-3</td><td>4-2</td><td>9-3</td><td>436</td><td>368</td><td><span
+        class=\"greenfont\">+68</span></td><td>Won 4</td></tr>\n<tr class=\"evenrow
         team-28-4\" align=\"right\"><td align=\"left\">y - <a href=\"http://espn.go.com/nfl/team/_/name/cin/cincinnati-bengals\">Cincinnati</a>\n</td>\n<td>10</td><td>5</td><td>1</td><td
         class=\"sortcell\">.656</td><td>5-2-1</td><td>5-3</td><td>3-3</td><td>7-5</td><td>365</td><td>344</td><td><span
         class=\"greenfont\">+21</span></td><td>Lost 1</td></tr>\n<tr class=\"oddrow
         team-28-33\" align=\"right\"><td align=\"left\">y - <a href=\"http://espn.go.com/nfl/team/_/name/bal/baltimore-ravens\">Baltimore</a>\n</td>\n<td>10</td><td>6</td><td>0</td><td
         class=\"sortcell\">.625</td><td>6-2</td><td>4-4</td><td>3-3</td><td>6-6</td><td>409</td><td>302</td><td><span
         class=\"greenfont\">+107</span></td><td>Won 1</td></tr>\n<tr class=\"evenrow
-        team-28-21\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/phi/philadelphia-eagles\">Philadelphia</a>\n</td>\n<td>10</td><td>6</td><td>0</td><td
-        class=\"sortcell\">.625</td><td>6-2</td><td>4-4</td><td>4-2</td><td>6-6</td><td>474</td><td>400</td><td><span
-        class=\"greenfont\">+74</span></td><td>Won 1</td></tr>\n<tr class=\"oddrow
-        team-28-12\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/kc/kansas-city-chiefs\">Kansas
-        City</a>\n</td>\n<td>9</td><td>7</td><td>0</td><td class=\"sortcell\">.563</td><td>6-2</td><td>3-5</td><td>3-3</td><td>7-5</td><td>353</td><td>281</td><td><span
-        class=\"greenfont\">+72</span></td><td>Won 1</td></tr>\n<tr class=\"evenrow
+        team-28-5\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/cle/cleveland-browns\">Cleveland</a>\n</td>\n<td>7</td><td>9</td><td>0</td><td
+        class=\"sortcell\">.438</td><td>4-4</td><td>3-5</td><td>2-4</td><td>4-8</td><td>299</td><td>337</td><td><span
+        class=\"redfont\">-38</span></td><td>Lost 5</td></tr>\n<tr align=\"right\"
+        class=\"colhead\"><td align=\"left\">AFC SOUTH</td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/wins\"
+        title=\"Wins\">W</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/losses\"
+        title=\"Losses\">L</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/ties\"
+        title=\"Ties\">T</a></td><td class=\"sortcell\"><a href=\"http://espn.go.com/nfl/standings/_/order/false\"
+        title=\"Win Percentage\">PCT</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/homeWinPercent\"
+        title=\"Home Record\">HOME</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/roadWinPercent\"
+        title=\"Road Record\">ROAD</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/divisionWinPercent\"
+        title=\"Division Record\">DIV</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/leagueWinPercent\"
+        title=\"Conference Record\">CONF</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/pointsFor\"
+        title=\"Points For\">PF</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/pointsAgainst/order/false\"
+        title=\"Points Against\">PA</a></td><td><span title=\"Point differential\">DIFF</span></td><td><a
+        href=\"http://espn.go.com/nfl/standings/_/sort/streak\" title=\"Streak\">STRK</a></td></tr><tr
+        class=\"oddrow team-28-11\" align=\"right\"><td align=\"left\">z - <a href=\"http://espn.go.com/nfl/team/_/name/ind/indianapolis-colts\">Indianapolis</a>\n</td>\n<td>11</td><td>5</td><td>0</td><td
+        class=\"sortcell\">.688</td><td>6-2</td><td>5-3</td><td>6-0</td><td>9-3</td><td>458</td><td>369</td><td><span
+        class=\"greenfont\">+89</span></td><td>Won 1</td></tr>\n<tr class=\"evenrow
         team-28-34\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/hou/houston-texans\">Houston</a>\n</td>\n<td>9</td><td>7</td><td>0</td><td
         class=\"sortcell\">.563</td><td>5-3</td><td>4-4</td><td>4-2</td><td>8-4</td><td>372</td><td>307</td><td><span
         class=\"greenfont\">+65</span></td><td>Won 2</td></tr>\n<tr class=\"oddrow
-        team-28-24\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/sd/san-diego-chargers\">San
-        Diego</a>\n</td>\n<td>9</td><td>7</td><td>0</td><td class=\"sortcell\">.563</td><td>5-3</td><td>4-4</td><td>2-4</td><td>6-6</td><td>348</td><td>348</td><td>0</td><td>Lost
-        1</td></tr>\n<tr class=\"evenrow team-28-2\" align=\"right\"><td align=\"left\"><a
-        href=\"http://espn.go.com/nfl/team/_/name/buf/buffalo-bills\">Buffalo</a>\n</td>\n<td>9</td><td>7</td><td>0</td><td
-        class=\"sortcell\">.563</td><td>5-3</td><td>4-4</td><td>4-2</td><td>5-7</td><td>343</td><td>289</td><td><span
-        class=\"greenfont\">+54</span></td><td>Won 1</td></tr>\n<tr class=\"oddrow
-        team-28-25\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/sf/san-francisco-49ers\">San
-        Francisco</a>\n</td>\n<td>8</td><td>8</td><td>0</td><td class=\"sortcell\">.500</td><td>4-4</td><td>4-4</td><td>2-4</td><td>7-5</td><td>306</td><td>340</td><td><span
-        class=\"redfont\">-34</span></td><td>Won 1</td></tr>\n<tr class=\"evenrow
-        team-28-15\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/mia/miami-dolphins\">Miami</a>\n</td>\n<td>8</td><td>8</td><td>0</td><td
-        class=\"sortcell\">.500</td><td>4-4</td><td>4-4</td><td>3-3</td><td>6-6</td><td>388</td><td>373</td><td><span
-        class=\"greenfont\">+15</span></td><td>Lost 1</td></tr>\n<tr class=\"oddrow
-        team-28-29\" align=\"right\"><td align=\"left\">z - <a href=\"http://espn.go.com/nfl/team/_/name/car/carolina-panthers\">Carolina</a>\n</td>\n<td>7</td><td>8</td><td>1</td><td
-        class=\"sortcell\">.469</td><td>4-4</td><td>3-4-1</td><td>4-2</td><td>6-6</td><td>339</td><td>374</td><td><span
-        class=\"redfont\">-35</span></td><td>Won 4</td></tr>\n<tr class=\"evenrow
-        team-28-18\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/no/new-orleans-saints\">New
-        Orleans</a>\n</td>\n<td>7</td><td>9</td><td>0</td><td class=\"sortcell\">.438</td><td>3-5</td><td>4-4</td><td>3-3</td><td>6-6</td><td>401</td><td>424</td><td><span
-        class=\"redfont\">-23</span></td><td>Won 1</td></tr>\n<tr class=\"oddrow team-28-16\"
-        align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/min/minnesota-vikings\">Minnesota</a>\n</td>\n<td>7</td><td>9</td><td>0</td><td
-        class=\"sortcell\">.438</td><td>5-3</td><td>2-6</td><td>1-5</td><td>6-6</td><td>325</td><td>343</td><td><span
-        class=\"redfont\">-18</span></td><td>Won 1</td></tr>\n<tr class=\"evenrow
-        team-28-5\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/cle/cleveland-browns\">Cleveland</a>\n</td>\n<td>7</td><td>9</td><td>0</td><td
-        class=\"sortcell\">.438</td><td>4-4</td><td>3-5</td><td>2-4</td><td>4-8</td><td>299</td><td>337</td><td><span
-        class=\"redfont\">-38</span></td><td>Lost 5</td></tr>\n<tr class=\"oddrow
-        team-28-19\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/nyg/new-york-giants\">NY
-        Giants</a>\n</td>\n<td>6</td><td>10</td><td>0</td><td class=\"sortcell\">.375</td><td>3-5</td><td>3-5</td><td>2-4</td><td>4-8</td><td>380</td><td>400</td><td><span
-        class=\"redfont\">-20</span></td><td>Lost 1</td></tr>\n<tr class=\"evenrow
-        team-28-1\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/atl/atlanta-falcons\">Atlanta</a>\n</td>\n<td>6</td><td>10</td><td>0</td><td
-        class=\"sortcell\">.375</td><td>3-5</td><td>3-5</td><td>5-1</td><td>6-6</td><td>381</td><td>417</td><td><span
-        class=\"redfont\">-36</span></td><td>Lost 1</td></tr>\n<tr class=\"oddrow
-        team-28-14\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/stl/st.-louis-rams\">St.
-        Louis</a>\n</td>\n<td>6</td><td>10</td><td>0</td><td class=\"sortcell\">.375</td><td>3-5</td><td>3-5</td><td>2-4</td><td>4-8</td><td>324</td><td>354</td><td><span
-        class=\"redfont\">-30</span></td><td>Lost 3</td></tr>\n<tr class=\"evenrow
-        team-28-3\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/chi/chicago-bears\">Chicago</a>\n</td>\n<td>5</td><td>11</td><td>0</td><td
-        class=\"sortcell\">.313</td><td>2-6</td><td>3-5</td><td>1-5</td><td>4-8</td><td>319</td><td>442</td><td><span
-        class=\"redfont\">-123</span></td><td>Lost 5</td></tr>\n<tr class=\"oddrow
-        team-28-20\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/nyj/new-york-jets\">NY
-        Jets</a>\n</td>\n<td>4</td><td>12</td><td>0</td><td class=\"sortcell\">.250</td><td>2-6</td><td>2-6</td><td>1-5</td><td>4-8</td><td>283</td><td>401</td><td><span
-        class=\"redfont\">-118</span></td><td>Won 1</td></tr>\n<tr class=\"evenrow
-        team-28-28\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/wsh/washington-redskins\">Washington</a>\n</td>\n<td>4</td><td>12</td><td>0</td><td
-        class=\"sortcell\">.250</td><td>3-5</td><td>1-7</td><td>2-4</td><td>2-10</td><td>301</td><td>438</td><td><span
-        class=\"redfont\">-137</span></td><td>Lost 1</td></tr>\n<tr class=\"oddrow
         team-28-30\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/jax/jacksonville-jaguars\">Jacksonville</a>\n</td>\n<td>3</td><td>13</td><td>0</td><td
         class=\"sortcell\">.188</td><td>3-5</td><td>0-8</td><td>1-5</td><td>2-10</td><td>249</td><td>412</td><td><span
         class=\"redfont\">-163</span></td><td>Lost 1</td></tr>\n<tr class=\"evenrow
-        team-28-13\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/oak/oakland-raiders\">Oakland</a>\n</td>\n<td>3</td><td>13</td><td>0</td><td
-        class=\"sortcell\">.188</td><td>3-5</td><td>0-8</td><td>1-5</td><td>2-10</td><td>253</td><td>452</td><td><span
-        class=\"redfont\">-199</span></td><td>Lost 1</td></tr>\n<tr class=\"oddrow
         team-28-10\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/ten/tennessee-titans\">Tennessee</a>\n</td>\n<td>2</td><td>14</td><td>0</td><td
         class=\"sortcell\">.125</td><td>1-7</td><td>1-7</td><td>1-5</td><td>2-10</td><td>254</td><td>438</td><td><span
-        class=\"redfont\">-184</span></td><td>Lost 10</td></tr>\n<tr class=\"evenrow
-        team-28-27\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/tb/tampa-bay-buccaneers\">Tampa
-        Bay</a>\n</td>\n<td>2</td><td>14</td><td>0</td><td class=\"sortcell\">.125</td><td>0-8</td><td>2-6</td><td>0-6</td><td>1-11</td><td>277</td><td>410</td><td><span
-        class=\"redfont\">-133</span></td><td>Lost 6</td></tr>\n</table>\n\n\n\t\t</div>\n\t\t<div
+        class=\"redfont\">-184</span></td><td>Lost 10</td></tr>\n<tr align=\"right\"
+        class=\"colhead\"><td align=\"left\">AFC WEST</td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/wins\"
+        title=\"Wins\">W</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/losses\"
+        title=\"Losses\">L</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/ties\"
+        title=\"Ties\">T</a></td><td class=\"sortcell\"><a href=\"http://espn.go.com/nfl/standings/_/order/false\"
+        title=\"Win Percentage\">PCT</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/homeWinPercent\"
+        title=\"Home Record\">HOME</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/roadWinPercent\"
+        title=\"Road Record\">ROAD</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/divisionWinPercent\"
+        title=\"Division Record\">DIV</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/leagueWinPercent\"
+        title=\"Conference Record\">CONF</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/pointsFor\"
+        title=\"Points For\">PF</a></td><td><a href=\"http://espn.go.com/nfl/standings/_/sort/pointsAgainst/order/false\"
+        title=\"Points Against\">PA</a></td><td><span title=\"Point differential\">DIFF</span></td><td><a
+        href=\"http://espn.go.com/nfl/standings/_/sort/streak\" title=\"Streak\">STRK</a></td></tr><tr
+        class=\"oddrow team-28-7\" align=\"right\"><td align=\"left\">* - <a href=\"http://espn.go.com/nfl/team/_/name/den/denver-broncos\">Denver</a>\n</td>\n<td>12</td><td>4</td><td>0</td><td
+        class=\"sortcell\">.750</td><td>8-0</td><td>4-4</td><td>6-0</td><td>10-2</td><td>482</td><td>354</td><td><span
+        class=\"greenfont\">+128</span></td><td>Won 1</td></tr>\n<tr class=\"evenrow
+        team-28-12\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/kc/kansas-city-chiefs\">Kansas
+        City</a>\n</td>\n<td>9</td><td>7</td><td>0</td><td class=\"sortcell\">.563</td><td>6-2</td><td>3-5</td><td>3-3</td><td>7-5</td><td>353</td><td>281</td><td><span
+        class=\"greenfont\">+72</span></td><td>Won 1</td></tr>\n<tr class=\"oddrow
+        team-28-24\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nfl/team/_/name/sd/san-diego-chargers\">San
+        Diego</a>\n</td>\n<td>9</td><td>7</td><td>0</td><td class=\"sortcell\">.563</td><td>5-3</td><td>4-4</td><td>2-4</td><td>6-6</td><td>348</td><td>348</td><td>0</td><td>Lost
+        1</td></tr>\n<tr class=\"evenrow team-28-13\" align=\"right\"><td align=\"left\"><a
+        href=\"http://espn.go.com/nfl/team/_/name/oak/oakland-raiders\">Oakland</a>\n</td>\n<td>3</td><td>13</td><td>0</td><td
+        class=\"sortcell\">.188</td><td>3-5</td><td>0-8</td><td>1-5</td><td>2-10</td><td>253</td><td>452</td><td><span
+        class=\"redfont\">-199</span></td><td>Lost 1</td></tr>\n</table>\n\n\n\t\t</div>\n\t\t<div
         class=\"mod-footer\">\n\t\t\t<div class=\"foot-header stathead\">\n\t\t\t\t<h5>Glossary</h5>\n\t\t\t</div>\n\t\t\t<div
         class=\"foot-content\">\n\t\t\t\t<ul><li><span>W:</span> Wins</li><li><span>L:</span>
         Losses</li><li><span>T:</span> Ties</li><li><span>PCT:</span> Win Percentage</li></ul><ul><li><span>HOME:</span>
@@ -363,7 +447,7 @@ http_interactions:
         begin sponsored links -->\n<div id=\"sponsored\" class=\"mod-container mod-no-footer\">\n<!--
         begin sp links -->\n<div style=\"margin: 10px 0 0 0;\">\n<!-- CONTENT: 09standings758,
         SPORT: nfl--><div style=\"margin:0px 0px 5px 0px; text-align: center; width:
-        758px;\"><ins id=\"splinks-33638\"></ins>\n        <script type=\"text/javascript\">\n
+        758px;\"><ins id=\"splinks-63086\"></ins>\n        <script type=\"text/javascript\">\n
         \           (function($) {\n                // config params\n                var
         width = '758',\n                    height = '300',\n                    client
         = 'ca-espn-q-standings',\n                    channel = 'nfl bottom',\n                    lang
@@ -371,7 +455,7 @@ http_interactions:
         buildIframe(width, height, client, channel) {\n                    var path
         = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
         \                   // pass params as the hash as they are only needed on
-        the client\n                    var hash = '33638|' + width + '|' + height
+        the client\n                    var hash = '63086|' + width + '|' + height
         + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
         = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
         + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
@@ -387,11 +471,11 @@ http_interactions:
         {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
         || espn.core.android) {\n                            // outside US or not
         on desktop\n                            client = 'ca-espn-nq';\n                        }\n
-        \                       $('#splinks-33638').html(buildIframe(width, height,
-        client, channel));\n                    }).fail(function() {\n                        $('#splinks-33638').html(buildIframe(width,
+        \                       $('#splinks-63086').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-63086').html(buildIframe(width,
         height, 'ca-espn-nq', channel));\n                    });\n                }
         else {\n                    // can't locate them, assume they are outside
-        US\n                    $('#splinks-33638').html(buildIframe(width, height,
+        US\n                    $('#splinks-63086').html(buildIframe(width, height,
         'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
         \   </div></div>\n<!-- end sp links -->\n</div>\n<!-- end sponsored links
         -->\n\n\n\t</div>\n\n\t<div class=\"col-ad-160\">\n\t\t<div class=\"ad-box\"><!--
@@ -406,7 +490,7 @@ http_interactions:
         target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nfl/nflstandings;pgtyp=nflstandings;sp=espn;sz=160x600,1x1;\"
         border=\"0\" alt=\"\"></a></noscript>\n</div><!-- end Poster -->\n</div><div><!--
         CONTENT: 09storyright160, SPORT: nfl--><div style=\"margin:0px 0px 5px 0px;
-        text-align: center; width: 160px;\"><ins id=\"splinks-72184\"></ins>\n        <script
+        text-align: center; width: 160px;\"><ins id=\"splinks-70428\"></ins>\n        <script
         type=\"text/javascript\">\n            (function($) {\n                //
         config params\n                var width = '160',\n                    height
         = '400',\n                    client = 'ca-espn-q-standings',\n                    channel
@@ -414,7 +498,7 @@ http_interactions:
         iframe HTML\n                function buildIframe(width, height, client, channel)
         {\n                    var path = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
         \                   // pass params as the hash as they are only needed on
-        the client\n                    var hash = '72184|' + width + '|' + height
+        the client\n                    var hash = '70428|' + width + '|' + height
         + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
         = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
         + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
@@ -430,11 +514,11 @@ http_interactions:
         {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
         || espn.core.android) {\n                            // outside US or not
         on desktop\n                            client = 'ca-espn-nq';\n                        }\n
-        \                       $('#splinks-72184').html(buildIframe(width, height,
-        client, channel));\n                    }).fail(function() {\n                        $('#splinks-72184').html(buildIframe(width,
+        \                       $('#splinks-70428').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-70428').html(buildIframe(width,
         height, 'ca-espn-nq', channel));\n                    });\n                }
         else {\n                    // can't locate them, assume they are outside
-        US\n                    $('#splinks-72184').html(buildIframe(width, height,
+        US\n                    $('#splinks-70428').html(buildIframe(width, height,
         'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
         \   </div></div>\n\t</div>\n\n</div>\n\n<div class=\"clear\"></div>\n\n<!--
         begin bottom nav -->\n<!-- begin bottom nav/sitemap -->\n<div class=\"mod-container
@@ -732,5 +816,5 @@ http_interactions:
         a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
         \ //]]>\n</script></body>\n</html>"
     http_version: 
-  recorded_at: Sun, 08 Mar 2015 15:07:08 GMT
+  recorded_at: Thu, 12 Mar 2015 15:27:19 GMT
 recorded_with: VCR 2.9.3

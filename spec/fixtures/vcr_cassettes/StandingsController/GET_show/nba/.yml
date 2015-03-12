@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://espn.go.com/nba/standings/_/group/1
+    uri: http://espn.go.com/nba/standings/_/group/3
     body:
       encoding: US-ASCII
       string: ''
@@ -22,22 +22,20 @@ http_interactions:
       - text/html; charset=iso-8859-1
       X-Ua-Compatible:
       - IE=edge,chrome=1
-      Content-Length:
-      - '17708'
-      Accept-Ranges:
-      - bytes
+      Transfer-Encoding:
+      - chunked
       Date:
-      - Sun, 08 Mar 2015 15:07:28 GMT
+      - Thu, 12 Mar 2015 15:27:12 GMT
       Connection:
       - keep-alive
       Cache-Control:
-      - max-age=1
+      - max-age=30
       P3p:
       - CP="CAO DSP COR CURa ADMa DEVa TAIa PSAa PSDa IVAi IVDi CONi OUR SAMo OTRo
         BUS PHY ONL UNI PUR COM NAV INT DEM CNT STA PRE"
       Set-Cookie:
-      - SWID=F019AC2E-E9CD-4E1B-85C3-7A3AF6EC8E34; path=/; expires=Sat, 03 Mar 2035
-        15:07:28 GMT; domain=go.com;
+      - SWID=33F955C7-DA48-4352-ABA0-CFE6590C6DD6; path=/; expires=Wed, 07 Mar 2035
+        15:27:12 GMT; domain=go.com;
     body:
       encoding: UTF-8
       string: "<!DOCTYPE html>\n<html xmlns:fb=\"http://www.facebook.com/2008/fbml\">\n<head><script
@@ -68,16 +66,16 @@ http_interactions:
         f.substring(c.length,f.length)}return null}function i(){\"beta\"===f(\"rand\")?espn.beta.recheck=!0:g()}var
         j=\"http://beta.espn.go.com\",k=a.location.href,l=b.location.pathname;return{init:function(){i()},test:function(a){return
         e(a)}}}(this,this.document),espn.beta.init();\n</script><title>2014-2015 NBA
-        Regular Season League Standings - National Basketball Association - ESPN</title>\n<meta
+        Regular Season Divisional Standings - National Basketball Association - ESPN</title>\n<meta
         name=\"google-site-verification\" content=\"xuj1ODRluWa0frM-BjIr_aSHoUC7HB5C1MgmYAM_GkA\"
         />\n<meta name=\"msvalidate.01\" content=\"B1FEB7C682C46C8FCDA3130F3D18AC28\"
         />\n<meta name=\"googlebot\" content=\"noodp\" />\n<meta name=\"robots\" content=\"index,
         follow\" />\n<meta name=\"description\" content=\"Check out the 2014-2015
-        NBA regular season league standings, and see if your team is in the lead!\"
-        />\n<meta name=\"keywords\" content=\"2014-2015 NBA Regular Season League
+        NBA regular season divisional standings, and see if your team is in the lead!\"
+        />\n<meta name=\"keywords\" content=\"2014-2015 NBA Regular Season Divisional
         Standings, 2014-2015 NBA standings, NBA standings, pro basketball standings\"
         />\n<meta property=\"fb:app_id\" content=\"116656161708917\">\n<meta property=\"og:site_name\"
-        content=\"ESPN.com\">\n<link rel=\"canonical\" href=\"http://espn.go.com/nba/standings/_/group/1\"
+        content=\"ESPN.com\">\n<link rel=\"canonical\" href=\"http://espn.go.com/nba/standings/_/group/3\"
         />\n<script type=\"text/javascript\">var NREUMQ=NREUMQ||[];NREUMQ.push([\"mark\",\"firstbyte\",new
         Date().getTime()]);</script>\n\t\t<script>var _sf_startpt=(new Date()).getTime();</script>\n<link
         rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"http://a.espncdn.com/search/opensearch.xml\"
@@ -192,37 +190,37 @@ http_interactions:
         class=\"span-6\">\n    <div class=\"mod-container mod-tabs mod-tabs-section
         mod-no-header-footer mod-page-header mod-page-header-tabs\">\n        <div
         class=\"mod-content\">\n        \t<h1 class=\"h2\">NBA  Standings - 2014-15</h1>\n
-        \       \t<div class=\"floatleft\">\n\t\t\t\tGroup: League | <a href=\"http://espn.go.com/nba/standings\">Conference</a>
-        | <a href=\"http://espn.go.com/nba/standings/_/group/3\">Division</a><br/>\nSeason:
+        \       \t<div class=\"floatleft\">\n\t\t\t\tGroup: <a href=\"http://espn.go.com/nba/standings/_/group/1\">League</a>
+        | <a href=\"http://espn.go.com/nba/standings\">Conference</a> | Division<br/>\nSeason:
         <form class=\"js-goto\" style=\"display:inline;\"><select class=\"tablesm\"><option
-        value=\"#\">Select One</option><option value=\"http://espn.go.com/nba/standings/_/group/1\"
-        selected>2014-15 Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2014/group/1\">2013-14
-        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2013/group/1\">2012-13
-        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2012/group/1\">2011-12
-        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2011/group/1\">2010-11
-        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2010/group/1\">2009-10
-        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2009/group/1\">2008-09
-        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2008/group/1\">2007-08
-        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2007/group/1\">2006-07
-        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2006/group/1\">2005-06
-        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2005/group/1\">2004-05
-        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2004/group/1\">2003-04
-        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2003/group/1\">2002-03
-        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2002/group/1\">2001-02
-        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/seasontype/1/group/1\">2014-15
-        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2014/seasontype/1/group/1\">2013-14
-        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2013/seasontype/1/group/1\">2012-13
-        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2012/seasontype/1/group/1\">2011-12
-        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2011/seasontype/1/group/1\">2010-11
-        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2010/seasontype/1/group/1\">2009-10
-        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2009/seasontype/1/group/1\">2008-09
-        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2008/seasontype/1/group/1\">2007-08
-        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2007/seasontype/1/group/1\">2006-07
-        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2006/seasontype/1/group/1\">2005-06
-        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2005/seasontype/1/group/1\">2004-05
-        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2004/seasontype/1/group/1\">2003-04
-        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2003/seasontype/1/group/1\">2002-03
-        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2002/seasontype/1/group/1\">2001-02
+        value=\"#\">Select One</option><option value=\"http://espn.go.com/nba/standings/_/group/3\"
+        selected>2014-15 Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2014/group/3\">2013-14
+        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2013/group/3\">2012-13
+        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2012/group/3\">2011-12
+        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2011/group/3\">2010-11
+        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2010/group/3\">2009-10
+        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2009/group/3\">2008-09
+        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2008/group/3\">2007-08
+        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2007/group/3\">2006-07
+        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2006/group/3\">2005-06
+        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2005/group/3\">2004-05
+        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2004/group/3\">2003-04
+        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2003/group/3\">2002-03
+        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/year/2002/group/3\">2001-02
+        Regular Season</option><option value=\"http://espn.go.com/nba/standings/_/seasontype/1/group/3\">2014-15
+        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2014/seasontype/1/group/3\">2013-14
+        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2013/seasontype/1/group/3\">2012-13
+        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2012/seasontype/1/group/3\">2011-12
+        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2011/seasontype/1/group/3\">2010-11
+        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2010/seasontype/1/group/3\">2009-10
+        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2009/seasontype/1/group/3\">2008-09
+        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2008/seasontype/1/group/3\">2007-08
+        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2007/seasontype/1/group/3\">2006-07
+        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2006/seasontype/1/group/3\">2005-06
+        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2005/seasontype/1/group/3\">2004-05
+        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2004/seasontype/1/group/3\">2003-04
+        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2003/seasontype/1/group/3\">2002-03
+        Preseason</option><option value=\"http://espn.go.com/nba/standings/_/year/2002/seasontype/1/group/3\">2001-02
         Preseason</option></select></form>\n\t\t\t</div>\n\t\t\t\n\t\t\t\t<div class=\"floatright
         cross-links\">\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li><a href=\"http://espn.go.com/nba/playoffs/matchups\">NBA
         Playoff Matchups &#187;</a></li>\n\t\t\t\t\t\t<li><a href=\"http://espn.go.com/nba/hollinger/powerrankings\">Hollinger's
@@ -230,15 +228,15 @@ http_interactions:
         Playoff Odds &#187;</a></li>\n\t\t\t\t\t\t<li><a href=\"http://espn.go.com/nba/powerrankings\">Stein's
         Power Rankings &#187;</a></li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t\n\t\t\t<div
         class=\"clear\"></div>\n\t\t\t<ul class=\"ui-tabs-nav\"><li class=\"ui-tabs-selected\"><a
-        href=\"http://espn.go.com/nba/standings/_/group/1\"title=\"Includes Wins,
+        href=\"http://espn.go.com/nba/standings/_/group/3\"title=\"Includes Wins,
         Losses, Win Percentage, Games Behind, Home Record, Road Record, Division Record,
         Conference Record, Average Points For, Average Points Against, Average Point
         Differential, Streak, Last 10 Games\"> Standings</a></li><li class=\"ui-tabs-disabled\"><a
-        href=\"http://espn.go.com/nba/standings/_/type/expanded/group/1\"title=\"Includes
+        href=\"http://espn.go.com/nba/standings/_/type/expanded/group/3\"title=\"Includes
         Wins, Losses, Win Percentage, Games Behind, In Games Decided By 3 or Less
         Points, In Games Decided By 10 Points or More, Vs. Teams Above .500, Vs. Teams
         Below .500, Overtime\">Expanded Standings</a></li><li class=\"ui-tabs-disabled\"><a
-        href=\"http://espn.go.com/nba/standings/_/type/vs-division/group/1\"title=\"Includes
+        href=\"http://espn.go.com/nba/standings/_/type/vs-division/group/3\"title=\"Includes
         Wins, Losses, Win Percentage, Games Behind, Vs. Eastern Conference, Vs. Atlantic
         Division, Vs. Central Division, Vs. Southeast Division, Vs. Western Conference,
         Vs. Northwest Division, Vs. Pacific Division, Vs. Southwest Division\">Vs.
@@ -247,110 +245,165 @@ http_interactions:
         \   <div class=\"col-main\" id=\"my-teams-table\">\n    \t<div class=\"mod-container
         mod-table mod-no-header\">\n        \t<div class=\"mod-content\">\n\t\t\t\t<table
         class=\"tablehead\" cellpadding=\"3\" cellspacing=\"1\">\n<tr class=\"stathead\"><td
-        colspan=\"14\">National Basketball Association</td></tr><tr align=\"right\"
-        class=\"colhead\"><td align=\"left\">NBA</td><td><a href=\"http://espn.go.com/nba/standings/_/sort/wins/group/1\"
-        title=\"Wins\">W</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/losses/group/1\"
-        title=\"Losses\">L</a></td><td class=\"sortcell\"><a href=\"http://espn.go.com/nba/standings/_/group/1/order/false\"
-        title=\"Win Percentage\">PCT</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/gamesBehind/group/1\"
-        title=\"Games Behind\">GB</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/homeWinPercent/group/1\"
-        title=\"Home Record\">HOME</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/roadWinPercent/group/1\"
-        title=\"Road Record\">ROAD</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/divisionWinPercent/group/1\"
-        title=\"Division Record\">DIV</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/leagueWinPercent/group/1\"
-        title=\"Conference Record\">CONF</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/avgPointsFor/group/1\"
-        title=\"Average Points For\">PF</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/avgPointsAgainst/group/1/order/false\"
+        colspan=\"14\">Eastern Conference</td></tr><tr align=\"right\" class=\"colhead\"><td
+        align=\"left\">ATLANTIC</td><td><a href=\"http://espn.go.com/nba/standings/_/sort/wins/group/3\"
+        title=\"Wins\">W</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/losses/group/3\"
+        title=\"Losses\">L</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/winPercent/group/3\"
+        title=\"Win Percentage\">PCT</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/gamesBehind/group/3\"
+        title=\"Games Behind\">GB</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/homeWinPercent/group/3\"
+        title=\"Home Record\">HOME</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/roadWinPercent/group/3\"
+        title=\"Road Record\">ROAD</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/divisionWinPercent/group/3\"
+        title=\"Division Record\">DIV</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/leagueWinPercent/group/3\"
+        title=\"Conference Record\">CONF</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/avgPointsFor/group/3\"
+        title=\"Average Points For\">PF</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/avgPointsAgainst/group/3/order/false\"
         title=\"Average Points Against\">PA</a></td><td><span title=\"Average Point
-        Differential\">DIFF</span></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/streak/group/1\"
+        Differential\">DIFF</span></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/streak/group/3\"
+        title=\"Streak\">STRK</a></td><td><span title=\"Last 10 Games\">L10</span></td></tr><tr
+        class=\"oddrow team-46-28\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/tor/toronto-raptors\">Toronto</a>\n
+        (4)</td>\n<td>38</td><td>26</td><td>.594</td><td>-</td><td>21-11</td><td>17-15</td><td>10-2</td><td>26-13</td><td>104.5</td><td>101.3</td><td><span
+        class=\"greenfont\">+3.2</span></td><td>Lost 4</td><td>1-9</td></tr>\n<tr
+        class=\"evenrow team-46-2\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/bos/boston-celtics\">Boston</a>\n</td>\n<td>27</td><td>36</td><td>.429</td><td>10&nbsp;&#189;</td><td>16-16</td><td>11-20</td><td>7-4</td><td>15-21</td><td>100.8</td><td>102.0</td><td><span
+        class=\"redfont\">-1.2</span></td><td>Won 2</td><td>7-3</td></tr>\n<tr class=\"oddrow
+        team-46-17\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/bkn/brooklyn-nets\">Brooklyn</a>\n</td>\n<td>25</td><td>38</td><td>.397</td><td>12&nbsp;&#189;</td><td>11-19</td><td>14-19</td><td>7-5</td><td>14-22</td><td>96.3</td><td>100.0</td><td><span
+        class=\"redfont\">-3.7</span></td><td>Lost 5</td><td>3-7</td></tr>\n<tr class=\"evenrow
+        team-46-20\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/phi/philadelphia-76ers\">Philadelphia</a>\n</td>\n<td>14</td><td>50</td><td>.219</td><td>24</td><td>9-23</td><td>5-27</td><td>1-11</td><td>10-30</td><td>90.7</td><td>100.8</td><td><span
+        class=\"redfont\">-10.1</span></td><td>Lost 1</td><td>2-8</td></tr>\n<tr class=\"oddrow
+        team-46-18\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/ny/new-york-knicks\">New
+        York</a>\n</td>\n<td>12</td><td>51</td><td>.190</td><td>25&nbsp;&#189;</td><td>8-23</td><td>4-28</td><td>4-7</td><td>8-32</td><td>92.2</td><td>101.1</td><td><span
+        class=\"redfont\">-8.9</span></td><td>Lost 5</td><td>2-8</td></tr>\n<tr align=\"right\"
+        class=\"colhead\"><td align=\"left\">CENTRAL</td><td><a href=\"http://espn.go.com/nba/standings/_/sort/wins/group/3\"
+        title=\"Wins\">W</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/losses/group/3\"
+        title=\"Losses\">L</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/winPercent/group/3\"
+        title=\"Win Percentage\">PCT</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/gamesBehind/group/3\"
+        title=\"Games Behind\">GB</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/homeWinPercent/group/3\"
+        title=\"Home Record\">HOME</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/roadWinPercent/group/3\"
+        title=\"Road Record\">ROAD</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/divisionWinPercent/group/3\"
+        title=\"Division Record\">DIV</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/leagueWinPercent/group/3\"
+        title=\"Conference Record\">CONF</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/avgPointsFor/group/3\"
+        title=\"Average Points For\">PF</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/avgPointsAgainst/group/3/order/false\"
+        title=\"Average Points Against\">PA</a></td><td><span title=\"Average Point
+        Differential\">DIFF</span></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/streak/group/3\"
+        title=\"Streak\">STRK</a></td><td><span title=\"Last 10 Games\">L10</span></td></tr><tr
+        class=\"oddrow team-46-5\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/cle/cleveland-cavaliers\">Cleveland</a>\n
+        (2)</td>\n<td>41</td><td>25</td><td>.621</td><td>-</td><td>24-9</td><td>17-16</td><td>6-5</td><td>25-13</td><td>102.9</td><td>98.4</td><td><span
+        class=\"greenfont\">+4.5</span></td><td>Won 2</td><td>7-3</td></tr>\n<tr class=\"evenrow
+        team-46-4\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/chi/chicago-bulls\">Chicago</a>\n
+        (3)</td>\n<td>40</td><td>26</td><td>.606</td><td>1</td><td>20-14</td><td>20-12</td><td>6-5</td><td>23-14</td><td>101.0</td><td>98.8</td><td><span
+        class=\"greenfont\">+2.2</span></td><td>Won 1</td><td>5-5</td></tr>\n<tr class=\"oddrow
+        team-46-15\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/mil/milwaukee-bucks\">Milwaukee</a>\n
+        (6)</td>\n<td>34</td><td>30</td><td>.531</td><td>6</td><td>19-12</td><td>15-18</td><td>5-6</td><td>23-15</td><td>97.7</td><td>96.6</td><td><span
+        class=\"greenfont\">+1.1</span></td><td>Won 1</td><td>3-7</td></tr>\n<tr class=\"evenrow
+        team-46-11\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/ind/indiana-pacers\">Indiana</a>\n
+        (7)</td>\n<td>29</td><td>34</td><td>.460</td><td>10&nbsp;&#189;</td><td>17-14</td><td>12-20</td><td>6-5</td><td>21-16</td><td>96.5</td><td>96.0</td><td><span
+        class=\"greenfont\">+0.5</span></td><td>Won 6</td><td>9-1</td></tr>\n<tr class=\"oddrow
+        team-46-8\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/det/detroit-pistons\">Detroit</a>\n</td>\n<td>23</td><td>41</td><td>.359</td><td>17</td><td>12-21</td><td>11-20</td><td>5-7</td><td>15-22</td><td>98.1</td><td>99.8</td><td><span
+        class=\"redfont\">-1.7</span></td><td>Lost 8</td><td>2-8</td></tr>\n<tr align=\"right\"
+        class=\"colhead\"><td align=\"left\">SOUTHEAST</td><td><a href=\"http://espn.go.com/nba/standings/_/sort/wins/group/3\"
+        title=\"Wins\">W</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/losses/group/3\"
+        title=\"Losses\">L</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/winPercent/group/3\"
+        title=\"Win Percentage\">PCT</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/gamesBehind/group/3\"
+        title=\"Games Behind\">GB</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/homeWinPercent/group/3\"
+        title=\"Home Record\">HOME</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/roadWinPercent/group/3\"
+        title=\"Road Record\">ROAD</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/divisionWinPercent/group/3\"
+        title=\"Division Record\">DIV</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/leagueWinPercent/group/3\"
+        title=\"Conference Record\">CONF</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/avgPointsFor/group/3\"
+        title=\"Average Points For\">PF</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/avgPointsAgainst/group/3/order/false\"
+        title=\"Average Points Against\">PA</a></td><td><span title=\"Average Point
+        Differential\">DIFF</span></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/streak/group/3\"
+        title=\"Streak\">STRK</a></td><td><span title=\"Last 10 Games\">L10</span></td></tr><tr
+        class=\"oddrow team-46-1\" align=\"right\"><td align=\"left\">x - <a href=\"http://espn.go.com/nba/team/_/name/atl/atlanta-hawks\">Atlanta</a>\n
+        (1)</td>\n<td>50</td><td>14</td><td>.781</td><td>-</td><td>30-4</td><td>20-10</td><td>9-2</td><td>32-9</td><td>102.8</td><td>96.7</td><td><span
+        class=\"greenfont\">+6.1</span></td><td>Lost 1</td><td>7-3</td></tr>\n<tr
+        class=\"evenrow team-46-27\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/wsh/washington-wizards\">Washington</a>\n
+        (5)</td>\n<td>36</td><td>28</td><td>.563</td><td>14</td><td>22-10</td><td>14-18</td><td>8-6</td><td>25-18</td><td>98.4</td><td>97.5</td><td><span
+        class=\"greenfont\">+0.9</span></td><td>Won 1</td><td>3-7</td></tr>\n<tr class=\"oddrow
+        team-46-14\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/mia/miami-heat\">Miami</a>\n
+        (8)</td>\n<td>29</td><td>35</td><td>.453</td><td>21</td><td>14-18</td><td>15-17</td><td>4-9</td><td>19-19</td><td>94.5</td><td>97.0</td><td><span
+        class=\"redfont\">-2.5</span></td><td>Won 1</td><td>6-4</td></tr>\n<tr class=\"evenrow
+        team-46-30\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/cha/charlotte-hornets\">Charlotte</a>\n</td>\n<td>28</td><td>35</td><td>.444</td><td>21&nbsp;&#189;</td><td>15-18</td><td>13-17</td><td>7-5</td><td>21-17</td><td>95.0</td><td>97.0</td><td><span
+        class=\"redfont\">-2.0</span></td><td>Lost 2</td><td>6-4</td></tr>\n<tr class=\"oddrow
+        team-46-19\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/orl/orlando-magic\">Orlando</a>\n</td>\n<td>21</td><td>45</td><td>.318</td><td>30</td><td>11-21</td><td>10-24</td><td>4-10</td><td>13-29</td><td>95.7</td><td>101.4</td><td><span
+        class=\"redfont\">-5.7</span></td><td>Lost 2</td><td>4-6</td></tr>\n<tr class=\"stathead\"><td
+        colspan=\"14\">Western Conference</td></tr><tr align=\"right\" class=\"colhead\"><td
+        align=\"left\">NORTHWEST</td><td><a href=\"http://espn.go.com/nba/standings/_/sort/wins/group/3\"
+        title=\"Wins\">W</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/losses/group/3\"
+        title=\"Losses\">L</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/winPercent/group/3\"
+        title=\"Win Percentage\">PCT</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/gamesBehind/group/3\"
+        title=\"Games Behind\">GB</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/homeWinPercent/group/3\"
+        title=\"Home Record\">HOME</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/roadWinPercent/group/3\"
+        title=\"Road Record\">ROAD</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/divisionWinPercent/group/3\"
+        title=\"Division Record\">DIV</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/leagueWinPercent/group/3\"
+        title=\"Conference Record\">CONF</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/avgPointsFor/group/3\"
+        title=\"Average Points For\">PF</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/avgPointsAgainst/group/3/order/false\"
+        title=\"Average Points Against\">PA</a></td><td><span title=\"Average Point
+        Differential\">DIFF</span></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/streak/group/3\"
+        title=\"Streak\">STRK</a></td><td><span title=\"Last 10 Games\">L10</span></td></tr><tr
+        class=\"oddrow team-46-22\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/por/portland-trail-blazers\">Portland</a>\n
+        (3)</td>\n<td>42</td><td>20</td><td>.677</td><td>-</td><td>27-6</td><td>15-14</td><td>8-3</td><td>24-14</td><td>102.5</td><td>97.4</td><td><span
+        class=\"greenfont\">+5.0</span></td><td>Won 1</td><td>7-3</td></tr>\n<tr class=\"evenrow
+        team-46-25\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/okc/oklahoma-city-thunder\">Oklahoma
+        City</a>\n</td>\n<td>35</td><td>29</td><td>.547</td><td>8</td><td>21-9</td><td>14-20</td><td>7-5</td><td>19-20</td><td>102.4</td><td>99.9</td><td><span
+        class=\"greenfont\">+2.4</span></td><td>Lost 1</td><td>6-4</td></tr>\n<tr
+        class=\"oddrow team-46-26\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/utah/utah-jazz\">Utah</a>\n</td>\n<td>27</td><td>36</td><td>.429</td><td>15&nbsp;&#189;</td><td>14-16</td><td>13-20</td><td>5-4</td><td>14-22</td><td>95.0</td><td>95.8</td><td><span
+        class=\"redfont\">-0.8</span></td><td>Won 3</td><td>8-2</td></tr>\n<tr class=\"evenrow
+        team-46-7\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/den/denver-nuggets\">Denver</a>\n</td>\n<td>24</td><td>41</td><td>.369</td><td>19&nbsp;&#189;</td><td>15-19</td><td>9-22</td><td>5-8</td><td>14-24</td><td>100.0</td><td>103.7</td><td><span
+        class=\"redfont\">-3.7</span></td><td>Won 2</td><td>4-6</td></tr>\n<tr class=\"oddrow
+        team-46-16\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/min/minnesota-timberwolves\">Minnesota</a>\n</td>\n<td>14</td><td>49</td><td>.222</td><td>28&nbsp;&#189;</td><td>9-24</td><td>5-25</td><td>3-8</td><td>6-33</td><td>97.6</td><td>105.4</td><td><span
+        class=\"redfont\">-7.8</span></td><td>Lost 2</td><td>3-7</td></tr>\n<tr align=\"right\"
+        class=\"colhead\"><td align=\"left\">PACIFIC</td><td><a href=\"http://espn.go.com/nba/standings/_/sort/wins/group/3\"
+        title=\"Wins\">W</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/losses/group/3\"
+        title=\"Losses\">L</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/winPercent/group/3\"
+        title=\"Win Percentage\">PCT</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/gamesBehind/group/3\"
+        title=\"Games Behind\">GB</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/homeWinPercent/group/3\"
+        title=\"Home Record\">HOME</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/roadWinPercent/group/3\"
+        title=\"Road Record\">ROAD</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/divisionWinPercent/group/3\"
+        title=\"Division Record\">DIV</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/leagueWinPercent/group/3\"
+        title=\"Conference Record\">CONF</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/avgPointsFor/group/3\"
+        title=\"Average Points For\">PF</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/avgPointsAgainst/group/3/order/false\"
+        title=\"Average Points Against\">PA</a></td><td><span title=\"Average Point
+        Differential\">DIFF</span></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/streak/group/3\"
         title=\"Streak\">STRK</a></td><td><span title=\"Last 10 Games\">L10</span></td></tr><tr
         class=\"oddrow team-46-9\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/gs/golden-state-warriors\">Golden
-        State</a>\n</td>\n<td>48</td><td>12</td><td class=\"sortcell\">.800</td><td>-</td><td>26-2</td><td>22-10</td><td>8-3</td><td>28-7</td><td>109.9</td><td>99.7</td><td><span
-        class=\"greenfont\">+10.2</span></td><td>Won 2</td><td>7-3</td></tr>\n<tr
-        class=\"evenrow team-46-1\" align=\"right\"><td align=\"left\">x - <a href=\"http://espn.go.com/nba/team/_/name/atl/atlanta-hawks\">Atlanta</a>\n</td>\n<td>49</td><td>13</td><td
-        class=\"sortcell\">.790</td><td>-</td><td>29-4</td><td>20-9</td><td>9-2</td><td>32-9</td><td>102.4</td><td>96.3</td><td><span
-        class=\"greenfont\">+6.1</span></td><td>Lost 1</td><td>7-3</td></tr>\n<tr
-        class=\"oddrow team-46-29\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/mem/memphis-grizzlies\">Memphis</a>\n</td>\n<td>44</td><td>18</td><td
-        class=\"sortcell\">.710</td><td>5</td><td>24-7</td><td>20-11</td><td>7-6</td><td>28-13</td><td>99.3</td><td>95.6</td><td><span
-        class=\"greenfont\">+3.7</span></td><td>Lost 1</td><td>5-5</td></tr>\n<tr
-        class=\"evenrow team-46-10\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/hou/houston-rockets\">Houston</a>\n</td>\n<td>43</td><td>20</td><td
-        class=\"sortcell\">.683</td><td>6&nbsp;&#189;</td><td>24-9</td><td>19-11</td><td>5-6</td><td>24-14</td><td>103.3</td><td>99.7</td><td><span
-        class=\"greenfont\">+3.6</span></td><td>Won 2</td><td>7-3</td></tr>\n<tr class=\"oddrow
-        team-46-22\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/por/portland-trail-blazers\">Portland</a>\n</td>\n<td>41</td><td>20</td><td
-        class=\"sortcell\">.672</td><td>7&nbsp;&#189;</td><td>26-6</td><td>15-14</td><td>8-3</td><td>23-14</td><td>102.4</td><td>97.4</td><td><span
-        class=\"greenfont\">+5.0</span></td><td>Lost 1</td><td>7-3</td></tr>\n<tr
+        State</a>\n (1)</td>\n<td>51</td><td>12</td><td>.810</td><td>-</td><td>28-2</td><td>23-10</td><td>10-3</td><td>30-7</td><td>109.6</td><td>99.3</td><td><span
+        class=\"greenfont\">+10.2</span></td><td>Won 5</td><td>8-2</td></tr>\n<tr
         class=\"evenrow team-46-12\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers\">LA
-        Clippers</a>\n</td>\n<td>40</td><td>22</td><td class=\"sortcell\">.645</td><td>9</td><td>23-9</td><td>17-13</td><td>8-2</td><td>26-11</td><td>106.4</td><td>100.3</td><td><span
-        class=\"greenfont\">+6.1</span></td><td>Lost 1</td><td>7-3</td></tr>\n<tr
-        class=\"oddrow team-46-6\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/dal/dallas-mavericks\">Dallas</a>\n</td>\n<td>40</td><td>24</td><td
-        class=\"sortcell\">.625</td><td>10</td><td>21-10</td><td>19-14</td><td>6-6</td><td>20-17</td><td>104.5</td><td>100.5</td><td><span
-        class=\"greenfont\">+4.0</span></td><td>Lost 2</td><td>5-5</td></tr>\n<tr
-        class=\"evenrow team-46-24\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/sa/san-antonio-spurs\">San
-        Antonio</a>\n</td>\n<td>38</td><td>23</td><td class=\"sortcell\">.623</td><td>10&nbsp;&#189;</td><td>22-7</td><td>16-16</td><td>4-6</td><td>22-18</td><td>101.1</td><td>97.1</td><td><span
-        class=\"greenfont\">+4.0</span></td><td>Won 4</td><td>6-4</td></tr>\n<tr class=\"oddrow
-        team-46-4\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/chi/chicago-bulls\">Chicago</a>\n</td>\n<td>39</td><td>24</td><td
-        class=\"sortcell\">.619</td><td>10&nbsp;&#189;</td><td>20-13</td><td>19-11</td><td>6-5</td><td>22-14</td><td>101.0</td><td>98.5</td><td><span
-        class=\"greenfont\">+2.5</span></td><td>Lost 1</td><td>6-4</td></tr>\n<tr
-        class=\"evenrow team-46-5\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/cle/cleveland-cavaliers\">Cleveland</a>\n</td>\n<td>40</td><td>25</td><td
-        class=\"sortcell\">.615</td><td>10&nbsp;&#189;</td><td>24-9</td><td>16-16</td><td>6-5</td><td>25-13</td><td>102.5</td><td>98.5</td><td><span
-        class=\"greenfont\">+4.1</span></td><td>Won 1</td><td>7-3</td></tr>\n<tr class=\"oddrow
-        team-46-28\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/tor/toronto-raptors\">Toronto</a>\n</td>\n<td>38</td><td>24</td><td
-        class=\"sortcell\">.613</td><td>11</td><td>21-11</td><td>17-13</td><td>10-2</td><td>26-13</td><td>104.4</td><td>100.9</td><td><span
-        class=\"greenfont\">+3.5</span></td><td>Lost 2</td><td>3-7</td></tr>\n<tr
-        class=\"evenrow team-46-27\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/wsh/washington-wizards\">Washington</a>\n</td>\n<td>35</td><td>28</td><td
-        class=\"sortcell\">.556</td><td>14&nbsp;&#189;</td><td>22-10</td><td>13-18</td><td>7-6</td><td>24-18</td><td>98.4</td><td>97.9</td><td><span
-        class=\"greenfont\">+0.5</span></td><td>Lost 1</td><td>2-8</td></tr>\n<tr
-        class=\"oddrow team-46-25\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/okc/oklahoma-city-thunder\">Oklahoma
-        City</a>\n</td>\n<td>34</td><td>28</td><td class=\"sortcell\">.548</td><td>15</td><td>20-8</td><td>14-20</td><td>7-5</td><td>19-19</td><td>102.2</td><td>99.5</td><td><span
-        class=\"greenfont\">+2.6</span></td><td>Lost 1</td><td>7-3</td></tr>\n<tr
-        class=\"evenrow team-46-3\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/no/new-orleans-pelicans\">New
-        Orleans</a>\n</td>\n<td>34</td><td>29</td><td class=\"sortcell\">.540</td><td>15&nbsp;&#189;</td><td>22-11</td><td>12-18</td><td>7-5</td><td>21-15</td><td>99.4</td><td>99.0</td><td><span
-        class=\"greenfont\">+0.3</span></td><td>Won 1</td><td>7-3</td></tr>\n<tr class=\"oddrow
-        team-46-15\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/mil/milwaukee-bucks\">Milwaukee</a>\n</td>\n<td>33</td><td>29</td><td
-        class=\"sortcell\">.532</td><td>16</td><td>18-11</td><td>15-18</td><td>5-6</td><td>22-15</td><td>97.6</td><td>96.4</td><td><span
-        class=\"greenfont\">+1.2</span></td><td>Won 1</td><td>4-6</td></tr>\n<tr class=\"evenrow
-        team-46-21\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/phx/phoenix-suns\">Phoenix</a>\n</td>\n<td>33</td><td>31</td><td
-        class=\"sortcell\">.516</td><td>17</td><td>17-13</td><td>16-18</td><td>6-6</td><td>16-21</td><td>105.3</td><td>104.8</td><td><span
-        class=\"greenfont\">+0.5</span></td><td>Lost 1</td><td>4-6</td></tr>\n<tr
-        class=\"oddrow team-46-11\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/ind/indiana-pacers\">Indiana</a>\n</td>\n<td>28</td><td>34</td><td
-        class=\"sortcell\">.452</td><td>21</td><td>16-14</td><td>12-20</td><td>6-5</td><td>20-16</td><td>96.1</td><td>96.1</td><td><span
-        class=\"redfont\">-0.0</span></td><td>Won 5</td><td>8-2</td></tr>\n<tr class=\"evenrow
-        team-46-14\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/mia/miami-heat\">Miami</a>\n</td>\n<td>28</td><td>34</td><td
-        class=\"sortcell\">.452</td><td>21</td><td>13-17</td><td>15-17</td><td>4-9</td><td>18-18</td><td>94.5</td><td>97.0</td><td><span
-        class=\"redfont\">-2.5</span></td><td>Won 1</td><td>6-4</td></tr>\n<tr class=\"oddrow
-        team-46-30\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/cha/charlotte-hornets\">Charlotte</a>\n</td>\n<td>27</td><td>33</td><td
-        class=\"sortcell\">.450</td><td>21</td><td>15-16</td><td>12-17</td><td>7-4</td><td>20-16</td><td>95.1</td><td>96.7</td><td><span
-        class=\"redfont\">-1.7</span></td><td>Won 4</td><td>5-5</td></tr>\n<tr class=\"evenrow
-        team-46-2\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/bos/boston-celtics\">Boston</a>\n</td>\n<td>25</td><td>35</td><td
-        class=\"sortcell\">.417</td><td>23</td><td>15-16</td><td>10-19</td><td>7-4</td><td>14-20</td><td>101.0</td><td>102.4</td><td><span
-        class=\"redfont\">-1.4</span></td><td>Won 2</td><td>6-4</td></tr>\n<tr class=\"oddrow
-        team-46-17\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/bkn/brooklyn-nets\">Brooklyn</a>\n</td>\n<td>25</td><td>35</td><td
-        class=\"sortcell\">.417</td><td>23</td><td>11-17</td><td>14-18</td><td>7-5</td><td>14-21</td><td>96.5</td><td>99.8</td><td><span
-        class=\"redfont\">-3.4</span></td><td>Lost 2</td><td>4-6</td></tr>\n<tr class=\"evenrow
-        team-46-26\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/utah/utah-jazz\">Utah</a>\n</td>\n<td>25</td><td>36</td><td
-        class=\"sortcell\">.410</td><td>23&nbsp;&#189;</td><td>13-16</td><td>12-20</td><td>5-4</td><td>14-22</td><td>95.2</td><td>96.2</td><td><span
-        class=\"redfont\">-1.0</span></td><td>Won 1</td><td>7-3</td></tr>\n<tr class=\"oddrow
-        team-46-8\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/det/detroit-pistons\">Detroit</a>\n</td>\n<td>23</td><td>38</td><td
-        class=\"sortcell\">.377</td><td>25&nbsp;&#189;</td><td>12-20</td><td>11-18</td><td>5-7</td><td>15-21</td><td>98.2</td><td>99.7</td><td><span
-        class=\"redfont\">-1.4</span></td><td>Lost 5</td><td>3-7</td></tr>\n<tr class=\"evenrow
-        team-46-7\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/den/denver-nuggets\">Denver</a>\n</td>\n<td>22</td><td>41</td><td
-        class=\"sortcell\">.349</td><td>27&nbsp;&#189;</td><td>13-19</td><td>9-22</td><td>5-8</td><td>14-24</td><td>99.7</td><td>104.2</td><td><span
-        class=\"redfont\">-4.5</span></td><td>Lost 2</td><td>2-8</td></tr>\n<tr class=\"oddrow
-        team-46-23\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/sac/sacramento-kings\">Sacramento</a>\n</td>\n<td>21</td><td>40</td><td
-        class=\"sortcell\">.344</td><td>27&nbsp;&#189;</td><td>13-19</td><td>8-21</td><td>4-8</td><td>14-25</td><td>100.6</td><td>104.7</td><td><span
-        class=\"redfont\">-4.0</span></td><td>Lost 3</td><td>3-7</td></tr>\n<tr class=\"evenrow
-        team-46-19\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/orl/orlando-magic\">Orlando</a>\n</td>\n<td>20</td><td>43</td><td
-        class=\"sortcell\">.317</td><td>29&nbsp;&#189;</td><td>10-21</td><td>10-22</td><td>4-10</td><td>12-27</td><td>95.8</td><td>101.3</td><td><span
-        class=\"redfont\">-5.5</span></td><td>Won 1</td><td>4-6</td></tr>\n<tr class=\"oddrow
+        Clippers</a>\n (5)</td>\n<td>42</td><td>23</td><td>.646</td><td>10</td><td>24-9</td><td>18-14</td><td>8-3</td><td>28-12</td><td>106.2</td><td>100.2</td><td><span
+        class=\"greenfont\">+6.1</span></td><td>Won 2</td><td>6-4</td></tr>\n<tr class=\"oddrow
+        team-46-21\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/phx/phoenix-suns\">Phoenix</a>\n</td>\n<td>34</td><td>32</td><td>.515</td><td>18&nbsp;&#189;</td><td>18-14</td><td>16-18</td><td>6-7</td><td>17-22</td><td>104.9</td><td>104.6</td><td><span
+        class=\"greenfont\">+0.3</span></td><td>Won 1</td><td>5-5</td></tr>\n<tr class=\"evenrow
+        team-46-23\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/sac/sacramento-kings\">Sacramento</a>\n</td>\n<td>22</td><td>41</td><td>.349</td><td>29</td><td>13-19</td><td>9-22</td><td>4-8</td><td>14-25</td><td>100.9</td><td>105.1</td><td><span
+        class=\"redfont\">-4.2</span></td><td>Won 1</td><td>3-7</td></tr>\n<tr class=\"oddrow
         team-46-13\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers\">LA
-        Lakers</a>\n</td>\n<td>16</td><td>45</td><td class=\"sortcell\">.262</td><td>32&nbsp;&#189;</td><td>9-20</td><td>7-25</td><td>2-9</td><td>7-31</td><td>99.4</td><td>105.8</td><td><span
-        class=\"redfont\">-6.4</span></td><td>Lost 4</td><td>3-7</td></tr>\n<tr class=\"evenrow
-        team-46-16\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/min/minnesota-timberwolves\">Minnesota</a>\n</td>\n<td>14</td><td>47</td><td
-        class=\"sortcell\">.230</td><td>34&nbsp;&#189;</td><td>9-24</td><td>5-23</td><td>3-8</td><td>6-31</td><td>98.0</td><td>105.6</td><td><span
-        class=\"redfont\">-7.7</span></td><td>Won 1</td><td>3-7</td></tr>\n<tr class=\"oddrow
-        team-46-20\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/phi/philadelphia-76ers\">Philadelphia</a>\n</td>\n<td>14</td><td>49</td><td
-        class=\"sortcell\">.222</td><td>35&nbsp;&#189;</td><td>9-22</td><td>5-27</td><td>1-11</td><td>10-29</td><td>90.6</td><td>100.7</td><td><span
-        class=\"redfont\">-10.1</span></td><td>Won 1</td><td>2-8</td></tr>\n<tr class=\"evenrow
-        team-46-18\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/ny/new-york-knicks\">New
-        York</a>\n</td>\n<td>12</td><td>49</td><td class=\"sortcell\">.197</td><td>36&nbsp;&#189;</td><td>8-23</td><td>4-26</td><td>4-7</td><td>8-32</td><td>92.6</td><td>101.2</td><td><span
-        class=\"redfont\">-8.7</span></td><td>Lost 3</td><td>2-8</td></tr>\n</table>\n\n\n\t\t</div>\n\t\t<div
+        Lakers</a>\n</td>\n<td>17</td><td>46</td><td>.270</td><td>34</td><td>10-21</td><td>7-25</td><td>2-9</td><td>7-32</td><td>99.2</td><td>105.3</td><td><span
+        class=\"redfont\">-6.1</span></td><td>Won 1</td><td>4-6</td></tr>\n<tr align=\"right\"
+        class=\"colhead\"><td align=\"left\">SOUTHWEST</td><td><a href=\"http://espn.go.com/nba/standings/_/sort/wins/group/3\"
+        title=\"Wins\">W</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/losses/group/3\"
+        title=\"Losses\">L</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/winPercent/group/3\"
+        title=\"Win Percentage\">PCT</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/gamesBehind/group/3\"
+        title=\"Games Behind\">GB</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/homeWinPercent/group/3\"
+        title=\"Home Record\">HOME</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/roadWinPercent/group/3\"
+        title=\"Road Record\">ROAD</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/divisionWinPercent/group/3\"
+        title=\"Division Record\">DIV</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/leagueWinPercent/group/3\"
+        title=\"Conference Record\">CONF</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/avgPointsFor/group/3\"
+        title=\"Average Points For\">PF</a></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/avgPointsAgainst/group/3/order/false\"
+        title=\"Average Points Against\">PA</a></td><td><span title=\"Average Point
+        Differential\">DIFF</span></td><td><a href=\"http://espn.go.com/nba/standings/_/sort/streak/group/3\"
+        title=\"Streak\">STRK</a></td><td><span title=\"Last 10 Games\">L10</span></td></tr><tr
+        class=\"oddrow team-46-29\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/mem/memphis-grizzlies\">Memphis</a>\n
+        (2)</td>\n<td>45</td><td>19</td><td>.703</td><td>-</td><td>24-7</td><td>21-12</td><td>7-6</td><td>28-13</td><td>99.2</td><td>95.5</td><td><span
+        class=\"greenfont\">+3.7</span></td><td>Lost 1</td><td>5-5</td></tr>\n<tr
+        class=\"evenrow team-46-10\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/hou/houston-rockets\">Houston</a>\n
+        (4)</td>\n<td>43</td><td>21</td><td>.672</td><td>2</td><td>24-9</td><td>19-12</td><td>5-6</td><td>24-15</td><td>103.2</td><td>99.8</td><td><span
+        class=\"greenfont\">+3.4</span></td><td>Lost 1</td><td>7-3</td></tr>\n<tr
+        class=\"oddrow team-46-24\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/sa/san-antonio-spurs\">San
+        Antonio</a>\n (6)</td>\n<td>40</td><td>23</td><td>.635</td><td>4&nbsp;&#189;</td><td>24-7</td><td>16-16</td><td>4-6</td><td>22-18</td><td>101.6</td><td>97.4</td><td><span
+        class=\"greenfont\">+4.2</span></td><td>Won 6</td><td>6-4</td></tr>\n<tr class=\"evenrow
+        team-46-6\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/dal/dallas-mavericks\">Dallas</a>\n
+        (7)</td>\n<td>41</td><td>25</td><td>.621</td><td>5</td><td>21-11</td><td>20-14</td><td>6-6</td><td>21-17</td><td>104.3</td><td>100.8</td><td><span
+        class=\"greenfont\">+3.5</span></td><td>Lost 1</td><td>5-5</td></tr>\n<tr
+        class=\"oddrow team-46-3\" align=\"right\"><td align=\"left\"><a href=\"http://espn.go.com/nba/team/_/name/no/new-orleans-pelicans\">New
+        Orleans</a>\n (8)</td>\n<td>36</td><td>29</td><td>.554</td><td>9&nbsp;&#189;</td><td>22-11</td><td>14-18</td><td>7-5</td><td>21-15</td><td>99.8</td><td>99.0</td><td><span
+        class=\"greenfont\">+0.8</span></td><td>Won 3</td><td>8-2</td></tr>\n</table>\n\n\n\t\t</div>\n\t\t<div
         class=\"mod-footer\">\n\t\t\t<div class=\"foot-header stathead\">\n\t\t\t\t<h5>Glossary</h5>\n\t\t\t</div>\n\t\t\t<div
         class=\"foot-content\">\n\t\t\t\t<ul><li><span>W:</span> Wins</li><li><span>L:</span>
         Losses</li><li><span>PCT:</span> Win Percentage</li><li><span>GB:</span> Games
@@ -365,7 +418,7 @@ http_interactions:
         begin sponsored links -->\n<div id=\"sponsored\" class=\"mod-container mod-no-footer\">\n<!--
         begin sp links -->\n<div style=\"margin: 10px 0 0 0;\">\n<!-- CONTENT: 09standings758,
         SPORT: nba--><div style=\"margin:0px 0px 5px 0px; text-align: center; width:
-        758px;\"><ins id=\"splinks-15653\"></ins>\n        <script type=\"text/javascript\">\n
+        758px;\"><ins id=\"splinks-3191\"></ins>\n        <script type=\"text/javascript\">\n
         \           (function($) {\n                // config params\n                var
         width = '758',\n                    height = '300',\n                    client
         = 'ca-espn-q-standings',\n                    channel = 'nba bottom',\n                    lang
@@ -373,7 +426,7 @@ http_interactions:
         buildIframe(width, height, client, channel) {\n                    var path
         = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
         \                   // pass params as the hash as they are only needed on
-        the client\n                    var hash = '15653|' + width + '|' + height
+        the client\n                    var hash = '3191|' + width + '|' + height
         + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
         = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
         + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
@@ -389,11 +442,11 @@ http_interactions:
         {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
         || espn.core.android) {\n                            // outside US or not
         on desktop\n                            client = 'ca-espn-nq';\n                        }\n
-        \                       $('#splinks-15653').html(buildIframe(width, height,
-        client, channel));\n                    }).fail(function() {\n                        $('#splinks-15653').html(buildIframe(width,
+        \                       $('#splinks-3191').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-3191').html(buildIframe(width,
         height, 'ca-espn-nq', channel));\n                    });\n                }
         else {\n                    // can't locate them, assume they are outside
-        US\n                    $('#splinks-15653').html(buildIframe(width, height,
+        US\n                    $('#splinks-3191').html(buildIframe(width, height,
         'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
         \   </div></div>\n<!-- end sp links -->\n</div>\n<!-- end sponsored links
         -->\n\n\n\t</div>\n\n\t<div class=\"col-ad-160\">\n\t\t<div class=\"ad-box\"><!--
@@ -408,7 +461,7 @@ http_interactions:
         target=\"_blank\"><img src=\"http://ad.Doubleclick.net/ad/espn.us.com.nba/nbastandings;pgtyp=nbastandings;sp=espn;sz=160x600,1x1;\"
         border=\"0\" alt=\"\"></a></noscript>\n</div><!-- end Poster -->\n</div><div><!--
         CONTENT: 09storyright160, SPORT: nba--><div style=\"margin:0px 0px 5px 0px;
-        text-align: center; width: 160px;\"><ins id=\"splinks-4562\"></ins>\n        <script
+        text-align: center; width: 160px;\"><ins id=\"splinks-82557\"></ins>\n        <script
         type=\"text/javascript\">\n            (function($) {\n                //
         config params\n                var width = '160',\n                    height
         = '400',\n                    client = 'ca-espn-q-standings',\n                    channel
@@ -416,7 +469,7 @@ http_interactions:
         iframe HTML\n                function buildIframe(width, height, client, channel)
         {\n                    var path = 'http://sports-ak.espn.go.com/espn/sponsoredlinks/adsense/iframeCached';\n
         \                   // pass params as the hash as they are only needed on
-        the client\n                    var hash = '4562|' + width + '|' + height
+        the client\n                    var hash = '82557|' + width + '|' + height
         + '|' + client + '|' + channel + '|' + lang;\n                    var iframe
         = '<iframe seamless scrolling=\"no\" frameborder=\"0\" height=\"' + height
         + '\" width=\"' + width + '\" src=\"' + path + '#' + hash + '\"></iframe>';\n
@@ -432,11 +485,11 @@ http_interactions:
         {\n                        if (loc.country.isoCode !== 'usa' || espn.core.mobileApple
         || espn.core.android) {\n                            // outside US or not
         on desktop\n                            client = 'ca-espn-nq';\n                        }\n
-        \                       $('#splinks-4562').html(buildIframe(width, height,
-        client, channel));\n                    }).fail(function() {\n                        $('#splinks-4562').html(buildIframe(width,
+        \                       $('#splinks-82557').html(buildIframe(width, height,
+        client, channel));\n                    }).fail(function() {\n                        $('#splinks-82557').html(buildIframe(width,
         height, 'ca-espn-nq', channel));\n                    });\n                }
         else {\n                    // can't locate them, assume they are outside
-        US\n                    $('#splinks-4562').html(buildIframe(width, height,
+        US\n                    $('#splinks-82557').html(buildIframe(width, height,
         'ca-espn-nq', channel));\n                }\n            })(jQuery);\n        </script>\n
         \   </div></div>\n\t</div>\n\n</div>\n\n<div class=\"clear\"></div>\n\n<!--
         begin bottom nav -->\n<!-- begin bottom nav/sitemap -->\n<div class=\"mod-container
@@ -760,8 +813,8 @@ http_interactions:
         a};c=document.getElementsByTagName(\"script\")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();\n
         \ //]]>\n</script><script type=\"text/javascript\">if (!NREUMQ.f) { NREUMQ.f=function()
         {NREUMQ.push([\"load\",new Date().getTime()]);var e=document.createElement(\"script\");e.type=\"text/javascript\";e.src=((\"http:\"===document.location.protocol)?\"http:\":\"https:\")
-        + \"//\" + \"js-agent.newrelic.com/nr-100.js\";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push([\"nrfj\",\"bam.nr-data.net\",\"7c16f39f8d\",\"2256671\",\"NVxTZBFZXUFQW0ZQVwwWZEIKF11QUBdBTVkMXVheBEs=\",0,14,new
+        + \"//\" + \"js-agent.newrelic.com/nr-100.js\";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push([\"nrfj\",\"bam.nr-data.net\",\"7c16f39f8d\",\"2256671\",\"NVxTZBFZXUFQW0ZQVwwWZEIKF11QUBdBTVkMXVheBEs=\",0,15,new
         Date().getTime(),\"\",\"\",\"\",\"\",\"\"]);</script></body>\n</html>"
     http_version: 
-  recorded_at: Sun, 08 Mar 2015 15:07:27 GMT
+  recorded_at: Thu, 12 Mar 2015 15:27:21 GMT
 recorded_with: VCR 2.9.3
