@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/mikesilvis/espn-scraper.git
-  revision: 6aa9e7fd19aff5e4777542fc33b6df53c6f2e2eb
+  revision: 90f5ca5b57dfdaf8a2e2461713a2f91e4ce1bbe8
   specs:
     espn_scraper (1.0.4)
       activesupport
@@ -63,7 +63,7 @@ GEM
     commonjs (0.2.7)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
-    dalli (2.7.2)
+    dalli (2.7.3)
     diff-lcs (1.2.5)
     dragonfly (1.0.7)
       addressable (~> 2.3)
