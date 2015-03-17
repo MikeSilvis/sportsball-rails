@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  # TODO: Remove endpoint
   get "images/:path" => Dragonfly.app.endpoint { |params, app|
     size = params[:size] ? params[:size] : '70x70'
     path = QueryBase.decode_path(params[:path])

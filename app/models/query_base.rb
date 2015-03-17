@@ -34,7 +34,7 @@ class QueryBase
   end
 
   def self.api_image_url(path)
-    Rails.application.routes.url_helpers.image_url(encode_path(path))
+    Rails.application.routes.url_helpers.image_url(encode_path(path), subdomain: 'images')
   end
 
   def self.encode_path(path)
