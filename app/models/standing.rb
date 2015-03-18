@@ -1,10 +1,12 @@
 class Standing
-  attr_accessor :divisions
+  attr_accessor :divisions, :league, :headers
 
   def initialize(attrs)
     self.divisions = {}
+    self.league    = attrs[:league]
+    self.headers   = attrs[:headers]
 
-    attrs.each do |division, teams|
+    attrs[:teams].each do |division, teams|
       self.divisions[division] = teams.map do |team|
         Team.new(team)
       end

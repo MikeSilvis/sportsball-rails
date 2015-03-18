@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/mikesilvis/espn-scraper.git
-  revision: 3a68b700d3915fe3ec54706418a47d49844949d3
+  revision: ef4b7d98513464b7cd6c144f36ed58031ec7a7a5
   specs:
     espn_scraper (1.0.4)
       activesupport
@@ -56,14 +56,13 @@ GEM
     bugsnag (2.8.1)
       multi_json (~> 1.0)
     builder (3.2.2)
-    byebug (4.0.1)
+    byebug (4.0.2)
       columnize (= 0.9.0)
-      rb-readline (= 0.5.2)
     columnize (0.9.0)
     commonjs (0.2.7)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
-    dalli (2.7.3)
+    dalli (2.7.4)
     diff-lcs (1.2.5)
     dragonfly (1.0.7)
       addressable (~> 2.3)
@@ -211,7 +210,7 @@ GEM
       railties (>= 3.2.11)
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
-    rails-dom-testing (1.0.5)
+    rails-dom-testing (1.0.6)
       activesupport (>= 4.2.0.beta, < 5.0)
       nokogiri (~> 1.6.0)
       rails-deprecated_sanitizer (>= 1.0.1)
@@ -230,7 +229,6 @@ GEM
     rainbow (2.0.0)
     raindrops (0.13.0)
     rake (10.4.2)
-    rb-readline (0.5.2)
     ref (1.0.5)
     rspec-core (3.2.2)
       rspec-support (~> 3.2.0)
