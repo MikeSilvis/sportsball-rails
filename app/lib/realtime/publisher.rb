@@ -8,7 +8,11 @@ class Realtime::Publisher
 
     Pusher["boxscore_#{league}_#{game_id}"].trigger('event', {
       boxscore: Boxscore.find(league, game_id),
-      game: League.new(league).scores.detect { |s| s.boxscore == game_id }
+      game: League.new(league).scores(today).detect { |s| s.boxscore == game_id }
     })
+  end
+
+  def today
+    ActiveSupport::TimeZone['America/New_York']
   end
 end
