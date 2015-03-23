@@ -13,6 +13,6 @@ class Realtime::Publisher
   end
 
   def today
-    ActiveSupport::TimeZone['America/New_York']
+    ActiveSupport::TimeZone['America/New_York'].today
   end
 end
