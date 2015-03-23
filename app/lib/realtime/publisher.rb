@@ -13,18 +13,18 @@ class Realtime::Publisher
     })
   end
 
-  def self.send_scores(league, date)
+  def self.send_scores(league)
+    date = ActiveSupport::TimeZone['America/New_York'].today
+
     push_event("scores_#{league}_#{date.strftime('%Y-%m-%d')}", {
       scores: League.new(league).scores(date)
     })
   end
 
+  private
+
   def self.push_event(channel, data)
     client.trigger(channel, 'event', data)
-  end
-
-  def today
-    ActiveSupport::TimeZone['America/New_York'].today
   end
 
   def self.client
