@@ -50,14 +50,14 @@ class Score < QueryBase
   concerning :UpdateFrequency do
     def check
       time = Time.now
-      all = self.all
+      all = Score.all(self.league, Date.today)
       puts 'still cached' while verify_similar(all)
 
       puts "ESPN took: #{Time.now - time} to update"
     end
 
     def verify_similar(all)
-      all == self.all
+      all == Score.all(self.league, Date.today)
     end
   end
 

@@ -18,6 +18,7 @@ gem 'rubocop'
 gem 'therubyracer'
 gem 'unicorn-rails'
 gem 'fog'
+gem 'pusher'
 
 group :production do
   gem 'rails_12factor'
