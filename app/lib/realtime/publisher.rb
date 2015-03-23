@@ -12,6 +12,12 @@ class Realtime::Publisher
     })
   end
 
+  def self.send_scores(league)
+    Pusher["scores_#{league}"].trigger('event', {
+      scores: League.new(league).scores(ActiveSupport::TimeZone['America/New_York'].today)
+    })
+  end
+
   def today
     ActiveSupport::TimeZone['America/New_York'].today
   end
