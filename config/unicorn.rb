@@ -19,13 +19,13 @@ before_fork do |server, worker|
   t.abort_on_exception = true
 
   # Clockwork
-  #@clockwork_pid ||= spawn("bundle exec clockwork config/clockwork.rb")
-  #t = Thread.new {
-    #Process.wait(@clockwork_pid)
-    #puts "Worker died. Bouncing unicorn."
-    #Process.kill 'QUIT', Process.pid
-  #}
-  #t.abort_on_exception = true
+  @clockwork_pid ||= spawn("bundle exec clockwork config/clockwork.rb")
+  t = Thread.new {
+    Process.wait(@clockwork_pid)
+    puts "Worker died. Bouncing unicorn."
+    Process.kill 'QUIT', Process.pid
+  }
+  t.abort_on_exception = true
 end
 
 after_fork do |server, worker|
