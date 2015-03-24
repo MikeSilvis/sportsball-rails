@@ -1,4 +1,6 @@
 class RealtimeWebhookController < ApplicationController
+  skip_before_filter :ensure_valid_league
+
   def create
     if webhook.valid?
       webhook.events.each do |event|
