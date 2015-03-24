@@ -10,13 +10,13 @@ before_fork do |server, worker|
   end
 
   # Sidekiq
-  @sidekiq_pid ||= spawn("bundle exec sidekiq -q default")
-  t = Thread.new {
-    Process.wait(@sidekiq_pid)
-    puts "Worker died. Bouncing unicorn."
-    Process.kill 'QUIT', Process.pid
-  }
-  t.abort_on_exception = true
+  #@sidekiq_pid ||= spawn("bundle exec sidekiq -q default")
+  #t = Thread.new {
+    #Process.wait(@sidekiq_pid)
+    #puts "Worker died. Bouncing unicorn."
+    #Process.kill 'QUIT', Process.pid
+  #}
+  #t.abort_on_exception = true
 
   # Clockwork
   @clockwork_pid ||= spawn("bundle exec clockwork config/clockwork.rb")
