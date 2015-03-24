@@ -5,5 +5,5 @@ require './config/environment'
 module Clockwork
   handler { |job| RealtimeWorker.perform_async }
 
-  every(20.seconds, 'frequent.job')
+  every(2.minute, 'frequent.job')
 end
