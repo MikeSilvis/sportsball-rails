@@ -1,10 +1,5 @@
 class Realtime::Checker
   attr_accessor :channels
-  #SUPPORTED_CHANNEL_FORMATS = League.all.map(&:name)
-
-  #def updated?(league, scores)
-    #return if scores.all? { |s| s[:state] == 'final' }
-  #end
 
   def self.push_updates
     channels.each do |channel, _|
