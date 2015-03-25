@@ -19,9 +19,9 @@ gem 'rails-api'
 gem 'sidekiq'
 gem 'unicorn-rails'
 
-#group :production do
-  #gem 'rails_12factor'
-#end
+group :production do
+  gem 'rails_12factor'
+end
 
 group :test do
   gem 'rspec-rails'
