@@ -8,7 +8,7 @@ gem 'byebug'
 gem 'clockwork'
 gem 'dalli'
 gem 'dragonfly'
-#gem 'espn_scraper', github: 'mikesilvis/espn-scraper'
+gem 'espn_scraper', github: 'mikesilvis/espn-scraper'
 gem 'faraday'
 gem 'fog'
 gem 'less-rails'
@@ -16,14 +16,12 @@ gem 'newrelic_rpm'
 gem 'pusher'
 gem 'rails', '4.2.0'
 gem 'rails-api'
-gem 'rubocop'
 gem 'sidekiq'
-gem 'therubyracer'
 gem 'unicorn-rails'
 
-group :production do
-  gem 'rails_12factor'
-end
+#group :production do
+  #gem 'rails_12factor'
+#end
 
 group :test do
   gem 'rspec-rails'
