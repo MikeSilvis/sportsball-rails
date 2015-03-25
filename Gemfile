@@ -10,11 +10,11 @@ gem 'dragonfly'
 gem 'espn_scraper', github: 'mikesilvis/espn-scraper'
 gem 'faraday'
 gem 'fog'
-#gem 'less-rails'
 gem 'newrelic_rpm'
 gem 'pusher'
 gem 'rails', '4.2.0'
 gem 'rails-api'
+gem 'rubocop'
 gem 'sidekiq'
 gem 'unicorn-rails'
 
@@ -31,3 +31,4 @@ end
 group :development do
   gem 'benchmark-ips'
 end
+
