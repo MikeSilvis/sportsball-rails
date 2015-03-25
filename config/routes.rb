@@ -1,7 +1,4 @@
-require 'sidekiq/web'
-
 Rails.application.routes.draw do
-
   resources :realtime_webhook, only: :create
   get 'images/:path' => redirect('not_found'), as: 'image'
 
@@ -19,7 +16,4 @@ Rails.application.routes.draw do
       resource :schedule, only: :show
     end
   end
-
-  mount Sidekiq::Web, at: '/sidekiq'
-
 end
