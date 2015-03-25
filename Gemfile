@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.1.5'
 
+gem 'benchmark-ips'
 gem 'bugsnag'
 gem 'byebug'
 gem 'clockwork'
@@ -27,9 +28,5 @@ group :test do
   gem 'rspec-rails'
   gem 'vcr'
   gem 'webmock'
-end
-
-group :development do
-  gem 'benchmark-ips'
 end
 
