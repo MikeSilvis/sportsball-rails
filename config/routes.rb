@@ -1,3 +1,5 @@
+require 'sidekiq/web'
+
 Rails.application.routes.draw do
 
   resources :realtime_webhook, only: :create
@@ -17,5 +19,7 @@ Rails.application.routes.draw do
       resource :schedule, only: :show
     end
   end
+
+  mount Sidekiq::Web, at: '/sidekiq'
 
 end
