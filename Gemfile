@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 ruby '2.1.5'
 
-gem 'benchmark-ips'
 gem 'bugsnag'
 gem 'byebug'
 gem 'clockwork'
@@ -11,7 +10,7 @@ gem 'dragonfly'
 gem 'espn_scraper', github: 'mikesilvis/espn-scraper'
 gem 'faraday'
 gem 'fog'
-gem 'less-rails'
+#gem 'less-rails'
 gem 'newrelic_rpm'
 gem 'pusher'
 gem 'rails', '4.2.0'
@@ -29,3 +28,6 @@ group :test do
   gem 'webmock'
 end
 
+group :development do
+  gem 'benchmark-ips'
+end
