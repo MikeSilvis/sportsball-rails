@@ -7,5 +7,5 @@ module Clockwork
     RealtimePush.perform_async if Realtime::Channel.any?
   end
 
-  every(2.minute, 'frequent.job')
+  every(1.minute, 'frequent.job')
 end
