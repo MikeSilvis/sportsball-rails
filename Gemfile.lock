@@ -58,9 +58,6 @@ GEM
     builder (3.2.2)
     byebug (4.0.4)
       columnize (= 0.9.0)
-    clockwork (1.1.0)
-      activesupport
-      tzinfo
     columnize (0.9.0)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
@@ -289,7 +286,6 @@ DEPENDENCIES
   benchmark-ips
   bugsnag
   byebug
-  clockwork
   dalli
   dragonfly
   espn_scraper!
