@@ -11,6 +11,10 @@ class Realtime::Channel
     client.get(channel_key).to_i > 0
   end
 
+  def self.all
+    @channels ||= Realtime.client.channels[:channels]
+  end
+
   private
 
   def self.channel_key
