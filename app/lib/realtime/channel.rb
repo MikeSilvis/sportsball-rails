@@ -1,14 +1,10 @@
 class Realtime::Channel
-  def self.increment
-    client.incr channel_key
-  end
-
-  def self.decrement
-    client.decr channel_key
+  def self.verify
+    client.set channel_key, all.any?
   end
 
   def self.any?
-    client.get(channel_key).to_i > 0
+    client.get(channel_key) == 'true'
   end
 
   def self.all

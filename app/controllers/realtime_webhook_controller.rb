@@ -3,13 +3,7 @@ class RealtimeWebhookController < ApplicationController
 
   def create
     if webhook.valid?
-      webhook.events.each do |event|
-        if event['name'] == 'channel_occupied'
-          Realtime::Channel.increment
-        elsif event['name'] == 'channel_vacated'
-          Realtime::Channel.decrement
-        end
-      end
+      Realtime::Channel.verify
 
       render text: 'ok'
     else
