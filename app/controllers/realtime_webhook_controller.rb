@@ -3,7 +3,7 @@ class RealtimeWebhookController < ApplicationController
 
   def create
     if webhook.valid?
-      Realtime::Channel.verify
+      #Realtime::Channel.verify
 
       render text: 'ok'
     else
