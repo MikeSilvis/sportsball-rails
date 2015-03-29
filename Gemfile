@@ -17,6 +17,7 @@ gem 'rails', '4.2.0'
 gem 'rails-api'
 gem 'rubocop'
 gem 'sidekiq'
+gem 'sinatra'
 gem 'unicorn-rails'
 
 group :production do

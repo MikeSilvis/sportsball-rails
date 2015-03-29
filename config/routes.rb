@@ -16,4 +16,6 @@ Rails.application.routes.draw do
       resource :schedule, only: :show
     end
   end
+
+  mount Sidekiq::Web, at: '/sidekiq'
 end
