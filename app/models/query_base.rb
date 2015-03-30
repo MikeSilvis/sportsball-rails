@@ -1,12 +1,6 @@
-class QueryBase
-  ASSET_STRINGS = [
-    'ASSET_STRING_1',
-    'ASSET_STRING_2'
-  ]
-  ASSET_HASHES = ASSET_STRINGS.map do |asset_string|
-    Digest::MD5.hexdigest(asset_string)
-  end
+require 'sportsball/assets'
 
+class QueryBase
   def self.attr_accessor(*vars)
     @attributes ||= []
     @attributes.concat vars
@@ -34,18 +28,6 @@ class QueryBase
   end
 
   def self.api_image_url(path)
-    Rails.application.routes.url_helpers.image_url(encode_path(path), subdomain: 'images')
-  end
-
-  def self.encode_path(path)
-    "#{path}-#{ASSET_HASHES.last}.png"
-  end
-
-  def self.decode_path(path)
-    path.tap do |updated_path|
-      ASSET_HASHES.each do |asset_hash|
-        updated_path.gsub!("-#{asset_hash}", '')
-      end
-    end
+    Rails.application.routes.url_helpers.image_url(Sportsball::Assets.encode_path(path), subdomain: 'images')
   end
 end

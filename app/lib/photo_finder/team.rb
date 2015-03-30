@@ -29,7 +29,7 @@ class PhotoFinder::Team
   end
 
   def has_photo?
-    File.exists?(file_location) || s3_photos.include?(team[:data_name])
+    File.exists?(file_location)# || s3_photos.include?(team[:data_name])
   end
 
   def s3_photos
