@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/mikesilvis/espn-scraper.git
-  revision: 05f411a560f627302af7cd8eb5fbfdba08f6d203
+  revision: b142686e4a43dbbbb784b3c565eee13daa6bc332
   specs:
     espn_scraper (1.0.5)
       activesupport
@@ -59,7 +59,7 @@ GEM
     astrolabe (1.3.0)
       parser (>= 2.2.0.pre.3, < 3.0)
     benchmark-ips (2.1.1)
-    bugsnag (2.8.1)
+    bugsnag (2.8.2)
       multi_json (~> 1.0)
     builder (3.2.2)
     byebug (4.0.4)
