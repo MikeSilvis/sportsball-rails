@@ -47,20 +47,6 @@ class Score < QueryBase
     @start_time.to_i
   end
 
-  concerning :UpdateFrequency do
-    def check
-      time = Time.now
-      all = Score.all(self.league, Date.today)
-      puts 'still cached' while verify_similar(all)
-
-      puts "ESPN took: #{Time.now - time} to update"
-    end
-
-    def verify_similar(all)
-      all == Score.all(self.league, Date.today)
-    end
-  end
-
   module ScoreFinder
     def self.included(base)
       base.extend(ClassMethods)
