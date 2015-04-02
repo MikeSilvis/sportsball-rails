@@ -98,7 +98,9 @@ class League < QueryBase
   end
 
   def schedule
-    ESPN::Schedule::League.find(name)
+    schedule = ESPN::Schedule::League.find(name)
+    schedule = schedule.concat([Date.new(2015, 4, 2), Date.new(2015, 4, 3), Date.new(2015, 4, 4)]) if name == 'mlb'
+    schedule.sort
   end
 
   def scores(date = Date.today)
