@@ -56,13 +56,6 @@ class Score < QueryBase
       def all(league_id, date)
         query_with_timeout(league_id, date).map do |score|
           Score.new(score)
-        end.sort_by do |score|
-          [
-            GAME_ORDER[score.state],
-            score.start_time.to_i,
-            -score.progress.to_i,
-            score.time_remaining.to_s.gsub(':', '.').to_f
-          ]
         end
       end
 
