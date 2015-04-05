@@ -44,18 +44,6 @@ class Preview < QueryBase
     @start_time.to_i
   end
 
-  def content
-    (league == 'nhl' ? nhl_preview[:content] : @content).gsub('\n', '').gsub(/\n/, '')
-  end
-
-  def headline
-    league == 'nhl' ? nhl_preview[:headline] : @headline
-  end
-
-  def url
-    league == 'nhl' ? nhl_preview[:url] : @url
-  end
-
   def self.find(league, game_id)
     new(ESPN::Preview.find(league, game_id))
   end
@@ -68,9 +56,5 @@ class Preview < QueryBase
         location: location
       }
     )
-  end
-
-  def nhl_preview
-    @nhl_preview ||= Nhl::Preview.find_by(self.away_team.name, self.home_team.name, @start_time.in_time_zone('Central Time (US & Canada)').to_date)
   end
 end
