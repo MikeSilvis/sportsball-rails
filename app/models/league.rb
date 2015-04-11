@@ -19,9 +19,9 @@ class League < QueryBase
     #'ncf' => {
       #english_name: 'NCAAF'
     #},
-    'ncb' => {
-      english_name: 'NCAAB'
-    },
+    #'ncb' => {
+      #english_name: 'NCAAB'
+    #},
     'nba' => {
       english_name: 'NBA'
     },
