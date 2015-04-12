@@ -8,25 +8,32 @@ class League < QueryBase
                 :header_blurred_image,
                 :schedule,
                 :monthly_schedule,
-                :english_name
+                :english_name,
+                :enabled
   LEAGUES = {
     'nhl' => {
-      english_name: 'NHL'
+      english_name: 'NHL',
+      enabled: true
     },
-    #'nfl' => {
-      #english_name: 'NFL'
-    #},
-    #'ncf' => {
-      #english_name: 'NCAAF'
-    #},
-    #'ncb' => {
-      #english_name: 'NCAAB'
-    #},
+    'nfl' => {
+      english_name: 'NFL',
+      enabled: false
+    },
+    'ncf' => {
+      english_name: 'NCAAF',
+      enabled: false
+    },
+    'ncb' => {
+      english_name: 'NCAAB',
+      enabled: false
+    },
     'nba' => {
-      english_name: 'NBA'
+      english_name: 'NBA',
+      enabled: true
     },
     'mlb' => {
-      english_name: 'MLB'
+      english_name: 'MLB',
+      enabled: true
     }
   }
 
@@ -37,7 +44,7 @@ class League < QueryBase
   def self.all
     LEAGUES.map do |league, _|
       League.new(league)
-    end
+    end.sort_by { |league| league.enabled? ? 0 : 1 }
   end
 
   def logo
@@ -70,6 +77,14 @@ class League < QueryBase
     @english_name ||= LEAGUES[name][:english_name]
   end
 
+  def enabled
+    @enabled ||= LEAGUES[name][:enabled]
+  end
+
+  def enabled?
+    enabled
+  end
+
   def find_images(location)
     get_files(location).inject({}) do |hash, file|
       team_name = file.split('/').last.gsub(/.png/, '')
@@ -98,9 +113,13 @@ class League < QueryBase
   end
 
   def schedule
-    schedule = ESPN::Schedule::League.find(name)
-    schedule = schedule.concat([Date.new(2015, 4, 2), Date.new(2015, 4, 3), Date.new(2015, 4, 4)]) if name == 'mlb'
-    schedule.sort
+    if enabled?
+      schedule = ESPN::Schedule::League.find(name)
+      schedule = schedule.concat([Date.new(2015, 4, 2), Date.new(2015, 4, 3), Date.new(2015, 4, 4)]) if name == 'mlb'
+      schedule.sort
+    else
+      []
+    end
   end
 
   def scores(date = Date.today)
