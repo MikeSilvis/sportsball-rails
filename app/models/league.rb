@@ -69,6 +69,7 @@ class League < QueryBase
     @header_images ||= find_images('headers')
   end
 
+  ## TODO: REMOVE YOU ENTIRELY
   def header_blurred_images
     @header_blurred_images ||= find_images('blurred-headers')
   end
