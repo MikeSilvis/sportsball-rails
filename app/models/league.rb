@@ -114,7 +114,24 @@ class League < QueryBase
   end
 
   def schedule
-    enabled ? ESPN::Schedule::League.find(name).sort : []
+    if enabled?
+      ## TODO: WTF ESPN
+      if league == 'nhl'
+        [
+          Date.new(2015, 4, 15),
+          Date.new(2014, 4, 16),
+          Date.new(2014, 4, 17),
+          Date.new(2014, 4, 18),
+          Date.new(2014, 4, 19),
+          Date.new(2014, 4, 20),
+          Date.new(2014, 4, 21)
+        ]
+      else
+        ESPN::Schedule::League.find(name).sort
+      end
+    else
+      []
+    end
   end
 
   def scores(date = Date.today)
