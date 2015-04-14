@@ -118,6 +118,7 @@ class League < QueryBase
       ## TODO: WTF ESPN
       if league == 'nhl'
         [
+          Date.new(2015, 4, 11),
           Date.new(2015, 4, 15),
           Date.new(2014, 4, 16),
           Date.new(2014, 4, 17),
