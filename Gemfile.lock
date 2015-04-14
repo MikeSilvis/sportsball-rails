@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/mikesilvis/espn-scraper.git
-  revision: 444db347604e92f395c0b37020287e16883c73f5
+  revision: 7a683127120d13d32fab4341f5ceffbe7aa40347
   specs:
     espn_scraper (1.0.5)
       activesupport
@@ -184,7 +184,7 @@ GEM
       mime-types (>= 1.16, < 3)
     mime-types (2.4.3)
     mini_portile (0.6.2)
-    minitest (5.5.1)
+    minitest (5.6.0)
     multi_json (1.11.0)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
