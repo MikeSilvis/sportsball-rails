@@ -12,7 +12,8 @@ class Preview < QueryBase
                 :league,
                 :away_team_schedule,
                 :home_team_schedule,
-                :game_info
+                :game_info,
+                :photo
 
   def initialize(attrs)
     self.away_team  = Team.new(attrs, 'away')
@@ -26,6 +27,7 @@ class Preview < QueryBase
     self.series     = attrs[:series]
     self.game_id    = attrs[:game_id]
     self.league     = attrs[:league]
+    self.photo      = attrs[:photo]
   end
 
   def home_team_schedule
