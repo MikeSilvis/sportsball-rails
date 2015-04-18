@@ -2,6 +2,8 @@ class LeaguesController < ApplicationController
   skip_before_filter :ensure_valid_league
 
   def index
+    expires_in 1.day, public: true
+
     render json: { leagues: leagues }, callback: params[:callback]
   end
 
