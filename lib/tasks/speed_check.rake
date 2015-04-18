@@ -1,5 +1,5 @@
 require 'faraday'
-require 'benchmark/ips'
+require 'benchmark/ips' if ENV['RACK_ENV'] == 'development'
 
 namespace :speed do
   desc 'Compares various sport providers API response time'
