@@ -10,7 +10,7 @@ class LeaguesController < ApplicationController
   private
 
   def leagues
-    ## TODO: REMOVE AFTER ONE MONTH OF RELEASE
+     #TODO: REMOVE AFTER ONE MONTH OF RELEASE
     if params[:version].to_f == 1.3
       League.all
     else
