@@ -40,7 +40,7 @@ class Score < QueryBase
   end
 
   def start_time=(val)
-    @start_time = ActiveSupport::TimeZone['America/New_York'].parse(val.to_s).utc if val && !val.match(/TBD/)
+    @start_time = ActiveSupport::TimeZone['America/New_York'].parse(val.to_s).utc if val && !val.match(/TBD|Delayed|Postponed/)
   end
 
   def start_time
