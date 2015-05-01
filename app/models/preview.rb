@@ -31,11 +31,11 @@ class Preview < QueryBase
   end
 
   def home_team_schedule
-    @home_team_schedule ||= Schedule.find(self.league, self.home_team.data_name)
+    @home_team_schedule ||= Schedule.find(self.league, self.home_team.data_name) if self.content.present?
   end
 
   def away_team_schedule
-    @away_team_schedule ||= Schedule.find(self.league, self.away_team.data_name)
+    @away_team_schedule ||= Schedule.find(self.league, self.away_team.data_name) if self.content.present?
   end
 
   def start_time=(val)
