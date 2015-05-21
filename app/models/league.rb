@@ -1,11 +1,7 @@
 class League < QueryBase
   attr_accessor :name,
                 :logo,
-                :secondary_logo,
                 :header_images,
-                :header_blurred_images,
-                :header_image,
-                :header_blurred_image,
                 :schedule,
                 :monthly_schedule,
                 :english_name,
@@ -51,27 +47,8 @@ class League < QueryBase
     @logo ||= api_image_url("leagues/#{name}")
   end
 
-  def secondary_logo
-    @secondary_logo ||= api_image_url("leagues/secondary/#{name}")
-  end
-
-  # TODO: Remove upon submitting new build
-  def header_image
-    @header_image ||= header_images.values.first
-  end
-
-  # TODO: Remove upon submitting new build
-  def header_blurred_image
-    @header_blurred_image ||= header_blurred_images.values.first
-  end
-
   def header_images
     @header_images ||= find_images('headers')
-  end
-
-  ## TODO: REMOVE YOU ENTIRELY
-  def header_blurred_images
-    @header_blurred_images ||= find_images('blurred-headers')
   end
 
   def english_name
