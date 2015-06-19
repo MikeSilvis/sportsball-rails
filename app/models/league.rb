@@ -9,7 +9,7 @@ class League < QueryBase
   LEAGUES = {
     'nhl' => {
       english_name: 'NHL',
-      enabled: true
+      enabled: false
     },
     'nfl' => {
       english_name: 'NFL',
@@ -25,7 +25,7 @@ class League < QueryBase
     },
     'nba' => {
       english_name: 'NBA',
-      enabled: true
+      enabled: false
     },
     'mlb' => {
       english_name: 'MLB',
