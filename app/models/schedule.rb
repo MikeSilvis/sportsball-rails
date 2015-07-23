@@ -10,7 +10,7 @@ class Schedule < QueryBase
     self.games = attrs[:games].map do |game|
       {
         opponent: {
-          logo: Team.logo(self.league, game[:opponent]),
+          logo: (Team.logo(self.league, game[:opponent]) rescue byebug),
           name: game[:opponent_name],
           data_name: game[:opponent]
         },
