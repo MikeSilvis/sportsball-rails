@@ -13,11 +13,11 @@ class League < QueryBase
     },
     'nfl' => {
       english_name: 'NFL',
-      enabled: false
+      enabled: true
     },
     'ncf' => {
       english_name: 'NCAAF',
-      enabled: false
+      enabled: true
     },
     'ncb' => {
       english_name: 'NCAAB',

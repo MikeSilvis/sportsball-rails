@@ -10,11 +10,6 @@ class LeaguesController < ApplicationController
   private
 
   def leagues
-     #TODO: REMOVE AFTER ONE MONTH OF RELEASE
-    if params[:version].to_f == 1.3
-      League.all
-    else
-      League.all.select { |league| league.enabled? }
-    end
+    League.all
   end
 end
