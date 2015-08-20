@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/mikesilvis/espn-scraper.git
-  revision: e1c4054f2aa9fb838041b438ad60f4d44629c8e0
+  revision: 9e118a78d7a1bb3179716e8621a3a90c0fca9793
   specs:
     espn_scraper (1.0.5)
       activesupport
@@ -60,10 +60,8 @@ GEM
       parser (~> 2.2)
     benchmark-ips (2.3.0)
     builder (3.2.2)
-    byebug (5.0.0)
-      columnize (= 0.9.0)
+    byebug (6.0.2)
     certifi (2015.08.10)
-    columnize (0.9.0)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
     dalli (2.7.4)
@@ -106,7 +104,7 @@ GEM
       fog-json (~> 1.0)
       fog-xml (~> 0.1)
       ipaddress (~> 0.8)
-    fog-brightbox (0.8.0)
+    fog-brightbox (0.9.0)
       fog-core (~> 1.22)
       fog-json
       inflecto (~> 0.0.2)
@@ -185,7 +183,7 @@ GEM
     ipaddress (0.8.0)
     json (1.8.3)
     kgio (2.9.3)
-    loofah (2.0.2)
+    loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
@@ -275,7 +273,7 @@ GEM
       certifi
       faraday (>= 0.7.6)
     signature (0.1.8)
-    sprockets (3.3.1)
+    sprockets (3.3.2)
       rack (~> 1.0)
     sprockets-rails (2.3.2)
       actionpack (>= 3.0)
