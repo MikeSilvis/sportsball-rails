@@ -1,11 +1,19 @@
 GIT
   remote: git://github.com/mikesilvis/espn-scraper.git
-  revision: 76d0684c55742281f22373686ba72e41087ebe0f
+  revision: e832596fe5b265fdcf80d1f491aebcdb75d7532f
   specs:
     espn_scraper (1.0.5)
       activesupport
       addressable
       httparty
+      nokogiri
+
+GIT
+  remote: git://github.com/mikesilvis/sports_api.git
+  revision: 7e066eb6b40446c961b384d6e81ee3dcfb13aece
+  specs:
+    sports_api (0.1.0)
+      faraday
       nokogiri
 
 GIT
@@ -313,6 +321,7 @@ DEPENDENCIES
   rspec-rails
   rubocop
   sentry-raven
+  sports_api!
   sportsball-assets!
   unicorn-rails
   vcr
