@@ -26,6 +26,7 @@ class Score < QueryBase
   }
 
   def initialize(event)
+    ## TODO: Refactor into team
     self.home_team = Team.new({}).tap do |team|
       competitor = event.competitors.first
 
@@ -34,8 +35,10 @@ class Score < QueryBase
       team.data_name  = competitor.id
       team.abbr       = competitor.abbreviation
       team.league     = event.league
+      team.rank       = competitor.rank
     end
 
+    ## TODO: Refactor into team
     self.away_team = Team.new({}).tap do |team|
       competitor = event.competitors.last
 
@@ -44,10 +47,11 @@ class Score < QueryBase
       team.data_name  = competitor.id
       team.abbr       = competitor.abbreviation
       team.league     = event.league
+      team.rank       = competitor.rank
     end
 
     self.game_date      = event.date
-    (self.start_time     = event.status.start_time
+    self.start_time     = event.status.start_time
     self.state          = event.status.state
     self.ended_in       = event.status.period
     self.league         = event.league
@@ -72,7 +76,7 @@ class Score < QueryBase
 
     module ClassMethods
       def all(league_id, date)
-        query_with_timeout(league_id, date).events.map do |score|
+        Array(query_with_timeout(league_id, date).try(:events)).map do |score|
           Score.new(score)
         end
       end

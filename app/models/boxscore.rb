@@ -32,25 +32,62 @@ class Boxscore < QueryBase
     'DREB'  => 'Deffensive'
   }
 
-  def initialize(attrs)
-    self.away_team              = Team.new(attrs, 'away')
-    self.home_team              = Team.new(attrs, 'home')
-    self.game_date              = attrs[:game_date]
-    self.arena                  = attrs[:arena]
-    self.score_summary          = attrs[:score_summary]
-    self.score_detail           = attrs[:score_detail]
-    self.state                  = attrs[:state]
-    self.league                 = attrs[:league]
-    self.game_id                = attrs[:game_id]
-    self.time_remaining_summary = attrs[:time_remaining_summary]
-    self.channel                = attrs[:channel]
-    self.location               = attrs[:location]
-    self.start_time             = attrs[:start_time]
-    self.game_stats             = attrs[:game_stats]
+  def initialize(boxscore)
+    ## TODO: Refactor into team
+    self.home_team = Team.new({}).tap do |team|
+      competitor = boxscore.event.competitors.first
+
+      team.name       = competitor.name
+      team.record     = competitor.record.summary
+      team.data_name  = competitor.id
+      team.abbr       = competitor.abbreviation
+      team.league     = boxscore.event.league
+      team.rank       = competitor.rank
+    end
+
+    ## TODO: Refactor into team
+    self.away_team = Team.new({}).tap do |team|
+      competitor = boxscore.event.competitors.last
+
+      team.name       = competitor.name
+      team.record     = competitor.record.summary
+      team.data_name  = competitor.id
+      team.abbr       = competitor.abbreviation
+      team.league     = boxscore.event.league
+      team.rank       = competitor.rank
+    end
+
+    self.game_date              = boxscore.event.date
+    self.score_summary          = boxscore.event.score
+    self.score_detail           = boxscore.score_details
+    self.state                  = boxscore.event.status.state
+    self.league                 = boxscore.event.league
+    self.game_id                = boxscore.event.gameid
+    self.time_remaining_summary = boxscore.event.status.display_clock
+    self.start_time             = boxscore.event.status.start_time
+
+    #self.channel                = attrs[:channel]
+    #self.location               = attrs[:location]
+    #self.arena                  = attrs[:arena]
+    #self.game_stats             = attrs[:game_stats]
   end
 
   def start_time
     @start_time.to_i
+  end
+
+  def score_detail=(score_detail)
+    @score_detail = score_detail.map do |detail|
+      {
+        detail.headline => detail.contents.map do |content|
+          [
+            content.competitor.abbreviation,
+            content.time,
+            content.detail
+          ]
+        end
+      }
+    end
   end
 
   def score_summary
@@ -65,10 +102,6 @@ class Boxscore < QueryBase
     Recap.find(league, game_id, self.away_team.name, self.home_team.name, self.game_date).tap do |recap|
       return nil if recap.headline.to_s.match(/No recap/)
     end
-  end
-
-  def start_time=(val)
-    @start_time = ActiveSupport::TimeZone['America/New_York'].parse(val.to_s).utc if val
   end
 
   def game_stats
@@ -92,6 +125,6 @@ class Boxscore < QueryBase
   end
 
   def self.find(league, game_id)
-    new(ESPN::Boxscore.find(league, game_id))
+    new(SportsApi::Fetcher::Boxscore.find(league, game_id))
   end
 end
