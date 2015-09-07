@@ -54,7 +54,7 @@ class Score < QueryBase
 
     self.game_date      = event.date
     self.start_time     = event.status.start_time
-    self.state          = event.status.state
+    self.state          = API_TO_STATE[event.status.state]
     self.ended_in       = event.status.period
     self.league         = event.league
     self.home_score     = event.competitors.first.score
