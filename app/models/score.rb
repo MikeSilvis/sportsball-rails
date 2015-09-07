@@ -22,7 +22,9 @@ class Score < QueryBase
   }
 
   API_TO_STATE = {
-    'pre' => 'pregame'
+    'pre' => 'pregame',
+    'post' => 'postgame',
+    'in-progress' => 'in-progress'
   }
 
   def initialize(event)

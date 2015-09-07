@@ -65,6 +65,7 @@ class Boxscore < QueryBase
     self.game_id                = boxscore.event.gameid
     self.time_remaining_summary = boxscore.event.status.display_clock
     self.start_time             = boxscore.event.status.start_time
+    self.recap                  = boxscore.event.headline
 
     #self.channel                = attrs[:channel]
     #self.location               = attrs[:location]
@@ -90,17 +91,13 @@ class Boxscore < QueryBase
     end
   end
 
+  def recap=(recap)
+    @recap = Recap.new(recap)
+  end
+
   def score_summary
     @score_summary.tap do |score_summary|
       score_summary[0][0] = time_remaining_summary.gsub('In Progress -', '').strip
-    end
-  end
-
-  def recap
-    return nil unless state =='postgame'
-
-    Recap.find(league, game_id, self.away_team.name, self.home_team.name, self.game_date).tap do |recap|
-      return nil if recap.headline.to_s.match(/No recap/)
     end
   end
 

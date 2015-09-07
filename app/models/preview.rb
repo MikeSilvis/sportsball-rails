@@ -15,19 +15,41 @@ class Preview < QueryBase
                 :game_info,
                 :photo
 
-  def initialize(attrs)
-    self.away_team  = Team.new(attrs, 'away')
-    self.home_team  = Team.new(attrs, 'home')
-    self.content    = attrs[:content]
-    self.headline   = attrs[:headline]
-    self.start_time = attrs[:start_time]
-    self.channel    = attrs[:channel]
-    self.location   = attrs[:location]
-    self.url        = attrs[:url]
-    self.series     = attrs[:series]
-    self.game_id    = attrs[:game_id]
-    self.league     = attrs[:league]
-    self.photo      = attrs[:photo]
+  def initialize(boxscore)
+    ## TODO: Refactor into team
+    self.home_team = Team.new({}).tap do |team|
+      competitor = boxscore.event.competitors.first
+
+      team.name       = competitor.name
+      team.record     = competitor.record.summary
+      team.data_name  = competitor.id
+      team.abbr       = competitor.abbreviation
+      team.league     = boxscore.event.league
+      team.rank       = competitor.rank
+    end
+
+    ## TODO: Refactor into team
+    self.away_team = Team.new({}).tap do |team|
+      competitor = boxscore.event.competitors.last
+
+      team.name       = competitor.name
+      team.record     = competitor.record.summary
+      team.data_name  = competitor.id
+      team.abbr       = competitor.abbreviation
+      team.league     = boxscore.event.league
+      team.rank       = competitor.rank
+    end
+
+    self.league     = boxscore.event.league
+    self.game_id    = boxscore.event.gameid
+    self.start_time = boxscore.event.status.start_time
+    self.headline   = boxscore.event.headline.title
+    self.content    = boxscore.event.headline.content
+    self.url        = boxscore.event.headline.url
+    self.photo      = boxscore.event.headline.photo
+
+    self.channel   = boxscore.event.channel
+    self.location  = boxscore.location
   end
 
   def home_team_schedule
@@ -38,16 +60,28 @@ class Preview < QueryBase
     @away_team_schedule ||= Schedule.find(self.league, self.away_team.data_name) if self.content.present?
   end
 
-  def start_time=(val)
-    @start_time = ActiveSupport::TimeZone['America/New_York'].parse(val.to_s).utc if val
-  end
-
   def start_time
     @start_time.to_i
   end
 
   def self.find(league, game_id)
-    new(ESPN::Preview.find(league, game_id))
+    new(SportsApi::Fetcher::Boxscore.find(league, game_id))
+  end
+
+  def headline=(headline)
+    @headline = headline ? headline : preview[:headline]
+  end
+
+  def content=(content)
+    @content = content ? content : preview[:content]
+  end
+
+  def photo=(photo)
+    @photo = photo ? photo : preview[:photo]
+  end
+
+  def preview
+    @preview ||= ESPN::Preview.find(league, game_id)
   end
 
   def game_info
