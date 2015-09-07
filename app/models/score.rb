@@ -21,26 +21,44 @@ class Score < QueryBase
     'postgame'    => 3
   }
 
-  def initialize(attrs)
-    self.game_date      = attrs[:game_date]
-    self.home_team      = Team.new(attrs, 'home')
-    self.away_team      = Team.new(attrs, 'away')
-    self.start_time     = attrs[:start_time]
-    self.state          = attrs[:state]
-    self.ended_in       = attrs[:ended_in]
-    self.league         = attrs[:league]
-    self.away_score     = attrs[:away_score]
-    self.home_score     = attrs[:home_score]
-    self.progress       = attrs[:progress]
-    self.time_remaining = attrs[:time_remaining]
-    self.line           = attrs[:line]
-    self.id             = attrs[:id]
-    self.boxscore       = attrs[:boxscore]
-    self.preview        = attrs[:preview]
-  end
+  API_TO_STATE = {
+    'pre' => 'pregame'
+  }
 
-  def start_time=(val)
-    @start_time = ActiveSupport::TimeZone['America/New_York'].parse(val.to_s).utc if val.present? && !val.match(/TBD|Delayed|Postponed/)
+  def initialize(event)
+    self.home_team = Team.new({}).tap do |team|
+      competitor = event.competitors.first
+
+      team.name       = competitor.name
+      team.record     = competitor.record.summary
+      team.data_name  = competitor.id
+      team.abbr       = competitor.abbreviation
+      team.league     = event.league
+    end
+
+    self.away_team = Team.new({}).tap do |team|
+      competitor = event.competitors.last
+
+      team.name       = competitor.name
+      team.record     = competitor.record.summary
+      team.data_name  = competitor.id
+      team.abbr       = competitor.abbreviation
+      team.league     = event.league
+    end
+
+    self.game_date      = event.date
+    (self.start_time     = event.status.start_time
+    self.state          = event.status.state
+    self.ended_in       = event.status.period
+    self.league         = event.league
+    self.home_score     = event.competitors.first.score
+    self.away_score     = event.competitors.last.score
+    self.progress       = event.status.period
+    self.time_remaining = event.status.display_clock
+    self.line           = event.line
+    self.id             = event.gameid
+    self.boxscore       = event.gameid
+    self.preview        = event.gameid
   end
 
   def start_time
@@ -54,14 +72,14 @@ class Score < QueryBase
 
     module ClassMethods
       def all(league_id, date)
-        query_with_timeout(league_id, date).map do |score|
+        query_with_timeout(league_id, date).events.map do |score|
           Score.new(score)
         end
       end
 
       def query_with_timeout(league_id, date)
         begin
-          Timeout.timeout(4) { ESPN::Score.find(league_id, date) }
+          Timeout.timeout(4) { SportsApi::Fetcher::Score.find(league_id, date) }
         rescue Timeout::Error
           []
         end
