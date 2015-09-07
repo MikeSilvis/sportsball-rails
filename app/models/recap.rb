@@ -8,7 +8,7 @@ class Recap < QueryBase
 
   def initialize(recap)
     self.content  = recap.content
-    self.headline = recap.headline
+    self.headline = recap.title
     self.photo    = recap.photo
     self.url      = recap.url
   end
