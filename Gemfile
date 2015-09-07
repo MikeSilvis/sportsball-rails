@@ -4,6 +4,7 @@ ruby '2.2.2'
 
 gem 'dalli'
 gem 'espn_scraper', github: 'mikesilvis/espn-scraper'
+gem 'sports_api', github: 'mikesilvis/sports_api'
 gem 'sportsball-assets', github: 'mikesilvis/sportsball-assets'
 gem 'fog'
 gem 'newrelic_rpm'

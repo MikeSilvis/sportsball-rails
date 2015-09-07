@@ -9,6 +9,15 @@ GIT
       nokogiri
 
 GIT
+  remote: git://github.com/mikesilvis/sports_api.git
+  revision: 6cba138a5be6b927b0fa2553e85e09f1f05287f7
+  specs:
+    sports_api (0.1.0)
+      activesupport
+      faraday
+      nokogiri
+
+GIT
   remote: git://github.com/mikesilvis/sportsball-assets.git
   revision: 3a6cf957bb88a83321374c375a4f4e7ed8f024a1
   specs:
@@ -313,6 +322,7 @@ DEPENDENCIES
   rspec-rails
   rubocop
   sentry-raven
+  sports_api!
   sportsball-assets!
   unicorn-rails
   vcr
