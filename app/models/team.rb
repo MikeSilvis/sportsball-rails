@@ -26,7 +26,7 @@ class Team < QueryBase
   end
 
   def logo
-    self.class.logo(league, league == 'ncf' ? data_name : abbr.downcase)
+    self.class.logo(league, league == 'ncf' ? data_name : abbr.to_s.downcase)
   end
 
   def self.logo(league, data_name)
