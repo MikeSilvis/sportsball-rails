@@ -66,11 +66,6 @@ class Boxscore < QueryBase
     self.time_remaining_summary = boxscore.event.status.display_clock
     self.start_time             = boxscore.event.status.start_time
     self.recap                  = boxscore.event.headline
-
-    #self.channel                = attrs[:channel]
-    #self.location               = attrs[:location]
-    #self.arena                  = attrs[:arena]
-    #self.game_stats             = attrs[:game_stats]
   end
 
   def start_time
