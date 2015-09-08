@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: git://github.com/mikesilvis/sports_api.git
-  revision: ad4d4efe5f8abbc8e0ab433dadd08f3786327670
+  revision: 93ed61b60f9453a82ba595408d9d7f409f5d66d6
   specs:
     sports_api (0.1.0)
       activesupport
