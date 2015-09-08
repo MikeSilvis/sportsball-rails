@@ -91,9 +91,12 @@ class Boxscore < QueryBase
   end
 
   def score_summary=(event)
+    home = event.competitors.first
+    away = event.competitors.last
+
     @score_summary = [
-      [event.competitors.first.name, event.competitors.first.linescores.map(&:to_i).map(&:to_s)].flatten,
-      [event.competitors.last.name, event.competitors.last.linescores.map(&:to_i).map(&:to_s)].flatten
+      [event.league == 'ncf' ? home.id : home.abbreviation.downcase, home.linescores.map(&:to_i).map(&:to_s)].flatten,
+      [event.league == 'ncf' ? away.id : away.abbreviation.downcase, home.linescores.map(&:to_i).map(&:to_s)].flatten,
     ]
 
     total_rows = @score_summary.first.count
