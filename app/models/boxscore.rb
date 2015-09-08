@@ -95,8 +95,8 @@ class Boxscore < QueryBase
     away = event.competitors.last
 
     @score_summary = [
-      [event.league == 'ncf' ? home.id : home.abbreviation.downcase, home.linescores.map(&:to_i).map(&:to_s)].flatten,
-      [event.league == 'ncf' ? away.id : away.abbreviation.downcase, home.linescores.map(&:to_i).map(&:to_s)].flatten,
+      [event.league == 'ncf' ? home.id : home.abbreviation.downcase, home.linescores.map(&:to_i).map(&:to_s), home.score].flatten,
+      [event.league == 'ncf' ? away.id : away.abbreviation.downcase, away.linescores.map(&:to_i).map(&:to_s), away.score].flatten,
     ]
 
     total_rows = @score_summary.first.count
