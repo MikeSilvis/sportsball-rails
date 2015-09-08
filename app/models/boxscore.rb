@@ -58,7 +58,7 @@ class Boxscore < QueryBase
     end
 
     self.game_date              = boxscore.event.date
-    self.score_summary          = boxscore.event.score
+    self.score_summary          = boxscore.event.competitors
     self.score_detail           = boxscore.score_details
     self.state                  = boxscore.event.status.state
     self.league                 = boxscore.event.league
@@ -90,10 +90,11 @@ class Boxscore < QueryBase
     @recap = Recap.new(recap)
   end
 
-  def score_summary
-    @score_summary.tap do |score_summary|
-      score_summary[0][0] = time_remaining_summary.gsub('In Progress -', '').strip
-    end
+  def score_summary=(competitors)
+    @score_summary = [
+      [competitors.first.name, competitors.first.linescores.map(&:to_s)].flatten,
+      [competitors.last.name, competitors.last.linescores.map(&:to_s)].flatten
+    ]
   end
 
   def game_stats
