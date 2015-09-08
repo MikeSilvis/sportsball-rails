@@ -98,7 +98,7 @@ class Boxscore < QueryBase
 
     total_rows = @score_summary.first.count
 
-    @score_summary = (@score_summary << ['', (1..total_rows).to_a, event.status.detail]).reverse
+    @score_summary = (@score_summary << ['', (1..total_rows).to_a.map(&:to_s), event.status.detail].flatten).reverse
 
     return @score_summary
   end
