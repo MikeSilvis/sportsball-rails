@@ -58,7 +58,7 @@ class Boxscore < QueryBase
     end
 
     self.game_date              = boxscore.event.date
-    self.score_summary          = boxscore.event.competitors
+    self.score_summary          = boxscore.event
     self.score_detail           = boxscore.score_details
     self.state                  = boxscore.event.status.state
     self.league                 = boxscore.event.league
@@ -90,11 +90,17 @@ class Boxscore < QueryBase
     @recap = Recap.new(recap)
   end
 
-  def score_summary=(competitors)
+  def score_summary=(event)
     @score_summary = [
-      [competitors.first.name, competitors.first.linescores.map(&:to_s)].flatten,
-      [competitors.last.name, competitors.last.linescores.map(&:to_s)].flatten
+      [event.competitors.first.name, event.competitors.first.linescores.map(&:to_i).map(&:to_s)].flatten,
+      [event.competitors.last.name, event.competitors.last.linescores.map(&:to_i).map(&:to_s)].flatten
     ]
+
+    total_rows = @score_summary.first.count
+
+    @score_summary = (@score_summary << ['', (1..total_rows).to_a, event.status.detail]).reverse
+
+    return @score_summary
   end
 
   def game_stats
