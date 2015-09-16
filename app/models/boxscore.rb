@@ -78,7 +78,7 @@ class Boxscore < QueryBase
           header_info: detail.headline,
           content_info: detail.contents.map do |content|
             [
-              content.competitor.abbreviation,
+              (league == 'ncf' ? content.competitor.id : content.competitor.abbreviation),
               content.time,
               content.detail
             ]
