@@ -14,7 +14,9 @@ class ScoresController < ApplicationController
   end
 
   def scores
-    @scores ||= league.scores(current_time.to_date)
+    @scores ||= league.scores(current_time.to_date).select do |score|
+      score.game_date.in_time_zone(time_zone).to_date == current_time.to_date
+    end
   end
 
   def time_zone
