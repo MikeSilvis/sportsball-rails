@@ -39,7 +39,7 @@ class Boxscore < QueryBase
 
       team.name       = competitor.name
       team.record     = competitor.record.summary
-      team.data_name  = competitor.id
+      team.data_name  = league == 'ncf' ? competitor.id : competitor.abbreviation
       team.abbr       = competitor.abbreviation
       team.league     = boxscore.event.league
       team.rank       = competitor.rank
@@ -51,7 +51,7 @@ class Boxscore < QueryBase
 
       team.name       = competitor.name
       team.record     = competitor.record.summary
-      team.data_name  = competitor.id
+      team.data_name  = league == 'ncf' ? competitor.id : competitor.abbreviation
       team.abbr       = competitor.abbreviation
       team.league     = boxscore.event.league
       team.rank       = competitor.rank
