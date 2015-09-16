@@ -69,7 +69,7 @@ class Boxscore < QueryBase
   end
 
   def start_time
-    @start_time.to_i
+    @start_time ? @start_time.to_i : nil
   end
 
   def score_detail=(score_detail)
